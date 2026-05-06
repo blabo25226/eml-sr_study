@@ -1,0 +1,5 @@
+./bin/test.rsの実行は
+cargo run --bin test
+
+参考にしているgithubのrepository
+https://github.com/Amin7410/Project-Andrzej/
