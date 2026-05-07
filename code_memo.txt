@@ -3,3 +3,5 @@ cargo run --bin test
 
 参考にしているgithubのrepository
 https://github.com/Amin7410/Project-Andrzej/
+
+現在利用しているライブラリ"eml-sr"はrustで作られている
