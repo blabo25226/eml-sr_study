@@ -6,3 +6,5 @@ edition = "2021"
 [dependencies]
 # Amin7410さんのGitHubリポジトリから直接最新版をダウンロードする設定
 eml_sr = { git = "https://github.com/Amin7410/Project-Andrzej.git" }
+
+oxieml = "0.1.1" # 最新バージョンを指定

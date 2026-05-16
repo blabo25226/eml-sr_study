@@ -1,3 +1,12 @@
+-gh1-
+githubのファイルをそのままコピーして引っ張て来た
+どのファイルも試していない
+
+-gh2-
+eml-srのinstallすら不明
+
+-gh3-
+
 ./bin/test.rsの実行は
 cargo run --bin test
 
@@ -5,3 +14,20 @@ cargo run --bin test
 https://github.com/Amin7410/Project-Andrzej/
 
 現在利用しているライブラリ"eml-sr"はrustで作られている
+
+README.mdとexampleフォルダの.rs、example_python.pyを試した
+
+他の.rsや.pyはまだ試していない(05/17)
+
+
+-gh4-
+
+./bin/test.rsの実行は
+cargo run --bin test
+
+README.mdとexampleフォルダの.rsを試した
+
+他の.rsや.pyはまだ試していない(05/17)
+
+-gh5-
+未読
