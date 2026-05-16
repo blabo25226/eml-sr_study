@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-04-20T14:11:17.580057+00:00",
+  "input_count": 16,
+  "inputs": [
+    {
+      "bytes": 682,
+      "path": "pyproject.toml",
+      "role": "source_input",
+      "sha256": "4dc58f90c4aa3535050eba5e7a7157003c7a99790b93e45a4aa7cecf254db7b7"
+    },
+    {
+      "bytes": 70,
+      "path": "requirements-lock.txt",
+      "role": "source_input",
+      "sha256": "38309ad75026d907098924c37905d5b3accb74f769bc8422ef8be6225315ada8"
+    },
+    {
+      "bytes": 429,
+      "path": "Dockerfile",
+      "role": "source_input",
+      "sha256": "2b11304cd13e53d7ce1cd8913a48f359c447a39d21619f8115abe72ec6fa4208"
+    },
+    {
+      "bytes": 46617,
+      "path": "src/eml_symbolic_regression/cli.py",
+      "role": "source_input",
+      "sha256": "d763cd4afdb23458a87b88a7a5da38df1f3250042e194b4cfcb821353b120223"
+    },
+    {
+      "bytes": 31048,
+      "path": "src/eml_symbolic_regression/publication.py",
+      "role": "source_input",
+      "sha256": "59ea336b8cb48c7007578880c96e25b47ee33a897c6ca86bbce7fc79d83f7529"
+    },
+    {
+      "bytes": 166307,
+      "path": "src/eml_symbolic_regression/benchmark.py",
+      "role": "source_input",
+      "sha256": "e4df34e080f1592355a30762d96f823d34c689891b200fc75431272c78624fb4"
+    },
+    {
+      "bytes": 68670,
+      "path": "src/eml_symbolic_regression/campaign.py",
+      "role": "source_input",
+      "sha256": "1a2d605184b7f750105382d43c68852d1da18a36eaaeabfc18084cb21f2bf54c"
+    },
+    {
+      "bytes": 31654,
+      "path": "src/eml_symbolic_regression/datasets.py",
+      "role": "source_input",
+      "sha256": "583899f751d3d24bb512885576f1569209fddf13a46521ad40800c9798cc73f0"
+    },
+    {
+      "bytes": 25086,
+      "path": "src/eml_symbolic_regression/baselines.py",
+      "role": "source_input",
+      "sha256": "4b9eb21a149e53fcff4609fe9ca3bd4eac83865dab10514762088255086ee58b"
+    },
+    {
+      "bytes": 12501,
+      "path": "src/eml_symbolic_regression/verify.py",
+      "role": "source_input",
+      "sha256": "afa6ec8aca72beff24a1687ffa88272de5ef5261fcb9279980bb0dbdedef9837"
+    },
+    {
+      "bytes": 4696,
+      "path": "scripts/validate-ci-contract.py",
+      "role": "source_input",
+      "sha256": "b1ffbf515a847438bb07f90360dfcc1a7f730051b4fcc1c5a4b5f747cbfee9d5"
+    },
+    {
+      "bytes": 3811,
+      "path": ".github/workflows/ci.yml",
+      "role": "source_input",
+      "sha256": "271dc1c4793283566dea7b28a5ce9d34e0dab15a9820ee3fa6418b91ede4cba9"
+    },
+    {
+      "bytes": 2338,
+      "path": ".github/workflows/publish-main.yml",
+      "role": "source_input",
+      "sha256": "71601afab6b592a1e954a8fb4f9fefc518e79450655fe9f108a559d27fd969bb"
+    },
+    {
+      "bytes": 449,
+      "path": "data/real/hubble_1929_velocity_distance.csv",
+      "role": "source_input",
+      "sha256": "6a79d2e305499f2553b2a2a141e99a04ec5a1b0294304599175e515753d73138"
+    },
+    {
+      "bytes": 33297,
+      "path": "sources/NORTH_STAR.md",
+      "role": "source_input",
+      "sha256": "72e5214321f997a6e231db942be44cb2fb827c9d1b183d9d881651fca1810af0"
+    },
+    {
+      "bytes": 6410,
+      "path": "sources/FOR_DEMO.md",
+      "role": "source_input",
+      "sha256": "a68bac22e5799dcef132b11fd940f731cd920756e39d29b66dee6927d489b665"
+    }
+  ],
+  "schema": "eml.v113_publication_source_locks.v1"
+}

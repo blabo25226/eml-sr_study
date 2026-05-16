@@ -1,0 +1,3 @@
+group,total,verifier_recovered,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate
+blind_training_recovered,2,2,0,0,0,0,0,1.0,0.0,0.0
+snapped_but_failed,16,0,0,0,0,16,0,0.0,0.0,1.0

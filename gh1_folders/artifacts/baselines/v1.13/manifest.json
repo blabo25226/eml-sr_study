@@ -1,0 +1,62 @@
+{
+  "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli baseline-harness --output-dir artifacts/baselines/v1.13 --overwrite",
+  "config": {
+    "adapters": [
+      "eml_reference",
+      "polynomial_least_squares",
+      "pysr",
+      "gplearn"
+    ],
+    "constants_policies": [
+      "basis_only",
+      "literal_constants"
+    ],
+    "datasets": [
+      "noisy_beer_lambert_sweep",
+      "michaelis_parameter_identifiability",
+      "multivariable_arrhenius_surface",
+      "unit_aware_ohm_law",
+      "real_hubble_1929"
+    ],
+    "max_evaluations": 1000,
+    "points": 32,
+    "seeds": [
+      0
+    ],
+    "start_conditions": [
+      "blind",
+      "warm_start"
+    ],
+    "time_seconds": 5.0,
+    "tolerance": 1e-08
+  },
+  "counts": {
+    "by_adapter": {
+      "eml_reference": 20,
+      "gplearn": 20,
+      "polynomial_least_squares": 20,
+      "pysr": 20
+    },
+    "by_status": {
+      "completed": 10,
+      "unavailable": 40,
+      "unsupported": 30
+    },
+    "total": 80
+  },
+  "denominator_policy": "excluded_from_eml_recovery_denominators",
+  "environment": {
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "generated_at": "2026-04-20T14:12:08+00:00",
+  "outputs": {
+    "dependency_locks_json": "artifacts/baselines/v1.13/dependency-locks.json",
+    "manifest_json": "artifacts/baselines/v1.13/manifest.json",
+    "output_dir": "artifacts/baselines/v1.13",
+    "report_md": "artifacts/baselines/v1.13/baseline-report.md",
+    "rows_csv": "artifacts/baselines/v1.13/baseline-runs.csv",
+    "rows_json": "artifacts/baselines/v1.13/baseline-runs.json"
+  },
+  "schema": "eml.baseline_harness_manifest.v1"
+}

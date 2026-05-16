@@ -1,0 +1,394 @@
+{
+  "counts": {
+    "evidence_classes": {
+      "scaffolded_blind_training_recovered": 18
+    },
+    "execution_error": 0,
+    "failed": 0,
+    "repaired_candidate": 0,
+    "same_ast_return": 0,
+    "total": 18,
+    "unsupported": 0,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 18,
+    "verifier_recovery_rate": 1.0
+  },
+  "generated_at": "2026-04-16T07:16:15.089835+00:00",
+  "output": {
+    "aggregate_json": "artifacts/proof/v1.5/campaigns/proof-shallow/aggregate.json",
+    "aggregate_markdown": "artifacts/proof/v1.5/campaigns/proof-shallow/aggregate.md",
+    "campaign_dir": "artifacts/proof/v1.5/campaigns/proof-shallow",
+    "figures": {
+      "beer_perturbation": "artifacts/proof/v1.5/campaigns/proof-shallow/figures/beer-perturbation.svg",
+      "depth_curve_recovery": "artifacts/proof/v1.5/campaigns/proof-shallow/figures/depth-curve-recovery.svg",
+      "failure_taxonomy": "artifacts/proof/v1.5/campaigns/proof-shallow/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/proof/v1.5/campaigns/proof-shallow/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/proof/v1.5/campaigns/proof-shallow/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/proof/v1.5/campaigns/proof-shallow/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/proof/v1.5/campaigns/proof-shallow/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-shallow/runs/v1.5-shallow-proof",
+    "report_markdown": "artifacts/proof/v1.5/campaigns/proof-shallow/report.md",
+    "suite_result": "artifacts/proof/v1.5/campaigns/proof-shallow/suite-result.json",
+    "tables": {
+      "depth_curve_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/depth-curve.csv",
+      "failures_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/failures.csv",
+      "group_claim_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/group-claim.csv",
+      "group_depth_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/group-depth.csv",
+      "group_evidence_class_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/group-evidence-class.csv",
+      "group_failure_class_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/group-start-mode.csv",
+      "group_threshold_policy_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/group-threshold-policy.csv",
+      "headline_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/headline-metrics.csv",
+      "headline_json": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/headline-metrics.json",
+      "runs_csv": "artifacts/proof/v1.5/campaigns/proof-shallow/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "18 runs; declared shallow scaffolded-training proof suite with bounded threshold metadata.",
+    "description": "Bounded v1.5 shallow proof campaign for scaffolded training evidence.",
+    "name": "proof-shallow",
+    "suite": "v1.5-shallow-proof",
+    "tier": "proof-contract"
+  },
+  "reproducibility": {
+    "code_version": "b75c22d",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign proof-shallow --output-root artifacts/proof/v1.5/campaigns --label proof-shallow --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "perturbation_noises": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/proof/v1.5/campaigns/proof-shallow/runs",
+    "cases": [
+      {
+        "claim_id": "paper-shallow-scaffolded-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "exp",
+        "id": "shallow-exp-blind",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 2,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "scaffolded_blind"
+        ],
+        "threshold_policy_id": "scaffolded_bounded_100_percent",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-scaffolded-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "log",
+        "id": "shallow-log-blind",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 2,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "scaffolded_blind"
+        ],
+        "threshold_policy_id": "scaffolded_bounded_100_percent",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-scaffolded-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "radioactive_decay",
+        "id": "shallow-radioactive-decay-blind",
+        "optimizer": {
+          "constants": [
+            "-0.4"
+          ],
+          "depth": 9,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 2,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "scaffolded_blind"
+        ],
+        "threshold_policy_id": "scaffolded_bounded_100_percent",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-scaffolded-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "beer_lambert",
+        "id": "shallow-beer-lambert-blind",
+        "optimizer": {
+          "constants": [
+            "-0.8"
+          ],
+          "depth": 9,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 2,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "scaffolded_blind"
+        ],
+        "threshold_policy_id": "scaffolded_bounded_100_percent",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-scaffolded-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "scaled_exp_growth",
+        "id": "shallow-scaled-exp-growth-blind",
+        "optimizer": {
+          "constants": [
+            "0.4"
+          ],
+          "depth": 9,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 2,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "scaffolded_blind"
+        ],
+        "threshold_policy_id": "scaffolded_bounded_100_percent",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-scaffolded-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "scaled_exp_fast_decay",
+        "id": "shallow-scaled-exp-fast-decay-blind",
+        "optimizer": {
+          "constants": [
+            "-1.2"
+          ],
+          "depth": 9,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 2,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "scaffolded_blind"
+        ],
+        "threshold_policy_id": "scaffolded_bounded_100_percent",
+        "training_mode": "blind_training"
+      }
+    ],
+    "description": "Bounded v1.5 shallow scaffolded-training proof suite with fixed proof constants and evidenced scaled-exponential depth.",
+    "id": "v1.5-shallow-proof",
+    "schema": "eml.benchmark_suite.v1"
+  },
+  "thresholds": [
+    {
+      "claim_class": "scaffolded_training_proof",
+      "claim_id": "paper-shallow-scaffolded-recovery",
+      "eligible": 18,
+      "evidence_classes": {
+        "scaffolded_blind_training_recovered": 18
+      },
+      "failed": 0,
+      "passed": 18,
+      "rate": 1.0,
+      "required_rate": 1.0,
+      "status": "passed",
+      "threshold": {
+        "allowed_evidence_classes": [
+          "scaffolded_blind_training_recovered"
+        ],
+        "description": "Declared scaffolded shallow suites pass only at 100% verifier-owned scaffolded training recovery.",
+        "fail_on_execution_error": true,
+        "fail_on_unsupported": true,
+        "id": "scaffolded_bounded_100_percent",
+        "policy_type": "bounded_rate",
+        "required_rate": 1.0
+      },
+      "threshold_policy_id": "scaffolded_bounded_100_percent"
+    }
+  ]
+}

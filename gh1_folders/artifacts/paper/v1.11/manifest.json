@@ -1,0 +1,29 @@
+{
+  "asset_manifest": "artifacts/paper/v1.11/assets/manifest.json",
+  "audit_status": "passed",
+  "claim_audit": "artifacts/paper/v1.11/claim-audit.json",
+  "claim_boundary": "final package preserves regime separation and unsupported diagnostic visibility",
+  "diagnostics_manifest": "artifacts/diagnostics/v1.11-paper-ablations/manifest.json",
+  "generated_at": "2026-04-19T14:13:16.612558+00:00",
+  "output_dir": "artifacts/paper/v1.11",
+  "outputs": {
+    "claim_audit_json": "artifacts/paper/v1.11/claim-audit.json",
+    "claim_audit_md": "artifacts/paper/v1.11/claim-audit.md",
+    "manifest_json": "artifacts/paper/v1.11/manifest.json",
+    "output_dir": "artifacts/paper/v1.11",
+    "paper_readiness_md": "artifacts/paper/v1.11/paper-readiness.md",
+    "reproduction_md": "artifacts/paper/v1.11/reproduction.md",
+    "source_locks_json": "artifacts/paper/v1.11/source-locks.json"
+  },
+  "probe_aggregate": "artifacts/campaigns/v1.11-logistic-planck-probes/aggregate.json",
+  "raw_hybrid_manifest": "artifacts/paper/v1.11/raw-hybrid/manifest.json",
+  "reproduction": {
+    "commands_markdown": "artifacts/paper/v1.11/reproduction.md",
+    "package_command": "PYTHONPATH=src python -m eml_symbolic_regression.cli paper-package --output-dir artifacts/paper/v1.11 --overwrite",
+    "paper_assets_command": "PYTHONPATH=src python -m eml_symbolic_regression.cli paper-assets --output-dir artifacts/paper/v1.11/assets"
+  },
+  "schema": "eml.v111_paper_package.v1",
+  "source_lock_count": 67,
+  "source_locks": "artifacts/paper/v1.11/source-locks.json",
+  "training_aggregate": "artifacts/campaigns/v1.11-paper-training/aggregate.json"
+}

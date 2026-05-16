@@ -1,0 +1,144 @@
+{
+  "config": {
+    "max_nodes": 256,
+    "points": 24,
+    "seed": 0,
+    "strict_gate": 13,
+    "tolerance": 1e-08
+  },
+  "diagnostic": {
+    "relaxed": {
+      "metadata": {
+        "assumptions": [
+          "multiplication uses verified EML arithmetic identity",
+          "exponential saturation shortcut lowers 1/(1+c*exp(a)) behind validation"
+        ],
+        "constant_policy": "literal_constants",
+        "constants": [
+          "-1.3",
+          "0",
+          "0.06598803584531254",
+          "1",
+          "1.6931471805599452"
+        ],
+        "depth": 15,
+        "macro_diagnostics": {
+          "baseline_depth": 27,
+          "baseline_node_count": 77,
+          "depth_delta": 12,
+          "hits": [
+            "exponential_saturation_template"
+          ],
+          "misses": [
+            "reciprocal_shift_template",
+            "saturation_ratio_template",
+            "low_degree_power_template",
+            "direct_division_template",
+            "scaled_exp_minus_one_template"
+          ],
+          "node_delta": 28,
+          "validation_passed": true,
+          "validation_status": "validated"
+        },
+        "node_count": 49,
+        "normalized_expression": "exp(1.3*x)/(exp(1.3*x) + 2)",
+        "source_expression": "1/(1 + 2*exp(-1.3*x))",
+        "trace": [
+          {
+            "assumptions": [],
+            "output_depth": 0,
+            "output_nodes": 1,
+            "rule": "constant",
+            "source": "-1.30000000000000"
+          },
+          {
+            "assumptions": [],
+            "output_depth": 0,
+            "output_nodes": 1,
+            "rule": "variable",
+            "source": "x"
+          },
+          {
+            "assumptions": [
+              "multiplication uses verified EML arithmetic identity"
+            ],
+            "output_depth": 8,
+            "output_nodes": 17,
+            "rule": "multiplication",
+            "source": "-1.3*x"
+          },
+          {
+            "assumptions": [
+              "multiplication uses verified EML arithmetic identity",
+              "exponential saturation shortcut lowers 1/(1+c*exp(a)) behind validation"
+            ],
+            "output_depth": 15,
+            "output_nodes": 49,
+            "rule": "exponential_saturation_template",
+            "source": "1/(1 + 2*exp(-1.3*x))"
+          }
+        ],
+        "unsupported_reason": null,
+        "variables": [
+          "x"
+        ]
+      },
+      "validation": {
+        "max_abs_error": 2.9229171921407977e-16,
+        "mse": 2.545635187218574e-32,
+        "passed": true,
+        "reason": "validated",
+        "tolerance": 1e-08
+      }
+    },
+    "schema": "eml.compiler_diagnostic.v1",
+    "status": "unsupported",
+    "strict": {
+      "detail": "compiled depth 15 exceeds max_depth=13",
+      "expression": "1/(1 + 2*exp(-1.3*x))",
+      "reason": "depth_exceeded"
+    }
+  },
+  "formula": {
+    "candidate_name": "logistic_catalog",
+    "description": "Nonlinear growth progression demo.",
+    "formula_id": "logistic",
+    "normalized_dimensionless": true,
+    "source_document": "sources/FOR_DEMO.md",
+    "source_linkage": "Logistic growth first serious demo after simpler warm-ups",
+    "symbolic_expression": "1/(1 + 2*exp(-1.3*x))",
+    "variable": "x"
+  },
+  "generated_at": "2026-04-19T14:50:59.591250+00:00",
+  "row": {
+    "claim_boundary": "strict gate remains 13; relaxed depth improvement is diagnostic and not recovery promotion",
+    "depth_gap_to_strict_gate": 2,
+    "formula_id": "logistic",
+    "max_nodes": 256,
+    "points": 24,
+    "promotion": "no",
+    "promotion_reason": "strict support and verifier recovery did not both pass",
+    "relaxed_baseline_depth": 27,
+    "relaxed_depth": 15,
+    "relaxed_depth_delta": 12,
+    "relaxed_macro_hits": [
+      "exponential_saturation_template"
+    ],
+    "relaxed_node_count": 49,
+    "relaxed_validation_passed": true,
+    "relaxed_validation_status": "validated",
+    "seed": 0,
+    "source": "v1.12-logistic-strict-support-probe",
+    "strict_depth": null,
+    "strict_detail": "compiled depth 15 exceeds max_depth=13",
+    "strict_gate": 13,
+    "strict_node_count": null,
+    "strict_reason": "depth_exceeded",
+    "strict_status": "unsupported",
+    "strict_validation_status": null,
+    "symbolic_expression": "1/(1 + 2*exp(-1.3*x))",
+    "verifier_reason": "strict compile did not produce an exact EML candidate",
+    "verifier_status": "not_run_strict_compile_failed"
+  },
+  "schema": "eml.v112_logistic_strict_support_diagnostic.v1"
+}

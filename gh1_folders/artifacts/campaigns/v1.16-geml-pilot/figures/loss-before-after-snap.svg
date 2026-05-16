@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+<style>
+  .title { font: 700 24px sans-serif; fill: #1d252c; }
+  .subtitle { font: 400 14px sans-serif; fill: #4b5563; }
+  .axis { stroke: #28343d; stroke-width: 1.3; }
+  .grid { stroke: #d7dde3; stroke-width: 1; }
+  .tick { font: 12px sans-serif; fill: #51606d; }
+  .label { font: 12px sans-serif; fill: #1d252c; }
+  .value { font: 700 11px sans-serif; fill: #1d252c; }
+</style>
+<text x="86" y="38" class="title">Training Loss Before and After Snap</text>
+<text x="86" y="60" class="subtitle">-log10(loss), higher is lower loss</text>
+<line x1="86" y1="390" x2="924" y2="390" class="axis" />
+<line x1="86" y1="76" x2="86" y2="390" class="axis" />
+<line x1="81" y1="390.00" x2="924" y2="390.00" class="grid" />
+<text x="74" y="394.00" class="tick" text-anchor="end">0</text>
+<line x1="81" y1="311.50" x2="924" y2="311.50" class="grid" />
+<text x="74" y="315.50" class="tick" text-anchor="end">0.28</text>
+<line x1="81" y1="233.00" x2="924" y2="233.00" class="grid" />
+<text x="74" y="237.00" class="tick" text-anchor="end">0.55</text>
+<line x1="81" y1="154.50" x2="924" y2="154.50" class="grid" />
+<text x="74" y="158.50" class="tick" text-anchor="end">0.83</text>
+<line x1="81" y1="76.00" x2="924" y2="76.00" class="grid" />
+<text x="74" y="80.00" class="tick" text-anchor="end">1.1</text>
+<rect x="88.73" y="295.06" width="12.00" height="94.94" fill="#2f6f8f" rx="3" />
+<text x="94.73" y="287.06" class="value" text-anchor="middle">4.6e-01</text>
+<text x="94.73" y="412" class="label" text-anchor="end" transform="rotate(-35 94.73 412)">sin_pi s0 best</text>
+<rect x="106.19" y="337.48" width="12.00" height="52.52" fill="#d1495b" rx="3" />
+<text x="112.19" y="329.48" class="value" text-anchor="middle">6.5e-01</text>
+<text x="112.19" y="412" class="label" text-anchor="end" transform="rotate(-35 112.19 412)">sin_pi s0 snap</text>
+<rect x="123.65" y="322.40" width="12.00" height="67.60" fill="#4f8a3a" rx="3" />
+<text x="129.65" y="314.40" class="value" text-anchor="middle">5.8e-01</text>
+<text x="129.65" y="412" class="label" text-anchor="end" transform="rotate(-35 129.65 412)">sin_pi s1 best</text>
+<rect x="141.10" y="338.09" width="12.00" height="51.91" fill="#7a5195" rx="3" />
+<text x="147.10" y="330.09" class="value" text-anchor="middle">6.6e-01</text>
+<text x="147.10" y="412" class="label" text-anchor="end" transform="rotate(-35 147.10 412)">sin_pi s1 snap</text>
+<rect x="158.56" y="390.00" width="12.00" height="0.00" fill="#a5673f" rx="3" />
+<text x="164.56" y="382.00" class="value" text-anchor="middle">2.1e+00</text>
+<text x="164.56" y="412" class="label" text-anchor="end" transform="rotate(-35 164.56 412)">sin_pi s0 best</text>
+<rect x="176.02" y="390.00" width="12.00" height="0.00" fill="#1f8a70" rx="3" />
+<text x="182.02" y="382.00" class="value" text-anchor="middle">2.5e+00</text>
+<text x="182.02" y="412" class="label" text-anchor="end" transform="rotate(-35 182.02 412)">sin_pi s0 snap</text>
+<rect x="193.48" y="390.00" width="12.00" height="0.00" fill="#2f6f8f" rx="3" />
+<text x="199.48" y="382.00" class="value" text-anchor="middle">1.8e+00</text>
+<text x="199.48" y="412" class="label" text-anchor="end" transform="rotate(-35 199.48 412)">sin_pi s1 best</text>
+<rect x="210.94" y="390.00" width="12.00" height="0.00" fill="#d1495b" rx="3" />
+<text x="216.94" y="382.00" class="value" text-anchor="middle">2.5e+00</text>
+<text x="216.94" y="412" class="label" text-anchor="end" transform="rotate(-35 216.94 412)">sin_pi s1 snap</text>
+<rect x="228.40" y="317.39" width="12.00" height="72.61" fill="#4f8a3a" rx="3" />
+<text x="234.40" y="309.39" class="value" text-anchor="middle">5.6e-01</text>
+<text x="234.40" y="412" class="label" text-anchor="end" transform="rotate(-35 234.40 412)">cos_pi s0 best</text>
+<rect x="245.85" y="339.99" width="12.00" height="50.01" fill="#7a5195" rx="3" />
+<text x="251.85" y="331.99" class="value" text-anchor="middle">6.7e-01</text>
+<text x="251.85" y="412" class="label" text-anchor="end" transform="rotate(-35 251.85 412)">cos_pi s0 snap</text>
+<rect x="263.31" y="380.10" width="12.00" height="9.90" fill="#a5673f" rx="3" />
+<text x="269.31" y="372.10" class="value" text-anchor="middle">9.2e-01</text>
+<text x="269.31" y="412" class="label" text-anchor="end" transform="rotate(-35 269.31 412)">cos_pi s1 best</text>
+<rect x="280.77" y="339.85" width="12.00" height="50.15" fill="#1f8a70" rx="3" />
+<text x="286.77" y="331.85" class="value" text-anchor="middle">6.7e-01</text>
+<text x="286.77" y="412" class="label" text-anchor="end" transform="rotate(-35 286.77 412)">cos_pi s1 snap</text>
+<rect x="298.23" y="390.00" width="12.00" height="0.00" fill="#2f6f8f" rx="3" />
+<text x="304.23" y="382.00" class="value" text-anchor="middle">1.8e+00</text>
+<text x="304.23" y="412" class="label" text-anchor="end" transform="rotate(-35 304.23 412)">cos_pi s0 best</text>
+<rect x="315.69" y="390.00" width="12.00" height="0.00" fill="#d1495b" rx="3" />
+<text x="321.69" y="382.00" class="value" text-anchor="middle">3.1e+00</text>
+<text x="321.69" y="412" class="label" text-anchor="end" transform="rotate(-35 321.69 412)">cos_pi s0 snap</text>
+<rect x="333.15" y="233.72" width="12.00" height="156.28" fill="#4f8a3a" rx="3" />
+<text x="339.15" y="225.72" class="value" text-anchor="middle">2.8e-01</text>
+<text x="339.15" y="412" class="label" text-anchor="end" transform="rotate(-35 339.15 412)">cos_pi s1 best</text>
+<rect x="350.60" y="311.58" width="12.00" height="78.42" fill="#7a5195" rx="3" />
+<text x="356.60" y="303.58" class="value" text-anchor="middle">5.3e-01</text>
+<text x="356.60" y="412" class="label" text-anchor="end" transform="rotate(-35 356.60 412)">cos_pi s1 snap</text>
+<rect x="368.06" y="266.15" width="12.00" height="123.85" fill="#a5673f" rx="3" />
+<text x="374.06" y="258.15" class="value" text-anchor="middle">3.7e-01</text>
+<text x="374.06" y="412" class="label" text-anchor="end" transform="rotate(-35 374.06 412)">harmonic_sum s0 best</text>
+<rect x="385.52" y="369.21" width="12.00" height="20.79" fill="#1f8a70" rx="3" />
+<text x="391.52" y="361.21" class="value" text-anchor="middle">8.5e-01</text>
+<text x="391.52" y="412" class="label" text-anchor="end" transform="rotate(-35 391.52 412)">harmonic_sum s0 snap</text>
+<rect x="402.98" y="265.64" width="12.00" height="124.36" fill="#2f6f8f" rx="3" />
+<text x="408.98" y="257.64" class="value" text-anchor="middle">3.7e-01</text>
+<text x="408.98" y="412" class="label" text-anchor="end" transform="rotate(-35 408.98 412)">harmonic_sum s1 best</text>
+<rect x="420.44" y="368.52" width="12.00" height="21.48" fill="#d1495b" rx="3" />
+<text x="426.44" y="360.52" class="value" text-anchor="middle">8.4e-01</text>
+<text x="426.44" y="412" class="label" text-anchor="end" transform="rotate(-35 426.44 412)">harmonic_sum s1 snap</text>
+<rect x="437.90" y="390.00" width="12.00" height="0.00" fill="#4f8a3a" rx="3" />
+<text x="443.90" y="382.00" class="value" text-anchor="middle">2.1e+00</text>
+<text x="443.90" y="412" class="label" text-anchor="end" transform="rotate(-35 443.90 412)">harmonic_sum s0 best</text>
+<rect x="455.35" y="390.00" width="12.00" height="0.00" fill="#7a5195" rx="3" />
+<text x="461.35" y="382.00" class="value" text-anchor="middle">2.7e+00</text>
+<text x="461.35" y="412" class="label" text-anchor="end" transform="rotate(-35 461.35 412)">harmonic_sum s0 snap</text>
+<rect x="472.81" y="390.00" width="12.00" height="0.00" fill="#a5673f" rx="3" />
+<text x="478.81" y="382.00" class="value" text-anchor="middle">1.9e+00</text>
+<text x="478.81" y="412" class="label" text-anchor="end" transform="rotate(-35 478.81 412)">harmonic_sum s1 best</text>
+<rect x="490.27" y="390.00" width="12.00" height="0.00" fill="#1f8a70" rx="3" />
+<text x="496.27" y="382.00" class="value" text-anchor="middle">2.7e+00</text>
+<text x="496.27" y="412" class="label" text-anchor="end" transform="rotate(-35 496.27 412)">harmonic_sum s1 snap</text>
+<rect x="507.73" y="161.37" width="12.00" height="228.63" fill="#2f6f8f" rx="3" />
+<text x="513.73" y="153.37" class="value" text-anchor="middle">1.6e-01</text>
+<text x="513.73" y="412" class="label" text-anchor="end" transform="rotate(-35 513.73 412)">log_periodic_oscillation s0 best</text>
+<rect x="525.19" y="385.88" width="12.00" height="4.12" fill="#d1495b" rx="3" />
+<text x="531.19" y="377.88" class="value" text-anchor="middle">9.7e-01</text>
+<text x="531.19" y="412" class="label" text-anchor="end" transform="rotate(-35 531.19 412)">log_periodic_oscillation s0 snap</text>
+<rect x="542.65" y="159.84" width="12.00" height="230.16" fill="#4f8a3a" rx="3" />
+<text x="548.65" y="151.84" class="value" text-anchor="middle">1.6e-01</text>
+<text x="548.65" y="412" class="label" text-anchor="end" transform="rotate(-35 548.65 412)">log_periodic_oscillation s1 best</text>
+<rect x="560.10" y="385.69" width="12.00" height="4.31" fill="#7a5195" rx="3" />
+<text x="566.10" y="377.69" class="value" text-anchor="middle">9.7e-01</text>
+<text x="566.10" y="412" class="label" text-anchor="end" transform="rotate(-35 566.10 412)">log_periodic_oscillation s1 snap</text>
+<rect x="577.56" y="390.00" width="12.00" height="0.00" fill="#a5673f" rx="3" />
+<text x="583.56" y="382.00" class="value" text-anchor="middle">1.5e+00</text>
+<text x="583.56" y="412" class="label" text-anchor="end" transform="rotate(-35 583.56 412)">log_periodic_oscillation s0 best</text>
+<rect x="595.02" y="390.00" width="12.00" height="0.00" fill="#1f8a70" rx="3" />
+<text x="601.02" y="382.00" class="value" text-anchor="middle">1.5e+00</text>
+<text x="601.02" y="412" class="label" text-anchor="end" transform="rotate(-35 601.02 412)">log_periodic_oscillation s0 snap</text>
+<rect x="612.48" y="219.19" width="12.00" height="170.81" fill="#2f6f8f" rx="3" />
+<text x="618.48" y="211.19" class="value" text-anchor="middle">2.5e-01</text>
+<text x="618.48" y="412" class="label" text-anchor="end" transform="rotate(-35 618.48 412)">log_periodic_oscillation s1 best</text>
+<rect x="629.94" y="390.00" width="12.00" height="0.00" fill="#d1495b" rx="3" />
+<text x="635.94" y="382.00" class="value" text-anchor="middle">1.4e+00</text>
+<text x="635.94" y="412" class="label" text-anchor="end" transform="rotate(-35 635.94 412)">log_periodic_oscillation s1 snap</text>
+<rect x="647.40" y="98.40" width="12.00" height="291.60" fill="#4f8a3a" rx="3" />
+<text x="653.40" y="90.40" class="value" text-anchor="middle">9.4e-02</text>
+<text x="653.40" y="412" class="label" text-anchor="end" transform="rotate(-35 653.40 412)">exp s0 best</text>
+<rect x="664.85" y="319.25" width="12.00" height="70.75" fill="#7a5195" rx="3" />
+<text x="670.85" y="311.25" class="value" text-anchor="middle">5.6e-01</text>
+<text x="670.85" y="412" class="label" text-anchor="end" transform="rotate(-35 670.85 412)">exp s0 snap</text>
+<rect x="682.31" y="76.00" width="12.00" height="314.00" fill="#a5673f" rx="3" />
+<text x="688.31" y="68.00" class="value" text-anchor="middle">7.9e-02</text>
+<text x="688.31" y="412" class="label" text-anchor="end" transform="rotate(-35 688.31 412)">exp s1 best</text>
+<rect x="699.77" y="319.25" width="12.00" height="70.75" fill="#1f8a70" rx="3" />
+<text x="705.77" y="311.25" class="value" text-anchor="middle">5.6e-01</text>
+<text x="705.77" y="412" class="label" text-anchor="end" transform="rotate(-35 705.77 412)">exp s1 snap</text>
+<rect x="717.23" y="390.00" width="12.00" height="0.00" fill="#2f6f8f" rx="3" />
+<text x="723.23" y="382.00" class="value" text-anchor="middle">1.2e+00</text>
+<text x="723.23" y="412" class="label" text-anchor="end" transform="rotate(-35 723.23 412)">exp s0 best</text>
+<rect x="734.69" y="390.00" width="12.00" height="0.00" fill="#d1495b" rx="3" />
+<text x="740.69" y="382.00" class="value" text-anchor="middle">3.2e+00</text>
+<text x="740.69" y="412" class="label" text-anchor="end" transform="rotate(-35 740.69 412)">exp s0 snap</text>
+<rect x="752.15" y="390.00" width="12.00" height="0.00" fill="#4f8a3a" rx="3" />
+<text x="758.15" y="382.00" class="value" text-anchor="middle">1.3e+00</text>
+<text x="758.15" y="412" class="label" text-anchor="end" transform="rotate(-35 758.15 412)">exp s1 best</text>
+<rect x="769.60" y="390.00" width="12.00" height="0.00" fill="#7a5195" rx="3" />
+<text x="775.60" y="382.00" class="value" text-anchor="middle">3.2e+00</text>
+<text x="775.60" y="412" class="label" text-anchor="end" transform="rotate(-35 775.60 412)">exp s1 snap</text>
+<rect x="787.06" y="390.00" width="12.00" height="0.00" fill="#a5673f" rx="3" />
+<text x="793.06" y="382.00" class="value" text-anchor="middle">2.6e+00</text>
+<text x="793.06" y="412" class="label" text-anchor="end" transform="rotate(-35 793.06 412)">log s0 best</text>
+<rect x="804.52" y="390.00" width="12.00" height="0.00" fill="#1f8a70" rx="3" />
+<text x="810.52" y="382.00" class="value" text-anchor="middle">2.3e+00</text>
+<text x="810.52" y="412" class="label" text-anchor="end" transform="rotate(-35 810.52 412)">log s0 snap</text>
+<rect x="821.98" y="390.00" width="12.00" height="0.00" fill="#2f6f8f" rx="3" />
+<text x="827.98" y="382.00" class="value" text-anchor="middle">2.4e+00</text>
+<text x="827.98" y="412" class="label" text-anchor="end" transform="rotate(-35 827.98 412)">log s1 best</text>
+<rect x="839.44" y="390.00" width="12.00" height="0.00" fill="#d1495b" rx="3" />
+<text x="845.44" y="382.00" class="value" text-anchor="middle">2.8e+00</text>
+<text x="845.44" y="412" class="label" text-anchor="end" transform="rotate(-35 845.44 412)">log s1 snap</text>
+<rect x="856.90" y="390.00" width="12.00" height="0.00" fill="#4f8a3a" rx="3" />
+<text x="862.90" y="382.00" class="value" text-anchor="middle">1.6e+00</text>
+<text x="862.90" y="412" class="label" text-anchor="end" transform="rotate(-35 862.90 412)">log s0 best</text>
+<rect x="874.35" y="390.00" width="12.00" height="0.00" fill="#7a5195" rx="3" />
+<text x="880.35" y="382.00" class="value" text-anchor="middle">1.6e+00</text>
+<text x="880.35" y="412" class="label" text-anchor="end" transform="rotate(-35 880.35 412)">log s0 snap</text>
+<rect x="891.81" y="390.00" width="12.00" height="0.00" fill="#a5673f" rx="3" />
+<text x="897.81" y="382.00" class="value" text-anchor="middle">1.6e+00</text>
+<text x="897.81" y="412" class="label" text-anchor="end" transform="rotate(-35 897.81 412)">log s1 best</text>
+<rect x="909.27" y="390.00" width="12.00" height="0.00" fill="#1f8a70" rx="3" />
+<text x="915.27" y="382.00" class="value" text-anchor="middle">1.6e+00</text>
+<text x="915.27" y="412" class="label" text-anchor="end" transform="rotate(-35 915.27 412)">log s1 snap</text>
+</svg>

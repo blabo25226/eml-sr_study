@@ -1,0 +1,7 @@
+group,total,verifier_recovered,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate
+beer_lambert,3,3,0,0,0,0,0,1.0,0.0,0.0
+exp,3,3,0,0,0,0,0,1.0,0.0,0.0
+log,3,3,0,0,0,0,0,1.0,0.0,0.0
+radioactive_decay,3,3,0,0,0,0,0,1.0,0.0,0.0
+scaled_exp_fast_decay,3,3,0,0,0,0,0,1.0,0.0,0.0
+scaled_exp_growth,3,3,0,0,0,0,0,1.0,0.0,0.0

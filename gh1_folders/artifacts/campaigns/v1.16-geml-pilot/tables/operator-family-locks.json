@@ -1,0 +1,53 @@
+{
+  "groups": [
+    {
+      "depth": "2",
+      "operator_family": "ipi_eml",
+      "operator_schedule": "fixed",
+      "refit_accept_rate": 0.0,
+      "repair_attempt_rate": 1.0,
+      "start_mode": "blind",
+      "total": 4,
+      "training_mode": "blind_training",
+      "unsupported_rate": 0.0,
+      "verifier_pass_rate": 0.0
+    },
+    {
+      "depth": "3",
+      "operator_family": "ipi_eml",
+      "operator_schedule": "fixed",
+      "refit_accept_rate": 0.125,
+      "repair_attempt_rate": 1.0,
+      "start_mode": "blind",
+      "total": 8,
+      "training_mode": "blind_training",
+      "unsupported_rate": 0.0,
+      "verifier_pass_rate": 0.0
+    },
+    {
+      "depth": "2",
+      "operator_family": "raw_eml",
+      "operator_schedule": "fixed",
+      "refit_accept_rate": 0.0,
+      "repair_attempt_rate": 1.0,
+      "start_mode": "blind",
+      "total": 4,
+      "training_mode": "blind_training",
+      "unsupported_rate": 0.0,
+      "verifier_pass_rate": 0.0
+    },
+    {
+      "depth": "3",
+      "operator_family": "raw_eml",
+      "operator_schedule": "fixed",
+      "refit_accept_rate": 0.5,
+      "repair_attempt_rate": 1.0,
+      "start_mode": "blind",
+      "total": 8,
+      "training_mode": "blind_training",
+      "unsupported_rate": 0.0,
+      "verifier_pass_rate": 0.0
+    }
+  ],
+  "schema": "eml.operator_family_locks.v1"
+}

@@ -1,0 +1,436 @@
+{
+  "counts": {
+    "evidence_classes": {
+      "blind_training_recovered": 2,
+      "failed": 1,
+      "repaired_candidate": 1,
+      "snapped_but_failed": 14
+    },
+    "execution_error": 0,
+    "failed": 15,
+    "repaired_candidate": 1,
+    "same_ast_return": 0,
+    "total": 18,
+    "unsupported": 0,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 3,
+    "verifier_recovery_rate": 0.16666666666666666
+  },
+  "generated_at": "2026-04-16T16:01:43.648505+00:00",
+  "output": {
+    "aggregate_json": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/aggregate.json",
+    "aggregate_markdown": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/aggregate.md",
+    "campaign_dir": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind",
+    "figures": {
+      "beer_perturbation": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/figures/beer-perturbation.svg",
+      "depth_curve_recovery": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/figures/depth-curve-recovery.svg",
+      "failure_taxonomy": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/runs/v1.5-shallow-pure-blind",
+    "report_markdown": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/report.md",
+    "suite_result": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/suite-result.json",
+    "tables": {
+      "depth_curve_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/depth-curve.csv",
+      "failures_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/failures.csv",
+      "group_claim_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/group-claim.csv",
+      "group_depth_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/group-depth.csv",
+      "group_evidence_class_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/group-evidence-class.csv",
+      "group_failure_class_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/group-start-mode.csv",
+      "group_threshold_policy_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/group-threshold-policy.csv",
+      "headline_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/headline-metrics.csv",
+      "headline_json": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/headline-metrics.json",
+      "runs_csv": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "18 runs; declared shallow pure-blind suite with measured recovery metadata.",
+    "description": "Measured v1.5 shallow pure-blind campaign with scaffold initializers disabled.",
+    "name": "proof-shallow-pure-blind",
+    "suite": "v1.5-shallow-pure-blind",
+    "tier": "proof-contract"
+  },
+  "reproducibility": {
+    "code_version": "c89610e",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign proof-shallow-pure-blind --output-root artifacts/proof/v1.6/campaigns --label proof-shallow-pure-blind --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "perturbation_noises": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/runs",
+    "cases": [
+      {
+        "claim_id": "paper-shallow-blind-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "shallow-exp-pure-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 2,
+          "scaffold_initializers": [],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "pure_blind"
+        ],
+        "threshold_policy_id": "measured_pure_blind_recovery",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-blind-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "shallow-log-pure-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 2,
+          "scaffold_initializers": [],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "pure_blind"
+        ],
+        "threshold_policy_id": "measured_pure_blind_recovery",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-blind-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "shallow-radioactive-decay-pure-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "-0.4"
+          ],
+          "depth": 9,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 2,
+          "scaffold_initializers": [],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "pure_blind"
+        ],
+        "threshold_policy_id": "measured_pure_blind_recovery",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-blind-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "shallow-beer-lambert-pure-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "-0.8"
+          ],
+          "depth": 9,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 2,
+          "scaffold_initializers": [],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "pure_blind"
+        ],
+        "threshold_policy_id": "measured_pure_blind_recovery",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-blind-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "scaled_exp_growth",
+        "id": "shallow-scaled-exp-growth-pure-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "0.4"
+          ],
+          "depth": 9,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 2,
+          "scaffold_initializers": [],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "pure_blind"
+        ],
+        "threshold_policy_id": "measured_pure_blind_recovery",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-shallow-blind-recovery",
+        "dataset": {
+          "points": 32,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "scaled_exp_fast_decay",
+        "id": "shallow-scaled-exp-fast-decay-pure-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "-1.2"
+          ],
+          "depth": 9,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 2,
+          "scaffold_initializers": [],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "pure_blind"
+        ],
+        "threshold_policy_id": "measured_pure_blind_recovery",
+        "training_mode": "blind_training"
+      }
+    ],
+    "description": "Measured v1.5 pure random-initialized shallow blind suite with scaffold initializers disabled.",
+    "id": "v1.5-shallow-pure-blind",
+    "schema": "eml.benchmark_suite.v1"
+  },
+  "thresholds": [
+    {
+      "claim_class": "measured_training_boundary",
+      "claim_id": "paper-shallow-blind-recovery",
+      "eligible": 18,
+      "evidence_classes": {
+        "blind_training_recovered": 2,
+        "failed": 1,
+        "repaired_candidate": 1,
+        "snapped_but_failed": 14
+      },
+      "failed": 16,
+      "passed": 2,
+      "rate": 0.1111111111111111,
+      "required_rate": null,
+      "status": "reported",
+      "threshold": {
+        "allowed_evidence_classes": [
+          "blind_training_recovered"
+        ],
+        "description": "Pure random-initialized blind suites report measured recovery without a 100% pass target.",
+        "fail_on_execution_error": false,
+        "fail_on_unsupported": false,
+        "id": "measured_pure_blind_recovery",
+        "policy_type": "measured_rate",
+        "required_rate": null
+      },
+      "threshold_policy_id": "measured_pure_blind_recovery"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "claim_boundary": "draft scaffold preserves v1.11 regime separation and unsupported logistic/Planck status",
+  "generated_at": "2026-04-19T14:33:47.844133+00:00",
+  "output_dir": "artifacts/paper/v1.11/draft",
+  "outputs": {
+    "abstract_md": "artifacts/paper/v1.11/draft/abstract.md",
+    "claim_taxonomy_csv": "artifacts/paper/v1.11/draft/claim-taxonomy.csv",
+    "claim_taxonomy_json": "artifacts/paper/v1.11/draft/claim-taxonomy.json",
+    "claim_taxonomy_md": "artifacts/paper/v1.11/draft/claim-taxonomy.md",
+    "limitations_md": "artifacts/paper/v1.11/draft/limitations.md",
+    "manifest_json": "artifacts/paper/v1.11/draft/manifest.json",
+    "methods_md": "artifacts/paper/v1.11/draft/methods.md",
+    "output_dir": "artifacts/paper/v1.11/draft",
+    "results_md": "artifacts/paper/v1.11/draft/results.md"
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli paper-draft --output-dir artifacts/paper/v1.11/draft"
+  },
+  "schema": "eml.v112_paper_draft.v1",
+  "sources": [
+    {
+      "path": "artifacts/paper/v1.11/paper-readiness.md",
+      "sha256": "4ec41bcc5bccc2546e2569d573a14dd2af9828fc0bdf06e52ad5c5803b8a3697",
+      "source_id": "paper_readiness"
+    },
+    {
+      "path": "artifacts/paper/v1.11/claim-audit.json",
+      "sha256": "dea76e043e2eea6cc7208e83710f96dca1ba4d8adbc9e6133714c2e534755d3d",
+      "source_id": "claim_audit"
+    },
+    {
+      "path": "artifacts/paper/v1.11/assets/manifest.json",
+      "sha256": "3d0a0b08ec9cf6b60493f29bcbd92db7737f3638ac7015845b65ef6bcaa7d548",
+      "source_id": "manifest"
+    },
+    {
+      "path": "artifacts/paper/v1.11/source-locks.json",
+      "sha256": "593252f0789b94c7369cda430b1c61fac7b54b9b7b8882d59292cabc56fb9417",
+      "source_id": "source_locks"
+    },
+    {
+      "path": "artifacts/paper/v1.11/raw-hybrid/claim-ledger.json",
+      "sha256": "2014d7ec03c1d4f07179fa3556fa9d73bafa4410df33be1176d488b46651ab6f",
+      "source_id": "claim_ledger"
+    },
+    {
+      "path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.json",
+      "sha256": "f0c7a9f05f246b01cbb616905b2ad1cc5ecebdf7681dce3418e5b555457cc10c",
+      "source_id": "scientific_law_table"
+    }
+  ]
+}

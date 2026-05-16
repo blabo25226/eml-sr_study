@@ -1,0 +1,8 @@
+run_id,formula,start_mode,classification,status,reason,artifact_path
+v1-3-standard-radioactive-decay-blind-a5182baf92cb,radioactive_decay,blind,snapped_but_failed,snapped_but_failed,mpmath_failed,artifacts/campaigns/v1.4-standard/runs/v1.3-standard/v1-3-standard-radioactive-decay-blind-a5182baf92cb.json
+v1-3-standard-radioactive-decay-blind-72661a29e7af,radioactive_decay,blind,snapped_but_failed,snapped_but_failed,mpmath_failed,artifacts/campaigns/v1.4-standard/runs/v1.3-standard/v1-3-standard-radioactive-decay-blind-72661a29e7af.json
+v1-3-standard-beer-perturbation-sweep-10022388db85,beer_lambert,warm_start,snapped_but_failed,snapped_but_failed,verified,artifacts/campaigns/v1.4-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-10022388db85.json
+v1-3-standard-beer-perturbation-sweep-0d444d18be54,beer_lambert,warm_start,snapped_but_failed,snapped_but_failed,verified,artifacts/campaigns/v1.4-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-0d444d18be54.json
+v1-3-standard-michaelis-warm-diagnostic-b09b1e8360d8,michaelis_menten,warm_start,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.4-standard/runs/v1.3-standard/v1-3-standard-michaelis-warm-diagnostic-b09b1e8360d8.json
+v1-3-standard-logistic-compile-b4c8b70a68a0,logistic,compile,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.4-standard/runs/v1.3-standard/v1-3-standard-logistic-compile-b4c8b70a68a0.json
+v1-3-standard-planck-diagnostic-2f4e5cf78436,planck,compile,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.4-standard/runs/v1.3-standard/v1-3-standard-planck-diagnostic-2f4e5cf78436.json

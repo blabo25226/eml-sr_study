@@ -1,0 +1,19 @@
+{
+  "broader_campaign_gate": "block_broader_campaigns",
+  "claim_boundary": "Broader campaigns are blocked unless this sandbox finds clean verifier-gated natural exact signal.",
+  "decision": "no_exact_signal",
+  "exact_signal_found": false,
+  "generated_at": "2026-04-22T12:43:46.298534+00:00",
+  "outputs": {
+    "manifest_json": "artifacts/paper/v1.17-geml/sandbox/manifest.json",
+    "output_dir": "artifacts/paper/v1.17-geml/sandbox",
+    "sandbox_results_csv": "artifacts/paper/v1.17-geml/sandbox/sandbox-results.csv",
+    "sandbox_results_json": "artifacts/paper/v1.17-geml/sandbox/sandbox-results.json",
+    "sandbox_results_md": "artifacts/paper/v1.17-geml/sandbox/sandbox-results.md",
+    "source_locks_json": "artifacts/paper/v1.17-geml/sandbox/source-locks.json"
+  },
+  "ranking_dir": "artifacts/paper/v1.17-geml/ranking",
+  "schema": "eml.v117_recovery_sandbox_manifest.v1",
+  "source_locks": "artifacts/paper/v1.17-geml/sandbox/source-locks.json",
+  "source_locks_ok": true
+}

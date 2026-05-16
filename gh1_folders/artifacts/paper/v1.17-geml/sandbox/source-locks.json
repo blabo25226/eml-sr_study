@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-04-22T12:43:46.298298+00:00",
+  "inputs": [
+    {
+      "bytes": 21634,
+      "path": "artifacts/paper/v1.17-geml/ranking/ranked-candidates.json",
+      "role": "input",
+      "sha256": "a31a2e8de864a22e5b3b111e0f02daf59a5ed99288305579c5f125a435af01e7",
+      "source_id": "ranked_candidates",
+      "status": "locked"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 2990,
+      "path": "artifacts/paper/v1.17-geml/sandbox/sandbox-results.json",
+      "role": "output",
+      "sha256": "2a17720c248a7b0975878b290fda81d9f8a6c1a1cd6bdc33bf0305ea2d33b473",
+      "source_id": "sandbox_results_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 580,
+      "path": "artifacts/paper/v1.17-geml/sandbox/sandbox-results.csv",
+      "role": "output",
+      "sha256": "680da80f76a7f050feb854f81dac1a18777ae7c9ff74eb07375043dc4bf24046",
+      "source_id": "sandbox_results_csv",
+      "status": "locked"
+    },
+    {
+      "bytes": 820,
+      "path": "artifacts/paper/v1.17-geml/sandbox/sandbox-results.md",
+      "role": "output",
+      "sha256": "77da002975e11d7b8d690e167d96e5ac154831e433954ac3b241439a523692a0",
+      "source_id": "sandbox_results_md",
+      "status": "locked"
+    }
+  ],
+  "schema": "eml.v117_source_locks.v1"
+}

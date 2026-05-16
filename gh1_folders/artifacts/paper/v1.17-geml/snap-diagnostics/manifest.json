@@ -1,0 +1,24 @@
+{
+  "campaign_dir": "artifacts/campaigns/v1.16-geml-pilot",
+  "claim_boundary": "Snap diagnostics seed target-agnostic neighborhood search; they do not change verifier recovery definitions.",
+  "counts": {
+    "diagnostic_rows": 24,
+    "loss_only_rows": 24,
+    "low_margin_rows": 24,
+    "neighborhood_seed_rows": 24,
+    "paired_rows": 12
+  },
+  "generated_at": "2026-04-22T12:43:34.011595+00:00",
+  "outputs": {
+    "manifest_json": "artifacts/paper/v1.17-geml/snap-diagnostics/manifest.json",
+    "output_dir": "artifacts/paper/v1.17-geml/snap-diagnostics",
+    "snap_diagnostics_csv": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-diagnostics.csv",
+    "snap_diagnostics_json": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-diagnostics.json",
+    "snap_diagnostics_md": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-diagnostics.md",
+    "snap_neighborhood_seeds_json": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-neighborhood-seeds.json",
+    "source_locks_json": "artifacts/paper/v1.17-geml/snap-diagnostics/source-locks.json"
+  },
+  "schema": "eml.v117_snap_diagnostics_manifest.v1",
+  "source_locks": "artifacts/paper/v1.17-geml/snap-diagnostics/source-locks.json",
+  "source_locks_ok": true
+}

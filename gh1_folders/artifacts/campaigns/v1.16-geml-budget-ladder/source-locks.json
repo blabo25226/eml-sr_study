@@ -1,0 +1,95 @@
+{
+  "inputs": [
+    {
+      "bytes": 16214,
+      "path": "artifacts/campaigns/v1.16-geml-smoke/campaign-manifest.json",
+      "role": "input",
+      "sha256": "92b527ac1150df2e55eaa14a7e7b70bc13b6d333a5907354aa0c2d6aabf95238",
+      "source_id": "smoke_manifest",
+      "status": "locked"
+    },
+    {
+      "bytes": 580,
+      "path": "artifacts/campaigns/v1.16-geml-smoke/tables/geml-paired-summary.json",
+      "role": "input",
+      "sha256": "bd70a8c1d69def0d329346b7430471dfb6653749025d76dff04cb5c99b2efb2d",
+      "source_id": "smoke_paired_summary",
+      "status": "locked"
+    },
+    {
+      "bytes": 2914,
+      "path": "artifacts/campaigns/v1.16-geml-smoke/tables/geml-paired-comparison.csv",
+      "role": "input",
+      "sha256": "bf44defaddda681c92ca68586fcf958fd0920c37c77b16ff6852cdc1fa8a40bc",
+      "source_id": "smoke_paired_comparison",
+      "status": "locked"
+    },
+    {
+      "bytes": 38933,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/campaign-manifest.json",
+      "role": "input",
+      "sha256": "906c79f2c746ada11e2fe7c2f7b60014a82d03963319669364a567a56e28fe31",
+      "source_id": "pilot_manifest",
+      "status": "locked"
+    },
+    {
+      "bytes": 659,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/tables/geml-paired-summary.json",
+      "role": "input",
+      "sha256": "839ed70847f762f56cc08109dfe0038f7a5931c8aac4b628ab860721df8d29dc",
+      "source_id": "pilot_paired_summary",
+      "status": "locked"
+    },
+    {
+      "bytes": 12167,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/tables/geml-paired-comparison.csv",
+      "role": "input",
+      "sha256": "03bec84f189e60c557073b0613395f1c7ed055f6088e7a69a70c6e702a6d245b",
+      "source_id": "pilot_paired_comparison",
+      "status": "locked"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 4123,
+      "path": "artifacts/campaigns/v1.16-geml-budget-ladder/budget-ladder.json",
+      "role": "output",
+      "sha256": "2142cab44d9537335593e225e5db31b9cb7de530142542d0f0a0fbd9e06c44b0",
+      "source_id": "budget_ladder_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 876,
+      "path": "artifacts/campaigns/v1.16-geml-budget-ladder/budget-ladder.md",
+      "role": "output",
+      "sha256": "c207c390a2c70550d3a33ef57c47c5e09fdc2bbe719e58ad331d4c368f3c26c6",
+      "source_id": "budget_ladder_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 5329,
+      "path": "artifacts/campaigns/v1.16-geml-budget-ladder/failure-taxonomy.json",
+      "role": "output",
+      "sha256": "8ffa85fcc3881c6a438787628b3cba22282a0f9a12ab3d090aa07e6863de49ce",
+      "source_id": "failure_taxonomy_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 2547,
+      "path": "artifacts/campaigns/v1.16-geml-budget-ladder/failure-taxonomy.csv",
+      "role": "output",
+      "sha256": "ec5d1bb569d93900d1c02e321a39534ee0c48f6f3a846db4aca0623ee6a03dff",
+      "source_id": "failure_taxonomy_csv",
+      "status": "locked"
+    },
+    {
+      "bytes": 2811,
+      "path": "artifacts/campaigns/v1.16-geml-budget-ladder/failure-taxonomy.md",
+      "role": "output",
+      "sha256": "ebc6261c71b2b8ab9c30f6623b684438d7d6973b1f10c304f8214418fa8dba13",
+      "source_id": "failure_taxonomy_md",
+      "status": "locked"
+    }
+  ],
+  "schema": "eml.v116_source_locks.v1"
+}

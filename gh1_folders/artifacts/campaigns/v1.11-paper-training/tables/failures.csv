@@ -1,0 +1,1 @@
+run_id,formula,start_mode,classification,status,return_kind,raw_status,repair_status,repair_verifier_status,repair_accepted_move_count,repair_candidate_root_count,repair_deduped_variant_count,repair_accepted_candidate_root_source,reason,artifact_path

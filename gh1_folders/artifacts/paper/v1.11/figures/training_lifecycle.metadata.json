@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "low loss alone is never counted as recovered without verifier success",
+  "denominator": "v1.11 training and probe runs with recorded soft or post-snap losses",
+  "figure_id": "training_lifecycle",
+  "included_statuses": [
+    "recovered",
+    "unsupported",
+    "failed"
+  ],
+  "schema": "eml.paper_figure_metadata.v1",
+  "source_table_csv": "artifacts/paper/v1.11/assets/tables/training_lifecycle.csv",
+  "source_table_json": "artifacts/paper/v1.11/assets/tables/training_lifecycle.json",
+  "title": "Training Loss Before and After Snap"
+}

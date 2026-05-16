@@ -1,0 +1,6659 @@
+{
+  "counts": {
+    "evidence_classes": {
+      "same_ast": 2,
+      "scaffolded_blind_training_recovered": 2,
+      "snapped_but_failed": 21,
+      "unsupported": 30
+    },
+    "execution_error": 0,
+    "failed": 21,
+    "repaired_candidate": 0,
+    "same_ast_return": 2,
+    "total": 55,
+    "unsupported": 30,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 4,
+    "verifier_recovery_rate": 0.07272727272727272
+  },
+  "generated_at": "2026-04-17T06:56:54.403234+00:00",
+  "output": {
+    "aggregate_json": "artifacts/campaigns/v1.8-family-standard-scoped/aggregate.json",
+    "aggregate_markdown": "artifacts/campaigns/v1.8-family-standard-scoped/aggregate.md",
+    "campaign_dir": "artifacts/campaigns/v1.8-family-standard-scoped",
+    "figures": {
+      "beer_perturbation": "artifacts/campaigns/v1.8-family-standard-scoped/figures/beer-perturbation.svg",
+      "depth_curve_recovery": "artifacts/campaigns/v1.8-family-standard-scoped/figures/depth-curve-recovery.svg",
+      "failure_taxonomy": "artifacts/campaigns/v1.8-family-standard-scoped/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/campaigns/v1.8-family-standard-scoped/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/campaigns/v1.8-family-standard-scoped/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/campaigns/v1.8-family-standard-scoped/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/campaigns/v1.8-family-standard-scoped/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/campaigns/v1.8-family-standard-scoped/runs/v1.8-family-standard",
+    "report_markdown": "artifacts/campaigns/v1.8-family-standard-scoped/report.md",
+    "suite_result": "artifacts/campaigns/v1.8-family-standard-scoped/suite-result.json",
+    "tables": {
+      "depth_curve_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/depth-curve.csv",
+      "failures_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/failures.csv",
+      "group_claim_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/group-claim.csv",
+      "group_depth_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/group-depth.csv",
+      "group_evidence_class_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/group-evidence-class.csv",
+      "group_failure_class_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/group-start-mode.csv",
+      "group_threshold_policy_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/group-threshold-policy.csv",
+      "headline_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/headline-metrics.csv",
+      "headline_json": "artifacts/campaigns/v1.8-family-standard-scoped/tables/headline-metrics.json",
+      "operator_family_comparison_md": "artifacts/campaigns/v1.8-family-standard-scoped/tables/operator-family-comparison.md",
+      "operator_family_diagnostics_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/operator-family-diagnostics.csv",
+      "operator_family_locks_json": "artifacts/campaigns/v1.8-family-standard-scoped/tables/operator-family-locks.json",
+      "operator_family_recovery_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/operator-family-recovery.csv",
+      "runs_csv": "artifacts/campaigns/v1.8-family-standard-scoped/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "Standard-style comparison cloned across expanded v1.8 operator variants with isolated v1.8 outputs.",
+    "description": "v1.8 standard-style raw-vs-centered operator-family comparison campaign.",
+    "name": "family-standard",
+    "suite": "v1.8-family-standard",
+    "tier": "v1.8-family-matrix"
+  },
+  "reproducibility": {
+    "code_version": "c35d746",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign family-standard --output-root artifacts/campaigns --label v1.8-family-standard-scoped --overwrite --formula exp --formula log --formula beer_lambert --seed 0",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [
+      "exp",
+      "log",
+      "beer_lambert"
+    ],
+    "perturbation_noises": [],
+    "seeds": [
+      0
+    ],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/campaigns/v1.8-family-standard-scoped/runs",
+    "cases": [
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-raw",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-ceml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_1",
+            "s": 1.0,
+            "singularity": 0.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-zeml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_1",
+            "s": 1.0,
+            "singularity": -1.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-ceml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_2",
+            "s": 2.0,
+            "singularity": -1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-zeml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_2",
+            "s": 2.0,
+            "singularity": -2.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-ceml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_4",
+            "s": 4.0,
+            "singularity": -3.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-zeml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_4",
+            "s": 4.0,
+            "singularity": -4.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-ceml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_8",
+            "s": 8.0,
+            "singularity": -7.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-zeml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-zeml8-4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind-zeml8-4-2-1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_2",
+              "s": 2.0,
+              "singularity": -2.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_1",
+              "s": 1.0,
+              "singularity": -1.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4-2-1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-raw",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-ceml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_1",
+            "s": 1.0,
+            "singularity": 0.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-zeml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_1",
+            "s": 1.0,
+            "singularity": -1.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-ceml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_2",
+            "s": 2.0,
+            "singularity": -1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-zeml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_2",
+            "s": 2.0,
+            "singularity": -2.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-ceml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_4",
+            "s": 4.0,
+            "singularity": -3.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-zeml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_4",
+            "s": 4.0,
+            "singularity": -4.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-ceml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_8",
+            "s": 8.0,
+            "singularity": -7.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-zeml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-zeml8-4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind-zeml8-4-2-1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_2",
+              "s": 2.0,
+              "singularity": -2.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_1",
+              "s": 1.0,
+              "singularity": -1.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4-2-1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-raw",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-ceml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_1",
+            "s": 1.0,
+            "singularity": 0.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-zeml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_1",
+            "s": 1.0,
+            "singularity": -1.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-ceml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_2",
+            "s": 2.0,
+            "singularity": -1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-zeml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_2",
+            "s": 2.0,
+            "singularity": -2.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-ceml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_4",
+            "s": 4.0,
+            "singularity": -3.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-zeml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_4",
+            "s": 4.0,
+            "singularity": -4.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-ceml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_8",
+            "s": 8.0,
+            "singularity": -7.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-zeml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-zeml8-4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind-zeml8-4-2-1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_2",
+              "s": 2.0,
+              "singularity": -2.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_1",
+              "s": 1.0,
+              "singularity": -1.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4-2-1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-raw",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-ceml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_1",
+            "s": 1.0,
+            "singularity": 0.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-zeml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_1",
+            "s": 1.0,
+            "singularity": -1.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-ceml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_2",
+            "s": 2.0,
+            "singularity": -1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-zeml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_2",
+            "s": 2.0,
+            "singularity": -2.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-ceml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_4",
+            "s": 4.0,
+            "singularity": -3.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-zeml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_4",
+            "s": 4.0,
+            "singularity": -4.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-ceml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_8",
+            "s": 8.0,
+            "singularity": -7.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-zeml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-zeml8-4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep-zeml8-4-2-1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_2",
+              "s": 2.0,
+              "singularity": -2.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_1",
+              "s": 1.0,
+              "singularity": -1.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 60
+        },
+        "perturbation_noise": [
+          0.0,
+          5.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4-2-1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-raw",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-ceml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_1",
+            "s": 1.0,
+            "singularity": 0.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-zeml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_1",
+            "s": 1.0,
+            "singularity": -1.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-ceml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_2",
+            "s": 2.0,
+            "singularity": -1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-zeml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_2",
+            "s": 2.0,
+            "singularity": -2.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-ceml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_4",
+            "s": 4.0,
+            "singularity": -3.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-zeml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_4",
+            "s": 4.0,
+            "singularity": -4.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-ceml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_8",
+            "s": 8.0,
+            "singularity": -7.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-zeml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-zeml8-4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic-zeml8-4-2-1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_2",
+              "s": 2.0,
+              "singularity": -2.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_1",
+              "s": 1.0,
+              "singularity": -1.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4-2-1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-raw",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-ceml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_1",
+            "s": 1.0,
+            "singularity": 0.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-zeml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_1",
+            "s": 1.0,
+            "singularity": -1.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-ceml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_2",
+            "s": 2.0,
+            "singularity": -1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-zeml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_2",
+            "s": 2.0,
+            "singularity": -2.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-ceml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_4",
+            "s": 4.0,
+            "singularity": -3.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-zeml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_4",
+            "s": 4.0,
+            "singularity": -4.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-ceml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_8",
+            "s": 8.0,
+            "singularity": -7.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-zeml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-zeml8-4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile-zeml8-4-2-1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_2",
+              "s": 2.0,
+              "singularity": -2.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_1",
+              "s": 1.0,
+              "singularity": -1.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4-2-1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "shockley",
+        "id": "shockley-warm-raw",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-ceml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_1",
+            "s": 1.0,
+            "singularity": 0.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-zeml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_1",
+            "s": 1.0,
+            "singularity": -1.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-ceml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_2",
+            "s": 2.0,
+            "singularity": -1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-zeml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_2",
+            "s": 2.0,
+            "singularity": -2.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-ceml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_4",
+            "s": 4.0,
+            "singularity": -3.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-zeml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_4",
+            "s": 4.0,
+            "singularity": -4.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-ceml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_8",
+            "s": 8.0,
+            "singularity": -7.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-zeml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-zeml8-4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-warm-zeml8-4-2-1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_2",
+              "s": 2.0,
+              "singularity": -2.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_1",
+              "s": 1.0,
+              "singularity": -1.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4-2-1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-raw",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-ceml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_1",
+            "s": 1.0,
+            "singularity": 0.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-zeml1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_1",
+            "s": 1.0,
+            "singularity": -1.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-ceml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_2",
+            "s": 2.0,
+            "singularity": -1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-zeml2",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_2",
+            "s": 2.0,
+            "singularity": -2.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml2"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-ceml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_4",
+            "s": 4.0,
+            "singularity": -3.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-zeml4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_4",
+            "s": 4.0,
+            "singularity": -4.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-ceml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "ceml_s",
+            "label": "CEML_8",
+            "s": 8.0,
+            "singularity": -7.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:ceml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-zeml8",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-zeml8-4",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic-zeml8-4-2-1",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "zeml_s",
+            "label": "ZEML_8",
+            "s": 8.0,
+            "singularity": -8.0,
+            "t": 0.0,
+            "terminal": "zero"
+          },
+          "operator_schedule": [
+            {
+              "family": "zeml_s",
+              "label": "ZEML_8",
+              "s": 8.0,
+              "singularity": -8.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_4",
+              "s": 4.0,
+              "singularity": -4.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_2",
+              "s": 2.0,
+              "singularity": -2.0,
+              "t": 0.0,
+              "terminal": "zero"
+            },
+            {
+              "family": "zeml_s",
+              "label": "ZEML_1",
+              "s": 1.0,
+              "singularity": -1.0,
+              "t": 0.0,
+              "terminal": "zero"
+            }
+          ],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [
+            "scaled_exp:centered_family_incompatible_raw_witness"
+          ],
+          "scaffold_initializers": [
+            "exp",
+            "log"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo",
+          "v1.8",
+          "family_matrix",
+          "operator_family",
+          "operator:zeml8-4-2-1"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      }
+    ],
+    "description": "v1.8 standard-style raw-vs-centered operator-family comparison matrix.",
+    "id": "v1.8-family-standard",
+    "schema": "eml.benchmark_suite.v1"
+  },
+  "thresholds": []
+}

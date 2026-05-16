@@ -1,0 +1,6 @@
+group,total,verifier_recovered,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate
+2,4,4,0,0,0,0,0,1.0,0.0,0.0
+3,4,4,0,0,0,0,0,1.0,0.0,0.0
+4,4,2,0,0,0,2,0,0.5,0.0,0.5
+5,4,2,0,0,0,2,0,0.5,0.0,0.5
+6,4,2,0,0,0,2,0,0.5,0.0,0.5

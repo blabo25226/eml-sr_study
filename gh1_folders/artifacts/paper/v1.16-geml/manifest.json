@@ -1,0 +1,22 @@
+{
+  "budget_ladder": {
+    "decision": "stop_full_campaign_fail_closed",
+    "dir": "artifacts/campaigns/v1.16-geml-budget-ladder",
+    "rationale": "Pilot did not show clean verifier-gated i*pi exact recovery signal; full campaign should not run."
+  },
+  "campaign_contract": "artifacts/paper/v1.16-geml/campaign-contract.json",
+  "campaign_dir": "artifacts/campaigns/v1.16-geml-pilot",
+  "claim_audit": {
+    "json": "artifacts/paper/v1.16-geml/claim-audit.json",
+    "markdown": "artifacts/paper/v1.16-geml/claim-audit.md",
+    "status": "passed"
+  },
+  "decision": "inconclusive",
+  "gate_config": "artifacts/paper/v1.16-geml/gate-config.json",
+  "gate_evaluation": "artifacts/paper/v1.16-geml/gate-evaluation.json",
+  "generated_at": "2026-04-22T11:13:09.994285+00:00",
+  "rationale": "The evidence is incomplete, loss-only, or confounded; no positive claim is allowed.",
+  "reproduction": "artifacts/paper/v1.16-geml/reproduction.md",
+  "schema": "eml.v116_paper_decision_package.v1",
+  "source_locks": "artifacts/paper/v1.16-geml/source-locks.json"
+}

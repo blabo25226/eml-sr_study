@@ -1,0 +1,15 @@
+{
+  "failed": 7,
+  "failure_rate": 0.4375,
+  "median_best_loss": 0.6010678613619513,
+  "median_post_snap_loss": 3.434767836142081,
+  "median_runtime_seconds": 0.31505906250094995,
+  "same_ast_return": 4,
+  "same_ast_return_rate": 0.25,
+  "total_runs": 16,
+  "unsupported": 4,
+  "unsupported_rate": 0.25,
+  "verified_equivalent_ast": 0,
+  "verifier_recovered": 5,
+  "verifier_recovery_rate": 0.3125
+}

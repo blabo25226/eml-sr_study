@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "regimes remain separated; this is not a single blind-discovery denominator",
+  "denominator": "group-local runs within each suite and start mode",
+  "figure_id": "regime_recovery",
+  "included_statuses": [
+    "recovered",
+    "unsupported",
+    "failed"
+  ],
+  "schema": "eml.paper_figure_metadata.v1",
+  "source_table_csv": "artifacts/paper/v1.11/assets/tables/regime_recovery.csv",
+  "source_table_json": "artifacts/paper/v1.11/assets/tables/regime_recovery.json",
+  "title": "Verifier Recovery by Evidence Regime"
+}

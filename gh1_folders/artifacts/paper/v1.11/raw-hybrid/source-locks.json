@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-04-19T13:23:32.213071+00:00",
+  "preset_id": "v1.11-paper-evidence-package",
+  "schema": "eml.raw_hybrid_source_locks.v1",
+  "sources": [
+    {
+      "description": "v1.6 shallow pure-blind measured boundary aggregate.",
+      "evidence_regime": "pure_blind",
+      "path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "proof_aggregate",
+      "sha256": "5b71457c17549ee2726744f7e08c0dd16de712131350fb13933c3446ae692e9c",
+      "source_id": "proof-shallow-pure-blind-aggregate"
+    },
+    {
+      "description": "v1.6 shallow scaffolded recovery aggregate.",
+      "evidence_regime": "scaffolded",
+      "path": "artifacts/proof/v1.6/campaigns/proof-shallow/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "proof_aggregate",
+      "sha256": "22d3402cb7f89250210607b40e280f2b620df55e8eb0331b46b28ea1106bfe23",
+      "source_id": "proof-shallow-scaffolded-aggregate"
+    },
+    {
+      "description": "v1.6 perturbed true-tree basin aggregate.",
+      "evidence_regime": "perturbed_basin",
+      "path": "artifacts/proof/v1.6/campaigns/proof-basin/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "proof_aggregate",
+      "sha256": "592971b6b68e765c87304c37de07174d1fae3b8a64e301507700c5261d7f22b2",
+      "source_id": "proof-perturbed-basin-aggregate"
+    },
+    {
+      "description": "v1.6 Beer-Lambert basin probe aggregate with repaired candidates separated.",
+      "evidence_regime": "perturbed_basin",
+      "path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "proof_aggregate",
+      "sha256": "a8b001afd8f649d6a27c195ff7b81f486941c466ba0538a34fe34d1ca5c4628e",
+      "source_id": "proof-basin-probes-aggregate"
+    },
+    {
+      "description": "v1.6 depth-curve measured boundary aggregate.",
+      "evidence_regime": "pure_blind",
+      "path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "proof_aggregate",
+      "sha256": "826d71230bcc1ce60ff0dccab6864d0cddd764d60ce0f7b62457f1e83b139f12",
+      "source_id": "proof-depth-curve-aggregate"
+    },
+    {
+      "description": "v1.8 centered-family decision payload.",
+      "path": "artifacts/paper/v1.8/decision-memo.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "centered_negative_diagnostic",
+      "sha256": "fd640d77ce3021037da717c90671db50f42471923a22ee9a88fee5aac64080bd",
+      "source_id": "v1.8-centered-decision-json"
+    },
+    {
+      "description": "v1.8 centered-family decision memo.",
+      "path": "artifacts/paper/v1.8/decision-memo.md",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "centered_negative_diagnostic",
+      "sha256": "d00699cab73ba9db8c888f288cb3b5052ffccede08924ad695746e571593c75d",
+      "source_id": "v1.8-centered-decision-markdown"
+    },
+    {
+      "description": "v1.8 centered-family completeness caveat.",
+      "path": "artifacts/paper/v1.8/completeness-boundary.md",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "centered_negative_diagnostic",
+      "sha256": "c10ae8d4c6d2023a38e9dfa731ef7f5c11bd856aaab01c0d1ef575e88b1f9537",
+      "source_id": "v1.8-centered-completeness-boundary"
+    },
+    {
+      "description": "v1.9 Arrhenius exact compiler warm-start aggregate.",
+      "evidence_regime": "same_ast_return",
+      "law": "arrhenius",
+      "path": "artifacts/campaigns/v1.9-arrhenius-evidence/v1.9-arrhenius-evidence/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_aggregate",
+      "sha256": "980c58eeadaa911efcbbb56ebc7f961de6832e856cfed198d0a741a9e6009511",
+      "source_id": "v1.9-arrhenius-aggregate"
+    },
+    {
+      "description": "v1.9 Arrhenius exact compiler warm-start run artifact.",
+      "evidence_regime": "same_ast_return",
+      "law": "arrhenius",
+      "path": "artifacts/campaigns/v1.9-arrhenius-evidence/v1.9-arrhenius-evidence/v1-9-arrhenius-evidence-arrhenius-warm-75f6e9c1764d.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_run",
+      "sha256": "7b2c09dae20c69e231ff4a5a8c0bbb9e2e75c094f63831fa6962e5fb23b9adbe",
+      "source_id": "v1.9-arrhenius-run"
+    },
+    {
+      "description": "v1.9 Michaelis-Menten exact compiler warm-start aggregate.",
+      "evidence_regime": "same_ast_return",
+      "law": "michaelis_menten",
+      "path": "artifacts/campaigns/v1.9-michaelis-evidence/v1.9-michaelis-evidence/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_aggregate",
+      "sha256": "c35dc696cebe08da456c5b061ab069472666327b3bae0174e454ea3f99c82704",
+      "source_id": "v1.9-michaelis-aggregate"
+    },
+    {
+      "description": "v1.9 Michaelis-Menten exact compiler warm-start run artifact.",
+      "evidence_regime": "same_ast_return",
+      "law": "michaelis_menten",
+      "path": "artifacts/campaigns/v1.9-michaelis-evidence/v1.9-michaelis-evidence/v1-9-michaelis-evidence-michaelis-warm-a67d8ccfb108.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_run",
+      "sha256": "4e26401fff7449179acce211d41df9622fa726bb17539e9b85c3f03bc7473a01",
+      "source_id": "v1.9-michaelis-run"
+    },
+    {
+      "description": "v1.9 expanded cleanup repair evidence aggregate.",
+      "evidence_regime": "repaired",
+      "path": "artifacts/campaigns/v1.9-repair-evidence/v1.9-repair-evidence/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "repair_evidence",
+      "sha256": "1499f28d091d2d91563722b9430bee4cf2ba0c37716173d8c5a7bfb0ab7cd8a3",
+      "source_id": "v1.9-repair-aggregate"
+    },
+    {
+      "description": "v1.9 expanded cleanup repair summary payload.",
+      "evidence_regime": "repaired",
+      "path": "artifacts/campaigns/v1.9-repair-evidence/repair-evidence-summary.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "repair_evidence",
+      "sha256": "c69bd971ca44b2d389506d9ffa8b2b81100023baab7a4af62075ff2803d3d6ee",
+      "source_id": "v1.9-repair-summary-json"
+    },
+    {
+      "description": "v1.9 expanded cleanup repair summary report.",
+      "evidence_regime": "repaired",
+      "path": "artifacts/campaigns/v1.9-repair-evidence/repair-evidence-summary.md",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "repair_evidence",
+      "sha256": "fa458f509ad1d041a61e381368e99b0e38a5230449f1aa13e32013e59adadb6a",
+      "source_id": "v1.9-repair-summary-markdown"
+    },
+    {
+      "description": "v1.6 Beer-Lambert warm-start/same-AST diagnostic run artifact.",
+      "evidence_regime": "same_ast_return",
+      "law": "beer_lambert",
+      "path": "artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-c671cedf25f1.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_run",
+      "sha256": "8265732b0f3ec4278fca54a214b3a780ccc0db5d1fe4aa123474d55e73bbe83b",
+      "source_id": "v1.6-beer-lambert-run"
+    },
+    {
+      "description": "v1.6 Shockley warm-start/same-AST diagnostic run artifact.",
+      "evidence_regime": "same_ast_return",
+      "law": "shockley",
+      "path": "artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-shockley-warm-316f98a5b1fb.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_run",
+      "sha256": "27805663fd666f599a351caa5b6f929e879860fb99778d2b300024c94dcfc1c8",
+      "source_id": "v1.6-shockley-run"
+    },
+    {
+      "description": "v1.6 historical Michaelis unsupported before/after diagnostic run artifact.",
+      "evidence_regime": "historical_context",
+      "law": "michaelis_menten_historical",
+      "path": "artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-michaelis-warm-diagnostic-9917f8383370.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_run",
+      "sha256": "d83e081059426b9478071a58cde577f02c1032fb4e38c2bc40bfe0d55e83e46e",
+      "source_id": "v1.6-historical-michaelis-diagnostic-run"
+    },
+    {
+      "description": "v1.10 logistic focused aggregate after exponential-saturation motif work.",
+      "evidence_regime": "compile_only",
+      "law": "logistic",
+      "path": "artifacts/campaigns/v1.10-logistic-evidence/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_aggregate",
+      "sha256": "808919738e483917bd4d5825da794e6ba0e4a728328c3b8d2ebf4d02660d55be",
+      "source_id": "v1.10-logistic-aggregate"
+    },
+    {
+      "description": "v1.10 logistic unsupported diagnostic with relaxed depth 15 and validated exponential-saturation motif.",
+      "evidence_regime": "compile_only",
+      "law": "logistic",
+      "path": "artifacts/campaigns/v1.10-logistic-evidence/v1-10-logistic-evidence-logistic-compile-c2af27a35e81.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_run",
+      "sha256": "e2ee51eaa4d5d2a021eaaebd0d5293065a0d9e7cb3305c4a892f1c1e2a37fe60",
+      "source_id": "v1.10-logistic-run"
+    },
+    {
+      "description": "v1.10 Planck focused aggregate after low-degree power compression.",
+      "evidence_regime": "compile_only",
+      "law": "planck",
+      "path": "artifacts/campaigns/v1.10-planck-diagnostics/aggregate.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_aggregate",
+      "sha256": "735fc6e9095fe3fe30a0d709756f47827bda7947fdfb3e4e7c63990c9d171e14",
+      "source_id": "v1.10-planck-aggregate"
+    },
+    {
+      "description": "v1.10 Planck unsupported diagnostic with relaxed depth 14 and validated low-degree power/direct-division motifs.",
+      "evidence_regime": "compile_only",
+      "law": "planck",
+      "path": "artifacts/campaigns/v1.10-planck-diagnostics/v1-10-planck-diagnostics-planck-compile-795067919a97.json",
+      "preset_id": "v1.11-paper-evidence-package",
+      "required": true,
+      "role": "scientific_law_run",
+      "sha256": "ae50d69b9379102894aaadf8be2b24dce53cd3389749ed6470933142122c28bb",
+      "source_id": "v1.10-planck-run"
+    }
+  ]
+}

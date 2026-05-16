@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "unsupported rows remain visible in the figure source table",
+  "denominator": "grouped unsupported or failed v1.11 runs",
+  "figure_id": "failure_taxonomy",
+  "included_statuses": [
+    "unsupported",
+    "failed",
+    "snapped_but_failed"
+  ],
+  "schema": "eml.paper_figure_metadata.v1",
+  "source_table_csv": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.csv",
+  "source_table_json": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.json",
+  "title": "Unsupported and Failure Taxonomy"
+}

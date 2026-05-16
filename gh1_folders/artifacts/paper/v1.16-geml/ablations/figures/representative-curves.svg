@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="600" viewBox="0 0 1080 600" role="img">
+<style>.title{font:700 22px Arial,sans-serif;fill:#17202a}.note{font:12px Arial,sans-serif;fill:#34495e}.label{font:11px Arial,sans-serif;fill:#34495e}.axis{stroke:#d8dee4;stroke-width:1}.target{fill:none;stroke:#1b998b;stroke-width:2}.candidate{fill:none;stroke:#e76f51;stroke-width:2;stroke-dasharray:5 4}.panel{fill:#ffffff;stroke:#d8dee4;stroke-width:1}</style>
+<text x="34" y="36" class="title">Representative Fits and Failures</text>
+<text x="34" y="58" class="note">Panels show target curves and selected snapped candidates when artifacts are available; all selected pilot examples failed verification.</text>
+<rect x="32" y="82" width="1016" height="154" rx="4" class="panel"/>
+<text x="50" y="106" class="label">log seed 0 ipi ipi_lower_post_snap_mse</text>
+<line x1="54" y1="216" x2="1004" y2="216" class="axis"/>
+<polyline points="54.0,216.0 84.2,204.7 116.3,195.5 146.0,188.6 175.4,182.8 207.8,177.3 240.2,172.6 270.2,168.6 297.7,165.3 327.3,162.1 359.2,158.8 391.2,155.9 417.3,153.6 452.0,150.8 480.7,148.6 512.4,146.4 543.4,144.3 574.5,142.3 606.5,140.3 638.4,138.5 666.8,136.9 700.3,135.1 727.1,133.8 759.7,132.2 791.5,130.7 820.6,129.4 849.7,128.1 880.0,126.8 911.5,125.5 943.5,124.3 971.8,123.2 1004.0,122.0" class="target"/>
+<text x="54" y="226" class="label">target</text>
+<text x="108" y="226" class="label" fill="#e76f51">candidate: exp(I*pi*x)</text>
+<text x="754" y="226" class="label">verifier: failed</text>
+<rect x="32" y="252" width="1016" height="154" rx="4" class="panel"/>
+<text x="50" y="276" class="label">log seed 1 ipi ipi_lower_post_snap_mse</text>
+<line x1="54" y1="386" x2="1004" y2="386" class="axis"/>
+<polyline points="54.0,386.0 85.6,374.3 115.4,365.8 143.1,359.3 178.0,352.4 207.9,347.4 236.7,343.1 269.6,338.7 299.9,335.1 330.5,331.8 360.7,328.8 392.5,325.8 420.8,323.4 452.6,320.8 482.7,318.5 515.5,316.2 545.2,314.2 575.3,312.3 605.1,310.4 636.8,308.6 668.1,306.9 698.2,305.3 732.0,303.6 762.2,302.1 785.8,301.0 818.1,299.5 852.1,298.0 882.4,296.7 914.3,295.4 945.1,294.2 979.4,292.9 1004.0,292.0" class="target"/>
+<text x="54" y="396" class="label">target</text>
+<text x="108" y="396" class="label" fill="#e76f51">candidate: exp(I*pi*x)</text>
+<text x="754" y="396" class="label">verifier: failed</text>
+<rect x="32" y="422" width="1016" height="154" rx="4" class="panel"/>
+<text x="50" y="446" class="label">cos_pi seed 1 ipi ipi_lower_post_snap_mse</text>
+<line x1="54" y1="556" x2="1004" y2="556" class="axis"/>
+<polyline points="54.0,556.0 85.6,554.9 115.4,552.1 143.1,548.0 178.0,541.0 207.9,533.6 236.7,525.6 269.6,515.7 299.9,506.3 330.5,496.9 360.7,488.1 392.5,479.8 420.8,473.4 452.6,467.8 482.7,464.0 515.5,462.0 545.2,462.0 575.3,463.9 605.1,467.5 636.8,473.1 668.1,480.1 698.2,488.0 732.0,497.8 762.2,507.1 785.8,514.4 818.1,524.2 852.1,533.7 882.4,541.2 914.3,547.6 945.1,552.2 979.4,555.3 1004.0,556.0" class="target"/>
+<polyline points="54.0,515.6 85.6,515.6 115.4,515.6 143.1,515.6 178.0,515.6 207.9,515.6 236.7,515.6 269.6,515.6 299.9,515.6 330.5,515.6 360.7,515.6 392.5,515.6 420.8,515.6 452.6,515.6 482.7,515.6 515.5,515.6 545.2,515.6 575.3,515.6 605.1,515.6 636.8,515.6 668.1,515.6 698.2,515.6 732.0,515.6 762.2,515.6 785.8,515.6 818.1,515.6 852.1,515.6 882.4,515.6 914.3,515.6 945.1,515.6 979.4,515.6 1004.0,515.6" class="candidate"/>
+<text x="54" y="566" class="label">target</text>
+<text x="108" y="566" class="label" fill="#e76f51">candidate: -0.141592653589793</text>
+<text x="754" y="566" class="label">verifier: failed</text>
+</svg>

@@ -1,0 +1,55 @@
+{
+  "completeness_boundary": {
+    "ceml_s_successor_claim": "not_established",
+    "status": "incomplete",
+    "zeml_s_terminal_zero_limitation": "closed zero-terminal ZEML_s trees do not generate new constants"
+  },
+  "decision": "wait_for_centered_family_evidence",
+  "evidence_summary": {
+    "aggregate_paths": [
+      "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/aggregate.json",
+      "artifacts/proof/v1.6/campaigns/proof-shallow/aggregate.json",
+      "artifacts/proof/v1.6/campaigns/proof-basin/aggregate.json",
+      "artifacts/proof/v1.6/campaigns/proof-depth-curve/aggregate.json"
+    ],
+    "best_centered_recovery_rate": null,
+    "has_centered_evidence": false,
+    "operator_groups": {
+      "raw_eml": {
+        "recovered": 44,
+        "recovery_rate": 0.676923076923077,
+        "schedules": [
+          "fixed"
+        ],
+        "total": 65,
+        "unsupported": 0,
+        "unsupported_rate": 0.0
+      }
+    },
+    "raw_recovery_rate": 0.676923076923077,
+    "run_count": 65
+  },
+  "figure_table_inventory": [
+    "Headline figure: exact recovery versus depth, raw EML versus fixed CEML_s/ZEML_s and continuation schedules.",
+    "Recovery table: exact recovery rate by formula, start mode, training mode, operator family, schedule, and depth.",
+    "Diagnostics table: anomaly rates, shifted-singularity proximity, post-snap verifier pass rate, and unsupported rate.",
+    "Repair/refit table: repair attempt rate, repair acceptance, refit attempt rate, and refit acceptance.",
+    "Overhead table: active node count and candidate complexity by operator family and formula."
+  ],
+  "recommendation": "Do not submit the centered-family empirical paper yet. Run the v1.7 family campaigns first; a raw-EML searchability/geometry note remains publishable from the archived proof evidence.",
+  "safe_claims": [
+    "cEML_{s,t} is an affine-normalized transport of raw EML that preserves the exp-log inverse-pair structure.",
+    "At the neutral point (0,t), cEML_{s,t} has output 0 and local Jacobian (+1,-1).",
+    "The scale s is a curvature knob: local second derivatives shrink as s grows.",
+    "The inverse-branch singularity is shifted to y=t-s, so singularity distance is a measurable diagnostic.",
+    "On bounded boxes away from the shifted singularity, the large-s limit approaches subtraction."
+  ],
+  "schema": "eml.paper_decision.v1",
+  "unsafe_claims": [
+    "Do not claim CEML_s is complete for all s>0 without constructive witnesses or proof.",
+    "Do not claim ZEML_s is a terminal-1 completeness replacement; closed zero-terminal trees collapse to zero.",
+    "Do not claim centered families universally solve blind symbolic regression.",
+    "Do not claim the centered family is a drop-in pocket-calculator basis until interdefinability is proved.",
+    "Do not merge pure blind, scaffolded, compile-only, warm-start, repaired, and perturbed-basin evidence into one recovery metric."
+  ]
+}

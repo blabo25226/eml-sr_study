@@ -1,0 +1,603 @@
+{
+  "counts": {
+    "evidence_classes": {
+      "blind_training_recovered": 2,
+      "perturbed_true_tree_recovered": 10,
+      "scaffolded_blind_training_recovered": 2,
+      "snapped_but_failed": 6
+    },
+    "execution_error": 0,
+    "failed": 6,
+    "repaired_candidate": 0,
+    "same_ast_return": 10,
+    "total": 20,
+    "unsupported": 0,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 14,
+    "verifier_recovery_rate": 0.7
+  },
+  "generated_at": "2026-04-16T07:17:12.351321+00:00",
+  "output": {
+    "aggregate_json": "artifacts/proof/v1.5/campaigns/proof-depth-curve/aggregate.json",
+    "aggregate_markdown": "artifacts/proof/v1.5/campaigns/proof-depth-curve/aggregate.md",
+    "campaign_dir": "artifacts/proof/v1.5/campaigns/proof-depth-curve",
+    "figures": {
+      "beer_perturbation": "artifacts/proof/v1.5/campaigns/proof-depth-curve/figures/beer-perturbation.svg",
+      "depth_curve_recovery": "artifacts/proof/v1.5/campaigns/proof-depth-curve/figures/depth-curve-recovery.svg",
+      "failure_taxonomy": "artifacts/proof/v1.5/campaigns/proof-depth-curve/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/proof/v1.5/campaigns/proof-depth-curve/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/proof/v1.5/campaigns/proof-depth-curve/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/proof/v1.5/campaigns/proof-depth-curve/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/proof/v1.5/campaigns/proof-depth-curve/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-depth-curve/runs/proof-depth-curve",
+    "report_markdown": "artifacts/proof/v1.5/campaigns/proof-depth-curve/report.md",
+    "suite_result": "artifacts/proof/v1.5/campaigns/proof-depth-curve/suite-result.json",
+    "tables": {
+      "depth_curve_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/depth-curve.csv",
+      "failures_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/failures.csv",
+      "group_claim_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/group-claim.csv",
+      "group_depth_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/group-depth.csv",
+      "group_evidence_class_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/group-evidence-class.csv",
+      "group_failure_class_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/group-start-mode.csv",
+      "group_threshold_policy_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/group-threshold-policy.csv",
+      "headline_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/headline-metrics.csv",
+      "headline_json": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/headline-metrics.json",
+      "runs_csv": "artifacts/proof/v1.5/campaigns/proof-depth-curve/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "20 runs; exact depth-2 through depth-6 blind and perturbed rows with fixed seeds and budgets.",
+    "description": "Measured v1.5 blind-vs-perturbed depth-curve campaign over deterministic exact EML targets.",
+    "name": "proof-depth-curve",
+    "suite": "proof-depth-curve",
+    "tier": "proof-contract"
+  },
+  "reproducibility": {
+    "code_version": "b75c22d",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign proof-depth-curve --output-root artifacts/proof/v1.5/campaigns --label proof-depth-curve --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "perturbation_noises": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/proof/v1.5/campaigns/proof-depth-curve/runs",
+    "cases": [
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "depth_curve_depth2",
+        "id": "depth-2-blind",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 3,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "blind"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "depth_curve_depth3",
+        "id": "depth-3-blind",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 3,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "blind"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "depth_curve_depth4",
+        "id": "depth-4-blind",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 3,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "blind"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "depth_curve_depth5",
+        "id": "depth-5-blind",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 5,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 3,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "blind"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "depth_curve_depth6",
+        "id": "depth-6-blind",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 6,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 3,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "blind"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "blind_training"
+      },
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "depth_curve_depth2",
+        "id": "depth-2-perturbed",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 20
+        },
+        "perturbation_noise": [
+          0.05
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "perturbed_tree"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "perturbed_true_tree_training"
+      },
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "depth_curve_depth3",
+        "id": "depth-3-perturbed",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 20
+        },
+        "perturbation_noise": [
+          0.05
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "perturbed_tree"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "perturbed_true_tree_training"
+      },
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "depth_curve_depth4",
+        "id": "depth-4-perturbed",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 30
+        },
+        "perturbation_noise": [
+          0.05
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "perturbed_tree"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "perturbed_true_tree_training"
+      },
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "depth_curve_depth5",
+        "id": "depth-5-perturbed",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 5,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 30
+        },
+        "perturbation_noise": [
+          0.05
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "perturbed_tree"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "perturbed_true_tree_training"
+      },
+      {
+        "claim_id": "paper-blind-depth-degradation",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "depth_curve_depth6",
+        "id": "depth-6-perturbed",
+        "optimizer": {
+          "constants": [
+            "1"
+          ],
+          "depth": 6,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 30
+        },
+        "perturbation_noise": [
+          0.02
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.5",
+          "proof",
+          "measured",
+          "depth_curve",
+          "perturbed_tree"
+        ],
+        "threshold_policy_id": "measured_depth_curve",
+        "training_mode": "perturbed_true_tree_training"
+      }
+    ],
+    "description": "Measured v1.5 blind-vs-perturbed depth curve over deterministic exact EML targets at depths 2 through 6.",
+    "id": "proof-depth-curve",
+    "schema": "eml.benchmark_suite.v1"
+  },
+  "thresholds": [
+    {
+      "claim_class": "measured_depth_curve",
+      "claim_id": "paper-blind-depth-degradation",
+      "eligible": 20,
+      "evidence_classes": {
+        "blind_training_recovered": 2,
+        "perturbed_true_tree_recovered": 10,
+        "scaffolded_blind_training_recovered": 2,
+        "snapped_but_failed": 6
+      },
+      "failed": 0,
+      "passed": 20,
+      "rate": 1.0,
+      "required_rate": null,
+      "status": "reported",
+      "threshold": {
+        "allowed_evidence_classes": [
+          "blind_training_recovered",
+          "scaffolded_blind_training_recovered",
+          "compiler_warm_start_recovered",
+          "perturbed_true_tree_recovered",
+          "repaired_candidate",
+          "verified_equivalent",
+          "same_ast",
+          "soft_fit_only",
+          "snapped_but_failed",
+          "failed",
+          "unsupported",
+          "execution_failure"
+        ],
+        "description": "Depth-curve suites report measured recovery by depth without requiring universal blind recovery.",
+        "fail_on_execution_error": false,
+        "fail_on_unsupported": false,
+        "id": "measured_depth_curve",
+        "policy_type": "measured_rate",
+        "required_rate": null
+      },
+      "threshold_policy_id": "measured_depth_curve"
+    }
+  ]
+}

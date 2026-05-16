@@ -1,0 +1,51 @@
+{
+  "adapters": [
+    {
+      "adapter": "eml_reference",
+      "import_status": "local",
+      "module": "eml_symbolic_regression",
+      "version": null
+    },
+    {
+      "adapter": "polynomial_least_squares",
+      "import_status": "local",
+      "module": "numpy+sympy",
+      "version": null
+    },
+    {
+      "adapter": "pysr",
+      "import_status": "missing",
+      "module": "pysr",
+      "version": null
+    },
+    {
+      "adapter": "gplearn",
+      "import_status": "missing",
+      "module": "gplearn",
+      "version": null
+    }
+  ],
+  "denominator_policy": "excluded_from_eml_recovery_denominators",
+  "generated_at": "2026-04-21T08:52:52+00:00",
+  "schema": "eml.baseline_dependency_locks.v1",
+  "source_locks": [
+    {
+      "path": "src/eml_symbolic_regression/baselines.py",
+      "present": true,
+      "sha256": "ca4b7edd156c164b21b026bfab093dce525437e00d8f853c26e7399c8489a121",
+      "source_id": "src_eml_symbolic_regression_baselines_py"
+    },
+    {
+      "path": "src/eml_symbolic_regression/datasets.py",
+      "present": true,
+      "sha256": "583899f751d3d24bb512885576f1569209fddf13a46521ad40800c9798cc73f0",
+      "source_id": "src_eml_symbolic_regression_datasets_py"
+    },
+    {
+      "path": "data/real/hubble_1929_velocity_distance.csv",
+      "present": true,
+      "sha256": "6a79d2e305499f2553b2a2a141e99a04ec5a1b0294304599175e515753d73138",
+      "source_id": "data_real_hubble_1929_velocity_distance_csv"
+    }
+  ]
+}

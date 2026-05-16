@@ -1,0 +1,586 @@
+{
+  "counts": {
+    "evidence_classes": {
+      "repaired_candidate": 1,
+      "same_ast": 12,
+      "scaffolded_blind_training_recovered": 6,
+      "snapped_but_failed": 6,
+      "unsupported": 4
+    },
+    "execution_error": 0,
+    "failed": 6,
+    "repaired_candidate": 1,
+    "same_ast_return": 12,
+    "total": 29,
+    "unsupported": 4,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 19,
+    "verifier_recovery_rate": 0.6551724137931034
+  },
+  "generated_at": "2026-04-16T12:31:42.966294+00:00",
+  "output": {
+    "aggregate_json": "artifacts/campaigns/v1.6-showcase/aggregate.json",
+    "aggregate_markdown": "artifacts/campaigns/v1.6-showcase/aggregate.md",
+    "campaign_dir": "artifacts/campaigns/v1.6-showcase",
+    "figures": {
+      "beer_perturbation": "artifacts/campaigns/v1.6-showcase/figures/beer-perturbation.svg",
+      "depth_curve_recovery": "artifacts/campaigns/v1.6-showcase/figures/depth-curve-recovery.svg",
+      "failure_taxonomy": "artifacts/campaigns/v1.6-showcase/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/campaigns/v1.6-showcase/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/campaigns/v1.6-showcase/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/campaigns/v1.6-showcase/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/campaigns/v1.6-showcase/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/campaigns/v1.6-showcase/runs/v1.3-showcase",
+    "report_markdown": "artifacts/campaigns/v1.6-showcase/report.md",
+    "suite_result": "artifacts/campaigns/v1.6-showcase/suite-result.json",
+    "tables": {
+      "depth_curve_csv": "artifacts/campaigns/v1.6-showcase/tables/depth-curve.csv",
+      "failures_csv": "artifacts/campaigns/v1.6-showcase/tables/failures.csv",
+      "group_claim_csv": "artifacts/campaigns/v1.6-showcase/tables/group-claim.csv",
+      "group_depth_csv": "artifacts/campaigns/v1.6-showcase/tables/group-depth.csv",
+      "group_evidence_class_csv": "artifacts/campaigns/v1.6-showcase/tables/group-evidence-class.csv",
+      "group_failure_class_csv": "artifacts/campaigns/v1.6-showcase/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/campaigns/v1.6-showcase/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/campaigns/v1.6-showcase/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/campaigns/v1.6-showcase/tables/group-start-mode.csv",
+      "group_threshold_policy_csv": "artifacts/campaigns/v1.6-showcase/tables/group-threshold-policy.csv",
+      "headline_csv": "artifacts/campaigns/v1.6-showcase/tables/headline-metrics.csv",
+      "headline_json": "artifacts/campaigns/v1.6-showcase/tables/headline-metrics.json",
+      "runs_csv": "artifacts/campaigns/v1.6-showcase/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "29 runs; larger blind and perturbation matrix plus full FOR_DEMO diagnostics.",
+    "description": "Expanded campaign for presentation-grade evidence with more seeds and perturbation levels.",
+    "name": "showcase",
+    "suite": "v1.3-showcase",
+    "tier": "expanded"
+  },
+  "reproducibility": {
+    "code_version": "6fd9d8a",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign showcase --output-root artifacts/campaigns --label v1.6-showcase --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "perturbation_noises": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/campaigns/v1.6-showcase/runs",
+    "cases": [
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 4,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 90
+        },
+        "perturbation_noise": [
+          0.0,
+          2.5,
+          5.0,
+          15.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 90
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "shockley",
+        "id": "shockley-warm",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "for_demo"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "damped_oscillator",
+        "id": "damped-oscillator-compile",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "for_demo"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      }
+    ],
+    "description": "Showcase v1.3 campaign matrix with expanded seeds, perturbations, and full FOR_DEMO diagnostics.",
+    "id": "v1.3-showcase",
+    "schema": "eml.benchmark_suite.v1"
+  },
+  "thresholds": []
+}

@@ -1,0 +1,232 @@
+{
+  "generated_at": "2026-04-22T12:43:37.859567+00:00",
+  "inputs": [
+    {
+      "bytes": 18046,
+      "path": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-neighborhood-seeds.json",
+      "role": "input",
+      "sha256": "d6380e7d10dc15f82b06e2e1e89c191ba4c3c0523fa3d341c264bec246ba862f",
+      "source_id": "snap_neighborhood_seeds",
+      "status": "locked"
+    },
+    {
+      "bytes": 1976833,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-cos-pi-ipi-v116-blind-8400b3ba3d1b.json",
+      "role": "input",
+      "sha256": "677fcd6846aa74e36e6cf856799248e4d9776f19ef2bd044706ed785c40241d1",
+      "source_id": "candidate_artifact_000",
+      "status": "locked"
+    },
+    {
+      "bytes": 1960227,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-cos-pi-ipi-v116-blind-d646ceb81086.json",
+      "role": "input",
+      "sha256": "d7a54eeaeb74ddf2ca9a581b85aa6149b78cb08b8d2a07f71d00d1d0b8a7e2a9",
+      "source_id": "candidate_artifact_001",
+      "status": "locked"
+    },
+    {
+      "bytes": 1190115,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-cos-pi-raw-v116-blind-434cf45abd91.json",
+      "role": "input",
+      "sha256": "f8d09f0d97ca3ea861b001e7314b33ce89aeb8ecf8fe8e56db8e5fe4c81840c8",
+      "source_id": "candidate_artifact_002",
+      "status": "locked"
+    },
+    {
+      "bytes": 1192940,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-cos-pi-raw-v116-blind-c9906f0a620d.json",
+      "role": "input",
+      "sha256": "560c96b5c0f125950e147ce3777bc617b6ee7cd062cdf2cf6ea301be625d84af",
+      "source_id": "candidate_artifact_003",
+      "status": "locked"
+    },
+    {
+      "bytes": 1121961,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-exp-ipi-v116-blind-96fd9b472e1c.json",
+      "role": "input",
+      "sha256": "3657591ca3c07203e0708d63b1f7b7b3bc6c197e6ef7d9ee734e7fb911e5a9f7",
+      "source_id": "candidate_artifact_004",
+      "status": "locked"
+    },
+    {
+      "bytes": 1132333,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-exp-ipi-v116-blind-f16264d68e9f.json",
+      "role": "input",
+      "sha256": "272427864f6b7dd81ae46f59eedd52baaa307190b43325121c00260f8a9435b5",
+      "source_id": "candidate_artifact_005",
+      "status": "locked"
+    },
+    {
+      "bytes": 694240,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-exp-raw-v116-blind-9954b4b63c6d.json",
+      "role": "input",
+      "sha256": "52b938d48337f0fd13ee2f03a783cc59ecaf99cf484dcffb9ea9cbe76abd19c9",
+      "source_id": "candidate_artifact_006",
+      "status": "locked"
+    },
+    {
+      "bytes": 693220,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-exp-raw-v116-blind-cf128515ef41.json",
+      "role": "input",
+      "sha256": "86710ed765f1c8c15127594d62af0189cabf96953c0cfba3de62db07edf68534",
+      "source_id": "candidate_artifact_007",
+      "status": "locked"
+    },
+    {
+      "bytes": 1946592,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-harmonic-sum-ipi-v116-blind-6dce386f4e7b.json",
+      "role": "input",
+      "sha256": "fc1a8cb80a8f6ee4230206595bb1127800ac4f7b49180ea50a2d72a51d5554ec",
+      "source_id": "candidate_artifact_008",
+      "status": "locked"
+    },
+    {
+      "bytes": 1958520,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-harmonic-sum-ipi-v116-blind-cbcffbfb08d5.json",
+      "role": "input",
+      "sha256": "fd2a3687365b9acae70493edde68af7846aa7deb8eabcc2b43126ce30d457ce3",
+      "source_id": "candidate_artifact_009",
+      "status": "locked"
+    },
+    {
+      "bytes": 1145965,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-harmonic-sum-raw-v116-blind-894efc04fa0d.json",
+      "role": "input",
+      "sha256": "5f91b2c25cd874ba8883856a86f2300f61e807c9dc5d424e9e772516987bd0fa",
+      "source_id": "candidate_artifact_010",
+      "status": "locked"
+    },
+    {
+      "bytes": 1146156,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-harmonic-sum-raw-v116-blind-a3087f36bc71.json",
+      "role": "input",
+      "sha256": "35b456c91918fd3d3a0da454a0c919f84c7e2cb8ee5bdef8f88176d43d854976",
+      "source_id": "candidate_artifact_011",
+      "status": "locked"
+    },
+    {
+      "bytes": 1146969,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-log-ipi-v116-blind-1cede807b734.json",
+      "role": "input",
+      "sha256": "c0c9b89c272526ad36690380b011e89c02a4137d5b374bbe335dc6dcb873361e",
+      "source_id": "candidate_artifact_012",
+      "status": "locked"
+    },
+    {
+      "bytes": 1147204,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-log-ipi-v116-blind-84e0e981b471.json",
+      "role": "input",
+      "sha256": "1ee5a4fbbe8223cd9054e6bcff5a6023d536623f054b8eac37ea5720d8964483",
+      "source_id": "candidate_artifact_013",
+      "status": "locked"
+    },
+    {
+      "bytes": 1966664,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-log-periodic-oscillation-ipi-v116-blind-7e17daae2089.json",
+      "role": "input",
+      "sha256": "318661371167b06e2109a4e00911f7f7e698dfd0cc21e13c2aeaf31603404a82",
+      "source_id": "candidate_artifact_014",
+      "status": "locked"
+    },
+    {
+      "bytes": 1932951,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-log-periodic-oscillation-ipi-v116-blind-b9dc27c7c5eb.json",
+      "role": "input",
+      "sha256": "6b1f11e7f7550e83fd88b1a02ad38b9682e223e13bf921b8c705c7d0d5e66d16",
+      "source_id": "candidate_artifact_015",
+      "status": "locked"
+    },
+    {
+      "bytes": 1187871,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-log-periodic-oscillation-raw-v116-blind-c15ac8ea4804.json",
+      "role": "input",
+      "sha256": "dba55946fa760ae1b34a89632f6fcaabf6b345b813f60cfea7ddfeabc52091de",
+      "source_id": "candidate_artifact_016",
+      "status": "locked"
+    },
+    {
+      "bytes": 1187720,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-log-periodic-oscillation-raw-v116-blind-cb9b0243d688.json",
+      "role": "input",
+      "sha256": "0b3dd5abd7d9a2235d9712d4721842766a7ab2689049fbf7d2a5eb15e1f89528",
+      "source_id": "candidate_artifact_017",
+      "status": "locked"
+    },
+    {
+      "bytes": 693116,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-log-raw-v116-blind-5017393b5d99.json",
+      "role": "input",
+      "sha256": "4140ee40ef689cdf32d2f9e3d917cdfd494be05aa6a18df7cf7a1120b598d3be",
+      "source_id": "candidate_artifact_018",
+      "status": "locked"
+    },
+    {
+      "bytes": 693060,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-log-raw-v116-blind-d348cd35ea0c.json",
+      "role": "input",
+      "sha256": "4e31db8c831f2e38210c07c6b8bea265f25792d2d1981610eb4dd371f907687f",
+      "source_id": "candidate_artifact_019",
+      "status": "locked"
+    },
+    {
+      "bytes": 1961498,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-sin-pi-ipi-v116-blind-2dbf88bedf2b.json",
+      "role": "input",
+      "sha256": "bec48f1b9e52c84b41e5c45f5f27dcaa5af5d074f6af37ba1d56b1c48d090049",
+      "source_id": "candidate_artifact_020",
+      "status": "locked"
+    },
+    {
+      "bytes": 1968859,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-sin-pi-ipi-v116-blind-c803be2bb022.json",
+      "role": "input",
+      "sha256": "c8703fecf3feecd73ed6a1b89dff9d843268ede3532e014e29f36149c2c63a04",
+      "source_id": "candidate_artifact_021",
+      "status": "locked"
+    },
+    {
+      "bytes": 1192342,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-sin-pi-raw-v116-blind-220d22c0209c.json",
+      "role": "input",
+      "sha256": "131bf2a96a33b563896e7ab416029a76f574c410b44a5da954c88379914cdda1",
+      "source_id": "candidate_artifact_022",
+      "status": "locked"
+    },
+    {
+      "bytes": 1188642,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/runs/v1.16-geml-pilot/v1-16-geml-pilot-sin-pi-raw-v116-blind-7aaf87676b6f.json",
+      "role": "input",
+      "sha256": "c58bf36a7e85c2f0c5be59a746470a80f06ca2ff5ffd1c66ee80e14b1f3df9ca",
+      "source_id": "candidate_artifact_023",
+      "status": "locked"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 17217,
+      "path": "artifacts/paper/v1.17-geml/neighborhoods/neighborhood-candidates.json",
+      "role": "output",
+      "sha256": "7c2c8ea678976aaef5b2fdcf78b7ac30566d8931b91d6c0e83b5bd34485fbd9f",
+      "source_id": "neighborhood_candidates_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 6267,
+      "path": "artifacts/paper/v1.17-geml/neighborhoods/neighborhood-candidates.csv",
+      "role": "output",
+      "sha256": "ed33d17670121e245d7ed751145bee176a816100f43bec6fb762e4d517ae8c1d",
+      "source_id": "neighborhood_candidates_csv",
+      "status": "locked"
+    },
+    {
+      "bytes": 3120,
+      "path": "artifacts/paper/v1.17-geml/neighborhoods/neighborhood-candidates.md",
+      "role": "output",
+      "sha256": "12c62ff1c358cb8ab33c6c0e20ac56eb7834ca256ab451b2d0e1a3ca286f0753",
+      "source_id": "neighborhood_candidates_md",
+      "status": "locked"
+    }
+  ],
+  "schema": "eml.v117_source_locks.v1"
+}

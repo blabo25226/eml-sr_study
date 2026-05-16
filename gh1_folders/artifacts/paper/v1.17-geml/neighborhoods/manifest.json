@@ -1,0 +1,23 @@
+{
+  "claim_boundary": "Neighborhood candidates are target-agnostic exact alternatives; Phase 96 owns verifier-first promotion.",
+  "counts": {
+    "candidate_rows": 24,
+    "fallback_rows": 0,
+    "generated_rows": 0,
+    "original_rows": 24,
+    "seed_rows": 24
+  },
+  "generated_at": "2026-04-22T12:43:37.860040+00:00",
+  "outputs": {
+    "manifest_json": "artifacts/paper/v1.17-geml/neighborhoods/manifest.json",
+    "neighborhood_candidates_csv": "artifacts/paper/v1.17-geml/neighborhoods/neighborhood-candidates.csv",
+    "neighborhood_candidates_json": "artifacts/paper/v1.17-geml/neighborhoods/neighborhood-candidates.json",
+    "neighborhood_candidates_md": "artifacts/paper/v1.17-geml/neighborhoods/neighborhood-candidates.md",
+    "output_dir": "artifacts/paper/v1.17-geml/neighborhoods",
+    "source_locks_json": "artifacts/paper/v1.17-geml/neighborhoods/source-locks.json"
+  },
+  "schema": "eml.v117_neighborhood_manifest.v1",
+  "snap_diagnostics_dir": "artifacts/paper/v1.17-geml/snap-diagnostics",
+  "source_locks": "artifacts/paper/v1.17-geml/neighborhoods/source-locks.json",
+  "source_locks_ok": true
+}

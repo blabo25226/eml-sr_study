@@ -1,0 +1,91 @@
+{
+  "candidate": {
+    "sympy": "2*x/(x + 0.5)"
+  },
+  "candidate_kind": "catalog_sympy",
+  "claim_status": "verified_showcase",
+  "cleanup": {
+    "cleaned": "2.0*x/(1.0*x + 0.5)",
+    "original": "2*x/(x + 0.5)",
+    "original_tree_size": null,
+    "verification": {
+      "candidate_kind": "catalog_sympy",
+      "high_precision_max_error": 0.0,
+      "reason": "verified_non_eml_candidate",
+      "split_results": [
+        {
+          "max_abs_error": 2.220446049250313e-16,
+          "max_imag_residue": 0.0,
+          "mse": 1.1247430875221457e-32,
+          "name": "train",
+          "passed": true
+        },
+        {
+          "max_abs_error": 2.220446049250313e-16,
+          "max_imag_residue": 0.0,
+          "mse": 9.860761315262648e-33,
+          "name": "heldout",
+          "passed": true
+        },
+        {
+          "max_abs_error": 2.220446049250313e-16,
+          "max_imag_residue": 0.0,
+          "mse": 1.479114197289397e-32,
+          "name": "extrapolation",
+          "passed": true
+        }
+      ],
+      "status": "verified_showcase",
+      "tolerance": 1e-08
+    }
+  },
+  "compiled_eml": {
+    "detail": "compiled depth 18 exceeds max_depth=12",
+    "expression": "2*x/(x + 0.5)",
+    "reason": "depth_exceeded",
+    "status": "unsupported"
+  },
+  "demo": "michaelis_menten",
+  "description": "Mechanistic biochemistry law from FOR_DEMO.md.",
+  "schema": "eml.demo_report.v1",
+  "stage_statuses": {
+    "catalog_showcase": "verified_showcase",
+    "compiled_seed": "unsupported",
+    "warm_start_attempt": "unsupported"
+  },
+  "verification": {
+    "candidate_kind": "catalog_sympy",
+    "high_precision_max_error": 0.0,
+    "reason": "verified_non_eml_candidate",
+    "split_results": [
+      {
+        "max_abs_error": 2.220446049250313e-16,
+        "max_imag_residue": 0.0,
+        "mse": 1.1247430875221457e-32,
+        "name": "train",
+        "passed": true
+      },
+      {
+        "max_abs_error": 2.220446049250313e-16,
+        "max_imag_residue": 0.0,
+        "mse": 9.860761315262648e-33,
+        "name": "heldout",
+        "passed": true
+      },
+      {
+        "max_abs_error": 2.220446049250313e-16,
+        "max_imag_residue": 0.0,
+        "mse": 1.479114197289397e-32,
+        "name": "extrapolation",
+        "passed": true
+      }
+    ],
+    "status": "verified_showcase",
+    "tolerance": 1e-08
+  },
+  "warm_start_eml": {
+    "detail": "warm-start requires a validated compiled EML seed",
+    "reason": "compile_failed",
+    "status": "unsupported"
+  }
+}

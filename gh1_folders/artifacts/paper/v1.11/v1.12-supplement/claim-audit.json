@@ -1,0 +1,212 @@
+{
+  "checks": [
+    {
+      "details": {
+        "paths": [
+          "artifacts/paper/v1.11/draft/abstract.md",
+          "artifacts/paper/v1.11/draft/methods.md",
+          "artifacts/paper/v1.11/draft/results.md",
+          "artifacts/paper/v1.11/draft/limitations.md"
+        ]
+      },
+      "id": "draft_sections_present",
+      "message": "Draft section skeletons are present.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "classes": [
+          "compile_only",
+          "failed",
+          "perturbed_basin",
+          "pure_blind",
+          "repair_refit",
+          "same_ast",
+          "scaffolded",
+          "unsupported",
+          "warm_start"
+        ],
+        "missing": []
+      },
+      "id": "claim_taxonomy_complete",
+      "message": "Claim taxonomy covers all evidence regimes.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "counts": {
+          "caption_files": 2,
+          "figures": 1,
+          "motif_rows": 5,
+          "negative_result_rows": 2
+        }
+      },
+      "id": "paper_facing_assets_present",
+      "message": "Paper-facing motif, negative-result, pipeline, and caption artifacts are present.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "case_counts": {
+          "exp-pure-blind-seed-refresh": 5,
+          "exp-scaffolded-seed-refresh": 5
+        },
+        "row_count": 10
+      },
+      "id": "shallow_refresh_counts",
+      "message": "Shallow refresh keeps pure-blind and scaffolded seed denominators separate.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "depth_counts": {
+          "2": 2,
+          "3": 2,
+          "4": 2,
+          "5": 2
+        },
+        "summary_rows": 4
+      },
+      "id": "depth_refresh_counts",
+      "message": "Depth refresh covers depths 2 through 5 with at least two rows each.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "rows": {
+          "logistic": {
+            "baseline_depth": 27,
+            "blind_probe_artifact_path": "artifacts/campaigns/v1.11-logistic-planck-probes/runs/v1.11-logistic-planck-probes/v1-11-logistic-planck-probes-logistic-blind-probe-b35045193c4c.json",
+            "blind_probe_status": "snapped_but_failed",
+            "blind_probe_verifier_status": "failed",
+            "claim_boundary": "negative result remains visible; relaxed depth improvement is not recovery",
+            "compile_probe_status": "unsupported",
+            "compile_support": "unsupported",
+            "evidence_regime": "compile_only",
+            "formula_id": "logistic",
+            "law": "Logistic diagnostic",
+            "macro_hits": [
+              "exponential_saturation_template"
+            ],
+            "promotion": "no",
+            "promotion_reason": "strict support and verifier recovery did not both pass",
+            "relaxed_depth_improved": true,
+            "relaxed_motif_depth": 15,
+            "scientific_artifact_path": "artifacts/campaigns/v1.10-logistic-evidence/v1-10-logistic-evidence-logistic-compile-c2af27a35e81.json",
+            "strict_gate": 13
+          },
+          "planck": {
+            "baseline_depth": 24,
+            "blind_probe_artifact_path": "artifacts/campaigns/v1.11-logistic-planck-probes/runs/v1.11-logistic-planck-probes/v1-11-logistic-planck-probes-planck-blind-probe-be823c997bf6.json",
+            "blind_probe_status": "failed",
+            "blind_probe_verifier_status": "failed",
+            "claim_boundary": "negative result remains visible; relaxed depth improvement is not recovery",
+            "compile_probe_status": "unsupported",
+            "compile_support": "unsupported",
+            "evidence_regime": "compile_only",
+            "formula_id": "planck",
+            "law": "Planck diagnostic",
+            "macro_hits": [
+              "low_degree_power_template",
+              "scaled_exp_minus_one_template",
+              "direct_division_template"
+            ],
+            "promotion": "no",
+            "promotion_reason": "strict support and verifier recovery did not both pass",
+            "relaxed_depth_improved": true,
+            "relaxed_motif_depth": 14,
+            "scientific_artifact_path": "artifacts/campaigns/v1.10-planck-diagnostics/v1-10-planck-diagnostics-planck-compile-795067919a97.json",
+            "strict_gate": 13
+          }
+        }
+      },
+      "id": "logistic_planck_negative_rows_not_promoted",
+      "message": "Logistic and Planck negative rows remain unsupported and unpromoted.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "baseline": {
+          "baseline_id": "conventional_symbolic_regression",
+          "checked_modules": [
+            "pysr",
+            "gplearn",
+            "pyoperon",
+            "karoo_gp"
+          ],
+          "claim_boundary": "absence of a conventional SR comparator is reported as a limitation, not hidden",
+          "denominator_policy": "excluded from EML recovery denominators",
+          "detected_modules": [],
+          "diagnostic_only": true,
+          "formula": "not_run",
+          "limitation": "PySR, gplearn, PyOperon, and karoo-gp were not importable locally; no dependency installation was attempted in this bounded phase.",
+          "reason": "no_local_symbolic_regression_package",
+          "status": "unavailable"
+        },
+        "logistic_probe": {
+          "claim_boundary": "strict gate remains 13; relaxed depth improvement is diagnostic and not recovery promotion",
+          "depth_gap_to_strict_gate": 2,
+          "formula_id": "logistic",
+          "max_nodes": 256,
+          "points": 24,
+          "promotion": "no",
+          "promotion_reason": "strict support and verifier recovery did not both pass",
+          "relaxed_baseline_depth": 27,
+          "relaxed_depth": 15,
+          "relaxed_depth_delta": 12,
+          "relaxed_macro_hits": [
+            "exponential_saturation_template"
+          ],
+          "relaxed_node_count": 49,
+          "relaxed_validation_passed": true,
+          "relaxed_validation_status": "validated",
+          "seed": 0,
+          "source": "v1.12-logistic-strict-support-probe",
+          "strict_depth": null,
+          "strict_detail": "compiled depth 15 exceeds max_depth=13",
+          "strict_gate": 13,
+          "strict_node_count": null,
+          "strict_reason": "depth_exceeded",
+          "strict_status": "unsupported",
+          "strict_validation_status": null,
+          "symbolic_expression": "1/(1 + 2*exp(-1.3*x))",
+          "verifier_reason": "strict compile did not produce an exact EML candidate",
+          "verifier_status": "not_run_strict_compile_failed"
+        }
+      },
+      "id": "bounded_probe_status_visible",
+      "message": "Bounded baseline and logistic strict-support probe outcomes are visible and non-promotional.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "counts": {
+          "candidate_lifecycle_rows": 232,
+          "run_payloads": 18,
+          "run_summary_rows": 58,
+          "step_trace_rows": 4472,
+          "traced_runs": 18
+        }
+      },
+      "id": "training_detail_artifacts_present",
+      "message": "Training-detail artifacts expose per-step losses, run summaries, candidate lifecycle rows, and loss-curve figures.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing_roles": [],
+        "source_lock_count": 62
+      },
+      "id": "source_locks_cover_v112_artifact_families",
+      "message": "Source locks cover draft, paper-facing, evidence-refresh, and bounded-probe artifact families.",
+      "status": "passed"
+    }
+  ],
+  "generated_at": "2026-04-19T18:04:25.280619+00:00",
+  "schema": "eml.v112_claim_audit.v1",
+  "status": "passed",
+  "summary": {
+    "failed": 0,
+    "passed": 9
+  }
+}

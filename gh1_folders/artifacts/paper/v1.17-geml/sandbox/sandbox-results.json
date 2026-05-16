@@ -1,0 +1,109 @@
+{
+  "broader_campaign_gate": "block_broader_campaigns",
+  "decision": "no_exact_signal",
+  "exact_signal_found": false,
+  "natural_exact_recovery_count": 0,
+  "negative_control_exact_recovery_count": 0,
+  "rationale": "No clean natural-family verifier-gated exact recovery signal appears; broader campaigns remain blocked.",
+  "schema": "eml.v117_recovery_sandbox.v1",
+  "selected_exact_candidates": [],
+  "source": "artifacts/paper/v1.17-geml/ranking/ranked-candidates.json",
+  "summary_rows": [
+    {
+      "exact_recovery": 0,
+      "fallback": 0,
+      "group": "ipi_eml:harmonic",
+      "loss_only": 0,
+      "negative_control_rows": 0,
+      "operator_family": "ipi_eml",
+      "original_snap": 2,
+      "ranked_rows": 2,
+      "target_family": "harmonic",
+      "verified_equivalence": 0
+    },
+    {
+      "exact_recovery": 0,
+      "fallback": 0,
+      "group": "ipi_eml:log_periodic",
+      "loss_only": 0,
+      "negative_control_rows": 0,
+      "operator_family": "ipi_eml",
+      "original_snap": 2,
+      "ranked_rows": 2,
+      "target_family": "log_periodic",
+      "verified_equivalence": 0
+    },
+    {
+      "exact_recovery": 0,
+      "fallback": 0,
+      "group": "ipi_eml:negative_control",
+      "loss_only": 0,
+      "negative_control_rows": 4,
+      "operator_family": "ipi_eml",
+      "original_snap": 4,
+      "ranked_rows": 4,
+      "target_family": "negative_control",
+      "verified_equivalence": 0
+    },
+    {
+      "exact_recovery": 0,
+      "fallback": 0,
+      "group": "ipi_eml:periodic",
+      "loss_only": 0,
+      "negative_control_rows": 0,
+      "operator_family": "ipi_eml",
+      "original_snap": 4,
+      "ranked_rows": 4,
+      "target_family": "periodic",
+      "verified_equivalence": 0
+    },
+    {
+      "exact_recovery": 0,
+      "fallback": 0,
+      "group": "raw_eml:harmonic",
+      "loss_only": 0,
+      "negative_control_rows": 0,
+      "operator_family": "raw_eml",
+      "original_snap": 2,
+      "ranked_rows": 2,
+      "target_family": "harmonic",
+      "verified_equivalence": 0
+    },
+    {
+      "exact_recovery": 0,
+      "fallback": 0,
+      "group": "raw_eml:log_periodic",
+      "loss_only": 0,
+      "negative_control_rows": 0,
+      "operator_family": "raw_eml",
+      "original_snap": 2,
+      "ranked_rows": 2,
+      "target_family": "log_periodic",
+      "verified_equivalence": 0
+    },
+    {
+      "exact_recovery": 0,
+      "fallback": 0,
+      "group": "raw_eml:negative_control",
+      "loss_only": 0,
+      "negative_control_rows": 4,
+      "operator_family": "raw_eml",
+      "original_snap": 4,
+      "ranked_rows": 4,
+      "target_family": "negative_control",
+      "verified_equivalence": 0
+    },
+    {
+      "exact_recovery": 0,
+      "fallback": 0,
+      "group": "raw_eml:periodic",
+      "loss_only": 0,
+      "negative_control_rows": 0,
+      "operator_family": "raw_eml",
+      "original_snap": 4,
+      "ranked_rows": 4,
+      "target_family": "periodic",
+      "verified_equivalence": 0
+    }
+  ]
+}

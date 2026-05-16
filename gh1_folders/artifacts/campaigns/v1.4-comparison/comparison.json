@@ -1,0 +1,217 @@
+{
+  "campaign_pairs": [
+    {
+      "baseline": {
+        "counts": {
+          "execution_error": 0,
+          "failed": 7,
+          "same_ast_return": 4,
+          "total": 16,
+          "unsupported": 4,
+          "verified_equivalent_ast": 0,
+          "verifier_recovered": 5,
+          "verifier_recovery_rate": 0.3125
+        },
+        "label": "v1.3-standard",
+        "path": "artifacts/campaigns/v1.3-standard",
+        "preset": "standard",
+        "suite_id": "v1.3-standard"
+      },
+      "candidate": {
+        "counts": {
+          "execution_error": 0,
+          "failed": 4,
+          "same_ast_return": 4,
+          "total": 16,
+          "unsupported": 3,
+          "verified_equivalent_ast": 0,
+          "verifier_recovered": 9,
+          "verifier_recovery_rate": 0.5625
+        },
+        "label": "v1.4-standard",
+        "path": "artifacts/campaigns/v1.4-standard",
+        "preset": "standard",
+        "suite_id": "v1.3-standard"
+      }
+    },
+    {
+      "baseline": {
+        "counts": {
+          "execution_error": 0,
+          "failed": 11,
+          "same_ast_return": 11,
+          "total": 29,
+          "unsupported": 5,
+          "verified_equivalent_ast": 0,
+          "verifier_recovered": 13,
+          "verifier_recovery_rate": 0.4482758620689655
+        },
+        "label": "v1.3-showcase",
+        "path": "artifacts/campaigns/v1.3-showcase",
+        "preset": "showcase",
+        "suite_id": "v1.3-showcase"
+      },
+      "candidate": {
+        "counts": {
+          "execution_error": 0,
+          "failed": 7,
+          "same_ast_return": 11,
+          "total": 29,
+          "unsupported": 4,
+          "verified_equivalent_ast": 0,
+          "verifier_recovered": 18,
+          "verifier_recovery_rate": 0.6206896551724138
+        },
+        "label": "v1.4-showcase",
+        "path": "artifacts/campaigns/v1.4-showcase",
+        "preset": "showcase",
+        "suite_id": "v1.3-showcase"
+      }
+    }
+  ],
+  "categories": {
+    "beer_perturbation": {
+      "baseline": {
+        "failed": 6,
+        "failure_rate": 0.2857142857142857,
+        "median_best_loss": 5.2362491614337876e-33,
+        "median_post_snap_loss": 4.542698990054559e-32,
+        "median_runtime_seconds": 13.010343291971367,
+        "total": 21,
+        "unsupported": 0,
+        "unsupported_rate": 0.0,
+        "verifier_recovered": 15,
+        "verifier_recovery_rate": 0.7142857142857143
+      },
+      "candidate": {
+        "failed": 6,
+        "failure_rate": 0.2857142857142857,
+        "median_best_loss": 5.2362491614337876e-33,
+        "median_post_snap_loss": 4.542698990054559e-32,
+        "median_runtime_seconds": 12.87439362501027,
+        "total": 21,
+        "unsupported": 0,
+        "unsupported_rate": 0.0,
+        "verifier_recovered": 15,
+        "verifier_recovery_rate": 0.7142857142857143
+      },
+      "delta": {
+        "failure_rate": 0.0,
+        "median_best_loss": 0.0,
+        "median_post_snap_loss": 0.0,
+        "median_runtime_seconds": -0.13594966696109623,
+        "unsupported_rate": 0.0,
+        "verifier_recovery_rate": 0.0
+      },
+      "verdict": "unchanged"
+    },
+    "blind_recovery": {
+      "baseline": {
+        "failed": 12,
+        "failure_rate": 0.8,
+        "median_best_loss": 1.6346277048832631,
+        "median_post_snap_loss": 31.88239850629235,
+        "median_runtime_seconds": 0.2133667500456795,
+        "total": 15,
+        "unsupported": 0,
+        "unsupported_rate": 0.0,
+        "verifier_recovered": 3,
+        "verifier_recovery_rate": 0.2
+      },
+      "candidate": {
+        "failed": 5,
+        "failure_rate": 0.3333333333333333,
+        "median_best_loss": 1.140311021239276e-32,
+        "median_post_snap_loss": 1.140311021239276e-32,
+        "median_runtime_seconds": 0.6180987089755945,
+        "total": 15,
+        "unsupported": 0,
+        "unsupported_rate": 0.0,
+        "verifier_recovered": 10,
+        "verifier_recovery_rate": 0.6666666666666666
+      },
+      "delta": {
+        "failure_rate": -0.46666666666666673,
+        "median_best_loss": -1.6346277048832631,
+        "median_post_snap_loss": -31.88239850629235,
+        "median_runtime_seconds": 0.404731958929915,
+        "unsupported_rate": 0.0,
+        "verifier_recovery_rate": 0.4666666666666666
+      },
+      "verdict": "improved"
+    },
+    "compiler_coverage": {
+      "baseline": {
+        "failed": 0,
+        "failure_rate": 0.0,
+        "median_best_loss": null,
+        "median_post_snap_loss": null,
+        "median_runtime_seconds": 0.010928250034339726,
+        "total": 9,
+        "unsupported": 9,
+        "unsupported_rate": 1.0,
+        "verifier_recovered": 0,
+        "verifier_recovery_rate": 0.0
+      },
+      "candidate": {
+        "failed": 0,
+        "failure_rate": 0.0,
+        "median_best_loss": null,
+        "median_post_snap_loss": null,
+        "median_runtime_seconds": 0.014028790988959372,
+        "total": 9,
+        "unsupported": 7,
+        "unsupported_rate": 0.7777777777777778,
+        "verifier_recovered": 2,
+        "verifier_recovery_rate": 0.2222222222222222
+      },
+      "delta": {
+        "failure_rate": 0.0,
+        "median_best_loss": null,
+        "median_post_snap_loss": null,
+        "median_runtime_seconds": 0.003100540954619646,
+        "unsupported_rate": -0.2222222222222222,
+        "verifier_recovery_rate": 0.2222222222222222
+      },
+      "verdict": "improved"
+    },
+    "overall": {
+      "baseline": {
+        "failed": 18,
+        "failure_rate": 0.4,
+        "median_best_loss": 0.10977647819864712,
+        "median_post_snap_loss": 4.542698990054559e-32,
+        "median_runtime_seconds": 0.46600499999476597,
+        "total": 45,
+        "unsupported": 9,
+        "unsupported_rate": 0.2,
+        "verifier_recovered": 18,
+        "verifier_recovery_rate": 0.4
+      },
+      "candidate": {
+        "failed": 11,
+        "failure_rate": 0.24444444444444444,
+        "median_best_loss": 5.246927387051346e-33,
+        "median_post_snap_loss": 4.5030170044832595e-32,
+        "median_runtime_seconds": 1.2839712919667363,
+        "total": 45,
+        "unsupported": 7,
+        "unsupported_rate": 0.15555555555555556,
+        "verifier_recovered": 27,
+        "verifier_recovery_rate": 0.6
+      },
+      "delta": {
+        "failure_rate": -0.15555555555555559,
+        "median_best_loss": -0.10977647819864712,
+        "median_post_snap_loss": -3.9681985571299305e-34,
+        "median_runtime_seconds": 0.8179662919719703,
+        "unsupported_rate": -0.04444444444444445,
+        "verifier_recovery_rate": 0.19999999999999996
+      },
+      "verdict": "improved"
+    }
+  },
+  "generated_at": "2026-04-15T12:29:48.345983+00:00",
+  "reproduce_command": "PYTHONPATH=src python -m eml_symbolic_regression.cli diagnostics compare --baseline artifacts/campaigns/v1.3-standard --candidate artifacts/campaigns/v1.4-standard --baseline artifacts/campaigns/v1.3-showcase --candidate artifacts/campaigns/v1.4-showcase --output-dir artifacts/campaigns/v1.4-comparison",
+  "schema": "eml.campaign_comparison.v1"
+}

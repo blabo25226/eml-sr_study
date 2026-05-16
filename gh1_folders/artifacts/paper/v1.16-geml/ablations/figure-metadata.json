@@ -1,0 +1,35 @@
+{
+  "figures": [
+    {
+      "claim_boundary": "Exact recovery bars are zero unless verifier-gated recovery rows exist.",
+      "id": "family_recovery",
+      "path": "artifacts/paper/v1.16-geml/ablations/figures/family-recovery.svg",
+      "source": "artifacts/campaigns/v1.16-geml-pilot/tables/geml-paired-comparison.csv"
+    },
+    {
+      "claim_boundary": "Loss improvements are diagnostic only and do not count as recovery.",
+      "id": "loss_before_after_snap",
+      "path": "artifacts/paper/v1.16-geml/ablations/figures/loss-before-after-snap.svg",
+      "source": "artifacts/campaigns/v1.16-geml-pilot/tables/geml-paired-comparison.csv"
+    },
+    {
+      "claim_boundary": "Branch anomalies are shown as blockers or diagnostics, not as hidden exclusions.",
+      "id": "branch_anomalies",
+      "path": "artifacts/paper/v1.16-geml/ablations/figures/branch-anomalies.svg",
+      "source": "artifacts/campaigns/v1.16-geml-pilot/tables/geml-paired-comparison.csv"
+    },
+    {
+      "claim_boundary": "Runtime is reported for resource context and does not affect recovery classification.",
+      "id": "runtime",
+      "path": "artifacts/paper/v1.16-geml/ablations/figures/runtime.svg",
+      "source": "artifacts/campaigns/v1.16-geml-pilot/tables/geml-paired-comparison.csv"
+    },
+    {
+      "claim_boundary": "Representative panels label failed verification honestly.",
+      "id": "representative_curves",
+      "path": "artifacts/paper/v1.16-geml/ablations/figures/representative-curves.svg",
+      "source": "artifacts/campaigns/v1.16-geml-pilot/runs"
+    }
+  ],
+  "schema": "eml.v116_figure_metadata.v1"
+}

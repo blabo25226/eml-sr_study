@@ -1,0 +1,97 @@
+{
+  "candidate": {
+    "sympy": "x**3/(exp(x) - 1)"
+  },
+  "candidate_kind": "catalog_sympy",
+  "claim_status": "verified_showcase",
+  "cleanup": {
+    "cleaned": "x**3/(exp(x) - 1)",
+    "original": "x**3/(exp(x) - 1)",
+    "original_tree_size": null,
+    "verification": {
+      "candidate_kind": "catalog_sympy",
+      "high_precision_max_error": 0.0,
+      "reason": "verified_non_eml_candidate",
+      "split_results": [
+        {
+          "max_abs_error": 4.440892098500626e-16,
+          "max_imag_residue": 0.0,
+          "mse": 1.1767431960206011e-32,
+          "name": "train",
+          "passed": true
+        },
+        {
+          "max_abs_error": 2.220446049250313e-16,
+          "max_imag_residue": 0.0,
+          "mse": 1.1882987756869246e-32,
+          "name": "heldout",
+          "passed": true
+        },
+        {
+          "max_abs_error": 2.7755575615628914e-17,
+          "max_imag_residue": 0.0,
+          "mse": 1.2518544638517033e-34,
+          "name": "extrapolation",
+          "passed": true
+        }
+      ],
+      "status": "verified_showcase",
+      "tolerance": 1e-08
+    }
+  },
+  "compiled_eml": {
+    "detail": "compiled depth 24 exceeds max_depth=12",
+    "expression": "x**3/(exp(x) - 1)",
+    "reason": "depth_exceeded",
+    "status": "unsupported"
+  },
+  "demo": "planck",
+  "description": "Flagship normalized Planck spectrum from FOR_DEMO.md.",
+  "schema": "eml.demo_report.v1",
+  "stage_statuses": {
+    "catalog_showcase": "verified_showcase",
+    "compiled_seed": "unsupported",
+    "stretch": "reported",
+    "warm_start_attempt": "unsupported"
+  },
+  "stretch": {
+    "guaranteed_trained_recovery": false,
+    "reason": "normalized_planck_is_stretch_target",
+    "status": "reported"
+  },
+  "verification": {
+    "candidate_kind": "catalog_sympy",
+    "high_precision_max_error": 0.0,
+    "reason": "verified_non_eml_candidate",
+    "split_results": [
+      {
+        "max_abs_error": 4.440892098500626e-16,
+        "max_imag_residue": 0.0,
+        "mse": 1.1767431960206011e-32,
+        "name": "train",
+        "passed": true
+      },
+      {
+        "max_abs_error": 2.220446049250313e-16,
+        "max_imag_residue": 0.0,
+        "mse": 1.1882987756869246e-32,
+        "name": "heldout",
+        "passed": true
+      },
+      {
+        "max_abs_error": 2.7755575615628914e-17,
+        "max_imag_residue": 0.0,
+        "mse": 1.2518544638517033e-34,
+        "name": "extrapolation",
+        "passed": true
+      }
+    ],
+    "status": "verified_showcase",
+    "tolerance": 1e-08
+  },
+  "warm_start_eml": {
+    "detail": "warm-start requires a validated compiled EML seed",
+    "reason": "compile_failed",
+    "status": "unsupported"
+  }
+}

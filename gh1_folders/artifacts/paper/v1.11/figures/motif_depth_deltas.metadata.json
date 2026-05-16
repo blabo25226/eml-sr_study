@@ -1,0 +1,13 @@
+{
+  "claim_boundary": "depth reduction is not recovery when strict support remains false",
+  "denominator": "rows with macro diagnostics and validation metadata",
+  "figure_id": "motif_depth_deltas",
+  "included_statuses": [
+    "supported",
+    "unsupported"
+  ],
+  "schema": "eml.paper_figure_metadata.v1",
+  "source_table_csv": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.csv",
+  "source_table_json": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.json",
+  "title": "Reusable Motif Compile-Depth Reduction"
+}

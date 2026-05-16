@@ -1,0 +1,138 @@
+{
+  "counts": {
+    "evidence_classes": {
+      "perturbed_true_tree_recovered": 1,
+      "repaired_candidate": 3
+    },
+    "execution_error": 0,
+    "failed": 0,
+    "repaired_candidate": 3,
+    "same_ast_return": 1,
+    "total": 4,
+    "unsupported": 0,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 4,
+    "verifier_recovery_rate": 1.0
+  },
+  "generated_at": "2026-04-16T16:23:37.994084+00:00",
+  "output": {
+    "aggregate_json": "artifacts/proof/v1.6/campaigns/proof-basin-probes/aggregate.json",
+    "aggregate_markdown": "artifacts/proof/v1.6/campaigns/proof-basin-probes/aggregate.md",
+    "campaign_dir": "artifacts/proof/v1.6/campaigns/proof-basin-probes",
+    "figures": {
+      "beer_perturbation": "artifacts/proof/v1.6/campaigns/proof-basin-probes/figures/beer-perturbation.svg",
+      "depth_curve_recovery": "artifacts/proof/v1.6/campaigns/proof-basin-probes/figures/depth-curve-recovery.svg",
+      "failure_taxonomy": "artifacts/proof/v1.6/campaigns/proof-basin-probes/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/proof/v1.6/campaigns/proof-basin-probes/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/proof/v1.6/campaigns/proof-basin-probes/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/proof/v1.6/campaigns/proof-basin-probes/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/proof/v1.6/campaigns/proof-basin-probes/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-basin-probes/runs/proof-perturbed-basin-beer-probes",
+    "report_markdown": "artifacts/proof/v1.6/campaigns/proof-basin-probes/report.md",
+    "suite_result": "artifacts/proof/v1.6/campaigns/proof-basin-probes/suite-result.json",
+    "tables": {
+      "depth_curve_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/depth-curve.csv",
+      "failures_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/failures.csv",
+      "group_claim_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/group-claim.csv",
+      "group_depth_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/group-depth.csv",
+      "group_evidence_class_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/group-evidence-class.csv",
+      "group_failure_class_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/group-start-mode.csv",
+      "group_threshold_policy_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/group-threshold-policy.csv",
+      "headline_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/headline-metrics.csv",
+      "headline_json": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/headline-metrics.json",
+      "runs_csv": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "4 runs; declared Beer-Lambert high-noise probe rows kept outside the bounded proof denominator.",
+    "description": "Visible v1.5 Beer-Lambert perturbed-basin probe campaign outside bounded thresholds.",
+    "name": "proof-basin-probes",
+    "suite": "proof-perturbed-basin-beer-probes",
+    "tier": "proof-contract"
+  },
+  "reproducibility": {
+    "code_version": "c89610e",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign proof-basin-probes --output-root artifacts/proof/v1.6/campaigns --label proof-basin-probes --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "perturbation_noises": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/proof/v1.6/campaigns/proof-basin-probes/runs",
+    "cases": [
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 12,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "beer_lambert",
+        "id": "basin-beer-lambert-bound-probes",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 40
+        },
+        "perturbation_noise": [
+          15.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "bound_probe",
+          "beer_lambert",
+          "high_noise"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      }
+    ],
+    "description": "Visible Beer-Lambert high-noise perturbed true-tree probe rows outside the bounded proof denominator.",
+    "id": "proof-perturbed-basin-beer-probes",
+    "schema": "eml.benchmark_suite.v1"
+  },
+  "thresholds": []
+}

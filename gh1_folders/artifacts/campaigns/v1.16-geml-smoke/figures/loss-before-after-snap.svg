@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+<style>
+  .title { font: 700 24px sans-serif; fill: #1d252c; }
+  .subtitle { font: 400 14px sans-serif; fill: #4b5563; }
+  .axis { stroke: #28343d; stroke-width: 1.3; }
+  .grid { stroke: #d7dde3; stroke-width: 1; }
+  .tick { font: 12px sans-serif; fill: #51606d; }
+  .label { font: 12px sans-serif; fill: #1d252c; }
+  .value { font: 700 11px sans-serif; fill: #1d252c; }
+</style>
+<text x="86" y="38" class="title">Training Loss Before and After Snap</text>
+<text x="86" y="60" class="subtitle">-log10(loss), higher is lower loss</text>
+<line x1="86" y1="390" x2="924" y2="390" class="axis" />
+<line x1="86" y1="76" x2="86" y2="390" class="axis" />
+<line x1="81" y1="390.00" x2="924" y2="390.00" class="grid" />
+<text x="74" y="394.00" class="tick" text-anchor="end">0</text>
+<line x1="81" y1="311.50" x2="924" y2="311.50" class="grid" />
+<text x="74" y="315.50" class="tick" text-anchor="end">0.26</text>
+<line x1="81" y1="233.00" x2="924" y2="233.00" class="grid" />
+<text x="74" y="237.00" class="tick" text-anchor="end">0.53</text>
+<line x1="81" y1="154.50" x2="924" y2="154.50" class="grid" />
+<text x="74" y="158.50" class="tick" text-anchor="end">0.79</text>
+<line x1="81" y1="76.00" x2="924" y2="76.00" class="grid" />
+<text x="74" y="80.00" class="tick" text-anchor="end">1.1</text>
+<rect x="108.00" y="331.74" width="60.75" height="58.26" fill="#2f6f8f" rx="3" />
+<text x="138.38" y="323.74" class="value" text-anchor="middle">6.4e-01</text>
+<text x="138.38" y="412" class="label" text-anchor="end" transform="rotate(-35 138.38 412)">sin_pi s0 best</text>
+<rect x="212.75" y="335.04" width="60.75" height="54.96" fill="#d1495b" rx="3" />
+<text x="243.12" y="327.04" class="value" text-anchor="middle">6.5e-01</text>
+<text x="243.12" y="412" class="label" text-anchor="end" transform="rotate(-35 243.12 412)">sin_pi s0 snap</text>
+<rect x="317.50" y="390.00" width="60.75" height="0.00" fill="#4f8a3a" rx="3" />
+<text x="347.88" y="382.00" class="value" text-anchor="middle">2.1e+00</text>
+<text x="347.88" y="412" class="label" text-anchor="end" transform="rotate(-35 347.88 412)">sin_pi s0 best</text>
+<rect x="422.25" y="390.00" width="60.75" height="0.00" fill="#7a5195" rx="3" />
+<text x="452.62" y="382.00" class="value" text-anchor="middle">2.5e+00</text>
+<text x="452.62" y="412" class="label" text-anchor="end" transform="rotate(-35 452.62 412)">sin_pi s0 snap</text>
+<rect x="527.00" y="76.00" width="60.75" height="314.00" fill="#a5673f" rx="3" />
+<text x="557.38" y="68.00" class="value" text-anchor="middle">8.8e-02</text>
+<text x="557.38" y="412" class="label" text-anchor="end" transform="rotate(-35 557.38 412)">exp s0 best</text>
+<rect x="631.75" y="315.96" width="60.75" height="74.04" fill="#1f8a70" rx="3" />
+<text x="662.12" y="307.96" class="value" text-anchor="middle">5.6e-01</text>
+<text x="662.12" y="412" class="label" text-anchor="end" transform="rotate(-35 662.12 412)">exp s0 snap</text>
+<rect x="736.50" y="390.00" width="60.75" height="0.00" fill="#2f6f8f" rx="3" />
+<text x="766.88" y="382.00" class="value" text-anchor="middle">3.2e+00</text>
+<text x="766.88" y="412" class="label" text-anchor="end" transform="rotate(-35 766.88 412)">exp s0 best</text>
+<rect x="841.25" y="390.00" width="60.75" height="0.00" fill="#d1495b" rx="3" />
+<text x="871.62" y="382.00" class="value" text-anchor="middle">3.2e+00</text>
+<text x="871.62" y="412" class="label" text-anchor="end" transform="rotate(-35 871.62 412)">exp s0 snap</text>
+</svg>

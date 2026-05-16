@@ -1,0 +1,45 @@
+{
+  "columns": [
+    "suite_id",
+    "formula",
+    "start_mode",
+    "classification",
+    "count",
+    "claim_boundary"
+  ],
+  "rows": [
+    {
+      "claim_boundary": "failure and unsupported rows stay visible",
+      "classification": "snapped_but_failed",
+      "count": 1,
+      "formula": "logistic",
+      "start_mode": "blind",
+      "suite_id": "v1.11-logistic-planck-probes"
+    },
+    {
+      "claim_boundary": "failure and unsupported rows stay visible",
+      "classification": "unsupported",
+      "count": 1,
+      "formula": "logistic",
+      "start_mode": "compile",
+      "suite_id": "v1.11-logistic-planck-probes"
+    },
+    {
+      "claim_boundary": "failure and unsupported rows stay visible",
+      "classification": "failed",
+      "count": 1,
+      "formula": "planck",
+      "start_mode": "blind",
+      "suite_id": "v1.11-logistic-planck-probes"
+    },
+    {
+      "claim_boundary": "failure and unsupported rows stay visible",
+      "classification": "unsupported",
+      "count": 1,
+      "formula": "planck",
+      "start_mode": "compile",
+      "suite_id": "v1.11-logistic-planck-probes"
+    }
+  ],
+  "schema": "eml.paper_asset_table.v1"
+}

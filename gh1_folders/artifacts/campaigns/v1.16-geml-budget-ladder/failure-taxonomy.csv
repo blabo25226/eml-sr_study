@@ -1,0 +1,15 @@
+tier,pair_id,formula,target_family,seed,comparison_outcome,failure_class,actionable_next_step
+smoke,exp:seed0:depth2,exp,negative_control,0,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+smoke,sin_pi:seed0:depth3,sin_pi,periodic,0,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,cos_pi:seed0:depth3,cos_pi,periodic,0,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,cos_pi:seed1:depth3,cos_pi,periodic,1,ipi_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,exp:seed0:depth2,exp,negative_control,0,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,exp:seed1:depth2,exp,negative_control,1,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,harmonic_sum:seed0:depth3,harmonic_sum,harmonic,0,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,harmonic_sum:seed1:depth3,harmonic_sum,harmonic,1,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,log:seed0:depth2,log,negative_control,0,ipi_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,log:seed1:depth2,log,negative_control,1,ipi_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,log_periodic_oscillation:seed0:depth3,log_periodic_oscillation,log_periodic,0,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,log_periodic_oscillation:seed1:depth3,log_periodic_oscillation,log_periodic,1,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,sin_pi:seed0:depth3,sin_pi,periodic,0,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.
+pilot,sin_pi:seed1:depth3,sin_pi,periodic,1,raw_lower_post_snap_mse,loss_only_signal,Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.

@@ -1,0 +1,9 @@
+group,total,verifier_recovered,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate
+beer_lambert,6,4,4,0,0,2,0,0.6666666666666666,0.0,0.3333333333333333
+exp,2,2,0,0,0,0,0,1.0,0.0,0.0
+log,2,2,0,0,0,0,0,1.0,0.0,0.0
+logistic,1,0,0,0,1,0,0,0.0,1.0,0.0
+michaelis_menten,1,0,0,0,1,0,0,0.0,1.0,0.0
+planck,1,0,0,0,1,0,0,0.0,1.0,0.0
+radioactive_decay,2,0,0,0,0,2,0,0.0,0.0,1.0
+shockley,1,1,0,0,0,0,0,1.0,0.0,0.0

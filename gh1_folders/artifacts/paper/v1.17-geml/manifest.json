@@ -1,0 +1,38 @@
+{
+  "broader_campaign_gate": "block_broader_campaigns",
+  "claim_audit": {
+    "json": "artifacts/paper/v1.17-geml/claim-audit.json",
+    "markdown": "artifacts/paper/v1.17-geml/claim-audit.md",
+    "status": "passed"
+  },
+  "claim_audit_status": "passed",
+  "claim_boundary": "v1.17 is an additive snap-first analysis over the intact v1.16 package. Exact-signal claims require verifier-gated natural exact recovery, loss-only rows remain diagnostic, and the v1.16 failure taxonomy remains the context for non-recovery rows.",
+  "decision": "still_inconclusive",
+  "exact_signal_found": false,
+  "final_decision": "artifacts/paper/v1.17-geml/final-decision.json",
+  "generated_at": "2026-04-22T12:43:50.943768+00:00",
+  "input_dirs": {
+    "neighborhoods_dir": "artifacts/paper/v1.17-geml/neighborhoods",
+    "ranking_dir": "artifacts/paper/v1.17-geml/ranking",
+    "sandbox_dir": "artifacts/paper/v1.17-geml/sandbox",
+    "snap_diagnostics_dir": "artifacts/paper/v1.17-geml/snap-diagnostics",
+    "v116_package_dir": "artifacts/paper/v1.16-geml"
+  },
+  "next_campaign_allowed": false,
+  "outputs": {
+    "claim_audit_json": "artifacts/paper/v1.17-geml/claim-audit.json",
+    "claim_audit_md": "artifacts/paper/v1.17-geml/claim-audit.md",
+    "final_decision_json": "artifacts/paper/v1.17-geml/final-decision.json",
+    "final_decision_md": "artifacts/paper/v1.17-geml/final-decision.md",
+    "manifest_json": "artifacts/paper/v1.17-geml/manifest.json",
+    "output_dir": "artifacts/paper/v1.17-geml",
+    "package_readme_md": "artifacts/paper/v1.17-geml/README.md",
+    "reproduction_md": "artifacts/paper/v1.17-geml/reproduction.md",
+    "source_locks_json": "artifacts/paper/v1.17-geml/source-locks.json"
+  },
+  "package_readme": "artifacts/paper/v1.17-geml/README.md",
+  "reproduction": "artifacts/paper/v1.17-geml/reproduction.md",
+  "schema": "eml.v117_evidence_package.v1",
+  "source_locks": "artifacts/paper/v1.17-geml/source-locks.json",
+  "source_locks_ok": true
+}

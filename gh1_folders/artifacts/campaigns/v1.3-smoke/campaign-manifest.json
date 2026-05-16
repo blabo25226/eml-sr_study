@@ -1,0 +1,168 @@
+{
+  "counts": {
+    "execution_error": 0,
+    "failed": 1,
+    "same_ast_return": 1,
+    "total": 3,
+    "unsupported": 1,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 1,
+    "verifier_recovery_rate": 0.3333333333333333
+  },
+  "generated_at": "2026-04-15T11:41:48.122490+00:00",
+  "output": {
+    "aggregate_json": "artifacts/campaigns/v1.3-smoke/aggregate.json",
+    "aggregate_markdown": "artifacts/campaigns/v1.3-smoke/aggregate.md",
+    "campaign_dir": "artifacts/campaigns/v1.3-smoke",
+    "figures": {
+      "beer_perturbation": "artifacts/campaigns/v1.3-smoke/figures/beer-perturbation.svg",
+      "failure_taxonomy": "artifacts/campaigns/v1.3-smoke/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/campaigns/v1.3-smoke/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/campaigns/v1.3-smoke/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/campaigns/v1.3-smoke/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/campaigns/v1.3-smoke/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/campaigns/v1.3-smoke/runs/smoke",
+    "report_markdown": "artifacts/campaigns/v1.3-smoke/report.md",
+    "suite_result": "artifacts/campaigns/v1.3-smoke/suite-result.json",
+    "tables": {
+      "failures_csv": "artifacts/campaigns/v1.3-smoke/tables/failures.csv",
+      "group_depth_csv": "artifacts/campaigns/v1.3-smoke/tables/group-depth.csv",
+      "group_failure_class_csv": "artifacts/campaigns/v1.3-smoke/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/campaigns/v1.3-smoke/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/campaigns/v1.3-smoke/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/campaigns/v1.3-smoke/tables/group-start-mode.csv",
+      "headline_csv": "artifacts/campaigns/v1.3-smoke/tables/headline-metrics.csv",
+      "headline_json": "artifacts/campaigns/v1.3-smoke/tables/headline-metrics.json",
+      "runs_csv": "artifacts/campaigns/v1.3-smoke/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "3 runs; shallow blind baseline, one warm-start recovery path, one unsupported diagnostic.",
+    "description": "Fast campaign for CI and development checks.",
+    "name": "smoke",
+    "suite": "smoke",
+    "tier": "ci"
+  },
+  "reproducibility": {
+    "code_version": "96efa5f",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign smoke --output-root artifacts/campaigns --label v1.3-smoke --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/campaigns/v1.3-smoke/runs",
+    "cases": [
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind",
+        "optimizer": {
+          "depth": 1,
+          "lr": 0.05,
+          "max_compile_depth": 12,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 6,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "smoke",
+          "blind"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "beer_lambert",
+        "id": "beer-warm",
+        "optimizer": {
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 12,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "smoke",
+          "warm_start"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic",
+        "optimizer": {
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 12,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "smoke",
+          "stretch"
+        ]
+      }
+    ],
+    "description": "Fast CI-scale benchmark contract smoke suite.",
+    "id": "smoke",
+    "schema": "eml.benchmark_suite.v1"
+  }
+}

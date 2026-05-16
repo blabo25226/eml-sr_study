@@ -1,0 +1,191 @@
+{
+  "generated_at": "2026-04-22T12:43:50.942723+00:00",
+  "inputs": [
+    {
+      "bytes": 1058,
+      "path": "artifacts/paper/v1.16-geml/manifest.json",
+      "required": true,
+      "role": "input",
+      "sha256": "0545e4bbdfb03da4d8899bc0dcc7e62bfcec343bf30c84847067032e423f696a",
+      "source_id": "v116_package_manifest",
+      "status": "locked"
+    },
+    {
+      "bytes": 1221,
+      "path": "artifacts/paper/v1.17-geml/snap-diagnostics/manifest.json",
+      "required": true,
+      "role": "input",
+      "sha256": "dbc1ed425c5a0d636f77b45ffc8bf66ea300727ade193bce23e86e7cba3a72ea",
+      "source_id": "snap_diagnostics_manifest",
+      "status": "locked"
+    },
+    {
+      "bytes": 30124,
+      "path": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-diagnostics.json",
+      "required": true,
+      "role": "input",
+      "sha256": "be7730fb0476cf076641e2dbbe6c375596254bfe6b432c1d98a411602eb6c8ee",
+      "source_id": "snap_diagnostics",
+      "status": "locked"
+    },
+    {
+      "bytes": 18046,
+      "path": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-neighborhood-seeds.json",
+      "required": true,
+      "role": "input",
+      "sha256": "d6380e7d10dc15f82b06e2e1e89c191ba4c3c0523fa3d341c264bec246ba862f",
+      "source_id": "snap_neighborhood_seeds",
+      "status": "locked"
+    },
+    {
+      "bytes": 1120,
+      "path": "artifacts/paper/v1.17-geml/neighborhoods/manifest.json",
+      "required": true,
+      "role": "input",
+      "sha256": "7cb78be28576c363efe36ebe7372415a4e07a06724fbd90c5e4340573af192ce",
+      "source_id": "neighborhood_manifest",
+      "status": "locked"
+    },
+    {
+      "bytes": 17217,
+      "path": "artifacts/paper/v1.17-geml/neighborhoods/neighborhood-candidates.json",
+      "required": true,
+      "role": "input",
+      "sha256": "7c2c8ea678976aaef5b2fdcf78b7ac30566d8931b91d6c0e83b5bd34485fbd9f",
+      "source_id": "neighborhood_candidates",
+      "status": "locked"
+    },
+    {
+      "bytes": 1054,
+      "path": "artifacts/paper/v1.17-geml/ranking/manifest.json",
+      "required": true,
+      "role": "input",
+      "sha256": "d86c5e0645a8b19d65dbbda623b533606feecea60ef57227cadfc3d3f252a7c0",
+      "source_id": "ranking_manifest",
+      "status": "locked"
+    },
+    {
+      "bytes": 21634,
+      "path": "artifacts/paper/v1.17-geml/ranking/ranked-candidates.json",
+      "required": true,
+      "role": "input",
+      "sha256": "a31a2e8de864a22e5b3b111e0f02daf59a5ed99288305579c5f125a435af01e7",
+      "source_id": "ranked_candidates",
+      "status": "locked"
+    },
+    {
+      "bytes": 990,
+      "path": "artifacts/paper/v1.17-geml/sandbox/manifest.json",
+      "required": true,
+      "role": "input",
+      "sha256": "427e30e48cf0c6d45fc3c7dd24cc7e0ba1db84eb848533e4402a9d7473110029",
+      "source_id": "sandbox_manifest",
+      "status": "locked"
+    },
+    {
+      "bytes": 2990,
+      "path": "artifacts/paper/v1.17-geml/sandbox/sandbox-results.json",
+      "required": true,
+      "role": "input",
+      "sha256": "2a17720c248a7b0975878b290fda81d9f8a6c1a1cd6bdc33bf0305ea2d33b473",
+      "source_id": "sandbox_results",
+      "status": "locked"
+    },
+    {
+      "bytes": 4155,
+      "path": "artifacts/paper/v1.16-geml/source-locks.json",
+      "required": false,
+      "role": "input",
+      "sha256": "c73fa521294892bba172681424dbe36eafd5fd932d19926f144509b2ff604fc5",
+      "source_id": "v116_source_locks",
+      "status": "locked"
+    },
+    {
+      "bytes": 1580,
+      "path": "artifacts/paper/v1.16-geml/claim-audit.json",
+      "required": false,
+      "role": "input",
+      "sha256": "07bc80eed573d3b82c498277732696372838deeeda028b5d73090b42c2358eca",
+      "source_id": "v116_claim_audit",
+      "status": "locked"
+    },
+    {
+      "bytes": 395,
+      "path": "artifacts/paper/v1.16-geml/reproduction.md",
+      "required": false,
+      "role": "input",
+      "sha256": "8e6cb5d7d3f9955ceedfe3178400ab32af513990c2930c8f44342594e8c84fc1",
+      "source_id": "v116_reproduction",
+      "status": "locked"
+    },
+    {
+      "bytes": 2791,
+      "path": "artifacts/paper/v1.16-geml/gate-evaluation.json",
+      "required": false,
+      "role": "input",
+      "sha256": "191d582c8ea2c69ecae4f0125d6fdff0d620865f2cd91755ac9f83fae426936e",
+      "source_id": "v116_gate_evaluation",
+      "status": "locked"
+    },
+    {
+      "bytes": 2591,
+      "path": "artifacts/paper/v1.16-geml/ablations/failure-examples.json",
+      "required": false,
+      "role": "input",
+      "sha256": "aaf840f6d755aee24c8918dba6793def7f6d8e50bbb9a9ceccd089617ee74ebf",
+      "source_id": "v116_failure_taxonomy_reference",
+      "status": "locked"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 3182,
+      "path": "artifacts/paper/v1.17-geml/final-decision.json",
+      "role": "output",
+      "sha256": "21b67b95206b73bd6ef9bc6eaf251108c84fc8c2fe12bdba2c03b735f0f9c175",
+      "source_id": "final_decision_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 632,
+      "path": "artifacts/paper/v1.17-geml/final-decision.md",
+      "role": "output",
+      "sha256": "32f21133e1de24ba1207df65c012c1dbc05841e338ca06efc65d884314989aaa",
+      "source_id": "final_decision_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 1703,
+      "path": "artifacts/paper/v1.17-geml/claim-audit.json",
+      "role": "output",
+      "sha256": "d8d64966740f93c0aeb7a06081bdde20208ac8d3322a00ea54e55738a82b427f",
+      "source_id": "claim_audit_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 1078,
+      "path": "artifacts/paper/v1.17-geml/claim-audit.md",
+      "role": "output",
+      "sha256": "8eb3f6ca47717067b6b5c9ee17c6e25fed325953904810f41daf431dad4508fc",
+      "source_id": "claim_audit_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 1305,
+      "path": "artifacts/paper/v1.17-geml/README.md",
+      "role": "output",
+      "sha256": "1e0375323d0483b91e15884ff6d4c17918a072b6fcf2e520bed4cbf8b46ee86e",
+      "source_id": "package_readme",
+      "status": "locked"
+    },
+    {
+      "bytes": 1334,
+      "path": "artifacts/paper/v1.17-geml/reproduction.md",
+      "role": "output",
+      "sha256": "1443d32f8d0a3a0c8472709dd3f267bd8a905b309533366ae051182f9818d8e1",
+      "source_id": "reproduction",
+      "status": "locked"
+    }
+  ],
+  "schema": "eml.v117_source_locks.v1"
+}

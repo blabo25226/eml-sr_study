@@ -1,0 +1,83 @@
+{
+  "rows": [
+    {
+      "both_recovered": 0,
+      "decision_class": "not_run",
+      "declared_targets": 1,
+      "ipi_lower_post_snap_mse": 0,
+      "ipi_recovery_wins": 0,
+      "loss_only_outcomes": 0,
+      "neither_recovered": 0,
+      "paired_rows": 0,
+      "raw_lower_post_snap_mse": 0,
+      "raw_recovery_wins": 0,
+      "target_family": "damped_oscillation"
+    },
+    {
+      "both_recovered": 0,
+      "decision_class": "not_run",
+      "declared_targets": 1,
+      "ipi_lower_post_snap_mse": 0,
+      "ipi_recovery_wins": 0,
+      "loss_only_outcomes": 0,
+      "neither_recovered": 0,
+      "paired_rows": 0,
+      "raw_lower_post_snap_mse": 0,
+      "raw_recovery_wins": 0,
+      "target_family": "harmonic"
+    },
+    {
+      "both_recovered": 0,
+      "decision_class": "not_run",
+      "declared_targets": 1,
+      "ipi_lower_post_snap_mse": 0,
+      "ipi_recovery_wins": 0,
+      "loss_only_outcomes": 0,
+      "neither_recovered": 0,
+      "paired_rows": 0,
+      "raw_lower_post_snap_mse": 0,
+      "raw_recovery_wins": 0,
+      "target_family": "log_periodic"
+    },
+    {
+      "both_recovered": 0,
+      "decision_class": "raw_loss_only_signal",
+      "declared_targets": 4,
+      "ipi_lower_post_snap_mse": 0,
+      "ipi_recovery_wins": 0,
+      "loss_only_outcomes": 1,
+      "neither_recovered": 1,
+      "paired_rows": 1,
+      "raw_lower_post_snap_mse": 1,
+      "raw_recovery_wins": 0,
+      "target_family": "negative_control"
+    },
+    {
+      "both_recovered": 0,
+      "decision_class": "ipi_loss_only_signal",
+      "declared_targets": 2,
+      "ipi_lower_post_snap_mse": 1,
+      "ipi_recovery_wins": 0,
+      "loss_only_outcomes": 1,
+      "neither_recovered": 1,
+      "paired_rows": 1,
+      "raw_lower_post_snap_mse": 0,
+      "raw_recovery_wins": 0,
+      "target_family": "periodic"
+    },
+    {
+      "both_recovered": 0,
+      "decision_class": "not_run",
+      "declared_targets": 1,
+      "ipi_lower_post_snap_mse": 0,
+      "ipi_recovery_wins": 0,
+      "loss_only_outcomes": 0,
+      "neither_recovered": 0,
+      "paired_rows": 0,
+      "raw_lower_post_snap_mse": 0,
+      "raw_recovery_wins": 0,
+      "target_family": "standing_wave"
+    }
+  ],
+  "schema": "eml.v115_geml_target_family_classification.v1"
+}

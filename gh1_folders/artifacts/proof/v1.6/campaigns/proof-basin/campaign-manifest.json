@@ -1,0 +1,338 @@
+{
+  "counts": {
+    "evidence_classes": {
+      "perturbed_true_tree_recovered": 9
+    },
+    "execution_error": 0,
+    "failed": 0,
+    "repaired_candidate": 0,
+    "same_ast_return": 9,
+    "total": 9,
+    "unsupported": 0,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 9,
+    "verifier_recovery_rate": 1.0
+  },
+  "generated_at": "2026-04-16T16:22:59.263564+00:00",
+  "output": {
+    "aggregate_json": "artifacts/proof/v1.6/campaigns/proof-basin/aggregate.json",
+    "aggregate_markdown": "artifacts/proof/v1.6/campaigns/proof-basin/aggregate.md",
+    "campaign_dir": "artifacts/proof/v1.6/campaigns/proof-basin",
+    "figures": {
+      "beer_perturbation": "artifacts/proof/v1.6/campaigns/proof-basin/figures/beer-perturbation.svg",
+      "depth_curve_recovery": "artifacts/proof/v1.6/campaigns/proof-basin/figures/depth-curve-recovery.svg",
+      "failure_taxonomy": "artifacts/proof/v1.6/campaigns/proof-basin/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/proof/v1.6/campaigns/proof-basin/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/proof/v1.6/campaigns/proof-basin/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/proof/v1.6/campaigns/proof-basin/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/proof/v1.6/campaigns/proof-basin/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-basin/runs/proof-perturbed-basin",
+    "report_markdown": "artifacts/proof/v1.6/campaigns/proof-basin/report.md",
+    "suite_result": "artifacts/proof/v1.6/campaigns/proof-basin/suite-result.json",
+    "tables": {
+      "depth_curve_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/depth-curve.csv",
+      "failures_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/failures.csv",
+      "group_claim_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/group-claim.csv",
+      "group_depth_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/group-depth.csv",
+      "group_evidence_class_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/group-evidence-class.csv",
+      "group_failure_class_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/group-start-mode.csv",
+      "group_threshold_policy_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/group-threshold-policy.csv",
+      "headline_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/headline-metrics.csv",
+      "headline_json": "artifacts/proof/v1.6/campaigns/proof-basin/tables/headline-metrics.json",
+      "runs_csv": "artifacts/proof/v1.6/campaigns/proof-basin/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "CI-scale perturbed basin proof suite; high-noise probes are reported separately",
+    "description": "Bounded v1.5 perturbed basin proof campaign with Beer-Lambert probe evidence reported separately.",
+    "name": "proof-basin",
+    "suite": "proof-perturbed-basin",
+    "tier": "proof-contract"
+  },
+  "reproducibility": {
+    "code_version": "c89610e",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign proof-basin --output-root artifacts/proof/v1.6/campaigns --label proof-basin --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "perturbation_noises": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/proof/v1.6/campaigns/proof-basin/runs",
+    "cases": [
+      {
+        "claim_id": "paper-perturbed-true-tree-basin",
+        "dataset": {
+          "points": 12,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "basin_depth1_exp",
+        "id": "basin-depth1-perturbed",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 12
+        },
+        "perturbation_noise": [
+          0.05,
+          0.25
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "perturbed_tree"
+        ],
+        "threshold_policy_id": "bounded_100_percent",
+        "training_mode": "perturbed_true_tree_training"
+      },
+      {
+        "claim_id": "paper-perturbed-true-tree-basin",
+        "dataset": {
+          "points": 12,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "basin_depth2_exp_exp",
+        "id": "basin-depth2-perturbed",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 16
+        },
+        "perturbation_noise": [
+          0.05,
+          0.1
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "perturbed_tree"
+        ],
+        "threshold_policy_id": "bounded_100_percent",
+        "training_mode": "perturbed_true_tree_training"
+      },
+      {
+        "claim_id": "paper-perturbed-true-tree-basin",
+        "dataset": {
+          "points": 12,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "basin_depth3_exp_exp_exp",
+        "id": "basin-depth3-perturbed",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 20
+        },
+        "perturbation_noise": [
+          0.05
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "perturbed_tree"
+        ],
+        "threshold_policy_id": "bounded_100_percent",
+        "training_mode": "perturbed_true_tree_training"
+      },
+      {
+        "claim_id": "paper-perturbed-true-tree-basin",
+        "dataset": {
+          "points": 12,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "beer_lambert",
+        "id": "basin-beer-lambert-bound",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 40
+        },
+        "perturbation_noise": [
+          5.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.5",
+          "proof",
+          "bounded",
+          "perturbed_tree"
+        ],
+        "threshold_policy_id": "bounded_100_percent",
+        "training_mode": "perturbed_true_tree_training"
+      }
+    ],
+    "description": "Bounded v1.5 perturbed true-tree basin proof suite with declared nonzero perturbation envelopes.",
+    "id": "proof-perturbed-basin",
+    "schema": "eml.benchmark_suite.v1"
+  },
+  "thresholds": [
+    {
+      "claim_class": "bounded_training_proof",
+      "claim_id": "paper-perturbed-true-tree-basin",
+      "eligible": 9,
+      "evidence_classes": {
+        "perturbed_true_tree_recovered": 9
+      },
+      "failed": 0,
+      "passed": 9,
+      "rate": 1.0,
+      "required_rate": 1.0,
+      "status": "passed",
+      "threshold": {
+        "allowed_evidence_classes": [
+          "blind_training_recovered",
+          "compiler_warm_start_recovered",
+          "perturbed_true_tree_recovered",
+          "repaired_candidate",
+          "verified_equivalent"
+        ],
+        "description": "Declared bounded proof suites pass only at 100% verifier-owned training recovery.",
+        "fail_on_execution_error": true,
+        "fail_on_unsupported": true,
+        "id": "bounded_100_percent",
+        "policy_type": "bounded_rate",
+        "required_rate": 1.0
+      },
+      "threshold_policy_id": "bounded_100_percent"
+    }
+  ]
+}

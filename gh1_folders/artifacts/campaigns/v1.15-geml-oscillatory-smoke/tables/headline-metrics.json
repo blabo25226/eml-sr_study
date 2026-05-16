@@ -1,0 +1,21 @@
+{
+  "compile_only_verified_support": 0,
+  "compile_only_verified_support_rate": 0.0,
+  "failed": 2,
+  "failure_rate": 0.5,
+  "median_best_loss": 0.722201885956296,
+  "median_post_snap_loss": 0.6087069361070284,
+  "median_runtime_seconds": 1.2195045624976046,
+  "same_ast_return": 0,
+  "same_ast_return_rate": 0.0,
+  "total_runs": 4,
+  "trained_exact_recovery": 0,
+  "trained_exact_recovery_rate": 0.0,
+  "unsupported": 0,
+  "unsupported_rate": 0.0,
+  "verification_passed": 0,
+  "verification_passed_rate": 0.0,
+  "verified_equivalent_ast": 0,
+  "verifier_recovered": 0,
+  "verifier_recovery_rate": 0.0
+}

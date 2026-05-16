@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+<style>
+  .title { font: 700 24px sans-serif; fill: #1d252c; }
+  .subtitle { font: 400 14px sans-serif; fill: #4b5563; }
+  .axis { stroke: #28343d; stroke-width: 1.3; }
+  .grid { stroke: #d7dde3; stroke-width: 1; }
+  .tick { font: 12px sans-serif; fill: #51606d; }
+  .label { font: 12px sans-serif; fill: #1d252c; }
+  .value { font: 700 11px sans-serif; fill: #1d252c; }
+</style>
+<text x="86" y="38" class="title">Training Loss Before and After Snap</text>
+<text x="86" y="60" class="subtitle">-log10(loss), higher is lower loss</text>
+<line x1="86" y1="390" x2="924" y2="390" class="axis" />
+<line x1="86" y1="76" x2="86" y2="390" class="axis" />
+<line x1="81" y1="390.00" x2="924" y2="390.00" class="grid" />
+<text x="74" y="394.00" class="tick" text-anchor="end">0</text>
+<line x1="81" y1="311.50" x2="924" y2="311.50" class="grid" />
+<text x="74" y="315.50" class="tick" text-anchor="end">4</text>
+<line x1="81" y1="233.00" x2="924" y2="233.00" class="grid" />
+<text x="74" y="237.00" class="tick" text-anchor="end">8</text>
+<line x1="81" y1="154.50" x2="924" y2="154.50" class="grid" />
+<text x="74" y="158.50" class="tick" text-anchor="end">12</text>
+<line x1="81" y1="76.00" x2="924" y2="76.00" class="grid" />
+<text x="74" y="80.00" class="tick" text-anchor="end">16</text>
+<rect x="95.78" y="76.00" width="27.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="109.28" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="109.28" y="412" class="label" text-anchor="end" transform="rotate(-35 109.28 412)">basin_depth1_exp s0 best</text>
+<rect x="142.33" y="76.00" width="27.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="155.83" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="155.83" y="412" class="label" text-anchor="end" transform="rotate(-35 155.83 412)">basin_depth1_exp s0 snap</text>
+<rect x="188.89" y="76.00" width="27.00" height="314.00" fill="#4f8a3a" rx="3" />
+<text x="202.39" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="202.39" y="412" class="label" text-anchor="end" transform="rotate(-35 202.39 412)">basin_depth1_exp s0 best</text>
+<rect x="235.44" y="76.00" width="27.00" height="314.00" fill="#7a5195" rx="3" />
+<text x="248.94" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="248.94" y="412" class="label" text-anchor="end" transform="rotate(-35 248.94 412)">basin_depth1_exp s0 snap</text>
+<rect x="282.00" y="76.00" width="27.00" height="314.00" fill="#a5673f" rx="3" />
+<text x="295.50" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="295.50" y="412" class="label" text-anchor="end" transform="rotate(-35 295.50 412)">basin_depth1_exp s1 best</text>
+<rect x="328.55" y="76.00" width="27.00" height="314.00" fill="#1f8a70" rx="3" />
+<text x="342.06" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="342.06" y="412" class="label" text-anchor="end" transform="rotate(-35 342.06 412)">basin_depth1_exp s1 snap</text>
+<rect x="375.11" y="76.00" width="27.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="388.61" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="388.61" y="412" class="label" text-anchor="end" transform="rotate(-35 388.61 412)">basin_depth1_exp s1 best</text>
+<rect x="421.67" y="76.00" width="27.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="435.17" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="435.17" y="412" class="label" text-anchor="end" transform="rotate(-35 435.17 412)">basin_depth1_exp s1 snap</text>
+<rect x="468.22" y="76.00" width="27.00" height="314.00" fill="#4f8a3a" rx="3" />
+<text x="481.72" y="68.00" class="value" text-anchor="middle">1.2e-208</text>
+<text x="481.72" y="412" class="label" text-anchor="end" transform="rotate(-35 481.72 412)">basin_depth2_exp_exp s0 best</text>
+<rect x="514.78" y="76.00" width="27.00" height="314.00" fill="#7a5195" rx="3" />
+<text x="528.28" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="528.28" y="412" class="label" text-anchor="end" transform="rotate(-35 528.28 412)">basin_depth2_exp_exp s0 snap</text>
+<rect x="561.33" y="76.00" width="27.00" height="314.00" fill="#a5673f" rx="3" />
+<text x="574.83" y="68.00" class="value" text-anchor="middle">5.3e-209</text>
+<text x="574.83" y="412" class="label" text-anchor="end" transform="rotate(-35 574.83 412)">basin_depth2_exp_exp s0 best</text>
+<rect x="607.89" y="76.00" width="27.00" height="314.00" fill="#1f8a70" rx="3" />
+<text x="621.39" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="621.39" y="412" class="label" text-anchor="end" transform="rotate(-35 621.39 412)">basin_depth2_exp_exp s0 snap</text>
+<rect x="654.44" y="76.00" width="27.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="667.94" y="68.00" class="value" text-anchor="middle">7.9e-210</text>
+<text x="667.94" y="412" class="label" text-anchor="end" transform="rotate(-35 667.94 412)">basin_depth3_exp_exp_exp s0 best</text>
+<rect x="701.00" y="76.00" width="27.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="714.50" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="714.50" y="412" class="label" text-anchor="end" transform="rotate(-35 714.50 412)">basin_depth3_exp_exp_exp s0 snap</text>
+<rect x="747.55" y="76.00" width="27.00" height="314.00" fill="#4f8a3a" rx="3" />
+<text x="761.06" y="68.00" class="value" text-anchor="middle">4.4e-33</text>
+<text x="761.06" y="412" class="label" text-anchor="end" transform="rotate(-35 761.06 412)">beer_lambert s0 best</text>
+<rect x="794.11" y="76.00" width="27.00" height="314.00" fill="#7a5195" rx="3" />
+<text x="807.61" y="68.00" class="value" text-anchor="middle">4.9e-32</text>
+<text x="807.61" y="412" class="label" text-anchor="end" transform="rotate(-35 807.61 412)">beer_lambert s0 snap</text>
+<rect x="840.67" y="76.00" width="27.00" height="314.00" fill="#a5673f" rx="3" />
+<text x="854.17" y="68.00" class="value" text-anchor="middle">1.8e-33</text>
+<text x="854.17" y="412" class="label" text-anchor="end" transform="rotate(-35 854.17 412)">beer_lambert s1 best</text>
+<rect x="887.22" y="76.00" width="27.00" height="314.00" fill="#1f8a70" rx="3" />
+<text x="900.72" y="68.00" class="value" text-anchor="middle">4.2e-32</text>
+<text x="900.72" y="412" class="label" text-anchor="end" transform="rotate(-35 900.72 412)">beer_lambert s1 snap</text>
+</svg>

@@ -1,0 +1,146 @@
+{
+  "category": "parameter_identifiability_stress",
+  "classification": "synthetic",
+  "compatible_contracts": [
+    "verifier",
+    "benchmark_track",
+    "baseline_harness"
+  ],
+  "data_path": null,
+  "dataset_id": "michaelis_parameter_identifiability",
+  "description": "Synthetic Michaelis-Menten parameter-identifiability stress with low-substrate and saturation-biased splits.",
+  "domain_constraints": {
+    "x": {
+      "max": 7.0,
+      "min": 0.05,
+      "positive": true
+    }
+  },
+  "formula_id": "michaelis_menten",
+  "generator": "split_domains_selected_to_stress_vmax_km_identifiability",
+  "manifest_sha256": "e5b08f7c5f84a9258d30d9d1fc3953362d3f7efc3c78606af9d08aebeca8918c",
+  "noise_policy": {
+    "type": "none"
+  },
+  "points": 32,
+  "schema": "eml.expanded_dataset_manifest.v1",
+  "seed": 0,
+  "source": "generated_from_michaelis_menten_formula_with_fixed_parameters",
+  "source_url": null,
+  "split_policy": {
+    "roles": {
+      "extrapolation": "diagnostic",
+      "final_confirmation": "final_confirmation",
+      "heldout": "diagnostic",
+      "selection": "selection",
+      "train": "training"
+    },
+    "type": "domain_shift_identifiability"
+  },
+  "splits": [
+    {
+      "count": 32,
+      "domain": {
+        "x": [
+          0.05,
+          0.9
+        ]
+      },
+      "input_sha256": {
+        "x": "da27fe250309c99ebafaa63debb1ba1a1483dc60199fcbd3d9eac539ba194416"
+      },
+      "name": "train",
+      "role": "training",
+      "target_sha256": "3d7947b7300b0fddee6148726f9ef9dc11495940803c9bfd4710cc96e9d72ce4",
+      "target_unit": "micromole_per_minute",
+      "units": {
+        "x": "millimolar_substrate_concentration"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "x": [
+          0.12,
+          1.6
+        ]
+      },
+      "input_sha256": {
+        "x": "53857dd2ae86e10ebc11ff3a356c8bca4ada1dac311ca4f8eda15afdeeb02c4d"
+      },
+      "name": "selection",
+      "role": "selection",
+      "target_sha256": "08b4605a6b8b911d608a61589049e6808b4ff4406f5860fd176db8411b0eb16c",
+      "target_unit": "micromole_per_minute",
+      "units": {
+        "x": "millimolar_substrate_concentration"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "x": [
+          1.8,
+          4.5
+        ]
+      },
+      "input_sha256": {
+        "x": "8157bf0bc978e1b8b5fad90b4232eb2c4d9897d035b13d844c1ade095acd0aec"
+      },
+      "name": "heldout",
+      "role": "diagnostic",
+      "target_sha256": "0049587eebaf03f8d4d8f0b45212f4c109f0f0079e22a9325c63a95bdbc52210",
+      "target_unit": "micromole_per_minute",
+      "units": {
+        "x": "millimolar_substrate_concentration"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "x": [
+          4.8,
+          7.0
+        ]
+      },
+      "input_sha256": {
+        "x": "39acbcabf83796b8cfd48cc3055437bd8bb9d0a662d5beec891e4d3519a24ff7"
+      },
+      "name": "extrapolation",
+      "role": "diagnostic",
+      "target_sha256": "5bcf0847349bcb9672c5590126a7d81ed74c42345f899edad747bd213064a020",
+      "target_unit": "micromole_per_minute",
+      "units": {
+        "x": "millimolar_substrate_concentration"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "x": [
+          0.08,
+          6.5
+        ]
+      },
+      "input_sha256": {
+        "x": "418f3fd56e1026db0e0113708fc603e4205d6ccebe12c8c97f6bc150e3642df4"
+      },
+      "name": "final_confirmation",
+      "role": "final_confirmation",
+      "target_sha256": "9fba6b26cbffca3634372073c19a4129a7d4d4d8471e61c7abaddf97b2ea09e3",
+      "target_unit": "micromole_per_minute",
+      "units": {
+        "x": "millimolar_substrate_concentration"
+      }
+    }
+  ],
+  "target_expression": "2*x/(x + 0.5)",
+  "tolerance": 1e-08,
+  "units": {
+    "target": "micromole_per_minute",
+    "x": "millimolar_substrate_concentration"
+  },
+  "variables": [
+    "x"
+  ]
+}

@@ -1,0 +1,23 @@
+operator_family,operator_schedule,start_mode,training_mode,depth,total,verifier_pass_rate,unsupported_rate,repair_attempt_rate,repair_accept_rate,refit_attempt_rate,refit_accept_rate,anomaly_clamp_count_total,anomaly_exp_overflow_count_total,anomaly_expm1_overflow_count_total,anomaly_log_branch_cut_count_total,anomaly_log1p_branch_cut_count_total,anomaly_shifted_singularity_near_count_total,shifted_singularity_min_distance_min,median_active_node_count,median_candidate_complexity,median_post_snap_loss
+CEML_1,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,3.0,,1.0
+CEML_1,fixed,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.25069151621601365,7.0,,0.1839531515847408
+CEML_2,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.9999979869425517,3.0,,1.2295265094499561
+CEML_2,fixed,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9150211089926991,3.0,,1.49538197897908
+CEML_4,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.9893716557432075,3.0,,1.349822776100326
+CEML_4,fixed,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.2506915162160137,7.0,,1.5633383893643238
+CEML_8,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.793083789520923,3.0,,1.4115267367746875
+CEML_8,fixed,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.250691516216014,7.0,,0.9361936630137444
+ZEML_1,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0005029208967539667,3.0,,2.866747375038092
+ZEML_1,fixed,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.7019929220147607,7.0,,1.1022124749855138
+ZEML_2,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0005029208843736,3.0,,3.6762804380944836
+ZEML_2,fixed,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.4561504204065658,3.0,,0.5217704070885725
+ZEML_4,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0005029208843736,3.0,,4.201552244062683
+ZEML_4,fixed,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.367809738529571,3.0,,0.486125568659873
+ZEML_8,ZEML_8 -> ZEML_4,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0005029208843736,3.0,,4.201552244062683
+ZEML_8,ZEML_8 -> ZEML_4,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.4790174591282086,3.0,,0.486125568659873
+ZEML_8,ZEML_8 -> ZEML_4 -> ZEML_2 -> ZEML_1,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0005029208843735367,3.0,,2.866747375038092
+ZEML_8,ZEML_8 -> ZEML_4 -> ZEML_2 -> ZEML_1,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.9516169720449439,3.0,,1.021775072282684
+ZEML_8,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.000502920884373,3.0,,4.513307932155835
+ZEML_8,fixed,blind,blind_training,3,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.3123965753213565,3.0,,0.5122837911528454
+raw_eml,fixed,blind,blind_training,1,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,3.0,,0.0
+raw_eml,fixed,blind,blind_training,3,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,7.0,,1.3867447915972624e-32

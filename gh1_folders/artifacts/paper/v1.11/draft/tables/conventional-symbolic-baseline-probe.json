@@ -1,0 +1,34 @@
+{
+  "columns": [
+    "baseline_id",
+    "checked_modules",
+    "detected_modules",
+    "status",
+    "formula",
+    "reason",
+    "limitation",
+    "diagnostic_only",
+    "denominator_policy",
+    "claim_boundary"
+  ],
+  "rows": [
+    {
+      "baseline_id": "conventional_symbolic_regression",
+      "checked_modules": [
+        "pysr",
+        "gplearn",
+        "pyoperon",
+        "karoo_gp"
+      ],
+      "claim_boundary": "absence of a conventional SR comparator is reported as a limitation, not hidden",
+      "denominator_policy": "excluded from EML recovery denominators",
+      "detected_modules": [],
+      "diagnostic_only": true,
+      "formula": "not_run",
+      "limitation": "PySR, gplearn, PyOperon, and karoo-gp were not importable locally; no dependency installation was attempted in this bounded phase.",
+      "reason": "no_local_symbolic_regression_package",
+      "status": "unavailable"
+    }
+  ],
+  "schema": "eml.v112_source_table.v1"
+}

@@ -1,0 +1,383 @@
+{
+  "counts": {
+    "execution_error": 0,
+    "failed": 7,
+    "same_ast_return": 11,
+    "total": 29,
+    "unsupported": 4,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 18,
+    "verifier_recovery_rate": 0.6206896551724138
+  },
+  "generated_at": "2026-04-15T12:29:39.175594+00:00",
+  "output": {
+    "aggregate_json": "artifacts/campaigns/v1.4-showcase/aggregate.json",
+    "aggregate_markdown": "artifacts/campaigns/v1.4-showcase/aggregate.md",
+    "campaign_dir": "artifacts/campaigns/v1.4-showcase",
+    "figures": {
+      "beer_perturbation": "artifacts/campaigns/v1.4-showcase/figures/beer-perturbation.svg",
+      "failure_taxonomy": "artifacts/campaigns/v1.4-showcase/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/campaigns/v1.4-showcase/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/campaigns/v1.4-showcase/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/campaigns/v1.4-showcase/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/campaigns/v1.4-showcase/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase",
+    "report_markdown": "artifacts/campaigns/v1.4-showcase/report.md",
+    "suite_result": "artifacts/campaigns/v1.4-showcase/suite-result.json",
+    "tables": {
+      "failures_csv": "artifacts/campaigns/v1.4-showcase/tables/failures.csv",
+      "group_depth_csv": "artifacts/campaigns/v1.4-showcase/tables/group-depth.csv",
+      "group_failure_class_csv": "artifacts/campaigns/v1.4-showcase/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/campaigns/v1.4-showcase/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/campaigns/v1.4-showcase/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/campaigns/v1.4-showcase/tables/group-start-mode.csv",
+      "headline_csv": "artifacts/campaigns/v1.4-showcase/tables/headline-metrics.csv",
+      "headline_json": "artifacts/campaigns/v1.4-showcase/tables/headline-metrics.json",
+      "runs_csv": "artifacts/campaigns/v1.4-showcase/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "29 runs; larger blind and perturbation matrix plus full FOR_DEMO diagnostics.",
+    "description": "Expanded campaign for presentation-grade evidence with more seeds and perturbation levels.",
+    "name": "showcase",
+    "suite": "v1.3-showcase",
+    "tier": "expanded"
+  },
+  "reproducibility": {
+    "code_version": "09a3989",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign showcase --output-root artifacts/campaigns --label v1.4-showcase --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "perturbation_noises": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/campaigns/v1.4-showcase/runs",
+    "cases": [
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-blind",
+        "optimizer": {
+          "depth": 1,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "log",
+        "id": "log-blind",
+        "optimizer": {
+          "depth": 3,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "radioactive_decay",
+        "id": "radioactive-decay-blind",
+        "optimizer": {
+          "depth": 4,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 120,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "blind",
+          "shallow",
+          "for_demo"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "beer_lambert",
+        "id": "beer-perturbation-sweep",
+        "optimizer": {
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 90
+        },
+        "perturbation_noise": [
+          0.0,
+          2.5,
+          5.0,
+          15.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "warm_start",
+          "perturbation",
+          "for_demo"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm-diagnostic",
+        "optimizer": {
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 90
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "diagnostic",
+          "depth_gate",
+          "for_demo"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "logistic",
+        "id": "logistic-compile",
+        "optimizer": {
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "shockley",
+        "id": "shockley-compile",
+        "optimizer": {
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "diagnostic",
+          "for_demo"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "damped_oscillator",
+        "id": "damped-oscillator-compile",
+        "optimizer": {
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "for_demo"
+        ]
+      },
+      {
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "planck",
+        "id": "planck-diagnostic",
+        "optimizer": {
+          "depth": 2,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 10,
+          "restarts": 1,
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "compile",
+        "tags": [
+          "stretch",
+          "depth_gate",
+          "for_demo"
+        ]
+      }
+    ],
+    "description": "Showcase v1.3 campaign matrix with expanded seeds, perturbations, and full FOR_DEMO diagnostics.",
+    "id": "v1.3-showcase",
+    "schema": "eml.benchmark_suite.v1"
+  }
+}

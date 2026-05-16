@@ -1,0 +1,71 @@
+{
+  "ablation_decision": "inconclusive",
+  "blockers": [
+    "no_natural_ipi_exact_recovery_signal",
+    "incomplete_matched_denominator",
+    "loss_only_signal_without_exact_recovery"
+  ],
+  "budget_ladder_decision": "stop_full_campaign_fail_closed",
+  "claim_boundary": "The package is inconclusive; no positive i*pi/GEML recovery claim is supported.",
+  "decision": "inconclusive",
+  "gate_metrics": {
+    "complete_denominator": false,
+    "declared_targets": 10,
+    "loss_only_outcomes": 12,
+    "min_unique_seeds_for_paper_positive": 3,
+    "natural_ipi_minus_raw_recovery_wins": 0,
+    "natural_ipi_recovery_wins": 0,
+    "natural_raw_recovery_wins": 0,
+    "negative_control_ipi_recovery_wins": 0,
+    "paired_rows": 12,
+    "source_locks_ok": true,
+    "unique_seeds": 2
+  },
+  "package_contents": {
+    "ablation_manifest": "artifacts/paper/v1.16-geml/ablations/manifest.json",
+    "ablation_table": "artifacts/paper/v1.16-geml/ablations/ablation-table.json",
+    "claim_audit": "artifacts/paper/v1.16-geml/claim-audit.json",
+    "failure_examples": "artifacts/paper/v1.16-geml/ablations/failure-examples.json",
+    "figure_metadata": "artifacts/paper/v1.16-geml/ablations/figure-metadata.json",
+    "gate_evaluation": "artifacts/paper/v1.16-geml/gate-evaluation.json",
+    "package_manifest": "artifacts/paper/v1.16-geml/manifest.json",
+    "reproduction": "artifacts/paper/v1.16-geml/reproduction.md"
+  },
+  "paired_summary": {
+    "both_recovered": 0,
+    "comparison_outcomes": {
+      "ipi_lower_post_snap_mse": 3,
+      "raw_lower_post_snap_mse": 9
+    },
+    "ipi_lower_post_snap_mse": 3,
+    "ipi_recovery_wins": 0,
+    "ipi_trained_exact_recovery": 0,
+    "ipi_trained_exact_recovery_rate": 0.0,
+    "loss_only_outcomes": 12,
+    "negative_control_pairs": 4,
+    "neither_recovered": 12,
+    "paired_rows": 12,
+    "raw_lower_post_snap_mse": 9,
+    "raw_recovery_wins": 0,
+    "raw_trained_exact_recovery": 0,
+    "raw_trained_exact_recovery_rate": 0.0,
+    "schema": "eml.geml_paired_summary.v1",
+    "target_families": {
+      "harmonic": 2,
+      "log_periodic": 2,
+      "negative_control": 4,
+      "periodic": 4
+    }
+  },
+  "paper_claim_allowed": false,
+  "rationale": "The evidence is incomplete, loss-only, or confounded; no positive claim is allowed.",
+  "reproduction_commands": [
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign geml-v116-smoke --label v1.16-geml-smoke --overwrite",
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign geml-v116-pilot --label v1.16-geml-pilot --overwrite",
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli geml-v116-ladder --pilot-dir artifacts/campaigns/v1.16-geml-pilot --output-dir artifacts/campaigns/v1.16-geml-budget-ladder --overwrite",
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli geml-paper-v116 --campaign-dir artifacts/campaigns/v1.16-geml-pilot --budget-ladder-dir artifacts/campaigns/v1.16-geml-budget-ladder --output-dir artifacts/paper/v1.16-geml --min-unique-seeds 3 --overwrite",
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli geml-v116-ablations --campaign-dir artifacts/campaigns/v1.16-geml-pilot --budget-ladder-dir artifacts/campaigns/v1.16-geml-budget-ladder --package-dir artifacts/paper/v1.16-geml --output-dir artifacts/paper/v1.16-geml/ablations --overwrite",
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli geml-v116-final --campaign-dir artifacts/campaigns/v1.16-geml-pilot --budget-ladder-dir artifacts/campaigns/v1.16-geml-budget-ladder --package-dir artifacts/paper/v1.16-geml --ablation-dir artifacts/paper/v1.16-geml/ablations --output-dir artifacts/paper/v1.16-geml/final-decision --overwrite"
+  ],
+  "schema": "eml.v116_final_decision.v1"
+}

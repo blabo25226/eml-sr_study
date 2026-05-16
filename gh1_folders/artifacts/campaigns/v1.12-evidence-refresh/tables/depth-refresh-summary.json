@@ -1,0 +1,75 @@
+{
+  "columns": [
+    "source",
+    "depth",
+    "start_mode",
+    "training_mode",
+    "seed_count",
+    "recovered",
+    "total",
+    "recovery_rate",
+    "best_loss_median",
+    "post_snap_loss_median",
+    "runtime_seconds_median",
+    "claim_boundary"
+  ],
+  "rows": [
+    {
+      "best_loss_median": 8.399855357685602e-07,
+      "claim_boundary": "current-code v1.12 depth refresh; not archived v1.6 evidence",
+      "depth": 2,
+      "post_snap_loss_median": 0.0,
+      "recovered": 2,
+      "recovery_rate": 1.0,
+      "runtime_seconds_median": 1.272411978978198,
+      "seed_count": 2,
+      "source": "v1.12-current-code-depth-refresh",
+      "start_mode": "blind",
+      "total": 2,
+      "training_mode": "blind_training"
+    },
+    {
+      "best_loss_median": 0.0,
+      "claim_boundary": "current-code v1.12 depth refresh; not archived v1.6 evidence",
+      "depth": 3,
+      "post_snap_loss_median": 0.0,
+      "recovered": 2,
+      "recovery_rate": 1.0,
+      "runtime_seconds_median": 1.795871396025177,
+      "seed_count": 2,
+      "source": "v1.12-current-code-depth-refresh",
+      "start_mode": "blind",
+      "total": 2,
+      "training_mode": "blind_training"
+    },
+    {
+      "best_loss_median": 0.23188966292699678,
+      "claim_boundary": "current-code v1.12 depth refresh; not archived v1.6 evidence",
+      "depth": 4,
+      "post_snap_loss_median": 0.6359713792353318,
+      "recovered": 0,
+      "recovery_rate": 0.0,
+      "runtime_seconds_median": 2.719772041484248,
+      "seed_count": 2,
+      "source": "v1.12-current-code-depth-refresh",
+      "start_mode": "blind",
+      "total": 2,
+      "training_mode": "blind_training"
+    },
+    {
+      "best_loss_median": 2.0070980065211708,
+      "claim_boundary": "current-code v1.12 depth refresh; not archived v1.6 evidence",
+      "depth": 5,
+      "post_snap_loss_median": 2.0137984788604744,
+      "recovered": 0,
+      "recovery_rate": 0.0,
+      "runtime_seconds_median": 4.590765978966374,
+      "seed_count": 2,
+      "source": "v1.12-current-code-depth-refresh",
+      "start_mode": "blind",
+      "total": 2,
+      "training_mode": "blind_training"
+    }
+  ],
+  "schema": "eml.v112_source_table.v1"
+}

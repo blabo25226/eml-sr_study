@@ -1,0 +1,544 @@
+{
+  "generated_at": "2026-04-19T14:13:16.612091+00:00",
+  "output_dir": "artifacts/paper/v1.11",
+  "schema": "eml.v111_paper_source_locks.v1",
+  "source_count": 67,
+  "sources": [
+    {
+      "bytes": 12712,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/manifest.json",
+      "role": "raw_hybrid_package",
+      "sha256": "2135fe356af73ea4803a032cd3a0f2a172aea59154ddc859af0afa1e9de73efe",
+      "source_id": "raw-hybrid-manifest-json",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/manifest.json"
+    },
+    {
+      "bytes": 10845,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/source-locks.json",
+      "role": "raw_hybrid_package",
+      "sha256": "588efc5c4e849d7da472949291eb5534d87b1fd6064016f5392b6374dfd0fcc5",
+      "source_id": "raw-hybrid-source-locks-json",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/source-locks.json"
+    },
+    {
+      "bytes": 9441,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/claim-ledger.json",
+      "role": "raw_hybrid_package",
+      "sha256": "2014d7ec03c1d4f07179fa3556fa9d73bafa4410df33be1176d488b46651ab6f",
+      "source_id": "raw-hybrid-claim-ledger-json",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/claim-ledger.json"
+    },
+    {
+      "bytes": 625,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/claim-boundaries.md",
+      "role": "raw_hybrid_package",
+      "sha256": "807e0dfe8214ac7851511bf4fc37eb353f6b3fd9b1891093b282c4ae21b10cbd",
+      "source_id": "raw-hybrid-claim-boundaries-md",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/claim-boundaries.md"
+    },
+    {
+      "bytes": 957,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/centered-negative-diagnostics.md",
+      "role": "raw_hybrid_package",
+      "sha256": "f16052db9f865c98a1003ba10dd99eebd894319d139d0dfed7c6c75037bd9f1d",
+      "source_id": "raw-hybrid-centered-negative-diagnostics-md",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/centered-negative-diagnostics.md"
+    },
+    {
+      "bytes": 27176,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/raw-hybrid-report.md",
+      "role": "raw_hybrid_package",
+      "sha256": "41afc2b20956f5c2f8f927e3f83a108f784390be2063198545c18cccdba5ef40",
+      "source_id": "raw-hybrid-raw-hybrid-report-md",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/raw-hybrid-report.md"
+    },
+    {
+      "bytes": 120373,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/regime-summary.json",
+      "role": "raw_hybrid_package",
+      "sha256": "a4cdc1cfc764dcb04c1cc32594e34620d853e29b62857c495ef7169d1ef170b4",
+      "source_id": "raw-hybrid-regime-summary-json",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/regime-summary.json"
+    },
+    {
+      "bytes": 3606,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.json",
+      "role": "raw_hybrid_package",
+      "sha256": "f0c7a9f05f246b01cbb616905b2ad1cc5ecebdf7681dce3418e5b555457cc10c",
+      "source_id": "raw-hybrid-scientific-law-table-json",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.json"
+    },
+    {
+      "bytes": 1738,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.csv",
+      "role": "raw_hybrid_package",
+      "sha256": "0f91e583360d84a258779c388daf76c3e0d1f226980bee7eedd8aa0f625b51cf",
+      "source_id": "raw-hybrid-scientific-law-table-csv",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.csv"
+    },
+    {
+      "bytes": 2073,
+      "package_path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.md",
+      "role": "raw_hybrid_package",
+      "sha256": "1ef1f2ceee8b3fb335e52ada74e0be6069ab5562ce39424fcf458146b7df44ef",
+      "source_id": "raw-hybrid-scientific-law-table-md",
+      "source_path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.md"
+    },
+    {
+      "bytes": 11931,
+      "package_path": "artifacts/paper/v1.11/assets/manifest.json",
+      "role": "paper_assets_manifest",
+      "sha256": "3d0a0b08ec9cf6b60493f29bcbd92db7737f3638ac7015845b65ef6bcaa7d548",
+      "source_id": "paper-assets-manifest",
+      "source_path": "artifacts/paper/v1.11/assets/manifest.json"
+    },
+    {
+      "bytes": 16359,
+      "package_path": "artifacts/paper/v1.11/tables/baseline_diagnostics.json",
+      "role": "paper_asset_table",
+      "sha256": "39b5878321b509c018bfeba5711db480441c7889416f321587b9c76c30e5b1ec",
+      "source_id": "asset-table-baseline_diagnostics-json",
+      "source_path": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.json"
+    },
+    {
+      "bytes": 6183,
+      "package_path": "artifacts/paper/v1.11/tables/baseline_diagnostics.csv",
+      "role": "paper_asset_table",
+      "sha256": "39e0a8a80afdb265a1a60d01782a8429c8e06df52cde212663dae5ab4c64655c",
+      "source_id": "asset-table-baseline_diagnostics-csv",
+      "source_path": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.csv"
+    },
+    {
+      "bytes": 7074,
+      "package_path": "artifacts/paper/v1.11/tables/baseline_diagnostics.md",
+      "role": "paper_asset_table",
+      "sha256": "731be8ae762e7079ae80583b41fe484612d8755b525954945ccee94bd5040e66",
+      "source_id": "asset-table-baseline_diagnostics-md",
+      "source_path": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.md"
+    },
+    {
+      "bytes": 5368,
+      "package_path": "artifacts/paper/v1.11/tables/depth_degradation.json",
+      "role": "paper_asset_table",
+      "sha256": "032fdfdba6e88384f6008f5763dfde50d19130c529fbc21053a0ceca496b8557",
+      "source_id": "asset-table-depth_degradation-json",
+      "source_path": "artifacts/paper/v1.11/assets/tables/depth_degradation.json"
+    },
+    {
+      "bytes": 1773,
+      "package_path": "artifacts/paper/v1.11/tables/depth_degradation.csv",
+      "role": "paper_asset_table",
+      "sha256": "2a344f082e373ab1e876a66b656e01a4e6e3fd99fb43a3de723c5e0f5fc57324",
+      "source_id": "asset-table-depth_degradation-csv",
+      "source_path": "artifacts/paper/v1.11/assets/tables/depth_degradation.csv"
+    },
+    {
+      "bytes": 2171,
+      "package_path": "artifacts/paper/v1.11/tables/depth_degradation.md",
+      "role": "paper_asset_table",
+      "sha256": "be72291d03c39ce72dbbabbd5d36fcaa4cb89f4c1b10db52aa6766f5c7cc2073",
+      "source_id": "asset-table-depth_degradation-md",
+      "source_path": "artifacts/paper/v1.11/assets/tables/depth_degradation.md"
+    },
+    {
+      "bytes": 1170,
+      "package_path": "artifacts/paper/v1.11/tables/failure_taxonomy.json",
+      "role": "paper_asset_table",
+      "sha256": "0414b1d11b4befaab0863edd088b4bdb1c9c14ebe4065cb3564978464d4e1d0f",
+      "source_id": "asset-table-failure_taxonomy-json",
+      "source_path": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.json"
+    },
+    {
+      "bytes": 471,
+      "package_path": "artifacts/paper/v1.11/tables/failure_taxonomy.csv",
+      "role": "paper_asset_table",
+      "sha256": "19bae7851f2900cc9b8c4b38d242f7178863de79ef8f2e54850b30c55d5ed5ab",
+      "source_id": "asset-table-failure_taxonomy-csv",
+      "source_path": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.csv"
+    },
+    {
+      "bytes": 594,
+      "package_path": "artifacts/paper/v1.11/tables/failure_taxonomy.md",
+      "role": "paper_asset_table",
+      "sha256": "7529db04213bb54e4cb50c887e15503ae789baf20d4c6e034d0a163a24426903",
+      "source_id": "asset-table-failure_taxonomy-md",
+      "source_path": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.md"
+    },
+    {
+      "bytes": 4183,
+      "package_path": "artifacts/paper/v1.11/tables/motif_depth_deltas.json",
+      "role": "paper_asset_table",
+      "sha256": "d0215589eeffb21a3df5da8bb815d315269df014468ffedffef19399e8e4bdec",
+      "source_id": "asset-table-motif_depth_deltas-json",
+      "source_path": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.json"
+    },
+    {
+      "bytes": 1701,
+      "package_path": "artifacts/paper/v1.11/tables/motif_depth_deltas.csv",
+      "role": "paper_asset_table",
+      "sha256": "480d7dce73b3e75517fddcaa14d071cb1c6d720d5459077cad886e6dcbf46ad0",
+      "source_id": "asset-table-motif_depth_deltas-csv",
+      "source_path": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.csv"
+    },
+    {
+      "bytes": 2032,
+      "package_path": "artifacts/paper/v1.11/tables/motif_depth_deltas.md",
+      "role": "paper_asset_table",
+      "sha256": "85b396826ae01a5fdc324125947a8e16d43978eb9b510fe045e2f2c99c9daae9",
+      "source_id": "asset-table-motif_depth_deltas-md",
+      "source_path": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.md"
+    },
+    {
+      "bytes": 2843,
+      "package_path": "artifacts/paper/v1.11/tables/regime_recovery.json",
+      "role": "paper_asset_table",
+      "sha256": "e005292c0040c0cfbe9cb4db17f8be9e3eab5f5e2d7a8e030221480aed91fcba",
+      "source_id": "asset-table-regime_recovery-json",
+      "source_path": "artifacts/paper/v1.11/assets/tables/regime_recovery.json"
+    },
+    {
+      "bytes": 1060,
+      "package_path": "artifacts/paper/v1.11/tables/regime_recovery.csv",
+      "role": "paper_asset_table",
+      "sha256": "19b37c735a9a6baf240e8ef3125501b7d2a10b60852db988d63380e8f6a1df3b",
+      "source_id": "asset-table-regime_recovery-csv",
+      "source_path": "artifacts/paper/v1.11/assets/tables/regime_recovery.csv"
+    },
+    {
+      "bytes": 1297,
+      "package_path": "artifacts/paper/v1.11/tables/regime_recovery.md",
+      "role": "paper_asset_table",
+      "sha256": "f4d008c46af18f6397297543e5894039993be26fde52af66e7407ca1547ff17c",
+      "source_id": "asset-table-regime_recovery-md",
+      "source_path": "artifacts/paper/v1.11/assets/tables/regime_recovery.md"
+    },
+    {
+      "bytes": 4467,
+      "package_path": "artifacts/paper/v1.11/tables/scientific_law_support.json",
+      "role": "paper_asset_table",
+      "sha256": "dd8810102aefb557d401b89709e8f46fab75c18b08eb1532117df6a2395ea851",
+      "source_id": "asset-table-scientific_law_support-json",
+      "source_path": "artifacts/paper/v1.11/assets/tables/scientific_law_support.json"
+    },
+    {
+      "bytes": 2206,
+      "package_path": "artifacts/paper/v1.11/tables/scientific_law_support.csv",
+      "role": "paper_asset_table",
+      "sha256": "d29b25acd7da2cdd58d21fb90e072da6fe98529c8f2d45a39f33bb2cafad64cc",
+      "source_id": "asset-table-scientific_law_support-csv",
+      "source_path": "artifacts/paper/v1.11/assets/tables/scientific_law_support.csv"
+    },
+    {
+      "bytes": 2484,
+      "package_path": "artifacts/paper/v1.11/tables/scientific_law_support.md",
+      "role": "paper_asset_table",
+      "sha256": "f52e3003a66e4842afb14a1bbbf48984bb01339d9ac740781511245286c5e314",
+      "source_id": "asset-table-scientific_law_support-md",
+      "source_path": "artifacts/paper/v1.11/assets/tables/scientific_law_support.md"
+    },
+    {
+      "bytes": 10265,
+      "package_path": "artifacts/paper/v1.11/tables/training_lifecycle.json",
+      "role": "paper_asset_table",
+      "sha256": "c68694fcd5b9ebd8eceb69aaf782c27543b5f97aa6ebffcf656918f2222b569d",
+      "source_id": "asset-table-training_lifecycle-json",
+      "source_path": "artifacts/paper/v1.11/assets/tables/training_lifecycle.json"
+    },
+    {
+      "bytes": 5184,
+      "package_path": "artifacts/paper/v1.11/tables/training_lifecycle.csv",
+      "role": "paper_asset_table",
+      "sha256": "99b36f305294a8350bf5bf093afacd9859d4593d51c1b27b31f60984fc646b1f",
+      "source_id": "asset-table-training_lifecycle-csv",
+      "source_path": "artifacts/paper/v1.11/assets/tables/training_lifecycle.csv"
+    },
+    {
+      "bytes": 5765,
+      "package_path": "artifacts/paper/v1.11/tables/training_lifecycle.md",
+      "role": "paper_asset_table",
+      "sha256": "3a6a634bd8aba675767d9ee8beeea92b547e3294f6b4016bf65a9ffb1a1e9747",
+      "source_id": "asset-table-training_lifecycle-md",
+      "source_path": "artifacts/paper/v1.11/assets/tables/training_lifecycle.md"
+    },
+    {
+      "bytes": 2927,
+      "package_path": "artifacts/paper/v1.11/figures/baseline_diagnostics.svg",
+      "role": "paper_asset_figure",
+      "sha256": "55784db10bf20c9b8ae1622c050f7b8b615ecd4024bdae04c69973b383d3134a",
+      "source_id": "asset-figure-baseline_diagnostics-svg",
+      "source_path": "artifacts/paper/v1.11/assets/figures/baseline_diagnostics.svg"
+    },
+    {
+      "bytes": 562,
+      "package_path": "artifacts/paper/v1.11/figures/baseline_diagnostics.metadata.json",
+      "role": "paper_asset_figure_metadata",
+      "sha256": "2729aee3a8893432ccb3c80980ab4d0457eeab41c44f97dbcb6ea3c8f0bb733d",
+      "source_id": "asset-figure-baseline_diagnostics-metadata",
+      "source_path": "artifacts/paper/v1.11/assets/figures/baseline_diagnostics.metadata.json"
+    },
+    {
+      "bytes": 2630,
+      "package_path": "artifacts/paper/v1.11/figures/depth_degradation.svg",
+      "role": "paper_asset_figure",
+      "sha256": "6515fce9fe3caaa455d76552d66b85f88d3a3cbfb1cb45ee209c245ff60c4399",
+      "source_id": "asset-figure-depth_degradation-svg",
+      "source_path": "artifacts/paper/v1.11/assets/figures/depth_degradation.svg"
+    },
+    {
+      "bytes": 555,
+      "package_path": "artifacts/paper/v1.11/figures/depth_degradation.metadata.json",
+      "role": "paper_asset_figure_metadata",
+      "sha256": "306059c43b2c04360832f55115e3995b3c5cb23b36cd20af7bbdc92720566c26",
+      "source_id": "asset-figure-depth_degradation-metadata",
+      "source_path": "artifacts/paper/v1.11/assets/figures/depth_degradation.metadata.json"
+    },
+    {
+      "bytes": 2569,
+      "package_path": "artifacts/paper/v1.11/figures/failure_taxonomy.svg",
+      "role": "paper_asset_figure",
+      "sha256": "73ca40b005a24ba51d4c0a43ddb2a67f4efdee7cbb41b17dec44fac7dc701878",
+      "source_id": "asset-figure-failure_taxonomy-svg",
+      "source_path": "artifacts/paper/v1.11/assets/figures/failure_taxonomy.svg"
+    },
+    {
+      "bytes": 526,
+      "package_path": "artifacts/paper/v1.11/figures/failure_taxonomy.metadata.json",
+      "role": "paper_asset_figure_metadata",
+      "sha256": "6f99135f2c7bb65124eb424002e368340a17b393bb68a6bc27aff25a34e5bd18",
+      "source_id": "asset-figure-failure_taxonomy-metadata",
+      "source_path": "artifacts/paper/v1.11/assets/figures/failure_taxonomy.metadata.json"
+    },
+    {
+      "bytes": 3174,
+      "package_path": "artifacts/paper/v1.11/figures/motif_depth_deltas.svg",
+      "role": "paper_asset_figure",
+      "sha256": "4d60fd10292eed429650c7c39cfd2e84a3683cf35abe675ac9fc5c257868cd0d",
+      "source_id": "asset-figure-motif_depth_deltas-svg",
+      "source_path": "artifacts/paper/v1.11/assets/figures/motif_depth_deltas.svg"
+    },
+    {
+      "bytes": 533,
+      "package_path": "artifacts/paper/v1.11/figures/motif_depth_deltas.metadata.json",
+      "role": "paper_asset_figure_metadata",
+      "sha256": "9657399a1d3b5a90ca656c8e5a489103a3c456ce2dce3af023be04ddf7154231",
+      "source_id": "asset-figure-motif_depth_deltas-metadata",
+      "source_path": "artifacts/paper/v1.11/assets/figures/motif_depth_deltas.metadata.json"
+    },
+    {
+      "bytes": 2865,
+      "package_path": "artifacts/paper/v1.11/figures/regime_recovery.svg",
+      "role": "paper_asset_figure",
+      "sha256": "ebcdcff00a8b01d4e2a5e60b11076af2e939414419b27de03c629d6b3a959f26",
+      "source_id": "asset-figure-regime_recovery-svg",
+      "source_path": "artifacts/paper/v1.11/assets/figures/regime_recovery.svg"
+    },
+    {
+      "bytes": 543,
+      "package_path": "artifacts/paper/v1.11/figures/regime_recovery.metadata.json",
+      "role": "paper_asset_figure_metadata",
+      "sha256": "b572a05eaa6e81fbdccb7fe435f6e633835f59305f34fc5019da918ab199eef4",
+      "source_id": "asset-figure-regime_recovery-metadata",
+      "source_path": "artifacts/paper/v1.11/assets/figures/regime_recovery.metadata.json"
+    },
+    {
+      "bytes": 4798,
+      "package_path": "artifacts/paper/v1.11/figures/scientific_law_support.svg",
+      "role": "paper_asset_figure",
+      "sha256": "b54584ddaa77325cc71a2478149a003a237fbc0a1495ea344c71924bda437aa0",
+      "source_id": "asset-figure-scientific_law_support-svg",
+      "source_path": "artifacts/paper/v1.11/assets/figures/scientific_law_support.svg"
+    },
+    {
+      "bytes": 575,
+      "package_path": "artifacts/paper/v1.11/figures/scientific_law_support.metadata.json",
+      "role": "paper_asset_figure_metadata",
+      "sha256": "7bb004de70552f70b6eca7a93811b4fc11641f89a0278499e335fccf689b150c",
+      "source_id": "asset-figure-scientific_law_support-metadata",
+      "source_path": "artifacts/paper/v1.11/assets/figures/scientific_law_support.metadata.json"
+    },
+    {
+      "bytes": 7127,
+      "package_path": "artifacts/paper/v1.11/figures/training_lifecycle.svg",
+      "role": "paper_asset_figure",
+      "sha256": "469b2f5bd68dfb20ee15020d30e415e2f71a1fc58c62f10837f32f5658456548",
+      "source_id": "asset-figure-training_lifecycle-svg",
+      "source_path": "artifacts/paper/v1.11/assets/figures/training_lifecycle.svg"
+    },
+    {
+      "bytes": 565,
+      "package_path": "artifacts/paper/v1.11/figures/training_lifecycle.metadata.json",
+      "role": "paper_asset_figure_metadata",
+      "sha256": "1db9105342219fc13e906917b50ff3413f0eb39b6c094dd6d292d43e89f55ad4",
+      "source_id": "asset-figure-training_lifecycle-metadata",
+      "source_path": "artifacts/paper/v1.11/assets/figures/training_lifecycle.metadata.json"
+    },
+    {
+      "bytes": 6183,
+      "package_path": "artifacts/paper/v1.11/diagnostics/baseline-diagnostics.csv",
+      "role": "paper_diagnostic",
+      "sha256": "2f25743cc9217883032622242b56635515aaa09693790f5768ac7719df4ca70a",
+      "source_id": "diagnostic-baseline-diagnostics-csv",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/baseline-diagnostics.csv"
+    },
+    {
+      "bytes": 16364,
+      "package_path": "artifacts/paper/v1.11/diagnostics/baseline-diagnostics.json",
+      "role": "paper_diagnostic",
+      "sha256": "f5780ffc80bcecf91fb4deaafdb20c2dcf10b0bb74e4c3d0e216393b5ed5dfff",
+      "source_id": "diagnostic-baseline-diagnostics-json",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/baseline-diagnostics.json"
+    },
+    {
+      "bytes": 7207,
+      "package_path": "artifacts/paper/v1.11/diagnostics/baseline-diagnostics.md",
+      "role": "paper_diagnostic",
+      "sha256": "6d5df3639a06cf74388241631a8247617c81c3edc30ef82b36cac7ee996ad7f8",
+      "source_id": "diagnostic-baseline-diagnostics-md",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/baseline-diagnostics.md"
+    },
+    {
+      "bytes": 2650,
+      "package_path": "artifacts/paper/v1.11/diagnostics/manifest.json",
+      "role": "paper_diagnostic",
+      "sha256": "50518c3e833a079196e576e5145ac4ef9318ee173ba99e84a3b2d9c3c8ed1f13",
+      "source_id": "diagnostic-manifest-json",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/manifest.json"
+    },
+    {
+      "bytes": 1701,
+      "package_path": "artifacts/paper/v1.11/diagnostics/motif-depth-deltas.csv",
+      "role": "paper_diagnostic",
+      "sha256": "fffc77c001556743303ff5e86bd41186023ea38b683f69d907dcad0a1adbf1a7",
+      "source_id": "diagnostic-motif-depth-deltas-csv",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/motif-depth-deltas.csv"
+    },
+    {
+      "bytes": 4188,
+      "package_path": "artifacts/paper/v1.11/diagnostics/motif-depth-deltas.json",
+      "role": "paper_diagnostic",
+      "sha256": "4f37daf3a0c2b44ff4ba17ab3faac4f70e3636e88ba32edbcc3bc832b77f9fa9",
+      "source_id": "diagnostic-motif-depth-deltas-json",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/motif-depth-deltas.json"
+    },
+    {
+      "bytes": 2032,
+      "package_path": "artifacts/paper/v1.11/diagnostics/motif-depth-deltas.md",
+      "role": "paper_diagnostic",
+      "sha256": "20eb249ce40771f3fc09b59f5b486adf5dd4d85d3c004691f07d3dc7c2546e13",
+      "source_id": "diagnostic-motif-depth-deltas-md",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/motif-depth-deltas.md"
+    },
+    {
+      "bytes": 1770,
+      "package_path": "artifacts/paper/v1.11/diagnostics/regime-comparison.csv",
+      "role": "paper_diagnostic",
+      "sha256": "058cd4e6953d00dab5192ae876489b5fd7cad036a4fa9fee6d92bfeea72c0754",
+      "source_id": "diagnostic-regime-comparison-csv",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/regime-comparison.csv"
+    },
+    {
+      "bytes": 5368,
+      "package_path": "artifacts/paper/v1.11/diagnostics/regime-comparison.json",
+      "role": "paper_diagnostic",
+      "sha256": "42fd2e9289a48cd9de21050e4f6a0bf84d284a5ddacf39442cba91451bf90ad2",
+      "source_id": "diagnostic-regime-comparison-json",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/regime-comparison.json"
+    },
+    {
+      "bytes": 2138,
+      "package_path": "artifacts/paper/v1.11/diagnostics/regime-comparison.md",
+      "role": "paper_diagnostic",
+      "sha256": "c640ab3cf4b22b9c691af8df0ef276cbbf2d9a599a045150631044f7e5cc255f",
+      "source_id": "diagnostic-regime-comparison-md",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/regime-comparison.md"
+    },
+    {
+      "bytes": 4159,
+      "package_path": "artifacts/paper/v1.11/diagnostics/repair-refit-diagnostics.csv",
+      "role": "paper_diagnostic",
+      "sha256": "376933b072b4cc549c59e898a830ef7d4684aad8ef0e90db29c1b2b5479c1be5",
+      "source_id": "diagnostic-repair-refit-diagnostics-csv",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/repair-refit-diagnostics.csv"
+    },
+    {
+      "bytes": 10174,
+      "package_path": "artifacts/paper/v1.11/diagnostics/repair-refit-diagnostics.json",
+      "role": "paper_diagnostic",
+      "sha256": "e1d54dedb017bb223ac7a82a5901ea70696616d53130cb738b64b38aadbdcb26",
+      "source_id": "diagnostic-repair-refit-diagnostics-json",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/repair-refit-diagnostics.json"
+    },
+    {
+      "bytes": 4750,
+      "package_path": "artifacts/paper/v1.11/diagnostics/repair-refit-diagnostics.md",
+      "role": "paper_diagnostic",
+      "sha256": "3ba8d37de09c70aac4c61b11b98e86c27c3eea7cbdd5a5faf2132d1fe3eee9e1",
+      "source_id": "diagnostic-repair-refit-diagnostics-md",
+      "source_path": "artifacts/diagnostics/v1.11-paper-ablations/repair-refit-diagnostics.md"
+    },
+    {
+      "bytes": 14758,
+      "package_path": "artifacts/paper/v1.11/campaigns/v1.11-paper-training/campaign-manifest.json",
+      "role": "v1.11_campaign_summary",
+      "sha256": "ddc7854e27f6e7b323879f6c4964a3ef9a3c4df7a71f08f8858215dc56309ec3",
+      "source_id": "v1.11-paper-training-campaign-manifest-json",
+      "source_path": "artifacts/campaigns/v1.11-paper-training/campaign-manifest.json"
+    },
+    {
+      "bytes": 77087,
+      "package_path": "artifacts/paper/v1.11/campaigns/v1.11-paper-training/aggregate.json",
+      "role": "v1.11_campaign_summary",
+      "sha256": "10c7e0f7b24fa546060ed4d6601d6c53bca692540788f786b9c368075b083954",
+      "source_id": "v1.11-paper-training-aggregate-json",
+      "source_path": "artifacts/campaigns/v1.11-paper-training/aggregate.json"
+    },
+    {
+      "bytes": 4517,
+      "package_path": "artifacts/paper/v1.11/campaigns/v1.11-paper-training/aggregate.md",
+      "role": "v1.11_campaign_summary",
+      "sha256": "8d811475f26c3eb0b6e2881ad44e7165a5c5103fe91187b62f7462f6b766c435",
+      "source_id": "v1.11-paper-training-aggregate-md",
+      "source_path": "artifacts/campaigns/v1.11-paper-training/aggregate.md"
+    },
+    {
+      "bytes": 4557,
+      "package_path": "artifacts/paper/v1.11/campaigns/v1.11-paper-training/report.md",
+      "role": "v1.11_campaign_summary",
+      "sha256": "5952ed3c3703e8d768bb090439cb04ed5846830e6964bcd4712a27be1c8561dd",
+      "source_id": "v1.11-paper-training-report-md",
+      "source_path": "artifacts/campaigns/v1.11-paper-training/report.md"
+    },
+    {
+      "bytes": 11737,
+      "package_path": "artifacts/paper/v1.11/campaigns/v1.11-logistic-planck-probes/campaign-manifest.json",
+      "role": "v1.11_campaign_summary",
+      "sha256": "2ce733814b6821e8aa6f31c00204f5cd56558008223cee458d33d7554b7b9376",
+      "source_id": "v1.11-logistic-planck-probes-campaign-manifest-json",
+      "source_path": "artifacts/campaigns/v1.11-logistic-planck-probes/campaign-manifest.json"
+    },
+    {
+      "bytes": 41791,
+      "package_path": "artifacts/paper/v1.11/campaigns/v1.11-logistic-planck-probes/aggregate.json",
+      "role": "v1.11_campaign_summary",
+      "sha256": "3d01c2c3943f6c38f496a66d44988a55a3c34f807b22d80dcd9c5724c7e1b92a",
+      "source_id": "v1.11-logistic-planck-probes-aggregate-json",
+      "source_path": "artifacts/campaigns/v1.11-logistic-planck-probes/aggregate.json"
+    },
+    {
+      "bytes": 3369,
+      "package_path": "artifacts/paper/v1.11/campaigns/v1.11-logistic-planck-probes/aggregate.md",
+      "role": "v1.11_campaign_summary",
+      "sha256": "d22d8109314914a9651a4a27bc7443fb358a1a76a9e6ed6e761db787a11f2ddf",
+      "source_id": "v1.11-logistic-planck-probes-aggregate-md",
+      "source_path": "artifacts/campaigns/v1.11-logistic-planck-probes/aggregate.md"
+    },
+    {
+      "bytes": 5491,
+      "package_path": "artifacts/paper/v1.11/campaigns/v1.11-logistic-planck-probes/report.md",
+      "role": "v1.11_campaign_summary",
+      "sha256": "8d65902496a5c4edbd5f265fa5fbe735db860765f315ddced878d020626512a1",
+      "source_id": "v1.11-logistic-planck-probes-report-md",
+      "source_path": "artifacts/campaigns/v1.11-logistic-planck-probes/report.md"
+    }
+  ]
+}

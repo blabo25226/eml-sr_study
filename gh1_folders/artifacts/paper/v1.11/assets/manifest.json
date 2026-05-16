@@ -1,0 +1,311 @@
+{
+  "claim_boundary": "paper assets visualize locked evidence and do not promote unsupported runs",
+  "counts": {
+    "figures": 7,
+    "source_locks": 7,
+    "tables": 7
+  },
+  "figures": {
+    "baseline_diagnostics": {
+      "claim_boundary": "prediction-only baseline diagnostics do not enter EML symbolic-recovery denominators",
+      "denominator": "local prediction-only baselines fit on deterministic demo splits",
+      "figure_id": "baseline_diagnostics",
+      "included_statuses": [
+        "ok",
+        "unavailable"
+      ],
+      "metadata": "artifacts/paper/v1.11/assets/figures/baseline_diagnostics.metadata.json",
+      "schema": "eml.paper_figure_metadata.v1",
+      "source_table_csv": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.csv",
+      "source_table_json": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.json",
+      "svg": "artifacts/paper/v1.11/assets/figures/baseline_diagnostics.svg",
+      "title": "Prediction-Only Baseline Diagnostics"
+    },
+    "depth_degradation": {
+      "claim_boundary": "depth-curve rows are historical boundary evidence, not v1.11 paper-training claims",
+      "denominator": "v1.6 proof-depth-curve rows grouped by depth and start mode",
+      "figure_id": "depth_degradation",
+      "included_statuses": [
+        "recovered",
+        "snapped_but_failed"
+      ],
+      "metadata": "artifacts/paper/v1.11/assets/figures/depth_degradation.metadata.json",
+      "schema": "eml.paper_figure_metadata.v1",
+      "source_table_csv": "artifacts/paper/v1.11/assets/tables/depth_degradation.csv",
+      "source_table_json": "artifacts/paper/v1.11/assets/tables/depth_degradation.json",
+      "svg": "artifacts/paper/v1.11/assets/figures/depth_degradation.svg",
+      "title": "Recovery Degradation with Depth"
+    },
+    "failure_taxonomy": {
+      "claim_boundary": "unsupported rows remain visible in the figure source table",
+      "denominator": "grouped unsupported or failed v1.11 runs",
+      "figure_id": "failure_taxonomy",
+      "included_statuses": [
+        "unsupported",
+        "failed",
+        "snapped_but_failed"
+      ],
+      "metadata": "artifacts/paper/v1.11/assets/figures/failure_taxonomy.metadata.json",
+      "schema": "eml.paper_figure_metadata.v1",
+      "source_table_csv": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.csv",
+      "source_table_json": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.json",
+      "svg": "artifacts/paper/v1.11/assets/figures/failure_taxonomy.svg",
+      "title": "Unsupported and Failure Taxonomy"
+    },
+    "motif_depth_deltas": {
+      "claim_boundary": "depth reduction is not recovery when strict support remains false",
+      "denominator": "rows with macro diagnostics and validation metadata",
+      "figure_id": "motif_depth_deltas",
+      "included_statuses": [
+        "supported",
+        "unsupported"
+      ],
+      "metadata": "artifacts/paper/v1.11/assets/figures/motif_depth_deltas.metadata.json",
+      "schema": "eml.paper_figure_metadata.v1",
+      "source_table_csv": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.csv",
+      "source_table_json": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.json",
+      "svg": "artifacts/paper/v1.11/assets/figures/motif_depth_deltas.svg",
+      "title": "Reusable Motif Compile-Depth Reduction"
+    },
+    "regime_recovery": {
+      "claim_boundary": "regimes remain separated; this is not a single blind-discovery denominator",
+      "denominator": "group-local runs within each suite and start mode",
+      "figure_id": "regime_recovery",
+      "included_statuses": [
+        "recovered",
+        "unsupported",
+        "failed"
+      ],
+      "metadata": "artifacts/paper/v1.11/assets/figures/regime_recovery.metadata.json",
+      "schema": "eml.paper_figure_metadata.v1",
+      "source_table_csv": "artifacts/paper/v1.11/assets/tables/regime_recovery.csv",
+      "source_table_json": "artifacts/paper/v1.11/assets/tables/regime_recovery.json",
+      "svg": "artifacts/paper/v1.11/assets/figures/regime_recovery.svg",
+      "title": "Verifier Recovery by Evidence Regime"
+    },
+    "scientific_law_support": {
+      "claim_boundary": "unsupported diagnostic laws stay unsupported unless strict compile and verifier support pass",
+      "denominator": "one row per paper-package scientific-law entry",
+      "figure_id": "scientific_law_support",
+      "included_statuses": [
+        "supported",
+        "unsupported",
+        "recovered"
+      ],
+      "metadata": "artifacts/paper/v1.11/assets/figures/scientific_law_support.metadata.json",
+      "schema": "eml.paper_figure_metadata.v1",
+      "source_table_csv": "artifacts/paper/v1.11/assets/tables/scientific_law_support.csv",
+      "source_table_json": "artifacts/paper/v1.11/assets/tables/scientific_law_support.json",
+      "svg": "artifacts/paper/v1.11/assets/figures/scientific_law_support.svg",
+      "title": "Scientific-Law Support Matrix"
+    },
+    "training_lifecycle": {
+      "claim_boundary": "low loss alone is never counted as recovered without verifier success",
+      "denominator": "v1.11 training and probe runs with recorded soft or post-snap losses",
+      "figure_id": "training_lifecycle",
+      "included_statuses": [
+        "recovered",
+        "unsupported",
+        "failed"
+      ],
+      "metadata": "artifacts/paper/v1.11/assets/figures/training_lifecycle.metadata.json",
+      "schema": "eml.paper_figure_metadata.v1",
+      "source_table_csv": "artifacts/paper/v1.11/assets/tables/training_lifecycle.csv",
+      "source_table_json": "artifacts/paper/v1.11/assets/tables/training_lifecycle.json",
+      "svg": "artifacts/paper/v1.11/assets/figures/training_lifecycle.svg",
+      "title": "Training Loss Before and After Snap"
+    }
+  },
+  "generated_at": "2026-04-19T13:46:43.102700+00:00",
+  "output_dir": "artifacts/paper/v1.11/assets",
+  "schema": "eml.paper_assets.v1",
+  "source_diagnostics_schema": "eml.paper_diagnostics.v1",
+  "sources": [
+    {
+      "path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.json",
+      "sha256": "f0c7a9f05f246b01cbb616905b2ad1cc5ecebdf7681dce3418e5b555457cc10c",
+      "source_id": "scientific_law_table"
+    },
+    {
+      "path": "artifacts/campaigns/v1.11-paper-training/aggregate.json",
+      "sha256": "10c7e0f7b24fa546060ed4d6601d6c53bca692540788f786b9c368075b083954",
+      "source_id": "training_aggregate"
+    },
+    {
+      "path": "artifacts/campaigns/v1.11-logistic-planck-probes/aggregate.json",
+      "sha256": "3d01c2c3943f6c38f496a66d44988a55a3c34f807b22d80dcd9c5724c7e1b92a",
+      "source_id": "probe_aggregate"
+    },
+    {
+      "path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/aggregate.json",
+      "sha256": "826d71230bcc1ce60ff0dccab6864d0cddd764d60ce0f7b62457f1e83b139f12",
+      "source_id": "depth_curve_aggregate"
+    },
+    {
+      "path": "artifacts/diagnostics/v1.11-paper-ablations/manifest.json",
+      "sha256": "50518c3e833a079196e576e5145ac4ef9318ee173ba99e84a3b2d9c3c8ed1f13",
+      "source_id": "diagnostics_manifest"
+    },
+    {
+      "path": "artifacts/diagnostics/v1.11-paper-ablations/motif-depth-deltas.json",
+      "sha256": "4f37daf3a0c2b44ff4ba17ab3faac4f70e3636e88ba32edbcc3bc832b77f9fa9",
+      "source_id": "motif_depth_deltas"
+    },
+    {
+      "path": "artifacts/diagnostics/v1.11-paper-ablations/baseline-diagnostics.json",
+      "sha256": "f5780ffc80bcecf91fb4deaafdb20c2dcf10b0bb74e4c3d0e216393b5ed5dfff",
+      "source_id": "baseline_diagnostics"
+    }
+  ],
+  "tables": {
+    "baseline_diagnostics": {
+      "columns": [
+        "assistance_level",
+        "baseline_name",
+        "baseline_type",
+        "claim_boundary",
+        "extrapolation_mae",
+        "extrapolation_max_abs",
+        "extrapolation_mse",
+        "failure_reason",
+        "formula",
+        "heldout_mae",
+        "heldout_max_abs",
+        "heldout_mse",
+        "model_summary",
+        "parameter_count",
+        "status",
+        "train_mae",
+        "train_max_abs",
+        "train_mse"
+      ],
+      "csv": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.csv",
+      "json": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.json",
+      "markdown": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.md",
+      "rows": 20
+    },
+    "depth_degradation": {
+      "columns": [
+        "source",
+        "depth",
+        "start_mode",
+        "training_mode",
+        "seed_count",
+        "recovered",
+        "total",
+        "recovery_rate",
+        "best_loss_median",
+        "post_snap_loss_median",
+        "runtime_seconds_median",
+        "snap_min_margin_median",
+        "claim_boundary"
+      ],
+      "csv": "artifacts/paper/v1.11/assets/tables/depth_degradation.csv",
+      "json": "artifacts/paper/v1.11/assets/tables/depth_degradation.json",
+      "markdown": "artifacts/paper/v1.11/assets/tables/depth_degradation.md",
+      "rows": 10
+    },
+    "failure_taxonomy": {
+      "columns": [
+        "suite_id",
+        "formula",
+        "start_mode",
+        "classification",
+        "count",
+        "claim_boundary"
+      ],
+      "csv": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.csv",
+      "json": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.json",
+      "markdown": "artifacts/paper/v1.11/assets/tables/failure_taxonomy.md",
+      "rows": 4
+    },
+    "motif_depth_deltas": {
+      "columns": [
+        "artifact_path",
+        "baseline_depth",
+        "baseline_nodes",
+        "compile_support",
+        "depth_delta",
+        "law",
+        "macro_hits",
+        "max_abs_error",
+        "motif_depth",
+        "motif_nodes",
+        "node_delta",
+        "source_expression",
+        "strict_support",
+        "validation_passed",
+        "validation_status"
+      ],
+      "csv": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.csv",
+      "json": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.json",
+      "markdown": "artifacts/paper/v1.11/assets/tables/motif_depth_deltas.md",
+      "rows": 6
+    },
+    "regime_recovery": {
+      "columns": [
+        "suite_id",
+        "regime",
+        "runs",
+        "verifier_recovered",
+        "same_ast_return",
+        "unsupported",
+        "failed",
+        "recovery_rate",
+        "unsupported_rate",
+        "failure_rate",
+        "evidence_classes",
+        "denominator_rule",
+        "claim_boundary"
+      ],
+      "csv": "artifacts/paper/v1.11/assets/tables/regime_recovery.csv",
+      "json": "artifacts/paper/v1.11/assets/tables/regime_recovery.json",
+      "markdown": "artifacts/paper/v1.11/assets/tables/regime_recovery.md",
+      "rows": 5
+    },
+    "scientific_law_support": {
+      "columns": [
+        "law",
+        "formula",
+        "compile_support",
+        "compile_depth",
+        "macro_hits",
+        "warm_start_status",
+        "verifier_status",
+        "evidence_regime",
+        "strict_supported_and_verified",
+        "artifact_path",
+        "claim_boundary"
+      ],
+      "csv": "artifacts/paper/v1.11/assets/tables/scientific_law_support.csv",
+      "json": "artifacts/paper/v1.11/assets/tables/scientific_law_support.json",
+      "markdown": "artifacts/paper/v1.11/assets/tables/scientific_law_support.md",
+      "rows": 7
+    },
+    "training_lifecycle": {
+      "columns": [
+        "suite_id",
+        "run_id",
+        "case_id",
+        "formula",
+        "start_mode",
+        "evidence_class",
+        "classification",
+        "status",
+        "claim_status",
+        "depth",
+        "steps",
+        "best_loss",
+        "post_snap_loss",
+        "snap_min_margin",
+        "verifier_status",
+        "artifact_path",
+        "claim_boundary"
+      ],
+      "csv": "artifacts/paper/v1.11/assets/tables/training_lifecycle.csv",
+      "json": "artifacts/paper/v1.11/assets/tables/training_lifecycle.json",
+      "markdown": "artifacts/paper/v1.11/assets/tables/training_lifecycle.md",
+      "rows": 12
+    }
+  }
+}

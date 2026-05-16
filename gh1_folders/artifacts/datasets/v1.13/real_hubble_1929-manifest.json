@@ -1,0 +1,109 @@
+{
+  "category": "real_dataset_path",
+  "classification": "real",
+  "compatible_contracts": [
+    "verifier",
+    "benchmark_track",
+    "baseline_harness"
+  ],
+  "data_path": "/Volumes/git/legotin/eml-symbolic-regression/data/real/hubble_1929_velocity_distance.csv",
+  "dataset_id": "real_hubble_1929",
+  "description": "Real Hubble 1929 nebula distance and recession-velocity observations with fixed independent splits.",
+  "domain_constraints": {
+    "distance_mpc": {
+      "max": 2.0,
+      "min": 0.032,
+      "positive": true
+    }
+  },
+  "formula_id": "hubble_velocity_distance",
+  "generator": "committed_csv_fixture_with_fixed_split_column",
+  "manifest_sha256": "3baf9508c672e8378520f777c374c95b335101b5e40e271217af76312c21b3c8",
+  "noise_policy": {
+    "known_noise_model": false,
+    "type": "observational"
+  },
+  "points": 32,
+  "schema": "eml.expanded_dataset_manifest.v1",
+  "seed": 0,
+  "source": "Hubble 1929 velocity-distance data table",
+  "source_url": "https://www2.stat.duke.edu/courses/Fall03/sta113/Hubble.html",
+  "split_policy": {
+    "roles": {
+      "extrapolation": "diagnostic",
+      "final_confirmation": "final_confirmation",
+      "heldout": "diagnostic",
+      "selection": "selection",
+      "train": "training"
+    },
+    "type": "fixed_csv_split_column"
+  },
+  "splits": [
+    {
+      "count": 15,
+      "domain": {
+        "distance_mpc": [
+          0.032,
+          2.0
+        ]
+      },
+      "input_sha256": {
+        "distance_mpc": "bc2a227a67187daa4dc0f598d2d0bc3c07080d16ace31d86fbabf9612da07dd2"
+      },
+      "name": "train",
+      "role": "training",
+      "target_sha256": "758f3d0e5a852c3ffa133ae78a6d240b61f45da708ed6a4e58abb891210fa8d7",
+      "target_unit": "kilometre_per_second",
+      "units": {
+        "distance_mpc": "megaparsec"
+      }
+    },
+    {
+      "count": 5,
+      "domain": {
+        "distance_mpc": [
+          0.214,
+          2.0
+        ]
+      },
+      "input_sha256": {
+        "distance_mpc": "5818afaccd324d68dea243eb25e4025ef9e2cd0d827fa371b38c3097f78549fd"
+      },
+      "name": "heldout",
+      "role": "diagnostic",
+      "target_sha256": "7df91f044e711169e70ceccd5efe70a3613ae7dce89c7af09fb9b132a7521151",
+      "target_unit": "kilometre_per_second",
+      "units": {
+        "distance_mpc": "megaparsec"
+      }
+    },
+    {
+      "count": 4,
+      "domain": {
+        "distance_mpc": [
+          0.275,
+          2.0
+        ]
+      },
+      "input_sha256": {
+        "distance_mpc": "b8f376390f11bcacec88c1f63eeccec1a7eb2a5db46d0a1bed531aa63fd49f51"
+      },
+      "name": "final_confirmation",
+      "role": "final_confirmation",
+      "target_sha256": "73293ffdafceb3cd4892ce5c70a9d2fa18f9e66638e6def79d8a1981ac7cd2c6",
+      "target_unit": "kilometre_per_second",
+      "units": {
+        "distance_mpc": "megaparsec"
+      }
+    }
+  ],
+  "target_expression": null,
+  "tolerance": 1e-08,
+  "units": {
+    "distance_mpc": "megaparsec",
+    "target": "kilometre_per_second"
+  },
+  "variables": [
+    "distance_mpc"
+  ]
+}

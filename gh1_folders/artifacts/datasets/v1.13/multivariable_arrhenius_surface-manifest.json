@@ -1,0 +1,182 @@
+{
+  "category": "multivariable_case",
+  "classification": "synthetic",
+  "compatible_contracts": [
+    "verifier",
+    "benchmark_track",
+    "baseline_harness"
+  ],
+  "data_path": null,
+  "dataset_id": "multivariable_arrhenius_surface",
+  "description": "Synthetic multivariable Arrhenius surface with variable pre-exponential factor and dimensionless temperature.",
+  "domain_constraints": {
+    "a": {
+      "max": 1.6,
+      "min": 0.7
+    },
+    "t": {
+      "max": 4.2,
+      "min": 0.6,
+      "positive": true
+    }
+  },
+  "formula_id": "arrhenius",
+  "generator": "independent_seeded_uniform_multivariable_sampling",
+  "manifest_sha256": "c460e508a1c3a91916ae5ac94f0ebbb23727a571ce82a019b6bbb7654ec2d069",
+  "noise_policy": {
+    "type": "none"
+  },
+  "points": 32,
+  "schema": "eml.expanded_dataset_manifest.v1",
+  "seed": 0,
+  "source": "generated_from_multivariable_arrhenius_formula",
+  "source_url": null,
+  "split_policy": {
+    "roles": {
+      "extrapolation": "diagnostic",
+      "final_confirmation": "final_confirmation",
+      "heldout": "diagnostic",
+      "selection": "selection",
+      "train": "training"
+    },
+    "type": "independent_multivariable_domains"
+  },
+  "splits": [
+    {
+      "count": 32,
+      "domain": {
+        "a": [
+          0.8,
+          1.2
+        ],
+        "t": [
+          0.6,
+          2.5
+        ]
+      },
+      "input_sha256": {
+        "a": "2d3f6cab3d40456966dd06fee27f323f2b71e338556282913ad7a7a4c0fef601",
+        "t": "368ac47e617180c729aed5dfcf824a94ce65b8cb35e3aea99389d510d4225175"
+      },
+      "name": "train",
+      "role": "training",
+      "target_sha256": "e7f154ad17d062fb173b6c9d4cfe7eb6fc54b52912bb31dc6911e7076f777938",
+      "target_unit": "dimensionless_rate",
+      "units": {
+        "a": "dimensionless_rate_prefactor",
+        "t": "dimensionless_temperature"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "a": [
+          0.85,
+          1.3
+        ],
+        "t": [
+          0.7,
+          2.7
+        ]
+      },
+      "input_sha256": {
+        "a": "35cfd7ce64663f83bc62041a767f412d00ae80d499f34e9ca7ed7f73bbc9cfa8",
+        "t": "1c32f7acfeab9cfd74605b290edc4318f0ba7f9219443072584f757039f638fe"
+      },
+      "name": "selection",
+      "role": "selection",
+      "target_sha256": "554b165114292c0c9bef72cb7163d4df48cd5d4b0e0f4aa448a1dedacb6cd3b1",
+      "target_unit": "dimensionless_rate",
+      "units": {
+        "a": "dimensionless_rate_prefactor",
+        "t": "dimensionless_temperature"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "a": [
+          0.75,
+          1.35
+        ],
+        "t": [
+          0.65,
+          2.8
+        ]
+      },
+      "input_sha256": {
+        "a": "5d6ed19591444bd49c48219eef816eb1ffd2f74729739b5a807cda39513291f3",
+        "t": "c712fe48b87b3be0f356c65c895113018f37cd7fd82887e3b3ce17cc64d1e4a5"
+      },
+      "name": "heldout",
+      "role": "diagnostic",
+      "target_sha256": "be49ddc90b7bb716eb43aee0680b5ba916d40af0ce536a89255092bd228c56fc",
+      "target_unit": "dimensionless_rate",
+      "units": {
+        "a": "dimensionless_rate_prefactor",
+        "t": "dimensionless_temperature"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "a": [
+          1.25,
+          1.6
+        ],
+        "t": [
+          2.9,
+          4.2
+        ]
+      },
+      "input_sha256": {
+        "a": "81fec953979b5b4a0b524abc1b2b07c554916234bca4b59262902be94bf1071d",
+        "t": "ca6961370c51400441ba341e7e117e377bf4f7097159ee69c814decdc760d503"
+      },
+      "name": "extrapolation",
+      "role": "diagnostic",
+      "target_sha256": "33b4bfd6b0f182a9d06b2a49a2e2cd3de0240404ecec0bb534e3fb58d2e62a15",
+      "target_unit": "dimensionless_rate",
+      "units": {
+        "a": "dimensionless_rate_prefactor",
+        "t": "dimensionless_temperature"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "a": [
+          0.7,
+          1.55
+        ],
+        "t": [
+          0.6,
+          4.0
+        ]
+      },
+      "input_sha256": {
+        "a": "642973c955b280191b5d2e9464a0f76dc6bad3b6e3a8e8570620ce8a71cb2f07",
+        "t": "e02e23c53cefe4417781c5d383a2ff049a3ec2efe69a4d0efd38b334afcca7c8"
+      },
+      "name": "final_confirmation",
+      "role": "final_confirmation",
+      "target_sha256": "1a888370ef0e4ed6545226156771ac1b80715b964dbe3d24448a0d0a6375a788",
+      "target_unit": "dimensionless_rate",
+      "units": {
+        "a": "dimensionless_rate_prefactor",
+        "t": "dimensionless_temperature"
+      }
+    }
+  ],
+  "target_expression": "a*exp(-0.8/t)",
+  "tolerance": 1e-08,
+  "units": {
+    "a": "dimensionless_rate_prefactor",
+    "t": "dimensionless_temperature",
+    "target": "dimensionless_rate"
+  },
+  "variables": [
+    "a",
+    "t"
+  ]
+}

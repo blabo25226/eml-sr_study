@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="320" viewBox="0 0 1140 320">
+<style>
+.title{font:700 24px Arial,sans-serif;fill:#17202a}.label{font:700 17px Arial,sans-serif;fill:#17202a}.small{font:13px Arial,sans-serif;fill:#34495e}.box{fill:#f7f9fb;stroke:#34495e;stroke-width:1.5}.arrow{stroke:#146c94;stroke-width:3;fill:none;marker-end:url(#arrow)}.band{fill:#e8f1f5}
+</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#146c94"/></marker></defs>
+<rect x="0" y="0" width="1140" height="320" fill="#ffffff"/>
+<text x="40" y="42" class="title">Verifier-Gated Hybrid EML Pipeline</text>
+<text x="40" y="68" class="small">Stages are regime-aware; verifier status, not soft loss alone, owns recovery claims.</text>
+<rect x="40" y="236" width="1060" height="42" class="band"/>
+<text x="58" y="262" class="small">Claim boundary: pure blind, scaffolded, warm-start, same-AST, repair/refit, compile-only, unsupported, and failed rows keep separate denominators.</text>
+<rect x="40" y="116" width="165" height="82" rx="6" class="box"/>
+<text x="54" y="148" class="label">Data</text>
+<text x="54" y="174" class="small">train / held-out / extrapolation</text>
+<path d="M215 157 L230 157" class="arrow"/>
+<rect x="245" y="116" width="210" height="82" rx="6" class="box"/>
+<text x="259" y="148" class="label">Soft complete EML tree</text>
+<text x="259" y="174" class="small">complex128 logits and guards</text>
+<path d="M465 157 L485 157" class="arrow"/>
+<rect x="500" y="116" width="165" height="82" rx="6" class="box"/>
+<text x="514" y="148" class="label">Snap</text>
+<text x="514" y="174" class="small">exact categorical EML AST</text>
+<path d="M675 157 L660 157" class="arrow"/>
+<rect x="675" y="116" width="165" height="82" rx="6" class="box"/>
+<text x="689" y="148" class="label">Candidate pool</text>
+<text x="689" y="174" class="small">repair / refit with fallback</text>
+<path d="M850 157 L895 157" class="arrow"/>
+<rect x="910" y="116" width="165" height="82" rx="6" class="box"/>
+<text x="924" y="148" class="label">Verifier</text>
+<text x="924" y="174" class="small">held-out + mpmath checks</text>
+</svg>

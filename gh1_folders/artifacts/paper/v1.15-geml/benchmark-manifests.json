@@ -1,0 +1,2171 @@
+{
+  "declared_targets": [
+    "sin_pi",
+    "cos_pi",
+    "harmonic_sum",
+    "damped_oscillator",
+    "standing_wave_snapshot",
+    "log_periodic_oscillation",
+    "exp",
+    "log",
+    "quadratic_polynomial",
+    "rational_decay"
+  ],
+  "schema": "eml.v115_geml_benchmark_manifests.v1",
+  "suites": [
+    {
+      "artifact_root": "artifacts/campaigns",
+      "cases": [
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "sin_pi",
+          "id": "sin-pi-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "periodic",
+            "branch_safe_by_construction",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "sin_pi",
+          "id": "sin-pi-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "periodic",
+            "branch_safe_by_construction",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": false,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "exp",
+          "id": "exp-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "negative_control_domain",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": false,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "exp",
+          "id": "exp-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "negative_control_domain",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        }
+      ],
+      "description": "Cheap v1.15 raw EML versus i*pi EML smoke subset over one natural oscillatory target and one negative control with matched blind-training budgets.",
+      "id": "v1.15-geml-oscillatory-smoke",
+      "schema": "eml.benchmark_suite.v1"
+    },
+    {
+      "artifact_root": "artifacts/campaigns",
+      "cases": [
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "sin_pi",
+          "id": "sin-pi-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "periodic",
+            "branch_safe_by_construction",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "sin_pi",
+          "id": "sin-pi-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "periodic",
+            "branch_safe_by_construction",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "cos_pi",
+          "id": "cos-pi-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "periodic",
+            "branch_safe_by_construction",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "cos_pi",
+          "id": "cos-pi-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "periodic",
+            "branch_safe_by_construction",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "0.5",
+              "2",
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "harmonic_sum",
+          "id": "harmonic-sum-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "0.5",
+              "2",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "harmonic",
+            "branch_safe_by_construction",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "0.5",
+              "2",
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "harmonic_sum",
+          "id": "harmonic-sum-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "0.5",
+              "2",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "harmonic",
+            "branch_safe_by_construction",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "-0.15",
+              "2.5",
+              "0.2"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "damped_oscillator",
+          "id": "damped-oscillator-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "-0.15",
+              "2.5",
+              "0.2"
+            ],
+            "depth": 4,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "damped_oscillation",
+            "branch_safe_by_construction",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "-0.15",
+              "2.5",
+              "0.2"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "damped_oscillator",
+          "id": "damped-oscillator-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "-0.15",
+              "2.5",
+              "0.2"
+            ],
+            "depth": 4,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "damped_oscillation",
+            "branch_safe_by_construction",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "standing_wave_snapshot",
+          "id": "standing-wave-snapshot-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "standing_wave",
+            "branch_safe_by_construction",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "3.141592653589793"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "standing_wave_snapshot",
+          "id": "standing-wave-snapshot-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "3.141592653589793"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "standing_wave",
+            "branch_safe_by_construction",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "0.5",
+              "2",
+              "0.3"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "log_periodic_oscillation",
+          "id": "log-periodic-oscillation-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "0.5",
+              "2",
+              "0.3"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "log_periodic",
+            "branch_safe_domain",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "0.5",
+              "2",
+              "0.3"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "log_periodic_oscillation",
+          "id": "log-periodic-oscillation-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "0.5",
+              "2",
+              "0.3"
+            ],
+            "depth": 3,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "oscillatory_target",
+            "log_periodic",
+            "branch_safe_domain",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": false,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "exp",
+          "id": "exp-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "negative_control_domain",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": false,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "exp",
+          "id": "exp-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "negative_control_domain",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": false,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "log",
+          "id": "log-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "branch_safe_domain",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": false,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "log",
+          "id": "log-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "branch_safe_domain",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "0.5"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "quadratic_polynomial",
+          "id": "quadratic-polynomial-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "0.5"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "negative_control_domain",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [
+              "0.5"
+            ],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": true,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "quadratic_polynomial",
+          "id": "quadratic-polynomial-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1",
+              "0.5"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "negative_control_domain",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": false,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "rational_decay",
+          "id": "rational-decay-raw-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "family": "raw_eml",
+              "label": "raw_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "negative_control_domain",
+            "operator:raw"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        },
+        {
+          "benchmark_track": {
+            "basis_constants": [
+              "1"
+            ],
+            "constants_policy": "literal_constants",
+            "denominator_key": "literal_constants",
+            "literal_catalog": [],
+            "name": "literal_constants",
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "scaffold_status": "disabled",
+            "start_mode": "blind",
+            "uses_literal_constants": false,
+            "warm_start_or_scaffold_status": "no_scaffold_initializers",
+            "warm_start_status": "not_warm_start"
+          },
+          "claim_id": null,
+          "constants_policy": "literal_constants",
+          "dataset": {
+            "points": 24,
+            "tolerance": 1e-08
+          },
+          "expect_recovery": false,
+          "formula": "rational_decay",
+          "id": "rational-decay-ipi-blind",
+          "optimizer": {
+            "clamp_exp_real": 40.0,
+            "constants": [
+              "1"
+            ],
+            "depth": 2,
+            "hardening_emit_interval": 2,
+            "hardening_steps": 4,
+            "hardening_temperature_end": 0.02,
+            "log_domain_epsilon": 1e-09,
+            "log_safety_imag_tolerance": 1e-06,
+            "log_safety_margin": 1e-06,
+            "log_safety_weight": 0.0,
+            "lr": 0.05,
+            "max_compile_depth": 13,
+            "max_compile_nodes": 256,
+            "max_power": 3,
+            "max_warm_depth": 14,
+            "operator_family": {
+              "a": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "family": "geml_a",
+              "geml_parameter": {
+                "imag": "3.141592653589793",
+                "real": "0.0"
+              },
+              "label": "ipi_eml",
+              "named_specialization": "ipi_eml",
+              "s": 1.0,
+              "t": 1.0,
+              "terminal": "one"
+            },
+            "operator_schedule": [],
+            "refit_lr": 0.02,
+            "refit_steps": 80,
+            "restarts": 1,
+            "scaffold_exclusions": [],
+            "scaffold_initializers": [],
+            "semantics_mode": "guarded",
+            "steps": 24,
+            "warm_depth": 0,
+            "warm_restarts": 1,
+            "warm_steps": 8
+          },
+          "perturbation_noise": [
+            0.0
+          ],
+          "seeds": [
+            0
+          ],
+          "start_mode": "blind",
+          "tags": [
+            "v1.15",
+            "geml_oscillatory",
+            "negative_control",
+            "negative_control_domain",
+            "operator:ipi"
+          ],
+          "threshold_policy_id": null,
+          "track": "literal_constants",
+          "training_mode": null
+        }
+      ],
+      "description": "v1.15 matched raw EML versus i*pi EML protocol over oscillatory natural-bias targets and exp/log/polynomial/rational negative controls.",
+      "id": "v1.15-geml-oscillatory",
+      "schema": "eml.benchmark_suite.v1"
+    }
+  ]
+}

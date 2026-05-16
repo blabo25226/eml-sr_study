@@ -1,0 +1,10 @@
+group,total,verifier_recovered,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate
+beer_lambert,15,11,11,0,0,4,0,0.7333333333333333,0.0,0.26666666666666666
+damped_oscillator,1,0,0,0,1,0,0,0.0,1.0,0.0
+exp,3,2,0,0,0,1,0,0.6666666666666666,0.0,0.3333333333333333
+log,3,0,0,0,0,3,0,0.0,0.0,1.0
+logistic,1,0,0,0,1,0,0,0.0,1.0,0.0
+michaelis_menten,1,0,0,0,1,0,0,0.0,1.0,0.0
+planck,1,0,0,0,1,0,0,0.0,1.0,0.0
+radioactive_decay,3,0,0,0,0,3,0,0.0,0.0,1.0
+shockley,1,0,0,0,1,0,0,0.0,1.0,0.0

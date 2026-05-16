@@ -1,0 +1,385 @@
+{
+  "basin_bound_report": {
+    "json": "artifacts/proof/v1.5/diagnostics/basin-bound/basin-bound.json",
+    "markdown": "artifacts/proof/v1.5/diagnostics/basin-bound/basin-bound.md"
+  },
+  "campaigns": {
+    "proof-basin": {
+      "campaign_dir": "artifacts/proof/v1.5/campaigns/proof-basin",
+      "counts": {
+        "evidence_classes": {
+          "perturbed_true_tree_recovered": 9
+        },
+        "execution_error": 0,
+        "failed": 0,
+        "repaired_candidate": 0,
+        "same_ast_return": 9,
+        "total": 9,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 9,
+        "verifier_recovery_rate": 1.0
+      },
+      "manifest_path": "artifacts/proof/v1.5/campaigns/proof-basin/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-basin/runs/proof-perturbed-basin",
+      "report_path": "artifacts/proof/v1.5/campaigns/proof-basin/report.md",
+      "thresholds": [
+        {
+          "claim_class": "bounded_training_proof",
+          "claim_id": "paper-perturbed-true-tree-basin",
+          "eligible": 9,
+          "evidence_classes": {
+            "perturbed_true_tree_recovered": 9
+          },
+          "failed": 0,
+          "passed": 9,
+          "rate": 1.0,
+          "required_rate": 1.0,
+          "status": "passed",
+          "threshold": {
+            "allowed_evidence_classes": [
+              "blind_training_recovered",
+              "compiler_warm_start_recovered",
+              "perturbed_true_tree_recovered",
+              "repaired_candidate",
+              "verified_equivalent"
+            ],
+            "description": "Declared bounded proof suites pass only at 100% verifier-owned training recovery.",
+            "fail_on_execution_error": true,
+            "fail_on_unsupported": true,
+            "id": "bounded_100_percent",
+            "policy_type": "bounded_rate",
+            "required_rate": 1.0
+          },
+          "threshold_policy_id": "bounded_100_percent"
+        }
+      ]
+    },
+    "proof-basin-probes": {
+      "campaign_dir": "artifacts/proof/v1.5/campaigns/proof-basin-probes",
+      "counts": {
+        "evidence_classes": {
+          "perturbed_true_tree_recovered": 1,
+          "repaired_candidate": 3
+        },
+        "execution_error": 0,
+        "failed": 0,
+        "repaired_candidate": 3,
+        "same_ast_return": 1,
+        "total": 4,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 4,
+        "verifier_recovery_rate": 1.0
+      },
+      "manifest_path": "artifacts/proof/v1.5/campaigns/proof-basin-probes/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-basin-probes/runs/proof-perturbed-basin-beer-probes",
+      "report_path": "artifacts/proof/v1.5/campaigns/proof-basin-probes/report.md",
+      "thresholds": []
+    },
+    "proof-depth-curve": {
+      "campaign_dir": "artifacts/proof/v1.5/campaigns/proof-depth-curve",
+      "counts": {
+        "evidence_classes": {
+          "blind_training_recovered": 2,
+          "perturbed_true_tree_recovered": 10,
+          "scaffolded_blind_training_recovered": 2,
+          "snapped_but_failed": 6
+        },
+        "execution_error": 0,
+        "failed": 6,
+        "repaired_candidate": 0,
+        "same_ast_return": 10,
+        "total": 20,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 14,
+        "verifier_recovery_rate": 0.7
+      },
+      "manifest_path": "artifacts/proof/v1.5/campaigns/proof-depth-curve/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-depth-curve/runs/proof-depth-curve",
+      "report_path": "artifacts/proof/v1.5/campaigns/proof-depth-curve/report.md",
+      "thresholds": [
+        {
+          "claim_class": "measured_depth_curve",
+          "claim_id": "paper-blind-depth-degradation",
+          "eligible": 20,
+          "evidence_classes": {
+            "blind_training_recovered": 2,
+            "perturbed_true_tree_recovered": 10,
+            "scaffolded_blind_training_recovered": 2,
+            "snapped_but_failed": 6
+          },
+          "failed": 0,
+          "passed": 20,
+          "rate": 1.0,
+          "required_rate": null,
+          "status": "reported",
+          "threshold": {
+            "allowed_evidence_classes": [
+              "blind_training_recovered",
+              "scaffolded_blind_training_recovered",
+              "compiler_warm_start_recovered",
+              "perturbed_true_tree_recovered",
+              "repaired_candidate",
+              "verified_equivalent",
+              "same_ast",
+              "soft_fit_only",
+              "snapped_but_failed",
+              "failed",
+              "unsupported",
+              "execution_failure"
+            ],
+            "description": "Depth-curve suites report measured recovery by depth without requiring universal blind recovery.",
+            "fail_on_execution_error": false,
+            "fail_on_unsupported": false,
+            "id": "measured_depth_curve",
+            "policy_type": "measured_rate",
+            "required_rate": null
+          },
+          "threshold_policy_id": "measured_depth_curve"
+        }
+      ]
+    },
+    "proof-shallow": {
+      "campaign_dir": "artifacts/proof/v1.5/campaigns/proof-shallow",
+      "counts": {
+        "evidence_classes": {
+          "scaffolded_blind_training_recovered": 18
+        },
+        "execution_error": 0,
+        "failed": 0,
+        "repaired_candidate": 0,
+        "same_ast_return": 0,
+        "total": 18,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 18,
+        "verifier_recovery_rate": 1.0
+      },
+      "manifest_path": "artifacts/proof/v1.5/campaigns/proof-shallow/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-shallow/runs/v1.5-shallow-proof",
+      "report_path": "artifacts/proof/v1.5/campaigns/proof-shallow/report.md",
+      "thresholds": [
+        {
+          "claim_class": "scaffolded_training_proof",
+          "claim_id": "paper-shallow-scaffolded-recovery",
+          "eligible": 18,
+          "evidence_classes": {
+            "scaffolded_blind_training_recovered": 18
+          },
+          "failed": 0,
+          "passed": 18,
+          "rate": 1.0,
+          "required_rate": 1.0,
+          "status": "passed",
+          "threshold": {
+            "allowed_evidence_classes": [
+              "scaffolded_blind_training_recovered"
+            ],
+            "description": "Declared scaffolded shallow suites pass only at 100% verifier-owned scaffolded training recovery.",
+            "fail_on_execution_error": true,
+            "fail_on_unsupported": true,
+            "id": "scaffolded_bounded_100_percent",
+            "policy_type": "bounded_rate",
+            "required_rate": 1.0
+          },
+          "threshold_policy_id": "scaffolded_bounded_100_percent"
+        }
+      ]
+    },
+    "proof-shallow-pure-blind": {
+      "campaign_dir": "artifacts/proof/v1.5/campaigns/proof-shallow-pure-blind",
+      "counts": {
+        "evidence_classes": {
+          "blind_training_recovered": 2,
+          "snapped_but_failed": 16
+        },
+        "execution_error": 0,
+        "failed": 16,
+        "repaired_candidate": 0,
+        "same_ast_return": 0,
+        "total": 18,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 2,
+        "verifier_recovery_rate": 0.1111111111111111
+      },
+      "manifest_path": "artifacts/proof/v1.5/campaigns/proof-shallow-pure-blind/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-shallow-pure-blind/runs/v1.5-shallow-pure-blind",
+      "report_path": "artifacts/proof/v1.5/campaigns/proof-shallow-pure-blind/report.md",
+      "thresholds": [
+        {
+          "claim_class": "measured_training_boundary",
+          "claim_id": "paper-shallow-blind-recovery",
+          "eligible": 18,
+          "evidence_classes": {
+            "blind_training_recovered": 2,
+            "snapped_but_failed": 16
+          },
+          "failed": 16,
+          "passed": 2,
+          "rate": 0.1111111111111111,
+          "required_rate": null,
+          "status": "reported",
+          "threshold": {
+            "allowed_evidence_classes": [
+              "blind_training_recovered"
+            ],
+            "description": "Pure random-initialized blind suites report measured recovery without a 100% pass target.",
+            "fail_on_execution_error": false,
+            "fail_on_unsupported": false,
+            "id": "measured_pure_blind_recovery",
+            "policy_type": "measured_rate",
+            "required_rate": null
+          },
+          "threshold_policy_id": "measured_pure_blind_recovery"
+        }
+      ]
+    }
+  },
+  "claim_rows": [
+    {
+      "campaign": "proof-shallow-pure-blind",
+      "claim_class": "measured_training_boundary",
+      "claim_id": "paper-shallow-blind-recovery",
+      "eligible": 18,
+      "passed": 2,
+      "rate": 0.1111111111111111,
+      "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-shallow-pure-blind/runs/v1.5-shallow-pure-blind",
+      "report_path": "artifacts/proof/v1.5/campaigns/proof-shallow-pure-blind/report.md",
+      "status": "reported",
+      "threshold_policy_id": "measured_pure_blind_recovery",
+      "verdict": "bounded"
+    },
+    {
+      "campaign": "proof-shallow",
+      "claim_class": "scaffolded_training_proof",
+      "claim_id": "paper-shallow-scaffolded-recovery",
+      "eligible": 18,
+      "passed": 18,
+      "rate": 1.0,
+      "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-shallow/runs/v1.5-shallow-proof",
+      "report_path": "artifacts/proof/v1.5/campaigns/proof-shallow/report.md",
+      "status": "passed",
+      "threshold_policy_id": "scaffolded_bounded_100_percent",
+      "verdict": "passed"
+    },
+    {
+      "campaign": "proof-basin",
+      "claim_class": "bounded_training_proof",
+      "claim_id": "paper-perturbed-true-tree-basin",
+      "eligible": 9,
+      "passed": 9,
+      "rate": 1.0,
+      "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-basin/runs/proof-perturbed-basin",
+      "report_path": "artifacts/proof/v1.5/campaigns/proof-basin/report.md",
+      "status": "passed",
+      "threshold_policy_id": "bounded_100_percent",
+      "verdict": "passed"
+    },
+    {
+      "campaign": "proof-depth-curve",
+      "claim_class": "measured_depth_curve",
+      "claim_id": "paper-blind-depth-degradation",
+      "eligible": 20,
+      "passed": 20,
+      "rate": 1.0,
+      "raw_run_root": "artifacts/proof/v1.5/campaigns/proof-depth-curve/runs/proof-depth-curve",
+      "report_path": "artifacts/proof/v1.5/campaigns/proof-depth-curve/report.md",
+      "status": "reported",
+      "threshold_policy_id": "measured_depth_curve",
+      "verdict": "bounded"
+    }
+  ],
+  "depth_curve": [
+    {
+      "blind_rate": 1.0,
+      "blind_seed_count": 2,
+      "depth": 2,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    },
+    {
+      "blind_rate": 1.0,
+      "blind_seed_count": 2,
+      "depth": 3,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    },
+    {
+      "blind_rate": 0.0,
+      "blind_seed_count": 2,
+      "depth": 4,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    },
+    {
+      "blind_rate": 0.0,
+      "blind_seed_count": 2,
+      "depth": 5,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    },
+    {
+      "blind_rate": 0.0,
+      "blind_seed_count": 2,
+      "depth": 6,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    }
+  ],
+  "generated_at": "2026-04-16T07:17:12.380610+00:00",
+  "out_of_scope_claims": [
+    {
+      "case_ids": [],
+      "claim_class": "contract_context",
+      "id": "paper-complete-depth-bounded-search",
+      "notes": [
+        "Complete depth-bounded search is represented separately from empirical optimizer success.",
+        "Catalog or compile-only validation cannot satisfy bounded training-proof claims."
+      ],
+      "source_refs": [
+        "sources/paper.pdf",
+        "sources/NORTH_STAR.md",
+        ".planning/REQUIREMENTS.md",
+        ".planning/ROADMAP.md"
+      ],
+      "statement": "EML trees form a complete depth-bounded representation family for the paper's elementary-function basis; this is context for proof suites, not a training-recovery pass condition.",
+      "suite_ids": [
+        "v1.5-shallow-pure-blind",
+        "v1.5-shallow-proof",
+        "proof-perturbed-basin",
+        "proof-depth-curve"
+      ],
+      "threshold_policy_id": "contract_context"
+    }
+  ],
+  "output_root": "artifacts/proof/v1.5",
+  "reproducibility": {
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli proof-campaign --output-root artifacts/proof/v1.5 --overwrite"
+  },
+  "schema": "eml.proof_campaign.v1",
+  "v14_campaigns": [
+    {
+      "blind_recovered": 4,
+      "blind_recovery_rate": 0.6666666666666666,
+      "blind_total": 6,
+      "campaign": "v1.4-standard",
+      "path": "artifacts/campaigns/v1.4-standard",
+      "total_runs": 16,
+      "verifier_recovered": 9,
+      "verifier_recovery_rate": 0.5625
+    },
+    {
+      "blind_recovered": 6,
+      "blind_recovery_rate": 0.6666666666666666,
+      "blind_total": 9,
+      "campaign": "v1.4-showcase",
+      "path": "artifacts/campaigns/v1.4-showcase",
+      "total_runs": 29,
+      "verifier_recovered": 18,
+      "verifier_recovery_rate": 0.6206896551724138
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "claim_boundary": "Ranking promotes only verifier-passed candidates; loss-only rows remain diagnostic.",
+  "counts": {
+    "by_evidence_class": {
+      "original_snap": 24
+    },
+    "total": 24
+  },
+  "generated_at": "2026-04-22T12:43:42.601081+00:00",
+  "neighborhoods_dir": "artifacts/paper/v1.17-geml/neighborhoods",
+  "outputs": {
+    "manifest_json": "artifacts/paper/v1.17-geml/ranking/manifest.json",
+    "output_dir": "artifacts/paper/v1.17-geml/ranking",
+    "ranked_candidates_csv": "artifacts/paper/v1.17-geml/ranking/ranked-candidates.csv",
+    "ranked_candidates_json": "artifacts/paper/v1.17-geml/ranking/ranked-candidates.json",
+    "ranked_candidates_md": "artifacts/paper/v1.17-geml/ranking/ranked-candidates.md",
+    "source_locks_json": "artifacts/paper/v1.17-geml/ranking/source-locks.json"
+  },
+  "schema": "eml.v117_candidate_ranking_manifest.v1",
+  "selected_candidate_id": "",
+  "selected_evidence_class": "original_snap",
+  "source_locks": "artifacts/paper/v1.17-geml/ranking/source-locks.json",
+  "source_locks_ok": true
+}

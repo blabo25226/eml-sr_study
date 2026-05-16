@@ -1,0 +1,12 @@
+run_id,formula,start_mode,classification,status,reason,artifact_path
+v1-3-standard-exp-blind-a5022d6098c7,exp,blind,snapped_but_failed,snapped_but_failed,mpmath_failed,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-exp-blind-a5022d6098c7.json
+v1-3-standard-log-blind-194180dc5df0,log,blind,snapped_but_failed,snapped_but_failed,mpmath_failed,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-log-blind-194180dc5df0.json
+v1-3-standard-log-blind-99aa5ff393ee,log,blind,snapped_but_failed,snapped_but_failed,mpmath_failed,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-log-blind-99aa5ff393ee.json
+v1-3-standard-radioactive-decay-blind-20f83222d0db,radioactive_decay,blind,failed,failed,mpmath_failed,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-radioactive-decay-blind-20f83222d0db.json
+v1-3-standard-radioactive-decay-blind-83660c5b4b25,radioactive_decay,blind,failed,failed,mpmath_failed,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-radioactive-decay-blind-83660c5b4b25.json
+v1-3-standard-beer-perturbation-sweep-348eebff7ed4,beer_lambert,warm_start,snapped_but_failed,snapped_but_failed,verified,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-348eebff7ed4.json
+v1-3-standard-beer-perturbation-sweep-68c818aed370,beer_lambert,warm_start,snapped_but_failed,snapped_but_failed,verified,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-68c818aed370.json
+v1-3-standard-michaelis-warm-diagnostic-37a57673a2e2,michaelis_menten,warm_start,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-michaelis-warm-diagnostic-37a57673a2e2.json
+v1-3-standard-logistic-compile-820d90103856,logistic,compile,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-logistic-compile-820d90103856.json
+v1-3-standard-shockley-compile-e410a7c053d4,shockley,compile,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-shockley-compile-e410a7c053d4.json
+v1-3-standard-planck-diagnostic-837e17c92c48,planck,compile,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-planck-diagnostic-837e17c92c48.json

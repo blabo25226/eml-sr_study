@@ -1,0 +1,109 @@
+{
+  "columns": [
+    "law",
+    "formula",
+    "compile_support",
+    "compile_depth",
+    "macro_hits",
+    "warm_start_status",
+    "verifier_status",
+    "evidence_regime",
+    "strict_supported_and_verified",
+    "artifact_path",
+    "claim_boundary"
+  ],
+  "rows": [
+    {
+      "artifact_path": "artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-c671cedf25f1.json",
+      "claim_boundary": "unsupported diagnostic laws are shown but not promoted",
+      "compile_depth": 9,
+      "compile_support": "supported",
+      "evidence_regime": "same_ast_return",
+      "formula": "exp(-0.8*x)",
+      "law": "Beer-Lambert",
+      "macro_hits": "",
+      "strict_supported_and_verified": true,
+      "verifier_status": "recovered",
+      "warm_start_status": "same_ast_return"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-shockley-warm-316f98a5b1fb.json",
+      "claim_boundary": "unsupported diagnostic laws are shown but not promoted",
+      "compile_depth": 13,
+      "compile_support": "supported",
+      "evidence_regime": "same_ast_return",
+      "formula": "0.2*exp(1.4*x) - 0.2",
+      "law": "Shockley",
+      "macro_hits": "scaled_exp_minus_one_template",
+      "strict_supported_and_verified": true,
+      "verifier_status": "recovered",
+      "warm_start_status": "same_ast_return"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.9-arrhenius-evidence/v1.9-arrhenius-evidence/v1-9-arrhenius-evidence-arrhenius-warm-75f6e9c1764d.json",
+      "claim_boundary": "unsupported diagnostic laws are shown but not promoted",
+      "compile_depth": 7,
+      "compile_support": "supported",
+      "evidence_regime": "same_ast_return",
+      "formula": "exp(-0.8/x)",
+      "law": "Arrhenius",
+      "macro_hits": "direct_division_template",
+      "strict_supported_and_verified": true,
+      "verifier_status": "recovered",
+      "warm_start_status": "same_ast_return"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.9-michaelis-evidence/v1.9-michaelis-evidence/v1-9-michaelis-evidence-michaelis-warm-a67d8ccfb108.json",
+      "claim_boundary": "unsupported diagnostic laws are shown but not promoted",
+      "compile_depth": 12,
+      "compile_support": "supported",
+      "evidence_regime": "same_ast_return",
+      "formula": "2*x/(x + 0.5)",
+      "law": "Michaelis-Menten",
+      "macro_hits": "saturation_ratio_template",
+      "strict_supported_and_verified": true,
+      "verifier_status": "recovered",
+      "warm_start_status": "same_ast_return"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.10-planck-diagnostics/v1-10-planck-diagnostics-planck-compile-795067919a97.json",
+      "claim_boundary": "unsupported diagnostic laws are shown but not promoted",
+      "compile_depth": 14,
+      "compile_support": "unsupported",
+      "evidence_regime": "compile_only",
+      "formula": "x**3/(exp(x) - 1)",
+      "law": "Planck diagnostic",
+      "macro_hits": "low_degree_power_template;scaled_exp_minus_one_template;direct_division_template",
+      "strict_supported_and_verified": false,
+      "verifier_status": "unsupported",
+      "warm_start_status": "not_applicable"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.10-logistic-evidence/v1-10-logistic-evidence-logistic-compile-c2af27a35e81.json",
+      "claim_boundary": "unsupported diagnostic laws are shown but not promoted",
+      "compile_depth": 15,
+      "compile_support": "unsupported",
+      "evidence_regime": "compile_only",
+      "formula": "1/(1 + 2*exp(-1.3*x))",
+      "law": "Logistic diagnostic",
+      "macro_hits": "exponential_saturation_template",
+      "strict_supported_and_verified": false,
+      "verifier_status": "unsupported",
+      "warm_start_status": "not_applicable"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-michaelis-warm-diagnostic-9917f8383370.json",
+      "claim_boundary": "unsupported diagnostic laws are shown but not promoted",
+      "compile_depth": 14,
+      "compile_support": "unsupported",
+      "evidence_regime": "historical_context",
+      "formula": "2*x/(x + 0.5)",
+      "law": "Historical Michaelis diagnostic",
+      "macro_hits": "direct_division_template",
+      "strict_supported_and_verified": false,
+      "verifier_status": "unsupported",
+      "warm_start_status": "unsupported"
+    }
+  ],
+  "schema": "eml.paper_asset_table.v1"
+}

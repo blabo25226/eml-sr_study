@@ -1,0 +1,12 @@
+{
+  "claim_audit_status": "passed",
+  "decision": "inconclusive",
+  "final_claim_audit": "artifacts/paper/v1.16-geml/final-decision/final-claim-audit.json",
+  "final_decision": "artifacts/paper/v1.16-geml/final-decision/final-decision.json",
+  "generated_at": "2026-04-22T11:33:13.773031+00:00",
+  "package_readme": "artifacts/paper/v1.16-geml/README.md",
+  "paper_claim_allowed": false,
+  "schema": "eml.v116_final_decision_manifest.v1",
+  "source_locks": "artifacts/paper/v1.16-geml/final-decision/source-locks.json",
+  "source_locks_ok": true
+}

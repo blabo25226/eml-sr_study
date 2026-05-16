@@ -1,0 +1,34 @@
+operator_family,operator_schedule,start_mode,training_mode,depth,total,verifier_pass_rate,unsupported_rate,repair_attempt_rate,repair_accept_rate,refit_attempt_rate,refit_accept_rate,anomaly_clamp_count_total,anomaly_exp_overflow_count_total,anomaly_expm1_overflow_count_total,anomaly_log_branch_cut_count_total,anomaly_log1p_branch_cut_count_total,anomaly_shifted_singularity_near_count_total,shifted_singularity_min_distance_min,median_active_node_count,median_candidate_complexity,median_post_snap_loss
+CEML_1,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,3.0,,1.0
+CEML_1,fixed,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+CEML_1,fixed,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+CEML_2,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.9892167389137256,3.0,,1.2206895849232353
+CEML_2,fixed,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+CEML_2,fixed,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+CEML_4,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.9138202531310973,3.0,,1.3360697028631083
+CEML_4,fixed,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+CEML_4,fixed,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+CEML_8,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.746865301439093,3.0,,1.395183159813234
+CEML_8,fixed,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+CEML_8,fixed,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_1,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.000502920884409841,3.0,,2.866747375038092
+ZEML_1,fixed,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_1,fixed,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_2,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0005029208843736,3.0,,3.661581430999517
+ZEML_2,fixed,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_2,fixed,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_4,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0005029208843736,3.0,,4.178400535991685
+ZEML_4,fixed,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_4,fixed,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_8,ZEML_8 -> ZEML_4,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0005029208843736,3.0,,4.178400535991685
+ZEML_8,ZEML_8 -> ZEML_4,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_8,ZEML_8 -> ZEML_4,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_8,ZEML_8 -> ZEML_4 -> ZEML_2 -> ZEML_1,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0005029208843735367,3.0,,2.866747375038092
+ZEML_8,ZEML_8 -> ZEML_4 -> ZEML_2 -> ZEML_1,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_8,ZEML_8 -> ZEML_4 -> ZEML_2 -> ZEML_1,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_8,fixed,blind,blind_training,1,1,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7.000502920884373,3.0,,4.485504223270564
+ZEML_8,fixed,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+ZEML_8,fixed,warm_start,compiler_warm_start_training,2,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+raw_eml,fixed,blind,blind_training,1,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,3.0,,0.0
+raw_eml,fixed,compile,compile_only_verification,2,1,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,
+raw_eml,fixed,warm_start,compiler_warm_start_training,2,1,1.0,0.0,0.0,0.0,1.0,0.0,123.0,115.0,0.0,3545.0,0.0,0.0,,19.0,,4.496499888230497e-32

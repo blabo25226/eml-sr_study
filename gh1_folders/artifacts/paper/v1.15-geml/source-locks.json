@@ -1,0 +1,151 @@
+{
+  "inputs": [
+    {
+      "bytes": 10421,
+      "path": ".planning/ROADMAP.md",
+      "role": "input",
+      "sha256": "442133566362c9ffc0aa9fc6443a557a6241aa43712bc0d547bebd5366c279f9",
+      "source_id": "roadmap",
+      "status": "locked"
+    },
+    {
+      "bytes": 7792,
+      "path": ".planning/REQUIREMENTS.md",
+      "role": "input",
+      "sha256": "5216f75d2360b552c25279e9c30ba8f80b9fdca2b4b9023a70867c36c5d69edd",
+      "source_id": "requirements",
+      "status": "locked"
+    },
+    {
+      "bytes": 1639,
+      "path": "artifacts/theory/v1.15/ipi-restricted-theory.json",
+      "role": "input",
+      "sha256": "d6fb698b921e1d5cd1ad04c9af60bdeab4b3a5d635a166edab15d1d0c49f21e3",
+      "source_id": "ipi_restricted_theory_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 1145,
+      "path": "artifacts/theory/v1.15/ipi-restricted-theory.md",
+      "role": "input",
+      "sha256": "e2cf35daf3a5bd0203aac6349ec2200411e2f54aa16397523b96c723b5b04d3b",
+      "source_id": "ipi_restricted_theory_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 2239,
+      "path": ".planning/phases/83-i-pi-eml-restricted-theory-and-branch-contract/83-VERIFICATION.md",
+      "role": "input",
+      "sha256": "61e991f8239330b8b780b553aab71ce4f5457798de2f74f475a43fab8b4d56c8",
+      "source_id": "phase_83_verification",
+      "status": "locked"
+    },
+    {
+      "bytes": 2236,
+      "path": ".planning/phases/85-oscillatory-benchmark-pack-and-negative-controls/85-VERIFICATION.md",
+      "role": "input",
+      "sha256": "55effe95e10f2298dbcb0b353e704406243bf0bc18256e35d881c0303c55e593",
+      "source_id": "phase_85_verification",
+      "status": "locked"
+    },
+    {
+      "bytes": 1799,
+      "path": ".planning/phases/86-matched-eml-versus-i-pi-eml-campaign-runner/86-VERIFICATION.md",
+      "role": "input",
+      "sha256": "f79b12bdeded140703da3b30cb5619d8137fe089a4b815fe293bdf0442f17793",
+      "source_id": "phase_86_verification",
+      "status": "locked"
+    },
+    {
+      "bytes": 15845,
+      "path": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/campaign-manifest.json",
+      "role": "input",
+      "sha256": "911e625f6e1276c3b7ab0401add73abc80093903ee223e33dd3795124c298b6f",
+      "source_id": "campaign_manifest",
+      "status": "locked"
+    },
+    {
+      "bytes": 614,
+      "path": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/geml-paired-summary.json",
+      "role": "input",
+      "sha256": "ae09b2bf68324379e6ee072f98b1d6d9254ebe53db6a9d6f68bf2c8ab970fa0e",
+      "source_id": "geml_paired_summary",
+      "status": "locked"
+    },
+    {
+      "bytes": 3030,
+      "path": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/geml-paired-comparison.csv",
+      "role": "input",
+      "sha256": "e9af682db358875c24cde5a338435bef8f3f8016ea8cec62752c8df1c8f6d56b",
+      "source_id": "geml_paired_comparison",
+      "status": "locked"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 67157,
+      "path": "artifacts/paper/v1.15-geml/benchmark-manifests.json",
+      "role": "output",
+      "sha256": "083ff84405a241cba2b300798f12851ea82b8e80fba656c273cd3f6c9ef2783a",
+      "source_id": "benchmark_manifests",
+      "status": "locked"
+    },
+    {
+      "bytes": 2263,
+      "path": "artifacts/paper/v1.15-geml/target-family-classification.json",
+      "role": "output",
+      "sha256": "373dcf97fdcdad00708fad7b1e138eb9b374f9c2eeb53ba5bf93347b7b9eb580",
+      "source_id": "target_family_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 464,
+      "path": "artifacts/paper/v1.15-geml/target-family-classification.csv",
+      "role": "output",
+      "sha256": "8ff0eea5b10a1d38c5931c09ad41bfcb6b458d81bdc73c05627618831cc4dd77",
+      "source_id": "target_family_csv",
+      "status": "locked"
+    },
+    {
+      "bytes": 721,
+      "path": "artifacts/paper/v1.15-geml/target-family-classification.md",
+      "role": "output",
+      "sha256": "908ba5e397be154f2fc21e29bcd2f097f611250c1de89c0aec854466aa26ac46",
+      "source_id": "target_family_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 1261,
+      "path": "artifacts/paper/v1.15-geml/claim-audit.json",
+      "role": "output",
+      "sha256": "1291d3fc6498bab1a85be8dd43028e8346295e7dd276449b392f8d4541366f9c",
+      "source_id": "claim_audit_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 844,
+      "path": "artifacts/paper/v1.15-geml/claim-audit.md",
+      "role": "output",
+      "sha256": "0412ee4a9e31f5090e4eb3d9acb24710d39d96979b113331bab6f93fa8c414a1",
+      "source_id": "claim_audit_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 1322,
+      "path": "artifacts/paper/v1.15-geml/claim-boundary.md",
+      "role": "output",
+      "sha256": "ae0bdd5af02dfabb0aaec273badb8b80c447d8b24401110d3f85847701c6c667",
+      "source_id": "claim_boundary_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 574,
+      "path": "artifacts/paper/v1.15-geml/reproduction.md",
+      "role": "output",
+      "sha256": "0afc66404d145c9dc7da8f4b8c7f896280b785dc7b0a39bc8d2d7262e882c749",
+      "source_id": "reproduction_md",
+      "status": "locked"
+    }
+  ],
+  "schema": "eml.v115_geml_source_locks.v1"
+}

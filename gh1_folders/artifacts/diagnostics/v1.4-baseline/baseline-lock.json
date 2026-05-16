@@ -1,0 +1,57 @@
+{
+  "baselines": [
+    {
+      "files": [
+        {
+          "path": "artifacts/campaigns/v1.3-standard/aggregate.json",
+          "sha256": "886d4a5ed558c7089df653da4ac641d17bb862717ad0561806a5cd88ec0f7e8e"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-standard/suite-result.json",
+          "sha256": "1beae94ce644381d5369fc75f57f749a359a9734ddce6eb71681e15c6c91c2c8"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-standard/campaign-manifest.json",
+          "sha256": "54a753197fe143f9a79741564fffe25ebe5b14fd2003213b167a25cb5f70824a"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-standard/tables/runs.csv",
+          "sha256": "5be8287f724612c20eea54403d6b3b7ffad41bfa09ed5f3e576510874230f27a"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-standard/tables/failures.csv",
+          "sha256": "a570df2e1539d6436acd8810b6334b4c613bff8c877cc198968ed62a17f1bbac"
+        }
+      ],
+      "label": "v1.3-standard",
+      "path": "artifacts/campaigns/v1.3-standard"
+    },
+    {
+      "files": [
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/aggregate.json",
+          "sha256": "28ff4e7b5eda78ad2045eec13eac3c042a0b6173dbffaebf9a3e0d9b970dee7c"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/suite-result.json",
+          "sha256": "1329913d7045850ad8027a99a314ae6d3a4a72586ad54c5a84bcec3ccce07606"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/campaign-manifest.json",
+          "sha256": "b8e3bce7014b2ad23f8a658f84bc2fa1b3593f0932288da85b986d52da29c018"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/tables/runs.csv",
+          "sha256": "3a3a0f396b628fd824a2961cb3dd22d46d93506024467f4cbff7423e084e96d5"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/tables/failures.csv",
+          "sha256": "1b635c3be5307d97a4a6ce075c580a645ccbcb970f27899aeb7c8daf0c9bf22e"
+        }
+      ],
+      "label": "v1.3-showcase",
+      "path": "artifacts/campaigns/v1.3-showcase"
+    }
+  ],
+  "schema": "eml.baseline_lock.v1"
+}

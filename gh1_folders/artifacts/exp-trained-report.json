@@ -1,0 +1,243 @@
+{
+  "candidate": {
+    "sympy": "exp(x)"
+  },
+  "candidate_kind": "exact_eml",
+  "claim_status": "recovered",
+  "cleanup": {
+    "cleaned": "exp(x)",
+    "original": "exp(x)",
+    "original_tree_size": 3,
+    "verification": {
+      "candidate_kind": "exact_eml",
+      "high_precision_max_error": 0.0,
+      "reason": "verified",
+      "split_results": [
+        {
+          "max_abs_error": 0.0,
+          "max_imag_residue": 0.0,
+          "mse": 0.0,
+          "name": "train",
+          "passed": true
+        },
+        {
+          "max_abs_error": 0.0,
+          "max_imag_residue": 0.0,
+          "mse": 0.0,
+          "name": "heldout",
+          "passed": true
+        },
+        {
+          "max_abs_error": 0.0,
+          "max_imag_residue": 0.0,
+          "mse": 0.0,
+          "name": "extrapolation",
+          "passed": true
+        }
+      ],
+      "status": "recovered",
+      "tolerance": 1e-08
+    }
+  },
+  "demo": "exp",
+  "description": "Paper smoke test: exp(x) = eml(x, 1).",
+  "schema": "eml.demo_report.v1",
+  "trained_eml_candidate": {
+    "best_loss": 3.5908777695012766e-06,
+    "best_restart": {
+      "best_fit_loss": 3.5908777695012766e-06,
+      "final_anomalies": {
+        "by_node": {
+          "root": {
+            "clamp_count": 0,
+            "inf_count": 0,
+            "max_abs": 2.740128394974633,
+            "max_exp_real": 1.008009550352027,
+            "nan_count": 0
+          }
+        },
+        "clamp_count": 0,
+        "inf_count": 0,
+        "max_abs": 2.740128394974633,
+        "max_exp_real": 1.008009550352027,
+        "nan_count": 0
+      },
+      "restart": 1,
+      "seed": 1,
+      "steps_completed": 80
+    },
+    "config": {
+      "depth": 1,
+      "entropy_weight": 0.001,
+      "lr": 0.05,
+      "restarts": 2,
+      "seed": 0,
+      "size_weight": 0.0001,
+      "steps": 80,
+      "temperature_end": 0.25,
+      "temperature_start": 2.0,
+      "variables": [
+        "x"
+      ]
+    },
+    "post_snap_loss": 0.0,
+    "restarts": [
+      {
+        "best_fit_loss": 4.380411886452832,
+        "final_anomalies": {
+          "by_node": {
+            "root": {
+              "clamp_count": 0,
+              "inf_count": 0,
+              "max_abs": 6.177136647546485,
+              "max_exp_real": 1.0080095675934493,
+              "nan_count": 0
+            }
+          },
+          "clamp_count": 0,
+          "inf_count": 0,
+          "max_abs": 6.177136647546485,
+          "max_exp_real": 1.0080095675934493,
+          "nan_count": 0
+        },
+        "restart": 0,
+        "seed": 0,
+        "steps_completed": 80
+      },
+      {
+        "best_fit_loss": 3.5908777695012766e-06,
+        "final_anomalies": {
+          "by_node": {
+            "root": {
+              "clamp_count": 0,
+              "inf_count": 0,
+              "max_abs": 2.740128394974633,
+              "max_exp_real": 1.008009550352027,
+              "nan_count": 0
+            }
+          },
+          "clamp_count": 0,
+          "inf_count": 0,
+          "max_abs": 2.740128394974633,
+          "max_exp_real": 1.008009550352027,
+          "nan_count": 0
+        },
+        "restart": 1,
+        "seed": 1,
+        "steps_completed": 80
+      }
+    ],
+    "schema": "eml.run_manifest.v1",
+    "snap": {
+      "active_node_count": 3,
+      "ast": {
+        "metadata": {
+          "depth": 1,
+          "node_count": 3,
+          "source": "exact_ast"
+        },
+        "root": {
+          "kind": "eml",
+          "left": {
+            "kind": "var",
+            "name": "x"
+          },
+          "right": {
+            "kind": "const",
+            "value": "1"
+          }
+        },
+        "schema": "eml.ast.v1",
+        "semantics": {
+          "constant_basis": [
+            "1"
+          ],
+          "log_branch": "principal",
+          "operator": "exp(x)-log(y)",
+          "verification_mode": "canonical"
+        },
+        "variables": [
+          "x"
+        ]
+      },
+      "decisions": [
+        {
+          "choice": "var:x",
+          "margin": 0.9236461343839709,
+          "path": "root",
+          "probability": 0.9618230671919855,
+          "side": "left"
+        },
+        {
+          "choice": "const:1",
+          "margin": 0.6653903780209005,
+          "path": "root",
+          "probability": 0.8326951890104503,
+          "side": "right"
+        }
+      ],
+      "min_margin": 0.6653903780209005
+    },
+    "status": "snapped_candidate"
+  },
+  "trained_eml_verification": {
+    "candidate_kind": "exact_eml",
+    "high_precision_max_error": 0.0,
+    "reason": "verified",
+    "split_results": [
+      {
+        "max_abs_error": 0.0,
+        "max_imag_residue": 0.0,
+        "mse": 0.0,
+        "name": "train",
+        "passed": true
+      },
+      {
+        "max_abs_error": 0.0,
+        "max_imag_residue": 0.0,
+        "mse": 0.0,
+        "name": "heldout",
+        "passed": true
+      },
+      {
+        "max_abs_error": 0.0,
+        "max_imag_residue": 0.0,
+        "mse": 0.0,
+        "name": "extrapolation",
+        "passed": true
+      }
+    ],
+    "status": "recovered",
+    "tolerance": 1e-08
+  },
+  "verification": {
+    "candidate_kind": "exact_eml",
+    "high_precision_max_error": 0.0,
+    "reason": "verified",
+    "split_results": [
+      {
+        "max_abs_error": 0.0,
+        "max_imag_residue": 0.0,
+        "mse": 0.0,
+        "name": "train",
+        "passed": true
+      },
+      {
+        "max_abs_error": 0.0,
+        "max_imag_residue": 0.0,
+        "mse": 0.0,
+        "name": "heldout",
+        "passed": true
+      },
+      {
+        "max_abs_error": 0.0,
+        "max_imag_residue": 0.0,
+        "mse": 0.0,
+        "name": "extrapolation",
+        "passed": true
+      }
+    ],
+    "status": "recovered",
+    "tolerance": 1e-08
+  }
+}

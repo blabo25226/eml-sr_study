@@ -1,0 +1,130 @@
+{
+  "checks": [
+    {
+      "details": {
+        "row": {
+          "artifact_path": "artifacts/campaigns/v1.10-logistic-evidence/v1-10-logistic-evidence-logistic-compile-c2af27a35e81.json",
+          "compile_depth": 15,
+          "compile_support": "unsupported",
+          "evidence_regime": "compile_only",
+          "formula": "1/(1 + 2*exp(-1.3*x))",
+          "law": "Logistic diagnostic",
+          "macro_hits": [
+            "exponential_saturation_template"
+          ],
+          "verifier_status": "unsupported",
+          "warm_start_status": "not_applicable"
+        }
+      },
+      "id": "logistic_remains_unsupported",
+      "message": "Logistic diagnostic is present and unsupported.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "row": {
+          "artifact_path": "artifacts/campaigns/v1.10-planck-diagnostics/v1-10-planck-diagnostics-planck-compile-795067919a97.json",
+          "compile_depth": 14,
+          "compile_support": "unsupported",
+          "evidence_regime": "compile_only",
+          "formula": "x**3/(exp(x) - 1)",
+          "law": "Planck diagnostic",
+          "macro_hits": [
+            "low_degree_power_template",
+            "scaled_exp_minus_one_template",
+            "direct_division_template"
+          ],
+          "verifier_status": "unsupported",
+          "warm_start_status": "not_applicable"
+        }
+      },
+      "id": "planck_remains_unsupported",
+      "message": "Planck diagnostic is present and unsupported.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "figure_count": 7,
+        "missing": []
+      },
+      "id": "figures_have_source_tables",
+      "message": "Every asset figure has SVG, metadata, source JSON, and source CSV.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "loss_only_recovery": "forbidden"
+      },
+      "id": "loss_only_recovery_forbidden",
+      "message": "Claim ledger forbids recovery from loss-only fields.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "row_count": 5,
+        "suite_ids": [
+          "v1.11-logistic-planck-probes",
+          "v1.11-paper-training"
+        ]
+      },
+      "id": "regime_denominators_are_separated",
+      "message": "Regime rows use suite/start-mode-local denominators and include training plus probe suites.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "probe_counts": {
+          "evidence_classes": {
+            "failed": 1,
+            "snapped_but_failed": 1,
+            "unsupported": 2
+          },
+          "execution_error": 0,
+          "failed": 2,
+          "repaired_candidate": 0,
+          "same_ast_return": 0,
+          "total": 4,
+          "unsupported": 2,
+          "verified_equivalent_ast": 0,
+          "verifier_recovered": 0,
+          "verifier_recovery_rate": 0.0
+        },
+        "training_counts": {
+          "evidence_classes": {
+            "blind_training_recovered": 2,
+            "perturbed_true_tree_recovered": 1,
+            "same_ast": 3,
+            "scaffolded_blind_training_recovered": 2
+          },
+          "execution_error": 0,
+          "failed": 0,
+          "repaired_candidate": 0,
+          "same_ast_return": 4,
+          "total": 8,
+          "unsupported": 0,
+          "verified_equivalent_ast": 0,
+          "verifier_recovered": 8,
+          "verifier_recovery_rate": 1.0
+        }
+      },
+      "id": "current_training_results_are_visible",
+      "message": "Current v1.11 training successes and logistic/Planck probe failures are visible.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "source_lock_count": 67
+      },
+      "id": "source_locks_cover_package_inputs",
+      "message": "Final package has file-level source locks.",
+      "status": "passed"
+    }
+  ],
+  "generated_at": "2026-04-19T14:13:16.611337+00:00",
+  "schema": "eml.v111_claim_audit.v1",
+  "status": "passed",
+  "summary": {
+    "failed": 0,
+    "passed": 7
+  }
+}

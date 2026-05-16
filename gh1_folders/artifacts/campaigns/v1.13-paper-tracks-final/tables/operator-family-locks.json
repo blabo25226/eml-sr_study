@@ -1,0 +1,29 @@
+{
+  "groups": [
+    {
+      "depth": "2",
+      "operator_family": "raw_eml",
+      "operator_schedule": "fixed",
+      "refit_accept_rate": 0.0,
+      "repair_attempt_rate": 0.0,
+      "start_mode": "compile",
+      "total": 12,
+      "training_mode": "compile_only_verification",
+      "unsupported_rate": 0.9166666666666666,
+      "verifier_pass_rate": 0.08333333333333333
+    },
+    {
+      "depth": "2",
+      "operator_family": "raw_eml",
+      "operator_schedule": "fixed",
+      "refit_accept_rate": 0.0,
+      "repair_attempt_rate": 0.0,
+      "start_mode": "warm_start",
+      "total": 12,
+      "training_mode": "compiler_warm_start_training",
+      "unsupported_rate": 0.3333333333333333,
+      "verifier_pass_rate": 0.6666666666666666
+    }
+  ],
+  "schema": "eml.operator_family_locks.v1"
+}

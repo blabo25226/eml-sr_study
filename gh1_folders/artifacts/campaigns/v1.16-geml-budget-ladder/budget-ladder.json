@@ -1,0 +1,113 @@
+{
+  "decision": "stop_full_campaign_fail_closed",
+  "pilot_gate_evaluation": {
+    "blockers": [
+      "no_natural_ipi_exact_recovery_signal",
+      "loss_only_signal_without_exact_recovery"
+    ],
+    "decision": "negative",
+    "gate": {
+      "diagnostic_only_classes": [
+        "loss_only",
+        "same_ast_seed_round_trip",
+        "verified_equivalent_warm_start",
+        "repaired_candidate",
+        "compile_only_verified_support",
+        "unsupported"
+      ],
+      "fail_closed_rules": [
+        "loss-only improvement cannot be promoted to recovery",
+        "same-AST or exact-seed returns cannot enter trained recovery denominators",
+        "negative-control i*pi wins block paper-positive interpretation",
+        "missing source locks or incomplete denominators block paper-positive interpretation"
+      ],
+      "outcomes": {
+        "inconclusive": "Evidence is insufficient or confounded; no positive claim is allowed.",
+        "negative": "Raw EML wins or no exact i*pi recovery signal appears under the declared protocol.",
+        "paper_positive": "Verifier-gated exact i*pi recovery beats raw EML on natural-bias targets under the full matched protocol.",
+        "promising_preliminary": "Exact i*pi signal exists but the full paper denominator is incomplete."
+      },
+      "positive_recovery_numerator": "trained_exact_recovery_only",
+      "schema": "eml.v116_paper_strength_gate.v1",
+      "thresholds": {
+        "declared_targets": [
+          "sin_pi",
+          "cos_pi",
+          "harmonic_sum",
+          "damped_oscillator",
+          "standing_wave_snapshot",
+          "log_periodic_oscillation",
+          "exp",
+          "log",
+          "quadratic_polynomial",
+          "rational_decay"
+        ],
+        "max_negative_control_ipi_recovery_wins": 0,
+        "min_ipi_minus_raw_recovery_wins": 1,
+        "min_natural_ipi_recovery_wins": 1,
+        "min_unique_seeds_for_paper_positive": 1,
+        "natural_bias_targets": [
+          "sin_pi",
+          "cos_pi",
+          "harmonic_sum",
+          "damped_oscillator",
+          "standing_wave_snapshot",
+          "log_periodic_oscillation"
+        ],
+        "negative_control_targets": [
+          "exp",
+          "log",
+          "quadratic_polynomial",
+          "rational_decay"
+        ],
+        "require_complete_matched_denominator": true,
+        "require_source_locks": true
+      }
+    },
+    "metrics": {
+      "complete_denominator": true,
+      "declared_targets": 10,
+      "loss_only_outcomes": 12,
+      "min_unique_seeds_for_paper_positive": 1,
+      "natural_ipi_minus_raw_recovery_wins": 0,
+      "natural_ipi_recovery_wins": 0,
+      "natural_raw_recovery_wins": 0,
+      "negative_control_ipi_recovery_wins": 0,
+      "paired_rows": 12,
+      "source_locks_ok": true,
+      "unique_seeds": 2
+    },
+    "rationale": "The matched exact-recovery evidence does not support an i*pi advantage.",
+    "schema": "eml.v116_gate_evaluation.v1"
+  },
+  "rationale": "Pilot did not show clean verifier-gated i*pi exact recovery signal; full campaign should not run.",
+  "schema": "eml.v116_budget_ladder.v1",
+  "tiers": [
+    {
+      "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign geml-v116-smoke --label v1.16-geml-smoke --overwrite",
+      "ipi_recovery_wins": 0,
+      "loss_only_outcomes": 2,
+      "name": "smoke",
+      "paired_rows": 2,
+      "raw_recovery_wins": 0,
+      "source_locks_ok": true,
+      "status": "performed"
+    },
+    {
+      "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign geml-v116-pilot --label v1.16-geml-pilot --overwrite",
+      "ipi_recovery_wins": 0,
+      "loss_only_outcomes": 12,
+      "name": "pilot",
+      "paired_rows": 12,
+      "raw_recovery_wins": 0,
+      "source_locks_ok": true,
+      "status": "performed"
+    },
+    {
+      "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign geml-v116-full --label v1.16-geml-full --overwrite",
+      "gate": "run only after pilot has clean verifier-gated exact i*pi recovery signal",
+      "name": "full",
+      "status": "blocked"
+    }
+  ]
+}

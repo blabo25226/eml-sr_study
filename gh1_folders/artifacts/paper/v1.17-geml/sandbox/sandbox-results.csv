@@ -1,0 +1,9 @@
+group,operator_family,target_family,ranked_rows,exact_recovery,verified_equivalence,loss_only,fallback,original_snap,negative_control_rows
+ipi_eml:harmonic,ipi_eml,harmonic,2,0,0,0,0,2,0
+ipi_eml:log_periodic,ipi_eml,log_periodic,2,0,0,0,0,2,0
+ipi_eml:negative_control,ipi_eml,negative_control,4,0,0,0,0,4,4
+ipi_eml:periodic,ipi_eml,periodic,4,0,0,0,0,4,0
+raw_eml:harmonic,raw_eml,harmonic,2,0,0,0,0,2,0
+raw_eml:log_periodic,raw_eml,log_periodic,2,0,0,0,0,2,0
+raw_eml:negative_control,raw_eml,negative_control,4,0,0,0,0,4,4
+raw_eml:periodic,raw_eml,periodic,4,0,0,0,0,4,0

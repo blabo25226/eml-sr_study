@@ -1,0 +1,5 @@
+operator_family,operator_schedule,formula,start_mode,training_mode,depth,total,verifier_recovered,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate,post_snap_verifier_pass_rate,median_best_loss,median_post_snap_loss,median_runtime_seconds,median_active_node_count,median_candidate_complexity
+ipi_eml,fixed,exp,blind,blind_training,2,1,0,0,0,0,1,0,0.0,0.0,1.0,0.0,3.23955297929817,3.2395529792987188,1.1487747910432518,3.0,
+ipi_eml,fixed,sin_pi,blind,blind_training,3,1,0,0,0,0,1,0,0.0,0.0,1.0,0.0,2.057433062652473,2.532535405260982,1.459377916995436,3.0,
+raw_eml,fixed,exp,blind,blind_training,2,1,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.08804128324313722,0.5638625830597994,1.0673105410533026,5.0,
+raw_eml,fixed,sin_pi,blind,blind_training,3,1,0,0,0,0,1,0,0.0,0.0,1.0,0.0,0.6370763821225767,0.6535512891542574,2.5564009580994025,5.0,

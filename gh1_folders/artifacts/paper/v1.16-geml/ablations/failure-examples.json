@@ -1,0 +1,82 @@
+{
+  "rows": [
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "count": 14,
+      "failure_class": "loss_only_signal",
+      "formula": "cos_pi",
+      "representative_pair_id": "cos_pi:seed0:depth3",
+      "seed": "0",
+      "status": "observed",
+      "target_family": "periodic"
+    },
+    {
+      "actionable_next_step": "Increase candidate-pool or hardening budget only after checking snap margins.",
+      "comparison_outcome": "",
+      "count": 0,
+      "failure_class": "optimization_or_snap_miss",
+      "formula": "",
+      "representative_pair_id": "",
+      "seed": "",
+      "status": "not_observed",
+      "target_family": ""
+    },
+    {
+      "actionable_next_step": "Compare soft candidate behavior with snapped AST alternatives near low-margin slots.",
+      "comparison_outcome": "",
+      "count": 0,
+      "failure_class": "snap_mismatch",
+      "formula": "",
+      "representative_pair_id": "",
+      "seed": "",
+      "status": "not_observed",
+      "target_family": ""
+    },
+    {
+      "actionable_next_step": "Inspect branch-domain construction and guarded-versus-faithful mismatch diagnostics.",
+      "comparison_outcome": "",
+      "count": 0,
+      "failure_class": "branch_pathology",
+      "formula": "",
+      "representative_pair_id": "",
+      "seed": "",
+      "status": "not_observed",
+      "target_family": ""
+    },
+    {
+      "actionable_next_step": "Inspect split-level verifier evidence and high-precision status.",
+      "comparison_outcome": "",
+      "count": 0,
+      "failure_class": "verifier_mismatch",
+      "formula": "",
+      "representative_pair_id": "",
+      "seed": "",
+      "status": "not_observed",
+      "target_family": ""
+    },
+    {
+      "actionable_next_step": "Check target depth, literal constants, and suite support gates before rerunning.",
+      "comparison_outcome": "",
+      "count": 0,
+      "failure_class": "unsupported_or_over_depth",
+      "formula": "",
+      "representative_pair_id": "",
+      "seed": "",
+      "status": "not_observed",
+      "target_family": ""
+    },
+    {
+      "actionable_next_step": "Reduce guard pressure or inspect anomaly traces before increasing budget.",
+      "comparison_outcome": "",
+      "count": 0,
+      "failure_class": "numerical_instability",
+      "formula": "",
+      "representative_pair_id": "",
+      "seed": "",
+      "status": "not_observed",
+      "target_family": ""
+    }
+  ],
+  "schema": "eml.v116_failure_examples.v1"
+}

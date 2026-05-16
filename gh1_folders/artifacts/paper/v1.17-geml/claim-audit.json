@@ -1,0 +1,53 @@
+{
+  "broader_campaign_gate": "block_broader_campaigns",
+  "checks": [
+    {
+      "description": "Final decision is one of the predefined v1.17 outcomes.",
+      "id": "final_decision_is_allowed",
+      "status": "passed"
+    },
+    {
+      "description": "Broader campaign planning follows the sandbox gate.",
+      "id": "gate_controls_next_campaign",
+      "status": "passed"
+    },
+    {
+      "description": "Exact-signal decisions require natural exact recovery and no negative-control exact recovery.",
+      "id": "exact_signal_counts_match_decision",
+      "status": "passed"
+    },
+    {
+      "description": "v1.16 package manifest is source-locked as the before-state reference.",
+      "id": "v116_package_locked",
+      "status": "passed"
+    },
+    {
+      "description": "Required v1.16 and v1.17 source artifacts are locked.",
+      "id": "required_sources_locked",
+      "status": "passed"
+    },
+    {
+      "description": "Package states that v1.17 comparisons are additive and do not mutate v1.16.",
+      "id": "additive_boundary_stated",
+      "status": "passed"
+    },
+    {
+      "description": "Package does not promote loss-only diagnostics into recovery claims.",
+      "id": "loss_only_not_promoted",
+      "status": "passed"
+    },
+    {
+      "description": "Package preserves failure taxonomy context for non-recovery rows.",
+      "id": "failure_taxonomy_referenced",
+      "status": "passed"
+    },
+    {
+      "description": "Package includes reproduction commands for all v1.17 stages.",
+      "id": "reproduction_commands_present",
+      "status": "passed"
+    }
+  ],
+  "decision": "still_inconclusive",
+  "schema": "eml.v117_claim_audit.v1",
+  "status": "passed"
+}

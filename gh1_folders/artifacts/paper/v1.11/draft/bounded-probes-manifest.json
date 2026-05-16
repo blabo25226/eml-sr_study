@@ -1,0 +1,46 @@
+{
+  "claim_boundary": "bounded probes are diagnostic-only unless strict support and verifier recovery both pass",
+  "counts": {
+    "baseline_rows": 1,
+    "logistic_probe_rows": 1
+  },
+  "generated_at": "2026-04-19T14:50:59.594035+00:00",
+  "output_dir": "artifacts/paper/v1.11/draft",
+  "outputs": {
+    "baseline_probe_csv": "artifacts/paper/v1.11/draft/tables/conventional-symbolic-baseline-probe.csv",
+    "baseline_probe_json": "artifacts/paper/v1.11/draft/tables/conventional-symbolic-baseline-probe.json",
+    "baseline_probe_md": "artifacts/paper/v1.11/draft/tables/conventional-symbolic-baseline-probe.md",
+    "logistic_diagnostic_json": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-diagnostic.json",
+    "logistic_probe_csv": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-probe.csv",
+    "logistic_probe_json": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-probe.json",
+    "logistic_probe_md": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-probe.md",
+    "manifest_json": "artifacts/paper/v1.11/draft/bounded-probes-manifest.json",
+    "output_dir": "artifacts/paper/v1.11/draft"
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli paper-probes --output-dir artifacts/paper/v1.11/draft"
+  },
+  "schema": "eml.v112_bounded_probes.v1",
+  "source_locks": [
+    {
+      "path": "artifacts/paper/v1.11/draft/tables/conventional-symbolic-baseline-probe.json",
+      "sha256": "86c13dc89fda6a77dd7e51ee5515912f20357dead18c30cb95aeea71a9150d43",
+      "source_id": "baseline_probe"
+    },
+    {
+      "path": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-probe.json",
+      "sha256": "0699182783002cae77f298f346f306002742f17f760e7c46b9bfa6e3f57e889d",
+      "source_id": "logistic_probe"
+    },
+    {
+      "path": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-diagnostic.json",
+      "sha256": "9d9f3426bc3a87a0c69485d12daf688b2430bc4eff0a2539377c3b28c1c664b8",
+      "source_id": "logistic_diagnostic"
+    }
+  ],
+  "statuses": {
+    "baseline": "unavailable",
+    "logistic_promotion": "no",
+    "logistic_strict_status": "unsupported"
+  }
+}

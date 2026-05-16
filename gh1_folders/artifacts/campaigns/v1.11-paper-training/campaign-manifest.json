@@ -1,0 +1,475 @@
+{
+  "counts": {
+    "evidence_classes": {
+      "blind_training_recovered": 2,
+      "perturbed_true_tree_recovered": 1,
+      "same_ast": 3,
+      "scaffolded_blind_training_recovered": 2
+    },
+    "execution_error": 0,
+    "failed": 0,
+    "repaired_candidate": 0,
+    "same_ast_return": 4,
+    "total": 8,
+    "unsupported": 0,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 8,
+    "verifier_recovery_rate": 1.0
+  },
+  "generated_at": "2026-04-19T13:28:27.614208+00:00",
+  "output": {
+    "aggregate_json": "artifacts/campaigns/v1.11-paper-training/aggregate.json",
+    "aggregate_markdown": "artifacts/campaigns/v1.11-paper-training/aggregate.md",
+    "campaign_dir": "artifacts/campaigns/v1.11-paper-training",
+    "figures": {
+      "beer_perturbation": "artifacts/campaigns/v1.11-paper-training/figures/beer-perturbation.svg",
+      "depth_curve_recovery": "artifacts/campaigns/v1.11-paper-training/figures/depth-curve-recovery.svg",
+      "failure_taxonomy": "artifacts/campaigns/v1.11-paper-training/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/campaigns/v1.11-paper-training/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/campaigns/v1.11-paper-training/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/campaigns/v1.11-paper-training/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/campaigns/v1.11-paper-training/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/campaigns/v1.11-paper-training/runs/v1.11-paper-training",
+    "report_markdown": "artifacts/campaigns/v1.11-paper-training/report.md",
+    "suite_result": "artifacts/campaigns/v1.11-paper-training/suite-result.json",
+    "tables": {
+      "depth_curve_csv": "artifacts/campaigns/v1.11-paper-training/tables/depth-curve.csv",
+      "failures_csv": "artifacts/campaigns/v1.11-paper-training/tables/failures.csv",
+      "group_claim_csv": "artifacts/campaigns/v1.11-paper-training/tables/group-claim.csv",
+      "group_depth_csv": "artifacts/campaigns/v1.11-paper-training/tables/group-depth.csv",
+      "group_evidence_class_csv": "artifacts/campaigns/v1.11-paper-training/tables/group-evidence-class.csv",
+      "group_failure_class_csv": "artifacts/campaigns/v1.11-paper-training/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/campaigns/v1.11-paper-training/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/campaigns/v1.11-paper-training/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/campaigns/v1.11-paper-training/tables/group-start-mode.csv",
+      "group_threshold_policy_csv": "artifacts/campaigns/v1.11-paper-training/tables/group-threshold-policy.csv",
+      "headline_csv": "artifacts/campaigns/v1.11-paper-training/tables/headline-metrics.csv",
+      "headline_json": "artifacts/campaigns/v1.11-paper-training/tables/headline-metrics.json",
+      "operator_family_comparison_md": "artifacts/campaigns/v1.11-paper-training/tables/operator-family-comparison.md",
+      "operator_family_diagnostics_csv": "artifacts/campaigns/v1.11-paper-training/tables/operator-family-diagnostics.csv",
+      "operator_family_locks_json": "artifacts/campaigns/v1.11-paper-training/tables/operator-family-locks.json",
+      "operator_family_recovery_csv": "artifacts/campaigns/v1.11-paper-training/tables/operator-family-recovery.csv",
+      "runs_csv": "artifacts/campaigns/v1.11-paper-training/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "8 runs; pure blind, scaffolded, same-AST warm-start, and perturbed-basin regimes kept separate.",
+    "description": "Compact v1.11 current-code training refresh for paper figures and claim-safe regime rows.",
+    "name": "paper-training",
+    "suite": "v1.11-paper-training",
+    "tier": "v1.11-paper"
+  },
+  "reproducibility": {
+    "code_version": "833f4d5",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign paper-training --output-root artifacts/campaigns --label v1.11-paper-training --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "perturbation_noises": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/campaigns/v1.11-paper-training/runs",
+    "cases": [
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-pure-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 2,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [],
+          "steps": 80,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.11",
+          "paper_training",
+          "pure_blind"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "exp",
+        "id": "exp-scaffolded",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 1,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 40,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.11",
+          "paper_training",
+          "scaffolded"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "shockley",
+        "id": "shockley-warm",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "v1.11",
+          "paper_training",
+          "warm_start",
+          "same_ast",
+          "scientific_law"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "arrhenius",
+        "id": "arrhenius-warm",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "v1.11",
+          "paper_training",
+          "warm_start",
+          "same_ast",
+          "scientific_law"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "michaelis_menten",
+        "id": "michaelis-warm",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 1
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "warm_start",
+        "tags": [
+          "v1.11",
+          "paper_training",
+          "warm_start",
+          "same_ast",
+          "scientific_law"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      },
+      {
+        "claim_id": null,
+        "dataset": {
+          "points": 12,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": true,
+        "formula": "basin_depth2_exp_exp",
+        "id": "basin-depth2-perturbed",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [
+            "exp",
+            "log",
+            "scaled_exp"
+          ],
+          "steps": 8,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 16
+        },
+        "perturbation_noise": [
+          0.05
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "perturbed_tree",
+        "tags": [
+          "v1.11",
+          "paper_training",
+          "perturbed_basin"
+        ],
+        "threshold_policy_id": null,
+        "training_mode": null
+      }
+    ],
+    "description": "Compact v1.11 current-code training refresh with pure blind, scaffolded, same-AST warm-start, and perturbed-basin regimes kept separate.",
+    "id": "v1.11-paper-training",
+    "schema": "eml.benchmark_suite.v1"
+  },
+  "thresholds": []
+}

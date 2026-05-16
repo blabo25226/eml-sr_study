@@ -1,0 +1,10 @@
+# Motif Depth Deltas
+
+| artifact_path | baseline_depth | baseline_nodes | compile_support | depth_delta | law | macro_hits | max_abs_error | motif_depth | motif_nodes | node_delta | source_expression | strict_support | validation_passed | validation_status |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-shockley-warm-316f98a5b1fb.json | 21 | 61 | supported | 8 | Shockley | scaled_exp_minus_one_template | 8.881784197e-15 | 13 | 35 | 26 | 0.2*exp(1.4*x) - 0.2 | true | true | validated |
+| artifacts/campaigns/v1.9-arrhenius-evidence/v1.9-arrhenius-evidence/v1-9-arrhenius-evidence-arrhenius-warm-75f6e9c1764d.json | 11 | 35 | supported | 4 | Arrhenius | direct_division_template | 2.26338126603e-16 | 7 | 19 | 16 | exp(-0.8/x) | true | true | validated |
+| artifacts/campaigns/v1.9-michaelis-evidence/v1.9-michaelis-evidence/v1-9-michaelis-evidence-michaelis-warm-a67d8ccfb108.json | 18 | 75 | supported | 6 | Michaelis-Menten | saturation_ratio_template | 1.11022302463e-15 | 12 | 41 | 34 | 2*x/(x + 0.5) | true | true | validated |
+| artifacts/campaigns/v1.10-planck-diagnostics/v1-10-planck-diagnostics-planck-compile-795067919a97.json | 24 | 93 | unsupported | 10 | Planck diagnostic | low_degree_power_template;scaled_exp_minus_one_template;direct_division_template | 2.0079341699e-15 | 14 | 59 | 34 | x**3/(exp(x) - 1) | false | true | validated |
+| artifacts/campaigns/v1.10-logistic-evidence/v1-10-logistic-evidence-logistic-compile-c2af27a35e81.json | 27 | 77 | unsupported | 12 | Logistic diagnostic | exponential_saturation_template | 2.92291719214e-16 | 15 | 49 | 28 | 1/(1 + 2*exp(-1.3*x)) | false | true | validated |
+| artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-michaelis-warm-diagnostic-9917f8383370.json | 18 | 75 | unsupported | 4 | Historical Michaelis diagnostic | direct_division_template | 1.55431223448e-15 | 14 | 59 | 16 | 2*x/(x + 0.5) | false | true | validated |

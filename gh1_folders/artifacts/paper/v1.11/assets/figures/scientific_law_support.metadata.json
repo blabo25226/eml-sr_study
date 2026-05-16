@@ -1,0 +1,14 @@
+{
+  "claim_boundary": "unsupported diagnostic laws stay unsupported unless strict compile and verifier support pass",
+  "denominator": "one row per paper-package scientific-law entry",
+  "figure_id": "scientific_law_support",
+  "included_statuses": [
+    "supported",
+    "unsupported",
+    "recovered"
+  ],
+  "schema": "eml.paper_figure_metadata.v1",
+  "source_table_csv": "artifacts/paper/v1.11/assets/tables/scientific_law_support.csv",
+  "source_table_json": "artifacts/paper/v1.11/assets/tables/scientific_law_support.json",
+  "title": "Scientific-Law Support Matrix"
+}

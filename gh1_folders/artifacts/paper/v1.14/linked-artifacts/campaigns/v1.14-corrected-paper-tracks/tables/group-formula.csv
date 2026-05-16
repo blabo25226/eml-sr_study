@@ -1,0 +1,13 @@
+group,total,verifier_recovered,verification_passed,trained_exact_recovery,compile_only_verified_support,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate
+arrhenius,2,1,1,1,0,1,0,1,0,0,0.5,0.5,0.0
+beer_lambert,2,1,1,1,0,1,0,1,0,0,0.5,0.5,0.0
+damped_oscillator,2,0,0,0,0,0,0,2,0,0,0.0,1.0,0.0
+exp,2,2,2,1,1,1,0,0,0,0,1.0,0.0,0.0
+log,2,0,0,0,0,0,0,2,0,0,0.0,1.0,0.0
+logistic,2,0,0,0,0,0,0,2,0,0,0.0,1.0,0.0
+michaelis_menten,2,1,1,1,0,1,0,1,0,0,0.5,0.5,0.0
+planck,2,0,0,0,0,0,0,2,0,0,0.0,1.0,0.0
+radioactive_decay,2,1,1,1,0,1,0,1,0,0,0.5,0.5,0.0
+scaled_exp_fast_decay,2,1,1,1,0,1,0,1,0,0,0.5,0.5,0.0
+scaled_exp_growth,2,1,1,1,0,1,0,1,0,0,0.5,0.5,0.0
+shockley,2,1,1,1,0,1,0,1,0,0,0.5,0.5,0.0

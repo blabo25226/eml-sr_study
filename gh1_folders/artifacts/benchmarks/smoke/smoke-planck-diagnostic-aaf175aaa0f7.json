@@ -1,0 +1,64 @@
+{
+  "claim_status": "unsupported",
+  "compiled_eml": {
+    "detail": "compiled depth 24 exceeds max_depth=12",
+    "expression": "x**3/(exp(x) - 1)",
+    "reason": "depth_exceeded",
+    "status": "unsupported"
+  },
+  "environment": {
+    "code_version": "ea6e0a5",
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "metrics": {
+    "active_slot_count": null,
+    "best_loss": null,
+    "changed_slot_count": null,
+    "high_precision_max_error": null,
+    "post_snap_loss": null,
+    "snap_active_node_count": null,
+    "snap_min_margin": null,
+    "verifier_status": null
+  },
+  "run": {
+    "artifact_path": "artifacts/benchmarks/smoke/smoke-planck-diagnostic-aaf175aaa0f7.json",
+    "case_id": "planck-diagnostic",
+    "dataset": {
+      "points": 24,
+      "tolerance": 1e-08
+    },
+    "expect_recovery": false,
+    "formula": "planck",
+    "optimizer": {
+      "depth": 2,
+      "lr": 0.05,
+      "max_compile_depth": 12,
+      "max_compile_nodes": 256,
+      "max_power": 3,
+      "max_warm_depth": 10,
+      "restarts": 1,
+      "steps": 8,
+      "warm_depth": 0,
+      "warm_restarts": 1,
+      "warm_steps": 8
+    },
+    "perturbation_noise": 0.0,
+    "run_id": "smoke-planck-diagnostic-aaf175aaa0f7",
+    "seed": 0,
+    "start_mode": "compile",
+    "suite_id": "smoke",
+    "tags": [
+      "smoke",
+      "stretch"
+    ]
+  },
+  "schema": "eml.benchmark_run.v1",
+  "stage_statuses": {
+    "compiled_seed": "unsupported"
+  },
+  "status": "unsupported",
+  "timing": {
+    "elapsed_seconds": 0.011062707984820008
+  }
+}

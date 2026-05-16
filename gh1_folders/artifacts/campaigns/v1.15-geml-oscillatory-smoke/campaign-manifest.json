@@ -1,0 +1,452 @@
+{
+  "counts": {
+    "compile_only_verified_support": 0,
+    "compile_only_verified_support_rate": 0.0,
+    "discovery_classes": {
+      "failed": 2,
+      "repaired_candidate": 2
+    },
+    "evidence_classes": {
+      "repaired_candidate": 2,
+      "snapped_but_failed": 2
+    },
+    "evidence_regimes": {
+      "repaired_candidate": 2,
+      "snapped_but_failed": 2
+    },
+    "execution_error": 0,
+    "failed": 2,
+    "repaired_candidate": 2,
+    "same_ast_return": 0,
+    "total": 4,
+    "trained_exact_recovery": 0,
+    "trained_exact_recovery_rate": 0.0,
+    "unsupported": 0,
+    "verification_passed": 0,
+    "verification_passed_rate": 0.0,
+    "verified_equivalent_ast": 0,
+    "verifier_recovered": 0,
+    "verifier_recovery_rate": 0.0
+  },
+  "generated_at": "2026-04-22T10:16:31.272896+00:00",
+  "output": {
+    "aggregate_json": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/aggregate.json",
+    "aggregate_markdown": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/aggregate.md",
+    "campaign_dir": "artifacts/campaigns/v1.15-geml-oscillatory-smoke",
+    "figures": {
+      "beer_perturbation": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/figures/beer-perturbation.svg",
+      "depth_curve_recovery": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/figures/depth-curve-recovery.svg",
+      "failure_taxonomy": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/figures/failure-taxonomy.svg",
+      "loss_before_after_snap": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/figures/loss-before-after-snap.svg",
+      "recovery_by_formula": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/figures/recovery-by-formula.svg",
+      "recovery_by_start_mode": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/figures/recovery-by-start-mode.svg",
+      "runtime_depth_budget": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/figures/runtime-depth-budget.svg"
+    },
+    "raw_run_root": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/runs/v1.15-geml-oscillatory-smoke",
+    "report_markdown": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/report.md",
+    "suite_result": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/suite-result.json",
+    "tables": {
+      "depth_curve_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/depth-curve.csv",
+      "failures_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/failures.csv",
+      "geml_paired_comparison_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/geml-paired-comparison.csv",
+      "geml_paired_comparison_md": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/geml-paired-comparison.md",
+      "geml_paired_summary_json": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/geml-paired-summary.json",
+      "group_claim_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/group-claim.csv",
+      "group_depth_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/group-depth.csv",
+      "group_evidence_class_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/group-evidence-class.csv",
+      "group_failure_class_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/group-failure-class.csv",
+      "group_formula_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/group-formula.csv",
+      "group_perturbation_noise_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/group-perturbation-noise.csv",
+      "group_start_mode_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/group-start-mode.csv",
+      "group_threshold_policy_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/group-threshold-policy.csv",
+      "headline_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/headline-metrics.csv",
+      "headline_json": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/headline-metrics.json",
+      "operator_family_comparison_md": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/operator-family-comparison.md",
+      "operator_family_diagnostics_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/operator-family-diagnostics.csv",
+      "operator_family_locks_json": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/operator-family-locks.json",
+      "operator_family_recovery_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/operator-family-recovery.csv",
+      "runs_csv": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/tables/runs.csv"
+    }
+  },
+  "preset": {
+    "budget_guardrail": "4 configured rows; sin(pi*x) and exp each paired across raw EML and i*pi EML.",
+    "description": "Cheap v1.15 raw EML versus i*pi EML smoke campaign for branch-safe matched manifests.",
+    "name": "geml-oscillatory-smoke",
+    "suite": "v1.15-geml-oscillatory-smoke",
+    "tier": "v1.15-geml"
+  },
+  "reproducibility": {
+    "code_version": "5497c98",
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign geml-oscillatory-smoke --output-root artifacts/campaigns --label v1.15-geml-oscillatory-smoke --overwrite",
+    "overwrite": true,
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "run_filter": {
+    "case_ids": [],
+    "formulas": [],
+    "perturbation_noises": [],
+    "seeds": [],
+    "start_modes": []
+  },
+  "schema": "eml.campaign_manifest.v1",
+  "suite": {
+    "artifact_root": "artifacts/campaigns/v1.15-geml-oscillatory-smoke/runs",
+    "cases": [
+      {
+        "benchmark_track": {
+          "basis_constants": [
+            "1"
+          ],
+          "constants_policy": "literal_constants",
+          "denominator_key": "literal_constants",
+          "literal_catalog": [
+            "3.141592653589793"
+          ],
+          "name": "literal_constants",
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [],
+          "scaffold_status": "disabled",
+          "start_mode": "blind",
+          "uses_literal_constants": true,
+          "warm_start_or_scaffold_status": "no_scaffold_initializers",
+          "warm_start_status": "not_warm_start"
+        },
+        "claim_id": null,
+        "constants_policy": "literal_constants",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "sin_pi",
+        "id": "sin-pi-raw-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1",
+            "3.141592653589793"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [],
+          "semantics_mode": "guarded",
+          "steps": 24,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.15",
+          "geml_oscillatory",
+          "oscillatory_target",
+          "periodic",
+          "branch_safe_by_construction",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "track": "literal_constants",
+        "training_mode": null
+      },
+      {
+        "benchmark_track": {
+          "basis_constants": [
+            "1"
+          ],
+          "constants_policy": "literal_constants",
+          "denominator_key": "literal_constants",
+          "literal_catalog": [
+            "3.141592653589793"
+          ],
+          "name": "literal_constants",
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [],
+          "scaffold_status": "disabled",
+          "start_mode": "blind",
+          "uses_literal_constants": true,
+          "warm_start_or_scaffold_status": "no_scaffold_initializers",
+          "warm_start_status": "not_warm_start"
+        },
+        "claim_id": null,
+        "constants_policy": "literal_constants",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "sin_pi",
+        "id": "sin-pi-ipi-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1",
+            "3.141592653589793"
+          ],
+          "depth": 3,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "a": {
+              "imag": "3.141592653589793",
+              "real": "0.0"
+            },
+            "family": "geml_a",
+            "geml_parameter": {
+              "imag": "3.141592653589793",
+              "real": "0.0"
+            },
+            "label": "ipi_eml",
+            "named_specialization": "ipi_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [],
+          "semantics_mode": "guarded",
+          "steps": 24,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.15",
+          "geml_oscillatory",
+          "oscillatory_target",
+          "periodic",
+          "branch_safe_by_construction",
+          "operator:ipi"
+        ],
+        "threshold_policy_id": null,
+        "track": "literal_constants",
+        "training_mode": null
+      },
+      {
+        "benchmark_track": {
+          "basis_constants": [
+            "1"
+          ],
+          "constants_policy": "literal_constants",
+          "denominator_key": "literal_constants",
+          "literal_catalog": [],
+          "name": "literal_constants",
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [],
+          "scaffold_status": "disabled",
+          "start_mode": "blind",
+          "uses_literal_constants": false,
+          "warm_start_or_scaffold_status": "no_scaffold_initializers",
+          "warm_start_status": "not_warm_start"
+        },
+        "claim_id": null,
+        "constants_policy": "literal_constants",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-raw-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "family": "raw_eml",
+            "label": "raw_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [],
+          "semantics_mode": "guarded",
+          "steps": 24,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.15",
+          "geml_oscillatory",
+          "negative_control",
+          "negative_control_domain",
+          "operator:raw"
+        ],
+        "threshold_policy_id": null,
+        "track": "literal_constants",
+        "training_mode": null
+      },
+      {
+        "benchmark_track": {
+          "basis_constants": [
+            "1"
+          ],
+          "constants_policy": "literal_constants",
+          "denominator_key": "literal_constants",
+          "literal_catalog": [],
+          "name": "literal_constants",
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [],
+          "scaffold_status": "disabled",
+          "start_mode": "blind",
+          "uses_literal_constants": false,
+          "warm_start_or_scaffold_status": "no_scaffold_initializers",
+          "warm_start_status": "not_warm_start"
+        },
+        "claim_id": null,
+        "constants_policy": "literal_constants",
+        "dataset": {
+          "points": 24,
+          "tolerance": 1e-08
+        },
+        "expect_recovery": false,
+        "formula": "exp",
+        "id": "exp-ipi-blind",
+        "optimizer": {
+          "clamp_exp_real": 40.0,
+          "constants": [
+            "1"
+          ],
+          "depth": 2,
+          "hardening_emit_interval": 2,
+          "hardening_steps": 4,
+          "hardening_temperature_end": 0.02,
+          "log_domain_epsilon": 1e-09,
+          "log_safety_imag_tolerance": 1e-06,
+          "log_safety_margin": 1e-06,
+          "log_safety_weight": 0.0,
+          "lr": 0.05,
+          "max_compile_depth": 13,
+          "max_compile_nodes": 256,
+          "max_power": 3,
+          "max_warm_depth": 14,
+          "operator_family": {
+            "a": {
+              "imag": "3.141592653589793",
+              "real": "0.0"
+            },
+            "family": "geml_a",
+            "geml_parameter": {
+              "imag": "3.141592653589793",
+              "real": "0.0"
+            },
+            "label": "ipi_eml",
+            "named_specialization": "ipi_eml",
+            "s": 1.0,
+            "t": 1.0,
+            "terminal": "one"
+          },
+          "operator_schedule": [],
+          "refit_lr": 0.02,
+          "refit_steps": 80,
+          "restarts": 1,
+          "scaffold_exclusions": [],
+          "scaffold_initializers": [],
+          "semantics_mode": "guarded",
+          "steps": 24,
+          "warm_depth": 0,
+          "warm_restarts": 1,
+          "warm_steps": 8
+        },
+        "perturbation_noise": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_mode": "blind",
+        "tags": [
+          "v1.15",
+          "geml_oscillatory",
+          "negative_control",
+          "negative_control_domain",
+          "operator:ipi"
+        ],
+        "threshold_policy_id": null,
+        "track": "literal_constants",
+        "training_mode": null
+      }
+    ],
+    "description": "Cheap v1.15 raw EML versus i*pi EML smoke subset over one natural oscillatory target and one negative control with matched blind-training budgets.",
+    "id": "v1.15-geml-oscillatory-smoke",
+    "schema": "eml.benchmark_suite.v1"
+  },
+  "thresholds": []
+}

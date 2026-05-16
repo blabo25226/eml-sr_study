@@ -1,0 +1,109 @@
+# EML Benchmark Campaign Report: proof-basin
+
+Bounded v1.5 perturbed basin proof campaign with Beer-Lambert probe evidence reported separately.
+
+## Reproduce
+
+Run this command from a clean checkout:
+
+```bash
+PYTHONPATH=src python -m eml_symbolic_regression.cli campaign proof-basin --output-root artifacts/proof/v1.6/campaigns --label proof-basin --overwrite
+```
+
+- Suite: `proof-perturbed-basin`
+- Budget tier: `proof-contract`
+- Guardrail: CI-scale perturbed basin proof suite; high-noise probes are reported separately
+- Raw run artifacts: [runs/proof-perturbed-basin](runs/proof-perturbed-basin)
+
+## Headline Metrics
+
+| Metric | Value |
+|--------|-------|
+| Total runs | 9 |
+| Verifier recovered | 9 (100.0%) |
+| Same-AST exact returns | 9 (100.0%) |
+| Verified-equivalent exact returns | 0 |
+| Unsupported | 0 (0.0%) |
+| Failed | 0 (0.0%) |
+| Median best soft loss | 7.881e-210 |
+| Median post-snap loss | 0 |
+| Median runtime seconds | 1.073 |
+
+## Regime Summary
+
+| Regime | Runs | Verifier Recovered | Same AST | Verified Equivalent | Unsupported | Failed |
+|--------|------|--------------------|----------|---------------------|-------------|--------|
+| blind | 0 | 0 | 0 | 0 | 0 | 0 |
+| warm_start | 0 | 0 | 0 | 0 | 0 | 0 |
+| compile | 0 | 0 | 0 | 0 | 0 | 0 |
+| catalog | 0 | 0 | 0 | 0 | 0 | 0 |
+| perturbed_tree | 9 | 9 | 9 | 0 | 0 | 0 |
+
+This table keeps blind, compiler-assisted warm-start, compile-only, catalog, and perturbed-basin evidence visibly separate before any narrative interpretation.
+
+## Proof Contract
+
+| Claim | Threshold | Status | Passed | Eligible | Rate |
+|-------|-----------|--------|--------|----------|------|
+| paper-perturbed-true-tree-basin | bounded_100_percent | passed | 9 | 9 | 1.000 |
+
+Bounded proof thresholds count only allowed verifier-owned training evidence classes; catalog and compile-only verification remain separate evidence classes.
+
+Beer-Lambert high-noise probe rows are reported by the separate `proof-perturbed-basin-beer-probes` suite; they remain outside the bounded proof threshold table.
+
+### Perturbed Basin Status Taxonomy
+
+| Field | Meaning |
+|-------|---------|
+| `return_kind` | Raw perturbed-tree return path such as `same_ast_return`, `verified_equivalent_ast`, `snapped_but_failed`, or `soft_fit_only`. |
+| `raw_status` | Status before local repair, preserved even when a repair succeeds. |
+| `repair_status` | Local repair outcome; repaired candidates remain `repaired_candidate` rather than raw perturbed recovery. |
+
+## Figures
+
+- [recovery by formula](figures/recovery-by-formula.svg)
+- [recovery by start mode](figures/recovery-by-start-mode.svg)
+- [loss before after snap](figures/loss-before-after-snap.svg)
+- [beer perturbation](figures/beer-perturbation.svg)
+- [runtime depth budget](figures/runtime-depth-budget.svg)
+- [failure taxonomy](figures/failure-taxonomy.svg)
+- [depth curve recovery](figures/depth-curve-recovery.svg)
+
+## Tables
+
+- [runs csv](tables/runs.csv)
+- [group formula csv](tables/group-formula.csv)
+- [group start mode csv](tables/group-start-mode.csv)
+- [group perturbation noise csv](tables/group-perturbation-noise.csv)
+- [group depth csv](tables/group-depth.csv)
+- [group failure class csv](tables/group-failure-class.csv)
+- [group evidence class csv](tables/group-evidence-class.csv)
+- [group claim csv](tables/group-claim.csv)
+- [group threshold policy csv](tables/group-threshold-policy.csv)
+- [depth curve csv](tables/depth-curve.csv)
+- [headline json](tables/headline-metrics.json)
+- [headline csv](tables/headline-metrics.csv)
+- [failures csv](tables/failures.csv)
+
+## What EML Demonstrates Well
+
+This campaign isolates the perturbed true-tree basin: 9/9 perturbed runs passed verifier-owned recovery, with 9 same-AST returns, 0 verified-equivalent returns, and 0 repaired candidates. Those outcomes demonstrate local basin and repair behavior, not blind-discovery performance.
+
+## Limitations
+
+- Blind training recovery: 0/0 blind runs recovered.
+- Same-AST exact return: 9 runs snapped back to the compiled seed or exact target; useful basin evidence, not discovery.
+- Verified-equivalent exact return: 0 runs snapped to a different exact AST that verified.
+- Unsupported gates: 0 runs were blocked by compiler/depth/operator limits and remain in the denominator.
+- Failed fits: 0 runs did not pass verifier-owned recovery after training or execution.
+
+## Failed and Unsupported Cases
+
+No failed or unsupported cases in this campaign.
+
+## Next Experiments
+
+- Improve blind optimizer robustness and compare against this campaign's `snapped_but_failed` cases.
+- Reduce compiled arithmetic tree depth for formulas gated as unsupported, especially Michaelis-Menten and Planck-style expressions.
+- Expand perturbation sweeps after optimizer changes so same-AST returns and verified-equivalent recoveries can be compared over time.
+- Add external noisy datasets only after the synthetic/source-document campaign remains reproducible and interpretable.

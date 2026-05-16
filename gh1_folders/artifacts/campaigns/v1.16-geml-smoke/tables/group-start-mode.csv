@@ -1,0 +1,2 @@
+group,total,verifier_recovered,verification_passed,trained_exact_recovery,compile_only_verified_support,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate
+blind,4,0,0,0,0,0,0,0,3,0,0.0,0.0,0.75

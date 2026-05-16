@@ -1,0 +1,142 @@
+{
+  "artifact_root": "artifacts/campaigns/v1.12-evidence-refresh/runs",
+  "cases": [
+    {
+      "claim_id": null,
+      "dataset": {
+        "points": 24,
+        "tolerance": 1e-08
+      },
+      "expect_recovery": false,
+      "formula": "exp",
+      "id": "exp-pure-blind-seed-refresh",
+      "optimizer": {
+        "clamp_exp_real": 40.0,
+        "constants": [
+          "1"
+        ],
+        "depth": 1,
+        "hardening_emit_interval": 2,
+        "hardening_steps": 4,
+        "hardening_temperature_end": 0.02,
+        "log_domain_epsilon": 1e-09,
+        "log_safety_imag_tolerance": 1e-06,
+        "log_safety_margin": 1e-06,
+        "log_safety_weight": 0.0,
+        "lr": 0.05,
+        "max_compile_depth": 13,
+        "max_compile_nodes": 256,
+        "max_power": 3,
+        "max_warm_depth": 14,
+        "operator_family": {
+          "family": "raw_eml",
+          "label": "raw_eml",
+          "s": 1.0,
+          "t": 1.0,
+          "terminal": "one"
+        },
+        "operator_schedule": [],
+        "refit_lr": 0.02,
+        "refit_steps": 80,
+        "restarts": 2,
+        "scaffold_exclusions": [],
+        "scaffold_initializers": [],
+        "steps": 80,
+        "warm_depth": 0,
+        "warm_restarts": 1,
+        "warm_steps": 20
+      },
+      "perturbation_noise": [
+        0.0
+      ],
+      "seeds": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_mode": "blind",
+      "tags": [
+        "v1.12",
+        "paper_refresh",
+        "pure_blind",
+        "shallow"
+      ],
+      "threshold_policy_id": null,
+      "training_mode": "blind_training"
+    },
+    {
+      "claim_id": null,
+      "dataset": {
+        "points": 24,
+        "tolerance": 1e-08
+      },
+      "expect_recovery": true,
+      "formula": "exp",
+      "id": "exp-scaffolded-seed-refresh",
+      "optimizer": {
+        "clamp_exp_real": 40.0,
+        "constants": [
+          "1"
+        ],
+        "depth": 1,
+        "hardening_emit_interval": 2,
+        "hardening_steps": 4,
+        "hardening_temperature_end": 0.02,
+        "log_domain_epsilon": 1e-09,
+        "log_safety_imag_tolerance": 1e-06,
+        "log_safety_margin": 1e-06,
+        "log_safety_weight": 0.0,
+        "lr": 0.05,
+        "max_compile_depth": 13,
+        "max_compile_nodes": 256,
+        "max_power": 3,
+        "max_warm_depth": 14,
+        "operator_family": {
+          "family": "raw_eml",
+          "label": "raw_eml",
+          "s": 1.0,
+          "t": 1.0,
+          "terminal": "one"
+        },
+        "operator_schedule": [],
+        "refit_lr": 0.02,
+        "refit_steps": 80,
+        "restarts": 1,
+        "scaffold_exclusions": [],
+        "scaffold_initializers": [
+          "exp",
+          "log",
+          "scaled_exp"
+        ],
+        "steps": 40,
+        "warm_depth": 0,
+        "warm_restarts": 1,
+        "warm_steps": 20
+      },
+      "perturbation_noise": [
+        0.0
+      ],
+      "seeds": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start_mode": "blind",
+      "tags": [
+        "v1.12",
+        "paper_refresh",
+        "scaffolded",
+        "shallow"
+      ],
+      "threshold_policy_id": null,
+      "training_mode": "blind_training"
+    }
+  ],
+  "description": "v1.12 current-code shallow exp seed refresh with separate pure-blind and scaffolded denominators.",
+  "id": "v1.12-shallow-refresh",
+  "schema": "eml.benchmark_suite.v1"
+}

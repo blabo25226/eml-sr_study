@@ -1,0 +1,135 @@
+{
+  "benchmark_manifests": "artifacts/paper/v1.15-geml/benchmark-manifests.json",
+  "campaign_dir": "artifacts/campaigns/v1.15-geml-oscillatory-smoke",
+  "claim_audit": {
+    "json": "artifacts/paper/v1.15-geml/claim-audit.json",
+    "markdown": "artifacts/paper/v1.15-geml/claim-audit.md",
+    "status": "passed"
+  },
+  "claim_boundary": "artifacts/paper/v1.15-geml/claim-boundary.md",
+  "decision": {
+    "decision": "inconclusive_smoke_only",
+    "declared_targets": 10,
+    "families": {
+      "damped_oscillation": "not_run",
+      "harmonic": "not_run",
+      "log_periodic": "not_run",
+      "negative_control": "raw_loss_only_signal",
+      "periodic": "ipi_loss_only_signal",
+      "standing_wave": "not_run"
+    },
+    "paired_rows": 2,
+    "rationale": "Only a subset of the declared matched protocol has paired evidence."
+  },
+  "generated_at": "2026-04-22T10:16:35.986700+00:00",
+  "outputs": [
+    {
+      "bytes": 5165,
+      "path": "artifacts/paper/v1.15-geml/source-locks.json",
+      "role": "output",
+      "sha256": "fc8518b883b22a782836c949b2679059de133ff96e3448dbb371df7740c0e3a6",
+      "source_id": "source_locks",
+      "status": "locked"
+    },
+    {
+      "bytes": 67157,
+      "path": "artifacts/paper/v1.15-geml/benchmark-manifests.json",
+      "role": "output",
+      "sha256": "083ff84405a241cba2b300798f12851ea82b8e80fba656c273cd3f6c9ef2783a",
+      "source_id": "benchmark_manifests",
+      "status": "locked"
+    },
+    {
+      "bytes": 2263,
+      "path": "artifacts/paper/v1.15-geml/target-family-classification.json",
+      "role": "output",
+      "sha256": "373dcf97fdcdad00708fad7b1e138eb9b374f9c2eeb53ba5bf93347b7b9eb580",
+      "source_id": "target_family_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 464,
+      "path": "artifacts/paper/v1.15-geml/target-family-classification.csv",
+      "role": "output",
+      "sha256": "8ff0eea5b10a1d38c5931c09ad41bfcb6b458d81bdc73c05627618831cc4dd77",
+      "source_id": "target_family_csv",
+      "status": "locked"
+    },
+    {
+      "bytes": 721,
+      "path": "artifacts/paper/v1.15-geml/target-family-classification.md",
+      "role": "output",
+      "sha256": "908ba5e397be154f2fc21e29bcd2f097f611250c1de89c0aec854466aa26ac46",
+      "source_id": "target_family_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 1261,
+      "path": "artifacts/paper/v1.15-geml/claim-audit.json",
+      "role": "output",
+      "sha256": "1291d3fc6498bab1a85be8dd43028e8346295e7dd276449b392f8d4541366f9c",
+      "source_id": "claim_audit_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 844,
+      "path": "artifacts/paper/v1.15-geml/claim-audit.md",
+      "role": "output",
+      "sha256": "0412ee4a9e31f5090e4eb3d9acb24710d39d96979b113331bab6f93fa8c414a1",
+      "source_id": "claim_audit_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 1322,
+      "path": "artifacts/paper/v1.15-geml/claim-boundary.md",
+      "role": "output",
+      "sha256": "ae0bdd5af02dfabb0aaec273badb8b80c447d8b24401110d3f85847701c6c667",
+      "source_id": "claim_boundary_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 574,
+      "path": "artifacts/paper/v1.15-geml/reproduction.md",
+      "role": "output",
+      "sha256": "0afc66404d145c9dc7da8f4b8c7f896280b785dc7b0a39bc8d2d7262e882c749",
+      "source_id": "reproduction_md",
+      "status": "locked"
+    }
+  ],
+  "paired_summary": {
+    "both_recovered": 0,
+    "comparison_outcomes": {
+      "ipi_lower_post_snap_mse": 1,
+      "raw_lower_post_snap_mse": 1
+    },
+    "ipi_lower_post_snap_mse": 1,
+    "ipi_recovery_wins": 0,
+    "ipi_trained_exact_recovery": 0,
+    "ipi_trained_exact_recovery_rate": 0.0,
+    "loss_only_outcomes": 2,
+    "negative_control_pairs": 1,
+    "neither_recovered": 2,
+    "paired_rows": 2,
+    "raw_lower_post_snap_mse": 1,
+    "raw_recovery_wins": 0,
+    "raw_trained_exact_recovery": 0,
+    "raw_trained_exact_recovery_rate": 0.0,
+    "schema": "eml.geml_paired_summary.v1",
+    "target_families": {
+      "negative_control": 1,
+      "periodic": 1
+    }
+  },
+  "reproduction": "artifacts/paper/v1.15-geml/reproduction.md",
+  "schema": "eml.v115_geml_evidence_package.v1",
+  "source_locks": "artifacts/paper/v1.15-geml/source-locks.json",
+  "target_family_classification": {
+    "csv": "artifacts/paper/v1.15-geml/target-family-classification.csv",
+    "json": "artifacts/paper/v1.15-geml/target-family-classification.json",
+    "markdown": "artifacts/paper/v1.15-geml/target-family-classification.md"
+  },
+  "theory": {
+    "json": "artifacts/theory/v1.15/ipi-restricted-theory.json",
+    "markdown": "artifacts/theory/v1.15/ipi-restricted-theory.md"
+  }
+}

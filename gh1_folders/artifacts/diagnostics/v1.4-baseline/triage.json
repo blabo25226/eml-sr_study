@@ -1,0 +1,1795 @@
+{
+  "baseline_locks": [
+    {
+      "files": [
+        {
+          "path": "artifacts/campaigns/v1.3-standard/aggregate.json",
+          "sha256": "886d4a5ed558c7089df653da4ac641d17bb862717ad0561806a5cd88ec0f7e8e"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-standard/suite-result.json",
+          "sha256": "1beae94ce644381d5369fc75f57f749a359a9734ddce6eb71681e15c6c91c2c8"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-standard/campaign-manifest.json",
+          "sha256": "54a753197fe143f9a79741564fffe25ebe5b14fd2003213b167a25cb5f70824a"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-standard/tables/runs.csv",
+          "sha256": "5be8287f724612c20eea54403d6b3b7ffad41bfa09ed5f3e576510874230f27a"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-standard/tables/failures.csv",
+          "sha256": "a570df2e1539d6436acd8810b6334b4c613bff8c877cc198968ed62a17f1bbac"
+        }
+      ],
+      "label": "v1.3-standard",
+      "path": "artifacts/campaigns/v1.3-standard"
+    },
+    {
+      "files": [
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/aggregate.json",
+          "sha256": "28ff4e7b5eda78ad2045eec13eac3c042a0b6173dbffaebf9a3e0d9b970dee7c"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/suite-result.json",
+          "sha256": "1329913d7045850ad8027a99a314ae6d3a4a72586ad54c5a84bcec3ccce07606"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/campaign-manifest.json",
+          "sha256": "b8e3bce7014b2ad23f8a658f84bc2fa1b3593f0932288da85b986d52da29c018"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/tables/runs.csv",
+          "sha256": "3a3a0f396b628fd824a2961cb3dd22d46d93506024467f4cbff7423e084e96d5"
+        },
+        {
+          "path": "artifacts/campaigns/v1.3-showcase/tables/failures.csv",
+          "sha256": "1b635c3be5307d97a4a6ce075c580a645ccbcb970f27899aeb7c8daf0c9bf22e"
+        }
+      ],
+      "label": "v1.3-showcase",
+      "path": "artifacts/campaigns/v1.3-showcase"
+    }
+  ],
+  "baselines": [
+    {
+      "counts": {
+        "execution_error": 0,
+        "failed": 7,
+        "same_ast_return": 4,
+        "total": 16,
+        "unsupported": 4,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 5,
+        "verifier_recovery_rate": 0.3125
+      },
+      "label": "v1.3-standard",
+      "path": "artifacts/campaigns/v1.3-standard",
+      "preset": "standard",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "counts": {
+        "execution_error": 0,
+        "failed": 11,
+        "same_ast_return": 11,
+        "total": 29,
+        "unsupported": 5,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 13,
+        "verifier_recovery_rate": 0.4482758620689655
+      },
+      "label": "v1.3-showcase",
+      "path": "artifacts/campaigns/v1.3-showcase",
+      "preset": "showcase",
+      "suite_id": "v1.3-showcase"
+    }
+  ],
+  "diagnostic_subsets": {
+    "beer-perturbation-failures": {
+      "run_count": 6,
+      "run_filter": {
+        "case_ids": [
+          "beer-perturbation-sweep"
+        ],
+        "formulas": [
+          "beer_lambert"
+        ],
+        "perturbation_noises": [
+          15.0,
+          35.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_modes": [
+          "warm_start"
+        ]
+      },
+      "runs": [
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-348eebff7ed4.json",
+          "campaign": "v1.3-standard",
+          "case_id": "beer-perturbation-sweep",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "beer_lambert",
+          "metrics": {
+            "active_slot_count": 18,
+            "best_loss": 6.97217942933663,
+            "changed_slot_count": 5,
+            "high_precision_max_error": 20.445903912747927,
+            "post_snap_loss": 7.2250695723031635,
+            "snap_active_node_count": 19,
+            "snap_min_margin": 0.9725785021131478,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 35.0,
+          "reason": "verified",
+          "run_id": "v1-3-standard-beer-perturbation-sweep-348eebff7ed4",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "recovered",
+            "trained_exact_recovery": "failed",
+            "warm_start_attempt": "snapped_but_failed"
+          },
+          "start_mode": "warm_start",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-68c818aed370.json",
+          "campaign": "v1.3-standard",
+          "case_id": "beer-perturbation-sweep",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "beer_lambert",
+          "metrics": {
+            "active_slot_count": 18,
+            "best_loss": 0.21927529113730626,
+            "changed_slot_count": 3,
+            "high_precision_max_error": 0.9983425650007712,
+            "post_snap_loss": 0.21927561010523208,
+            "snap_active_node_count": 7,
+            "snap_min_margin": 0.99999767229955,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 35.0,
+          "reason": "verified",
+          "run_id": "v1-3-standard-beer-perturbation-sweep-68c818aed370",
+          "seed": 1,
+          "stage_statuses": {
+            "compiled_seed": "recovered",
+            "trained_exact_recovery": "failed",
+            "warm_start_attempt": "snapped_but_failed"
+          },
+          "start_mode": "warm_start",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-6ffb162a5bb7.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "beer-perturbation-sweep",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "beer_lambert",
+          "metrics": {
+            "active_slot_count": 18,
+            "best_loss": 6.918600622230206,
+            "changed_slot_count": 5,
+            "high_precision_max_error": 20.445903912747927,
+            "post_snap_loss": 7.2250695723031635,
+            "snap_active_node_count": 19,
+            "snap_min_margin": 0.985069290082722,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 35.0,
+          "reason": "verified",
+          "run_id": "v1-3-showcase-beer-perturbation-sweep-6ffb162a5bb7",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "recovered",
+            "trained_exact_recovery": "failed",
+            "warm_start_attempt": "snapped_but_failed"
+          },
+          "start_mode": "warm_start",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-89c991bee41e.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "beer-perturbation-sweep",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "beer_lambert",
+          "metrics": {
+            "active_slot_count": 18,
+            "best_loss": 0.21509044977487604,
+            "changed_slot_count": 1,
+            "high_precision_max_error": 0.9983425650007712,
+            "post_snap_loss": 0.21927561010523208,
+            "snap_active_node_count": 7,
+            "snap_min_margin": 0.9998926154620775,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 15.0,
+          "reason": "verified",
+          "run_id": "v1-3-showcase-beer-perturbation-sweep-89c991bee41e",
+          "seed": 1,
+          "stage_statuses": {
+            "compiled_seed": "recovered",
+            "trained_exact_recovery": "failed",
+            "warm_start_attempt": "snapped_but_failed"
+          },
+          "start_mode": "warm_start",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-8615aab30e44.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "beer-perturbation-sweep",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "beer_lambert",
+          "metrics": {
+            "active_slot_count": 18,
+            "best_loss": 0.21927438627985,
+            "changed_slot_count": 3,
+            "high_precision_max_error": 0.9983425650007712,
+            "post_snap_loss": 0.21927561010523208,
+            "snap_active_node_count": 7,
+            "snap_min_margin": 0.9999985028118887,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 35.0,
+          "reason": "verified",
+          "run_id": "v1-3-showcase-beer-perturbation-sweep-8615aab30e44",
+          "seed": 1,
+          "stage_statuses": {
+            "compiled_seed": "recovered",
+            "trained_exact_recovery": "failed",
+            "warm_start_attempt": "snapped_but_failed"
+          },
+          "start_mode": "warm_start",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-05cb8f1ed422.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "beer-perturbation-sweep",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "beer_lambert",
+          "metrics": {
+            "active_slot_count": 18,
+            "best_loss": 0.3735906412028358,
+            "changed_slot_count": 7,
+            "high_precision_max_error": 0.54976399126406,
+            "post_snap_loss": 0.07479189732447282,
+            "snap_active_node_count": 3,
+            "snap_min_margin": 0.27431234111108455,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 35.0,
+          "reason": "verified",
+          "run_id": "v1-3-showcase-beer-perturbation-sweep-05cb8f1ed422",
+          "seed": 2,
+          "stage_statuses": {
+            "compiled_seed": "recovered",
+            "trained_exact_recovery": "failed",
+            "warm_start_attempt": "snapped_but_failed"
+          },
+          "start_mode": "warm_start",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-showcase"
+        }
+      ],
+      "target": "beer-perturbation-failures"
+    },
+    "blind-failures": {
+      "run_count": 12,
+      "run_filter": {
+        "case_ids": [
+          "exp-blind",
+          "log-blind",
+          "radioactive-decay-blind"
+        ],
+        "formulas": [
+          "exp",
+          "log",
+          "radioactive_decay"
+        ],
+        "perturbation_noises": [
+          0.0
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "start_modes": [
+          "blind"
+        ]
+      },
+      "runs": [
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-exp-blind-a5022d6098c7.json",
+          "campaign": "v1.3-standard",
+          "case_id": "exp-blind",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "exp",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 4.276312640712871,
+            "changed_slot_count": null,
+            "high_precision_max_error": 3.626994328701647,
+            "post_snap_loss": 6.65026006217893,
+            "snap_active_node_count": 3,
+            "snap_min_margin": 0.4618253617907166,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-standard-exp-blind-a5022d6098c7",
+          "seed": 0,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-log-blind-194180dc5df0.json",
+          "campaign": "v1.3-standard",
+          "case_id": "log-blind",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "log",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 1.6346277048832631,
+            "changed_slot_count": null,
+            "high_precision_max_error": 65.46133421647787,
+            "post_snap_loss": 57.11453695040577,
+            "snap_active_node_count": 7,
+            "snap_min_margin": 0.06559763555479026,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-standard-log-blind-194180dc5df0",
+          "seed": 0,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-log-blind-99aa5ff393ee.json",
+          "campaign": "v1.3-standard",
+          "case_id": "log-blind",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "log",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 0.9828604315865963,
+            "changed_slot_count": null,
+            "high_precision_max_error": 65.24551554978073,
+            "post_snap_loss": 57.2736718817892,
+            "snap_active_node_count": 7,
+            "snap_min_margin": 0.040214261504050275,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-standard-log-blind-99aa5ff393ee",
+          "seed": 1,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-radioactive-decay-blind-20f83222d0db.json",
+          "campaign": "v1.3-standard",
+          "case_id": "radioactive-decay-blind",
+          "claim_status": "failed",
+          "classification": "failed",
+          "formula": "radioactive_decay",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 662.4053453501712,
+            "changed_slot_count": null,
+            "high_precision_max_error": Infinity,
+            "post_snap_loss": Infinity,
+            "snap_active_node_count": 9,
+            "snap_min_margin": 0.016389018309306447,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-standard-radioactive-decay-blind-20f83222d0db",
+          "seed": 0,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "failed",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-radioactive-decay-blind-83660c5b4b25.json",
+          "campaign": "v1.3-standard",
+          "case_id": "radioactive-decay-blind",
+          "claim_status": "failed",
+          "classification": "failed",
+          "formula": "radioactive_decay",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 605.0998472184481,
+            "changed_slot_count": null,
+            "high_precision_max_error": Infinity,
+            "post_snap_loss": Infinity,
+            "snap_active_node_count": 9,
+            "snap_min_margin": 0.051373298683507373,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-standard-radioactive-decay-blind-83660c5b4b25",
+          "seed": 1,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "failed",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-exp-blind-c693d4329a15.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "exp-blind",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "exp",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 4.276013654956961,
+            "changed_slot_count": null,
+            "high_precision_max_error": 3.626994328701647,
+            "post_snap_loss": 6.65026006217893,
+            "snap_active_node_count": 3,
+            "snap_min_margin": 0.6864473937067659,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-showcase-exp-blind-c693d4329a15",
+          "seed": 0,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-log-blind-332dbad5db03.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "log-blind",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "log",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 1.5733021643743739,
+            "changed_slot_count": null,
+            "high_precision_max_error": 65.46133421647787,
+            "post_snap_loss": 57.11453695040577,
+            "snap_active_node_count": 7,
+            "snap_min_margin": 0.19548899758933969,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-showcase-log-blind-332dbad5db03",
+          "seed": 0,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-log-blind-a52747a50ca2.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "log-blind",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "log",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 0.9862127882894679,
+            "changed_slot_count": null,
+            "high_precision_max_error": 65.24551554978073,
+            "post_snap_loss": 57.2736718817892,
+            "snap_active_node_count": 7,
+            "snap_min_margin": 0.0402346068532895,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-showcase-log-blind-a52747a50ca2",
+          "seed": 1,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-log-blind-cf7866232845.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "log-blind",
+          "claim_status": "failed",
+          "classification": "snapped_but_failed",
+          "formula": "log",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 1.31983475269851,
+            "changed_slot_count": null,
+            "high_precision_max_error": 65.55048478064921,
+            "post_snap_loss": 57.16195646001804,
+            "snap_active_node_count": 7,
+            "snap_min_margin": 0.06249155826184366,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-showcase-log-blind-cf7866232845",
+          "seed": 2,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "snapped_but_failed",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-radioactive-decay-blind-4a34febadef0.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "radioactive-decay-blind",
+          "claim_status": "failed",
+          "classification": "failed",
+          "formula": "radioactive_decay",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 652.9115967195153,
+            "changed_slot_count": null,
+            "high_precision_max_error": Infinity,
+            "post_snap_loss": Infinity,
+            "snap_active_node_count": 9,
+            "snap_min_margin": 0.016391574671184295,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-showcase-radioactive-decay-blind-4a34febadef0",
+          "seed": 0,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "failed",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-radioactive-decay-blind-8055ab006d29.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "radioactive-decay-blind",
+          "claim_status": "failed",
+          "classification": "failed",
+          "formula": "radioactive_decay",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 693.6467612693677,
+            "changed_slot_count": null,
+            "high_precision_max_error": Infinity,
+            "post_snap_loss": Infinity,
+            "snap_active_node_count": 9,
+            "snap_min_margin": 0.05082733481942009,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-showcase-radioactive-decay-blind-8055ab006d29",
+          "seed": 1,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "failed",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-radioactive-decay-blind-396f4bdf4078.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "radioactive-decay-blind",
+          "claim_status": "failed",
+          "classification": "failed",
+          "formula": "radioactive_decay",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": 780.5039556439684,
+            "changed_slot_count": null,
+            "high_precision_max_error": Infinity,
+            "post_snap_loss": Infinity,
+            "snap_active_node_count": 9,
+            "snap_min_margin": 0.001516395309574592,
+            "verifier_status": "failed"
+          },
+          "perturbation_noise": 0.0,
+          "reason": "mpmath_failed",
+          "run_id": "v1-3-showcase-radioactive-decay-blind-396f4bdf4078",
+          "seed": 2,
+          "stage_statuses": {
+            "blind_baseline": "failed"
+          },
+          "start_mode": "blind",
+          "status": "failed",
+          "suite_id": "v1.3-showcase"
+        }
+      ],
+      "target": "blind-failures"
+    },
+    "compiler-depth-gates": {
+      "run_count": 9,
+      "run_filter": {
+        "case_ids": [
+          "damped-oscillator-compile",
+          "logistic-compile",
+          "michaelis-warm-diagnostic",
+          "planck-diagnostic",
+          "shockley-compile"
+        ],
+        "formulas": [
+          "damped_oscillator",
+          "logistic",
+          "michaelis_menten",
+          "planck",
+          "shockley"
+        ],
+        "perturbation_noises": [
+          0.0
+        ],
+        "seeds": [
+          0
+        ],
+        "start_modes": [
+          "compile",
+          "warm_start"
+        ]
+      },
+      "runs": [
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-michaelis-warm-diagnostic-37a57673a2e2.json",
+          "campaign": "v1.3-standard",
+          "case_id": "michaelis-warm-diagnostic",
+          "claim_status": "unsupported",
+          "classification": "unsupported",
+          "formula": "michaelis_menten",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": null,
+            "changed_slot_count": null,
+            "high_precision_max_error": null,
+            "post_snap_loss": null,
+            "snap_active_node_count": null,
+            "snap_min_margin": null,
+            "verifier_status": null
+          },
+          "perturbation_noise": 0.0,
+          "reason": "depth_exceeded",
+          "run_id": "v1-3-standard-michaelis-warm-diagnostic-37a57673a2e2",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "unsupported",
+            "warm_start_attempt": "unsupported"
+          },
+          "start_mode": "warm_start",
+          "status": "unsupported",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-logistic-compile-820d90103856.json",
+          "campaign": "v1.3-standard",
+          "case_id": "logistic-compile",
+          "claim_status": "unsupported",
+          "classification": "unsupported",
+          "formula": "logistic",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": null,
+            "changed_slot_count": null,
+            "high_precision_max_error": null,
+            "post_snap_loss": null,
+            "snap_active_node_count": null,
+            "snap_min_margin": null,
+            "verifier_status": null
+          },
+          "perturbation_noise": 0.0,
+          "reason": "depth_exceeded",
+          "run_id": "v1-3-standard-logistic-compile-820d90103856",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "unsupported"
+          },
+          "start_mode": "compile",
+          "status": "unsupported",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-shockley-compile-e410a7c053d4.json",
+          "campaign": "v1.3-standard",
+          "case_id": "shockley-compile",
+          "claim_status": "unsupported",
+          "classification": "unsupported",
+          "formula": "shockley",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": null,
+            "changed_slot_count": null,
+            "high_precision_max_error": null,
+            "post_snap_loss": null,
+            "snap_active_node_count": null,
+            "snap_min_margin": null,
+            "verifier_status": null
+          },
+          "perturbation_noise": 0.0,
+          "reason": "depth_exceeded",
+          "run_id": "v1-3-standard-shockley-compile-e410a7c053d4",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "unsupported"
+          },
+          "start_mode": "compile",
+          "status": "unsupported",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-planck-diagnostic-837e17c92c48.json",
+          "campaign": "v1.3-standard",
+          "case_id": "planck-diagnostic",
+          "claim_status": "unsupported",
+          "classification": "unsupported",
+          "formula": "planck",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": null,
+            "changed_slot_count": null,
+            "high_precision_max_error": null,
+            "post_snap_loss": null,
+            "snap_active_node_count": null,
+            "snap_min_margin": null,
+            "verifier_status": null
+          },
+          "perturbation_noise": 0.0,
+          "reason": "depth_exceeded",
+          "run_id": "v1-3-standard-planck-diagnostic-837e17c92c48",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "unsupported"
+          },
+          "start_mode": "compile",
+          "status": "unsupported",
+          "suite_id": "v1.3-standard"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-michaelis-warm-diagnostic-8f1f8084d61b.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "michaelis-warm-diagnostic",
+          "claim_status": "unsupported",
+          "classification": "unsupported",
+          "formula": "michaelis_menten",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": null,
+            "changed_slot_count": null,
+            "high_precision_max_error": null,
+            "post_snap_loss": null,
+            "snap_active_node_count": null,
+            "snap_min_margin": null,
+            "verifier_status": null
+          },
+          "perturbation_noise": 0.0,
+          "reason": "depth_exceeded",
+          "run_id": "v1-3-showcase-michaelis-warm-diagnostic-8f1f8084d61b",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "unsupported",
+            "warm_start_attempt": "unsupported"
+          },
+          "start_mode": "warm_start",
+          "status": "unsupported",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-logistic-compile-5a739cf1c01f.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "logistic-compile",
+          "claim_status": "unsupported",
+          "classification": "unsupported",
+          "formula": "logistic",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": null,
+            "changed_slot_count": null,
+            "high_precision_max_error": null,
+            "post_snap_loss": null,
+            "snap_active_node_count": null,
+            "snap_min_margin": null,
+            "verifier_status": null
+          },
+          "perturbation_noise": 0.0,
+          "reason": "depth_exceeded",
+          "run_id": "v1-3-showcase-logistic-compile-5a739cf1c01f",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "unsupported"
+          },
+          "start_mode": "compile",
+          "status": "unsupported",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-shockley-compile-0119659ca5dd.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "shockley-compile",
+          "claim_status": "unsupported",
+          "classification": "unsupported",
+          "formula": "shockley",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": null,
+            "changed_slot_count": null,
+            "high_precision_max_error": null,
+            "post_snap_loss": null,
+            "snap_active_node_count": null,
+            "snap_min_margin": null,
+            "verifier_status": null
+          },
+          "perturbation_noise": 0.0,
+          "reason": "depth_exceeded",
+          "run_id": "v1-3-showcase-shockley-compile-0119659ca5dd",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "unsupported"
+          },
+          "start_mode": "compile",
+          "status": "unsupported",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-damped-oscillator-compile-9b393796ada0.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "damped-oscillator-compile",
+          "claim_status": "unsupported",
+          "classification": "unsupported",
+          "formula": "damped_oscillator",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": null,
+            "changed_slot_count": null,
+            "high_precision_max_error": null,
+            "post_snap_loss": null,
+            "snap_active_node_count": null,
+            "snap_min_margin": null,
+            "verifier_status": null
+          },
+          "perturbation_noise": 0.0,
+          "reason": "unsupported_operator",
+          "run_id": "v1-3-showcase-damped-oscillator-compile-9b393796ada0",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "unsupported"
+          },
+          "start_mode": "compile",
+          "status": "unsupported",
+          "suite_id": "v1.3-showcase"
+        },
+        {
+          "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-planck-diagnostic-1ba93a0c5966.json",
+          "campaign": "v1.3-showcase",
+          "case_id": "planck-diagnostic",
+          "claim_status": "unsupported",
+          "classification": "unsupported",
+          "formula": "planck",
+          "metrics": {
+            "active_slot_count": null,
+            "best_loss": null,
+            "changed_slot_count": null,
+            "high_precision_max_error": null,
+            "post_snap_loss": null,
+            "snap_active_node_count": null,
+            "snap_min_margin": null,
+            "verifier_status": null
+          },
+          "perturbation_noise": 0.0,
+          "reason": "depth_exceeded",
+          "run_id": "v1-3-showcase-planck-diagnostic-1ba93a0c5966",
+          "seed": 0,
+          "stage_statuses": {
+            "compiled_seed": "unsupported"
+          },
+          "start_mode": "compile",
+          "status": "unsupported",
+          "suite_id": "v1.3-showcase"
+        }
+      ],
+      "target": "compiler-depth-gates"
+    }
+  },
+  "failure_group_counts": [
+    {
+      "classification": "snapped_but_failed",
+      "count": 1,
+      "formula": "beer_lambert",
+      "perturbation_noise": "15.0",
+      "start_mode": "warm_start"
+    },
+    {
+      "classification": "snapped_but_failed",
+      "count": 5,
+      "formula": "beer_lambert",
+      "perturbation_noise": "35.0",
+      "start_mode": "warm_start"
+    },
+    {
+      "classification": "unsupported",
+      "count": 1,
+      "formula": "damped_oscillator",
+      "perturbation_noise": "0.0",
+      "start_mode": "compile"
+    },
+    {
+      "classification": "snapped_but_failed",
+      "count": 2,
+      "formula": "exp",
+      "perturbation_noise": "0.0",
+      "start_mode": "blind"
+    },
+    {
+      "classification": "snapped_but_failed",
+      "count": 5,
+      "formula": "log",
+      "perturbation_noise": "0.0",
+      "start_mode": "blind"
+    },
+    {
+      "classification": "unsupported",
+      "count": 2,
+      "formula": "logistic",
+      "perturbation_noise": "0.0",
+      "start_mode": "compile"
+    },
+    {
+      "classification": "unsupported",
+      "count": 2,
+      "formula": "michaelis_menten",
+      "perturbation_noise": "0.0",
+      "start_mode": "warm_start"
+    },
+    {
+      "classification": "unsupported",
+      "count": 2,
+      "formula": "planck",
+      "perturbation_noise": "0.0",
+      "start_mode": "compile"
+    },
+    {
+      "classification": "failed",
+      "count": 5,
+      "formula": "radioactive_decay",
+      "perturbation_noise": "0.0",
+      "start_mode": "blind"
+    },
+    {
+      "classification": "unsupported",
+      "count": 2,
+      "formula": "shockley",
+      "perturbation_noise": "0.0",
+      "start_mode": "compile"
+    }
+  ],
+  "failure_runs": [
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-exp-blind-a5022d6098c7.json",
+      "campaign": "v1.3-standard",
+      "case_id": "exp-blind",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "exp",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 4.276312640712871,
+        "changed_slot_count": null,
+        "high_precision_max_error": 3.626994328701647,
+        "post_snap_loss": 6.65026006217893,
+        "snap_active_node_count": 3,
+        "snap_min_margin": 0.4618253617907166,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-standard-exp-blind-a5022d6098c7",
+      "seed": 0,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-log-blind-194180dc5df0.json",
+      "campaign": "v1.3-standard",
+      "case_id": "log-blind",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "log",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 1.6346277048832631,
+        "changed_slot_count": null,
+        "high_precision_max_error": 65.46133421647787,
+        "post_snap_loss": 57.11453695040577,
+        "snap_active_node_count": 7,
+        "snap_min_margin": 0.06559763555479026,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-standard-log-blind-194180dc5df0",
+      "seed": 0,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-log-blind-99aa5ff393ee.json",
+      "campaign": "v1.3-standard",
+      "case_id": "log-blind",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "log",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 0.9828604315865963,
+        "changed_slot_count": null,
+        "high_precision_max_error": 65.24551554978073,
+        "post_snap_loss": 57.2736718817892,
+        "snap_active_node_count": 7,
+        "snap_min_margin": 0.040214261504050275,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-standard-log-blind-99aa5ff393ee",
+      "seed": 1,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-radioactive-decay-blind-20f83222d0db.json",
+      "campaign": "v1.3-standard",
+      "case_id": "radioactive-decay-blind",
+      "claim_status": "failed",
+      "classification": "failed",
+      "formula": "radioactive_decay",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 662.4053453501712,
+        "changed_slot_count": null,
+        "high_precision_max_error": Infinity,
+        "post_snap_loss": Infinity,
+        "snap_active_node_count": 9,
+        "snap_min_margin": 0.016389018309306447,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-standard-radioactive-decay-blind-20f83222d0db",
+      "seed": 0,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "failed",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-radioactive-decay-blind-83660c5b4b25.json",
+      "campaign": "v1.3-standard",
+      "case_id": "radioactive-decay-blind",
+      "claim_status": "failed",
+      "classification": "failed",
+      "formula": "radioactive_decay",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 605.0998472184481,
+        "changed_slot_count": null,
+        "high_precision_max_error": Infinity,
+        "post_snap_loss": Infinity,
+        "snap_active_node_count": 9,
+        "snap_min_margin": 0.051373298683507373,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-standard-radioactive-decay-blind-83660c5b4b25",
+      "seed": 1,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "failed",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-348eebff7ed4.json",
+      "campaign": "v1.3-standard",
+      "case_id": "beer-perturbation-sweep",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "beer_lambert",
+      "metrics": {
+        "active_slot_count": 18,
+        "best_loss": 6.97217942933663,
+        "changed_slot_count": 5,
+        "high_precision_max_error": 20.445903912747927,
+        "post_snap_loss": 7.2250695723031635,
+        "snap_active_node_count": 19,
+        "snap_min_margin": 0.9725785021131478,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 35.0,
+      "reason": "verified",
+      "run_id": "v1-3-standard-beer-perturbation-sweep-348eebff7ed4",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "recovered",
+        "trained_exact_recovery": "failed",
+        "warm_start_attempt": "snapped_but_failed"
+      },
+      "start_mode": "warm_start",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-68c818aed370.json",
+      "campaign": "v1.3-standard",
+      "case_id": "beer-perturbation-sweep",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "beer_lambert",
+      "metrics": {
+        "active_slot_count": 18,
+        "best_loss": 0.21927529113730626,
+        "changed_slot_count": 3,
+        "high_precision_max_error": 0.9983425650007712,
+        "post_snap_loss": 0.21927561010523208,
+        "snap_active_node_count": 7,
+        "snap_min_margin": 0.99999767229955,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 35.0,
+      "reason": "verified",
+      "run_id": "v1-3-standard-beer-perturbation-sweep-68c818aed370",
+      "seed": 1,
+      "stage_statuses": {
+        "compiled_seed": "recovered",
+        "trained_exact_recovery": "failed",
+        "warm_start_attempt": "snapped_but_failed"
+      },
+      "start_mode": "warm_start",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-michaelis-warm-diagnostic-37a57673a2e2.json",
+      "campaign": "v1.3-standard",
+      "case_id": "michaelis-warm-diagnostic",
+      "claim_status": "unsupported",
+      "classification": "unsupported",
+      "formula": "michaelis_menten",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": null,
+        "changed_slot_count": null,
+        "high_precision_max_error": null,
+        "post_snap_loss": null,
+        "snap_active_node_count": null,
+        "snap_min_margin": null,
+        "verifier_status": null
+      },
+      "perturbation_noise": 0.0,
+      "reason": "depth_exceeded",
+      "run_id": "v1-3-standard-michaelis-warm-diagnostic-37a57673a2e2",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "unsupported",
+        "warm_start_attempt": "unsupported"
+      },
+      "start_mode": "warm_start",
+      "status": "unsupported",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-logistic-compile-820d90103856.json",
+      "campaign": "v1.3-standard",
+      "case_id": "logistic-compile",
+      "claim_status": "unsupported",
+      "classification": "unsupported",
+      "formula": "logistic",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": null,
+        "changed_slot_count": null,
+        "high_precision_max_error": null,
+        "post_snap_loss": null,
+        "snap_active_node_count": null,
+        "snap_min_margin": null,
+        "verifier_status": null
+      },
+      "perturbation_noise": 0.0,
+      "reason": "depth_exceeded",
+      "run_id": "v1-3-standard-logistic-compile-820d90103856",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "unsupported"
+      },
+      "start_mode": "compile",
+      "status": "unsupported",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-shockley-compile-e410a7c053d4.json",
+      "campaign": "v1.3-standard",
+      "case_id": "shockley-compile",
+      "claim_status": "unsupported",
+      "classification": "unsupported",
+      "formula": "shockley",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": null,
+        "changed_slot_count": null,
+        "high_precision_max_error": null,
+        "post_snap_loss": null,
+        "snap_active_node_count": null,
+        "snap_min_margin": null,
+        "verifier_status": null
+      },
+      "perturbation_noise": 0.0,
+      "reason": "depth_exceeded",
+      "run_id": "v1-3-standard-shockley-compile-e410a7c053d4",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "unsupported"
+      },
+      "start_mode": "compile",
+      "status": "unsupported",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-standard/runs/v1.3-standard/v1-3-standard-planck-diagnostic-837e17c92c48.json",
+      "campaign": "v1.3-standard",
+      "case_id": "planck-diagnostic",
+      "claim_status": "unsupported",
+      "classification": "unsupported",
+      "formula": "planck",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": null,
+        "changed_slot_count": null,
+        "high_precision_max_error": null,
+        "post_snap_loss": null,
+        "snap_active_node_count": null,
+        "snap_min_margin": null,
+        "verifier_status": null
+      },
+      "perturbation_noise": 0.0,
+      "reason": "depth_exceeded",
+      "run_id": "v1-3-standard-planck-diagnostic-837e17c92c48",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "unsupported"
+      },
+      "start_mode": "compile",
+      "status": "unsupported",
+      "suite_id": "v1.3-standard"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-exp-blind-c693d4329a15.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "exp-blind",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "exp",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 4.276013654956961,
+        "changed_slot_count": null,
+        "high_precision_max_error": 3.626994328701647,
+        "post_snap_loss": 6.65026006217893,
+        "snap_active_node_count": 3,
+        "snap_min_margin": 0.6864473937067659,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-showcase-exp-blind-c693d4329a15",
+      "seed": 0,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-log-blind-332dbad5db03.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "log-blind",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "log",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 1.5733021643743739,
+        "changed_slot_count": null,
+        "high_precision_max_error": 65.46133421647787,
+        "post_snap_loss": 57.11453695040577,
+        "snap_active_node_count": 7,
+        "snap_min_margin": 0.19548899758933969,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-showcase-log-blind-332dbad5db03",
+      "seed": 0,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-log-blind-a52747a50ca2.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "log-blind",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "log",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 0.9862127882894679,
+        "changed_slot_count": null,
+        "high_precision_max_error": 65.24551554978073,
+        "post_snap_loss": 57.2736718817892,
+        "snap_active_node_count": 7,
+        "snap_min_margin": 0.0402346068532895,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-showcase-log-blind-a52747a50ca2",
+      "seed": 1,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-log-blind-cf7866232845.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "log-blind",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "log",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 1.31983475269851,
+        "changed_slot_count": null,
+        "high_precision_max_error": 65.55048478064921,
+        "post_snap_loss": 57.16195646001804,
+        "snap_active_node_count": 7,
+        "snap_min_margin": 0.06249155826184366,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-showcase-log-blind-cf7866232845",
+      "seed": 2,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-radioactive-decay-blind-4a34febadef0.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "radioactive-decay-blind",
+      "claim_status": "failed",
+      "classification": "failed",
+      "formula": "radioactive_decay",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 652.9115967195153,
+        "changed_slot_count": null,
+        "high_precision_max_error": Infinity,
+        "post_snap_loss": Infinity,
+        "snap_active_node_count": 9,
+        "snap_min_margin": 0.016391574671184295,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-showcase-radioactive-decay-blind-4a34febadef0",
+      "seed": 0,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-radioactive-decay-blind-8055ab006d29.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "radioactive-decay-blind",
+      "claim_status": "failed",
+      "classification": "failed",
+      "formula": "radioactive_decay",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 693.6467612693677,
+        "changed_slot_count": null,
+        "high_precision_max_error": Infinity,
+        "post_snap_loss": Infinity,
+        "snap_active_node_count": 9,
+        "snap_min_margin": 0.05082733481942009,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-showcase-radioactive-decay-blind-8055ab006d29",
+      "seed": 1,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-radioactive-decay-blind-396f4bdf4078.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "radioactive-decay-blind",
+      "claim_status": "failed",
+      "classification": "failed",
+      "formula": "radioactive_decay",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": 780.5039556439684,
+        "changed_slot_count": null,
+        "high_precision_max_error": Infinity,
+        "post_snap_loss": Infinity,
+        "snap_active_node_count": 9,
+        "snap_min_margin": 0.001516395309574592,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 0.0,
+      "reason": "mpmath_failed",
+      "run_id": "v1-3-showcase-radioactive-decay-blind-396f4bdf4078",
+      "seed": 2,
+      "stage_statuses": {
+        "blind_baseline": "failed"
+      },
+      "start_mode": "blind",
+      "status": "failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-6ffb162a5bb7.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "beer-perturbation-sweep",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "beer_lambert",
+      "metrics": {
+        "active_slot_count": 18,
+        "best_loss": 6.918600622230206,
+        "changed_slot_count": 5,
+        "high_precision_max_error": 20.445903912747927,
+        "post_snap_loss": 7.2250695723031635,
+        "snap_active_node_count": 19,
+        "snap_min_margin": 0.985069290082722,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 35.0,
+      "reason": "verified",
+      "run_id": "v1-3-showcase-beer-perturbation-sweep-6ffb162a5bb7",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "recovered",
+        "trained_exact_recovery": "failed",
+        "warm_start_attempt": "snapped_but_failed"
+      },
+      "start_mode": "warm_start",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-89c991bee41e.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "beer-perturbation-sweep",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "beer_lambert",
+      "metrics": {
+        "active_slot_count": 18,
+        "best_loss": 0.21509044977487604,
+        "changed_slot_count": 1,
+        "high_precision_max_error": 0.9983425650007712,
+        "post_snap_loss": 0.21927561010523208,
+        "snap_active_node_count": 7,
+        "snap_min_margin": 0.9998926154620775,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 15.0,
+      "reason": "verified",
+      "run_id": "v1-3-showcase-beer-perturbation-sweep-89c991bee41e",
+      "seed": 1,
+      "stage_statuses": {
+        "compiled_seed": "recovered",
+        "trained_exact_recovery": "failed",
+        "warm_start_attempt": "snapped_but_failed"
+      },
+      "start_mode": "warm_start",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-8615aab30e44.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "beer-perturbation-sweep",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "beer_lambert",
+      "metrics": {
+        "active_slot_count": 18,
+        "best_loss": 0.21927438627985,
+        "changed_slot_count": 3,
+        "high_precision_max_error": 0.9983425650007712,
+        "post_snap_loss": 0.21927561010523208,
+        "snap_active_node_count": 7,
+        "snap_min_margin": 0.9999985028118887,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 35.0,
+      "reason": "verified",
+      "run_id": "v1-3-showcase-beer-perturbation-sweep-8615aab30e44",
+      "seed": 1,
+      "stage_statuses": {
+        "compiled_seed": "recovered",
+        "trained_exact_recovery": "failed",
+        "warm_start_attempt": "snapped_but_failed"
+      },
+      "start_mode": "warm_start",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-05cb8f1ed422.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "beer-perturbation-sweep",
+      "claim_status": "failed",
+      "classification": "snapped_but_failed",
+      "formula": "beer_lambert",
+      "metrics": {
+        "active_slot_count": 18,
+        "best_loss": 0.3735906412028358,
+        "changed_slot_count": 7,
+        "high_precision_max_error": 0.54976399126406,
+        "post_snap_loss": 0.07479189732447282,
+        "snap_active_node_count": 3,
+        "snap_min_margin": 0.27431234111108455,
+        "verifier_status": "failed"
+      },
+      "perturbation_noise": 35.0,
+      "reason": "verified",
+      "run_id": "v1-3-showcase-beer-perturbation-sweep-05cb8f1ed422",
+      "seed": 2,
+      "stage_statuses": {
+        "compiled_seed": "recovered",
+        "trained_exact_recovery": "failed",
+        "warm_start_attempt": "snapped_but_failed"
+      },
+      "start_mode": "warm_start",
+      "status": "snapped_but_failed",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-michaelis-warm-diagnostic-8f1f8084d61b.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "michaelis-warm-diagnostic",
+      "claim_status": "unsupported",
+      "classification": "unsupported",
+      "formula": "michaelis_menten",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": null,
+        "changed_slot_count": null,
+        "high_precision_max_error": null,
+        "post_snap_loss": null,
+        "snap_active_node_count": null,
+        "snap_min_margin": null,
+        "verifier_status": null
+      },
+      "perturbation_noise": 0.0,
+      "reason": "depth_exceeded",
+      "run_id": "v1-3-showcase-michaelis-warm-diagnostic-8f1f8084d61b",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "unsupported",
+        "warm_start_attempt": "unsupported"
+      },
+      "start_mode": "warm_start",
+      "status": "unsupported",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-logistic-compile-5a739cf1c01f.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "logistic-compile",
+      "claim_status": "unsupported",
+      "classification": "unsupported",
+      "formula": "logistic",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": null,
+        "changed_slot_count": null,
+        "high_precision_max_error": null,
+        "post_snap_loss": null,
+        "snap_active_node_count": null,
+        "snap_min_margin": null,
+        "verifier_status": null
+      },
+      "perturbation_noise": 0.0,
+      "reason": "depth_exceeded",
+      "run_id": "v1-3-showcase-logistic-compile-5a739cf1c01f",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "unsupported"
+      },
+      "start_mode": "compile",
+      "status": "unsupported",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-shockley-compile-0119659ca5dd.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "shockley-compile",
+      "claim_status": "unsupported",
+      "classification": "unsupported",
+      "formula": "shockley",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": null,
+        "changed_slot_count": null,
+        "high_precision_max_error": null,
+        "post_snap_loss": null,
+        "snap_active_node_count": null,
+        "snap_min_margin": null,
+        "verifier_status": null
+      },
+      "perturbation_noise": 0.0,
+      "reason": "depth_exceeded",
+      "run_id": "v1-3-showcase-shockley-compile-0119659ca5dd",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "unsupported"
+      },
+      "start_mode": "compile",
+      "status": "unsupported",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-damped-oscillator-compile-9b393796ada0.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "damped-oscillator-compile",
+      "claim_status": "unsupported",
+      "classification": "unsupported",
+      "formula": "damped_oscillator",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": null,
+        "changed_slot_count": null,
+        "high_precision_max_error": null,
+        "post_snap_loss": null,
+        "snap_active_node_count": null,
+        "snap_min_margin": null,
+        "verifier_status": null
+      },
+      "perturbation_noise": 0.0,
+      "reason": "unsupported_operator",
+      "run_id": "v1-3-showcase-damped-oscillator-compile-9b393796ada0",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "unsupported"
+      },
+      "start_mode": "compile",
+      "status": "unsupported",
+      "suite_id": "v1.3-showcase"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.3-showcase/runs/v1.3-showcase/v1-3-showcase-planck-diagnostic-1ba93a0c5966.json",
+      "campaign": "v1.3-showcase",
+      "case_id": "planck-diagnostic",
+      "claim_status": "unsupported",
+      "classification": "unsupported",
+      "formula": "planck",
+      "metrics": {
+        "active_slot_count": null,
+        "best_loss": null,
+        "changed_slot_count": null,
+        "high_precision_max_error": null,
+        "post_snap_loss": null,
+        "snap_active_node_count": null,
+        "snap_min_margin": null,
+        "verifier_status": null
+      },
+      "perturbation_noise": 0.0,
+      "reason": "depth_exceeded",
+      "run_id": "v1-3-showcase-planck-diagnostic-1ba93a0c5966",
+      "seed": 0,
+      "stage_statuses": {
+        "compiled_seed": "unsupported"
+      },
+      "start_mode": "compile",
+      "status": "unsupported",
+      "suite_id": "v1.3-showcase"
+    }
+  ],
+  "generated_at": "2026-04-15T12:06:48.854375+00:00",
+  "schema": "eml.baseline_diagnostics.v1"
+}

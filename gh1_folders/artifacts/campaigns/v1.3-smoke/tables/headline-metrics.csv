@@ -1,0 +1,2 @@
+total_runs,verifier_recovered,verifier_recovery_rate,unsupported,unsupported_rate,failed,failure_rate,same_ast_return,same_ast_return_rate,verified_equivalent_ast,median_best_loss,median_post_snap_loss,median_runtime_seconds
+3,1,0.3333333333333333,1,0.3333333333333333,1,0.3333333333333333,1,0.3333333333333333,0,3.2967819134132905,3.325130031089465,0.2740509169525467

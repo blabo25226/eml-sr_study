@@ -1,0 +1,12 @@
+run_id,formula,start_mode,classification,status,reason,artifact_path
+v1-3-showcase-radioactive-decay-blind-dbaaf54f8dfc,radioactive_decay,blind,snapped_but_failed,snapped_but_failed,mpmath_failed,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-radioactive-decay-blind-dbaaf54f8dfc.json
+v1-3-showcase-radioactive-decay-blind-1e9c9e6e9a4c,radioactive_decay,blind,snapped_but_failed,snapped_but_failed,mpmath_failed,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-radioactive-decay-blind-1e9c9e6e9a4c.json
+v1-3-showcase-radioactive-decay-blind-0015db66c35c,radioactive_decay,blind,snapped_but_failed,snapped_but_failed,mpmath_failed,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-radioactive-decay-blind-0015db66c35c.json
+v1-3-showcase-beer-perturbation-sweep-860689755983,beer_lambert,warm_start,snapped_but_failed,snapped_but_failed,verified,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-860689755983.json
+v1-3-showcase-beer-perturbation-sweep-56c113f0e392,beer_lambert,warm_start,snapped_but_failed,snapped_but_failed,verified,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-56c113f0e392.json
+v1-3-showcase-beer-perturbation-sweep-2acd7b37ee9f,beer_lambert,warm_start,snapped_but_failed,snapped_but_failed,verified,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-2acd7b37ee9f.json
+v1-3-showcase-beer-perturbation-sweep-f83ffd7672b5,beer_lambert,warm_start,snapped_but_failed,snapped_but_failed,verified,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-beer-perturbation-sweep-f83ffd7672b5.json
+v1-3-showcase-michaelis-warm-diagnostic-cb89f09c390e,michaelis_menten,warm_start,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-michaelis-warm-diagnostic-cb89f09c390e.json
+v1-3-showcase-logistic-compile-4792983fd836,logistic,compile,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-logistic-compile-4792983fd836.json
+v1-3-showcase-damped-oscillator-compile-cdce11ebc3e2,damped_oscillator,compile,unsupported,unsupported,unsupported_operator,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-damped-oscillator-compile-cdce11ebc3e2.json
+v1-3-showcase-planck-diagnostic-46fe96170216,planck,compile,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.4-showcase/runs/v1.3-showcase/v1-3-showcase-planck-diagnostic-46fe96170216.json

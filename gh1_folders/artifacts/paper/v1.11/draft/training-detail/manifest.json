@@ -1,0 +1,139 @@
+{
+  "claim_boundary": "training-detail figures show optimizer dynamics and candidate lifecycle; verifier status still owns recovery claims",
+  "counts": {
+    "candidate_lifecycle_rows": 232,
+    "run_payloads": 18,
+    "run_summary_rows": 58,
+    "step_trace_rows": 4472,
+    "traced_runs": 18
+  },
+  "generated_at": "2026-04-19T18:04:13.812192+00:00",
+  "output_dir": "artifacts/paper/v1.11/draft/training-detail",
+  "outputs": {
+    "candidate_lifecycle_csv": "artifacts/paper/v1.11/draft/training-detail/tables/candidate-lifecycle.csv",
+    "candidate_lifecycle_json": "artifacts/paper/v1.11/draft/training-detail/tables/candidate-lifecycle.json",
+    "candidate_lifecycle_md": "artifacts/paper/v1.11/draft/training-detail/tables/candidate-lifecycle.md",
+    "depth_loss_svg": "artifacts/paper/v1.11/draft/training-detail/figures/depth-loss-curves.svg",
+    "manifest_json": "artifacts/paper/v1.11/draft/training-detail/manifest.json",
+    "output_dir": "artifacts/paper/v1.11/draft/training-detail",
+    "readme_md": "artifacts/paper/v1.11/draft/training-detail/README.md",
+    "run_summary_csv": "artifacts/paper/v1.11/draft/training-detail/tables/training-run-summaries.csv",
+    "run_summary_json": "artifacts/paper/v1.11/draft/training-detail/tables/training-run-summaries.json",
+    "run_summary_md": "artifacts/paper/v1.11/draft/training-detail/tables/training-run-summaries.md",
+    "shallow_loss_svg": "artifacts/paper/v1.11/draft/training-detail/figures/shallow-loss-curves.svg",
+    "step_trace_csv": "artifacts/paper/v1.11/draft/training-detail/tables/training-step-traces.csv",
+    "step_trace_json": "artifacts/paper/v1.11/draft/training-detail/tables/training-step-traces.json",
+    "step_trace_md": "artifacts/paper/v1.11/draft/training-detail/tables/training-step-traces.md"
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli paper-training-detail --output-dir artifacts/paper/v1.11/draft/training-detail --refresh-dir artifacts/campaigns/v1.12-evidence-refresh"
+  },
+  "schema": "eml.v112_training_detail_assets.v1",
+  "sources": [
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-pure-blind-seed-refresh-d16bc2001c3b.json",
+      "sha256": "3f45636510dd951b88b9f56506e62eb002efca071036a2f08109a0a7bb3b6b53",
+      "source_id": "run_000"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-pure-blind-seed-refresh-19be26df7ec9.json",
+      "sha256": "fd27c87bc72133009a74c3e3ebb564d618ccd993efacdd0295a9d43ed062f93a",
+      "source_id": "run_001"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-pure-blind-seed-refresh-ef40333591db.json",
+      "sha256": "7c5e0c04512a46438f0c6b640fad76c8ca35d5fe9be596e197b0936b5ac71e91",
+      "source_id": "run_002"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-pure-blind-seed-refresh-950f14d3e36a.json",
+      "sha256": "6fd0b1e4e9309bfe7e4be1db8ac3b53a4fc455a24bdc1ab14b5698709f1dc29d",
+      "source_id": "run_003"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-pure-blind-seed-refresh-a61c7040e8ee.json",
+      "sha256": "f30a8ebe8f81b161e6363a2e239f5390239317bf8359692e2751c7af10a7c84e",
+      "source_id": "run_004"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-scaffolded-seed-refresh-8982018c4215.json",
+      "sha256": "ec460c30160cdc39ebcb07f4cf8a717bc04b2fa5e78bb7f4c79f23ed8a5be4ae",
+      "source_id": "run_005"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-scaffolded-seed-refresh-f97135ddbd8e.json",
+      "sha256": "972079733c9dbf11fa3dc5fbd31551ea69ce623056c1bd5ac405a3d0bfa39274",
+      "source_id": "run_006"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-scaffolded-seed-refresh-0e9ca9ea29af.json",
+      "sha256": "186308cf6c19c2fdbc9ed244ad5be3eb8cfd9c736a6e3974f39af0bc0a77389d",
+      "source_id": "run_007"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-scaffolded-seed-refresh-ed48d067a2c5.json",
+      "sha256": "83e8524afcd5ecac360fed21218e2cfd9e6f0535197832420e03dbe179752afb",
+      "source_id": "run_008"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/v1.12-shallow-refresh/v1-12-shallow-refresh-exp-scaffolded-seed-refresh-7a8db21ccc08.json",
+      "sha256": "afd55f731d69d04dcba75162a3a62b44fdbe9974e72dc31215fc59ff4dea7145",
+      "source_id": "run_009"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/proof-depth-curve/proof-depth-curve-depth-2-blind-496b59f4c7cc.json",
+      "sha256": "93edf92e15eb52765b3a77a71fc5b99eb81d0e6822d9e45487edfbfca5132dd3",
+      "source_id": "run_010"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/proof-depth-curve/proof-depth-curve-depth-2-blind-5ee1d10da503.json",
+      "sha256": "cbb7cfcd513a0105771f913ccd4bf4b1aa532610dc720239012bc5aeac2b9c2c",
+      "source_id": "run_011"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/proof-depth-curve/proof-depth-curve-depth-3-blind-4748c0afa168.json",
+      "sha256": "d8c69aa8f088618b674f56ffedcb3bd07580490db8dbcc70aa02375a9606ddca",
+      "source_id": "run_012"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/proof-depth-curve/proof-depth-curve-depth-3-blind-df010bca44c8.json",
+      "sha256": "04e40c1ee87b65fa8ce77b4f1d9c47be799cc2870befa7cc11223fb98e8fbd4a",
+      "source_id": "run_013"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/proof-depth-curve/proof-depth-curve-depth-4-blind-bb92e8f39df6.json",
+      "sha256": "aa21ab40aba9c1e14a6e33fbc8b159334cab140c11a8ea6e65da746b0f4cdde2",
+      "source_id": "run_014"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/proof-depth-curve/proof-depth-curve-depth-4-blind-53c3fee6869c.json",
+      "sha256": "c0f2e1c479110ac985852cef12646f1238b639d3394657a97d93c2705a9bb99a",
+      "source_id": "run_015"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/proof-depth-curve/proof-depth-curve-depth-5-blind-59fab048ae26.json",
+      "sha256": "847409ca0792d9435b1242f0c810ac8a28e5f8fd9fc04f811650a8f1cbfdf58a",
+      "source_id": "run_016"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/runs/proof-depth-curve/proof-depth-curve-depth-5-blind-20b87b5ab8f8.json",
+      "sha256": "33f6b7bdc669e88da06253e398517713470ecdf4996f4b08ffe3bc84f93038c1",
+      "source_id": "run_017"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/manifest.json",
+      "sha256": "978c50285b73c235cd233c8d2f9b2c134f4a3e883ed5e8f850861fb4d89e9b7e",
+      "source_id": "run_018"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/shallow-aggregate.json",
+      "sha256": "6f70e3b543c258fa9c25c3d76a5a4915cca70f47f8940b1c13db9252d16ee2f2",
+      "source_id": "run_019"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/depth-aggregate.json",
+      "sha256": "395985a154c1549af237166c98d56ffa37488c27b1a02e3a2dda594fe18cd657",
+      "source_id": "run_020"
+    }
+  ]
+}

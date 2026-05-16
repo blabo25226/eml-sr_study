@@ -1,0 +1,61 @@
+{
+  "completed_campaigns": [
+    {
+      "aggregate_json": "artifacts/campaigns/v1.8-family-smoke-triage/aggregate.json",
+      "name": "family-smoke",
+      "operator_family_locks_json": "artifacts/campaigns/v1.8-family-smoke-triage/tables/operator-family-locks.json",
+      "report_markdown": "artifacts/campaigns/v1.8-family-smoke-triage/report.md",
+      "reproduction_command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign family-smoke --output-root artifacts/campaigns --label v1.8-family-smoke-triage --overwrite",
+      "status": "completed"
+    },
+    {
+      "aggregate_json": "artifacts/campaigns/v1.8-family-calibration/aggregate.json",
+      "name": "family-calibration",
+      "operator_family_locks_json": "artifacts/campaigns/v1.8-family-calibration/tables/operator-family-locks.json",
+      "report_markdown": "artifacts/campaigns/v1.8-family-calibration/report.md",
+      "reproduction_command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign family-calibration --output-root artifacts/campaigns --label v1.8-family-calibration --overwrite",
+      "status": "completed"
+    },
+    {
+      "aggregate_json": "artifacts/campaigns/v1.8-family-standard-scoped/aggregate.json",
+      "name": "family-standard",
+      "operator_family_locks_json": "artifacts/campaigns/v1.8-family-standard-scoped/tables/operator-family-locks.json",
+      "report_markdown": "artifacts/campaigns/v1.8-family-standard-scoped/report.md",
+      "reproduction_command": "PYTHONPATH=src python -m eml_symbolic_regression.cli campaign family-standard --output-root artifacts/campaigns --label v1.8-family-standard-scoped --overwrite --formula exp --formula log --formula beer_lambert --seed 0",
+      "status": "completed"
+    }
+  ],
+  "counts": {
+    "completed": 3,
+    "scoped": 5,
+    "with_regression_locks": 3
+  },
+  "schema": "eml.family_evidence_manifest.v1",
+  "scoped_campaigns": [
+    {
+      "name": "family-shallow-pure-blind",
+      "scope_reason": "scoped after calibration because centered exp/log blind variants recovered 0/20 and full pure-blind matrix would mainly expand known centered failures",
+      "status": "scoped"
+    },
+    {
+      "name": "family-shallow",
+      "scope_reason": "scoped until same-family centered scaffold/witness support exists; centered warm-start rows remain fail-closed in denominators",
+      "status": "scoped"
+    },
+    {
+      "name": "family-basin",
+      "scope_reason": "centered perturbed-tree paths require same-family exact target seeds and remain explicit unsupported gates",
+      "status": "scoped"
+    },
+    {
+      "name": "family-depth-curve",
+      "scope_reason": "scoped because centered shallow calibration showed no positive signal; defer larger depth sweep until centered shallow behavior improves",
+      "status": "scoped"
+    },
+    {
+      "name": "family-showcase",
+      "scope_reason": "skipped because earlier evidence showed no meaningful centered-family positive signal",
+      "status": "scoped"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+run_id,formula,start_mode,classification,status,reason,artifact_path
+smoke-exp-blind-44cae09389c3,exp,blind,snapped_but_failed,snapped_but_failed,mpmath_failed,artifacts/campaigns/v1.3-smoke/runs/smoke/smoke-exp-blind-44cae09389c3.json
+smoke-planck-diagnostic-aaf175aaa0f7,planck,compile,unsupported,unsupported,depth_exceeded,artifacts/campaigns/v1.3-smoke/runs/smoke/smoke-planck-diagnostic-aaf175aaa0f7.json

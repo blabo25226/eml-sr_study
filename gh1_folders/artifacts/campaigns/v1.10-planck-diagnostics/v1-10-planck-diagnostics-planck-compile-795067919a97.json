@@ -1,0 +1,362 @@
+{
+  "budget": {
+    "clamp_exp_real": 40.0,
+    "constants": [
+      "1"
+    ],
+    "depth": 2,
+    "hardening_emit_interval": 2,
+    "hardening_steps": 4,
+    "hardening_temperature_end": 0.02,
+    "log_domain_epsilon": 1e-09,
+    "log_safety_imag_tolerance": 1e-06,
+    "log_safety_margin": 1e-06,
+    "log_safety_weight": 0.0,
+    "lr": 0.05,
+    "max_compile_depth": 13,
+    "max_compile_nodes": 256,
+    "max_power": 3,
+    "max_warm_depth": 14,
+    "operator_family": {
+      "family": "raw_eml",
+      "label": "raw_eml",
+      "s": 1.0,
+      "t": 1.0,
+      "terminal": "one"
+    },
+    "operator_schedule": [],
+    "refit_lr": 0.02,
+    "refit_steps": 80,
+    "restarts": 1,
+    "scaffold_exclusions": [],
+    "scaffold_initializers": [
+      "exp",
+      "log",
+      "scaled_exp"
+    ],
+    "steps": 8,
+    "warm_depth": 0,
+    "warm_restarts": 1,
+    "warm_steps": 8
+  },
+  "claim_class": null,
+  "claim_id": null,
+  "claim_status": "unsupported",
+  "compiled_eml": {
+    "detail": "compiled depth 14 exceeds max_depth=13",
+    "diagnostic": {
+      "relaxed": {
+        "metadata": {
+          "assumptions": [
+            "low-degree power shortcut lowers g**n as exp(n*log(g)) behind validation",
+            "scale*(exp(a)-1) compiled with lower-depth EML template",
+            "direct division shortcut lowers numerator/denominator once before exact divide identity"
+          ],
+          "constant_policy": "literal_constants",
+          "constants": [
+            "1",
+            "2.718281828459045",
+            "3"
+          ],
+          "depth": 14,
+          "macro_diagnostics": {
+            "baseline_depth": 24,
+            "baseline_node_count": 93,
+            "depth_delta": 10,
+            "hits": [
+              "low_degree_power_template",
+              "scaled_exp_minus_one_template",
+              "direct_division_template"
+            ],
+            "misses": [
+              "reciprocal_shift_template",
+              "saturation_ratio_template",
+              "exponential_saturation_template"
+            ],
+            "node_delta": 34,
+            "validation_passed": true,
+            "validation_status": "validated"
+          },
+          "node_count": 59,
+          "normalized_expression": "x**3/(exp(x) - 1)",
+          "source_expression": "x**3/(exp(x) - 1)",
+          "trace": [
+            {
+              "assumptions": [],
+              "output_depth": 0,
+              "output_nodes": 1,
+              "rule": "variable",
+              "source": "x"
+            },
+            {
+              "assumptions": [
+                "low-degree power shortcut lowers g**n as exp(n*log(g)) behind validation"
+              ],
+              "output_depth": 9,
+              "output_nodes": 25,
+              "rule": "low_degree_power_template",
+              "source": "x**3"
+            },
+            {
+              "assumptions": [
+                "low-degree power shortcut lowers g**n as exp(n*log(g)) behind validation"
+              ],
+              "output_depth": 0,
+              "output_nodes": 1,
+              "rule": "variable",
+              "source": "x"
+            },
+            {
+              "assumptions": [
+                "low-degree power shortcut lowers g**n as exp(n*log(g)) behind validation",
+                "scale*(exp(a)-1) compiled with lower-depth EML template"
+              ],
+              "output_depth": 8,
+              "output_nodes": 19,
+              "rule": "scaled_exp_minus_one_template",
+              "source": "exp(x) - 1"
+            },
+            {
+              "assumptions": [
+                "scale*(exp(a)-1) compiled with lower-depth EML template",
+                "direct division shortcut lowers numerator/denominator once before exact divide identity"
+              ],
+              "output_depth": 14,
+              "output_nodes": 59,
+              "rule": "direct_division_template",
+              "source": "x**3/(exp(x) - 1)"
+            }
+          ],
+          "unsupported_reason": null,
+          "variables": [
+            "x"
+          ]
+        },
+        "validation": {
+          "max_abs_error": 2.0079341698961957e-15,
+          "mse": 2.23234938840641e-31,
+          "passed": true,
+          "reason": "validated",
+          "tolerance": 1e-08
+        }
+      },
+      "schema": "eml.compiler_diagnostic.v1",
+      "status": "unsupported",
+      "strict": {
+        "detail": "compiled depth 14 exceeds max_depth=13",
+        "expression": "x**3/(exp(x) - 1)",
+        "reason": "depth_exceeded"
+      }
+    },
+    "expression": "x**3/(exp(x) - 1)",
+    "reason": "depth_exceeded",
+    "status": "unsupported"
+  },
+  "dataset": {
+    "points": 24,
+    "tolerance": 1e-08
+  },
+  "dataset_manifest": {
+    "formula_id": "planck",
+    "manifest_sha256": "021d09cad64656081182e9fb2b8993d4e224508b48e68e774004d9c2ede861de",
+    "points": 24,
+    "provenance": {
+      "candidate_name": "planck_catalog",
+      "description": "Flagship normalized Planck spectrum from FOR_DEMO.md.",
+      "formula_id": "planck",
+      "normalized_dimensionless": true,
+      "source_document": "sources/FOR_DEMO.md",
+      "source_linkage": "Normalized Planck spectrum flagship dimensionless physics demo",
+      "symbolic_expression": "x**3/(exp(x) - 1)",
+      "variable": "x"
+    },
+    "sample_policy": "linspace_with_seeded_0.2_percent_jitter",
+    "schema": "eml.proof_dataset_manifest.v1",
+    "seed": 0,
+    "splits": [
+      {
+        "count": 24,
+        "domain": [
+          0.2,
+          8.0
+        ],
+        "input_sha256": "56bca8cfb58a035251a67a1e1310ad92a9439c2293e4476f401d2e1e2ee96871",
+        "name": "train",
+        "target_sha256": "e81fbdec74860130c61a656f5038de4788afa89e291c07e9ae4febd26a63dcae"
+      },
+      {
+        "count": 16,
+        "domain": [
+          0.25,
+          7.5
+        ],
+        "input_sha256": "4af3af1dcadf90791243b013e6c70fb762313970467c199db894deeeefec8c2e",
+        "name": "heldout",
+        "target_sha256": "62d77fc799fd3c685b4d381c74845d8e926b548400193e615e284eebebc76649"
+      },
+      {
+        "count": 16,
+        "domain": [
+          8.1,
+          10.0
+        ],
+        "input_sha256": "0ac9e879219b864e72c03586b5ddd5f53ad9381c9937dacd957cfa4ed8020b7a",
+        "name": "extrapolation",
+        "target_sha256": "4bd8fe8996a6999e702b73d4ce9b5765f56fef3f4db3e2299dd38fa57c046299"
+      }
+    ],
+    "tolerance": 1e-08,
+    "variable": "x"
+  },
+  "environment": {
+    "code_version": "1056879",
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "evidence_class": "unsupported",
+  "metrics": {
+    "active_slot_count": null,
+    "anomaly_clamp_count": null,
+    "anomaly_exp_overflow_count": null,
+    "anomaly_expm1_overflow_count": null,
+    "anomaly_log1p_branch_cut_count": null,
+    "anomaly_log_branch_cut_count": null,
+    "anomaly_log_non_finite_input_count": null,
+    "anomaly_log_non_positive_real_count": null,
+    "anomaly_log_safety_penalty": null,
+    "anomaly_log_small_magnitude_count": null,
+    "anomaly_shifted_singularity_min_distance": null,
+    "anomaly_shifted_singularity_near_count": null,
+    "best_loss": null,
+    "candidate_complexity": null,
+    "candidate_pool_size": null,
+    "changed_slot_count": null,
+    "fallback_candidate_attempt_index": null,
+    "fallback_candidate_checkpoint_index": null,
+    "fallback_candidate_id": null,
+    "fallback_candidate_source": null,
+    "fallback_post_snap_loss": null,
+    "high_precision_max_error": null,
+    "legacy_best_loss": null,
+    "operator_family": "raw_eml",
+    "operator_schedule": "",
+    "post_snap_loss": null,
+    "refit_accepted": null,
+    "refit_constant_count": 0,
+    "refit_post_snap_loss": null,
+    "refit_status": null,
+    "refit_verifier_status": null,
+    "repair_accepted_candidate_id": null,
+    "repair_accepted_candidate_root_source": null,
+    "repair_accepted_candidate_source": null,
+    "repair_accepted_move_count": 0,
+    "repair_candidate_root_count": null,
+    "repair_candidate_root_summary_count": 0,
+    "repair_deduped_variant_count": null,
+    "repair_move_count": 0,
+    "repair_status": null,
+    "repair_variant_count": null,
+    "repair_verifier_status": null,
+    "scaffold_coefficient": null,
+    "scaffold_exclusions": [],
+    "scaffold_source": null,
+    "scaffold_strategy": null,
+    "selected_candidate_attempt_index": null,
+    "selected_candidate_checkpoint_index": null,
+    "selected_candidate_id": null,
+    "selected_candidate_source": null,
+    "selection_mode": null,
+    "snap_active_node_count": null,
+    "snap_min_margin": null,
+    "unsupported_reason": "depth_exceeded",
+    "verifier_status": null,
+    "warm_start_mechanism": null,
+    "warm_start_status": null
+  },
+  "provenance": {
+    "candidate_name": "planck_catalog",
+    "description": "Flagship normalized Planck spectrum from FOR_DEMO.md.",
+    "formula_id": "planck",
+    "normalized_dimensionless": true,
+    "source_document": "sources/FOR_DEMO.md",
+    "source_linkage": "Normalized Planck spectrum flagship dimensionless physics demo",
+    "symbolic_expression": "x**3/(exp(x) - 1)",
+    "variable": "x"
+  },
+  "run": {
+    "artifact_path": "artifacts/campaigns/v1.10-planck-diagnostics/v1-10-planck-diagnostics-planck-compile-795067919a97.json",
+    "case_id": "planck-compile",
+    "claim_id": null,
+    "dataset": {
+      "points": 24,
+      "tolerance": 1e-08
+    },
+    "expect_recovery": false,
+    "formula": "planck",
+    "optimizer": {
+      "clamp_exp_real": 40.0,
+      "constants": [
+        "1"
+      ],
+      "depth": 2,
+      "hardening_emit_interval": 2,
+      "hardening_steps": 4,
+      "hardening_temperature_end": 0.02,
+      "log_domain_epsilon": 1e-09,
+      "log_safety_imag_tolerance": 1e-06,
+      "log_safety_margin": 1e-06,
+      "log_safety_weight": 0.0,
+      "lr": 0.05,
+      "max_compile_depth": 13,
+      "max_compile_nodes": 256,
+      "max_power": 3,
+      "max_warm_depth": 14,
+      "operator_family": {
+        "family": "raw_eml",
+        "label": "raw_eml",
+        "s": 1.0,
+        "t": 1.0,
+        "terminal": "one"
+      },
+      "operator_schedule": [],
+      "refit_lr": 0.02,
+      "refit_steps": 80,
+      "restarts": 1,
+      "scaffold_exclusions": [],
+      "scaffold_initializers": [
+        "exp",
+        "log",
+        "scaled_exp"
+      ],
+      "steps": 8,
+      "warm_depth": 0,
+      "warm_restarts": 1,
+      "warm_steps": 8
+    },
+    "perturbation_noise": 0.0,
+    "run_id": "v1-10-planck-diagnostics-planck-compile-795067919a97",
+    "seed": 0,
+    "start_mode": "compile",
+    "suite_id": "v1.10-planck-diagnostics",
+    "tags": [
+      "v1.10",
+      "planck",
+      "compile",
+      "diagnostic",
+      "stretch",
+      "unsupported"
+    ],
+    "threshold_policy_id": null,
+    "training_mode": "compile_only_verification"
+  },
+  "schema": "eml.benchmark_run.v1",
+  "stage_statuses": {
+    "compiled_seed": "unsupported"
+  },
+  "status": "unsupported",
+  "threshold": null,
+  "timing": {
+    "elapsed_seconds": 0.1175833340967074
+  },
+  "training_mode": "compile_only_verification"
+}

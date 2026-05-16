@@ -1,0 +1,664 @@
+{
+  "anchor_locks": [
+    {
+      "files": [
+        {
+          "path": "artifacts/proof/v1.5/proof-campaign.json",
+          "sha256": "1c7bce85956110b168bf5b18b0e12e4432416ead400ab361ad2bce292d1eeef4"
+        },
+        {
+          "path": "artifacts/proof/v1.5/proof-report.md",
+          "sha256": "32012f232c9e84fdf14e8f75bec698cb394d6ad51c1d343fe4035a1758d1718a"
+        }
+      ],
+      "label": "v1.5",
+      "path": "artifacts/proof/v1.5"
+    },
+    {
+      "files": [
+        {
+          "path": "artifacts/campaigns/v1.4-standard/aggregate.json",
+          "sha256": "6fd82e7e428655b850f71c458c386a19764b9b3b631502bc1f2d122ec0320dc9"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-standard/suite-result.json",
+          "sha256": "86cd31cff51e0e7e6decd7241850ac75d9e6617e915b94257bfbb46801b0d2ab"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-standard/campaign-manifest.json",
+          "sha256": "f37b60a04ac65db5f6ca559a33c0232ef3b816ab59d6a10a32dce5eda5ff97b6"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-standard/report.md",
+          "sha256": "2968124092ed16e3787215f7ad4e6df371954c87ecad1fafb132bb3e56214298"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-standard/tables/runs.csv",
+          "sha256": "4cee19812d3309a925c0e11bebd3432d3af3b885a3edcac8f5b592974a667d8a"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-standard/tables/failures.csv",
+          "sha256": "1d948a516cffc308104b09485401a46a3b5faf8a9e79dab410ea7628a8dfc413"
+        }
+      ],
+      "label": "v1.4-standard",
+      "path": "artifacts/campaigns/v1.4-standard"
+    },
+    {
+      "files": [
+        {
+          "path": "artifacts/campaigns/v1.4-showcase/aggregate.json",
+          "sha256": "e2419aecfd6198c9716e2ca44eeaac51a7edbc5bdba46a3c0930675e706987da"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-showcase/suite-result.json",
+          "sha256": "c86d025f0793e58713c5d873c89b6d96a4d1061f9084d89b110f484bc760b81a"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-showcase/campaign-manifest.json",
+          "sha256": "b5f39842313059e51ee6f55f166e2545ced37990fbf1e81c4c25a31884d912f0"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-showcase/report.md",
+          "sha256": "42596e4424d46fb63430a75a8411bf43423112d973ff7a69e5db002a4d9cfab2"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-showcase/tables/runs.csv",
+          "sha256": "45c97f90a1230d7e06552ec2ef60a9085447bf8fb067fc12beb57138948d01ec"
+        },
+        {
+          "path": "artifacts/campaigns/v1.4-showcase/tables/failures.csv",
+          "sha256": "cf063b9e2fa9af72310809fb1690bee25e516a49ed4a1f6ac9211b2f50d0ff33"
+        }
+      ],
+      "label": "v1.4-showcase",
+      "path": "artifacts/campaigns/v1.4-showcase"
+    }
+  ],
+  "basin_bound_report": {
+    "json": "artifacts/proof/v1.6/diagnostics/basin-bound/basin-bound.json",
+    "markdown": "artifacts/proof/v1.6/diagnostics/basin-bound/basin-bound.md"
+  },
+  "campaign_locks": [
+    {
+      "files": [
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/aggregate.json",
+          "sha256": "5b71457c17549ee2726744f7e08c0dd16de712131350fb13933c3446ae692e9c"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/suite-result.json",
+          "sha256": "a12d864757bbf01886ea5f4cbe1d5f893474bb7ea22424ccf14917c48101468c"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/campaign-manifest.json",
+          "sha256": "90d8335a714036aa8b30a150e8224f43b16a9791889d4254bf74e4f65f913e7d"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/report.md",
+          "sha256": "2110b584f622fc8f840ff5ea044d196b38bd40af81461f3b981a20dcb169b750"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/runs.csv",
+          "sha256": "b7db8ffd5971725983bcddacab3fcfff66d0def3e3abf635a8141618885ff6ff"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/tables/failures.csv",
+          "sha256": "d08189554c9352b159642d7b6365ecc5b22159728360fa9a44c0dbac7366aebc"
+        }
+      ],
+      "label": "proof-shallow-pure-blind",
+      "path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind"
+    },
+    {
+      "files": [
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow/aggregate.json",
+          "sha256": "22d3402cb7f89250210607b40e280f2b620df55e8eb0331b46b28ea1106bfe23"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow/suite-result.json",
+          "sha256": "4a3c8c5bdb7462812e166101c211dabd7be66691be84c8987228d09d2f8f90ad"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow/campaign-manifest.json",
+          "sha256": "d31d693c77288572cbb14bffb26ea1c44512a448e17919094386dc98474dd6ff"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow/report.md",
+          "sha256": "898817150036b26961e29a718af596bac76a79ba6680701c3a8697a3ca56ba1d"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow/tables/runs.csv",
+          "sha256": "ef4dd752c24a9e07efd9468f59a9e37c0688c0e5f41a0469288df366ad777229"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-shallow/tables/failures.csv",
+          "sha256": "646232e29920d84b860657c39e828df4796df4acaad887c413d578e2a976c440"
+        }
+      ],
+      "label": "proof-shallow",
+      "path": "artifacts/proof/v1.6/campaigns/proof-shallow"
+    },
+    {
+      "files": [
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin/aggregate.json",
+          "sha256": "592971b6b68e765c87304c37de07174d1fae3b8a64e301507700c5261d7f22b2"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin/suite-result.json",
+          "sha256": "92495bb1f2b2abe60b4ff43ec67810db7ad9b85dc71b050970b1e775df111d8e"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin/campaign-manifest.json",
+          "sha256": "abe4aea8d5aa756f82fdb7f95bf8003431e82086e9db4e3b2014a8a1e2d2b493"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin/report.md",
+          "sha256": "c9c36d8713b33efc52b25f9c5160c89f14da3f81c3adeb672759006dda15d88a"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin/tables/runs.csv",
+          "sha256": "50c5450e6322a8743f95e005b7b038a59a60524629f22f347be2a191785f9ab2"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin/tables/failures.csv",
+          "sha256": "646232e29920d84b860657c39e828df4796df4acaad887c413d578e2a976c440"
+        }
+      ],
+      "label": "proof-basin",
+      "path": "artifacts/proof/v1.6/campaigns/proof-basin"
+    },
+    {
+      "files": [
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/aggregate.json",
+          "sha256": "a8b001afd8f649d6a27c195ff7b81f486941c466ba0538a34fe34d1ca5c4628e"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/suite-result.json",
+          "sha256": "b2cb46e53f9c64e9940a6da3c1d9403d27a9b66f9660cfd85510b96ec57f7650"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/campaign-manifest.json",
+          "sha256": "19e4c0c4bdf7b2b7c705baf0b2c50834a0716d5bf5f33b000a07540c09d7d87f"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/report.md",
+          "sha256": "478fffdd52dabd10417a8788c026f87c5d54713b79a47624ed7a823b300310a8"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/runs.csv",
+          "sha256": "9369b5b01dfce7b8b56b736f5dd365838f6ea80a8507474a05389530a83dc75c"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/tables/failures.csv",
+          "sha256": "b56961f837c62748229d973a574372790585adf3233d5808a9096262f90b5d0b"
+        }
+      ],
+      "label": "proof-basin-probes",
+      "path": "artifacts/proof/v1.6/campaigns/proof-basin-probes"
+    },
+    {
+      "files": [
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/aggregate.json",
+          "sha256": "826d71230bcc1ce60ff0dccab6864d0cddd764d60ce0f7b62457f1e83b139f12"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/suite-result.json",
+          "sha256": "1e75d55ba00148629b9b56b653451a29b1d68ce576829a9f8953260945eaa9f4"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/campaign-manifest.json",
+          "sha256": "60240fde2d141bca32da7b67ea88079b5029c6b7f408ae4b0852decdfa7a536a"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/report.md",
+          "sha256": "f5884c49d9ce28403a8ebe87cd658ec77d6055b010268847c569fb283967424d"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/tables/runs.csv",
+          "sha256": "d2db378e4a62a5d195ddacd87cd9268aa9a8d999454fe7ac798b5e30c10ea7f6"
+        },
+        {
+          "path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/tables/failures.csv",
+          "sha256": "a77bd3342211946219ee09c5c89f2a2991c7f7ab26624975dbbdd160ef5fbfdd"
+        }
+      ],
+      "label": "proof-depth-curve",
+      "path": "artifacts/proof/v1.6/campaigns/proof-depth-curve"
+    }
+  ],
+  "campaigns": {
+    "proof-basin": {
+      "campaign_dir": "artifacts/proof/v1.6/campaigns/proof-basin",
+      "counts": {
+        "evidence_classes": {
+          "perturbed_true_tree_recovered": 9
+        },
+        "execution_error": 0,
+        "failed": 0,
+        "repaired_candidate": 0,
+        "same_ast_return": 9,
+        "total": 9,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 9,
+        "verifier_recovery_rate": 1.0
+      },
+      "manifest_path": "artifacts/proof/v1.6/campaigns/proof-basin/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-basin/runs/proof-perturbed-basin",
+      "report_path": "artifacts/proof/v1.6/campaigns/proof-basin/report.md",
+      "thresholds": [
+        {
+          "claim_class": "bounded_training_proof",
+          "claim_id": "paper-perturbed-true-tree-basin",
+          "eligible": 9,
+          "evidence_classes": {
+            "perturbed_true_tree_recovered": 9
+          },
+          "failed": 0,
+          "passed": 9,
+          "rate": 1.0,
+          "required_rate": 1.0,
+          "status": "passed",
+          "threshold": {
+            "allowed_evidence_classes": [
+              "blind_training_recovered",
+              "compiler_warm_start_recovered",
+              "perturbed_true_tree_recovered",
+              "repaired_candidate",
+              "verified_equivalent"
+            ],
+            "description": "Declared bounded proof suites pass only at 100% verifier-owned training recovery.",
+            "fail_on_execution_error": true,
+            "fail_on_unsupported": true,
+            "id": "bounded_100_percent",
+            "policy_type": "bounded_rate",
+            "required_rate": 1.0
+          },
+          "threshold_policy_id": "bounded_100_percent"
+        }
+      ]
+    },
+    "proof-basin-probes": {
+      "campaign_dir": "artifacts/proof/v1.6/campaigns/proof-basin-probes",
+      "counts": {
+        "evidence_classes": {
+          "perturbed_true_tree_recovered": 1,
+          "repaired_candidate": 3
+        },
+        "execution_error": 0,
+        "failed": 0,
+        "repaired_candidate": 3,
+        "same_ast_return": 1,
+        "total": 4,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 4,
+        "verifier_recovery_rate": 1.0
+      },
+      "manifest_path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-basin-probes/runs/proof-perturbed-basin-beer-probes",
+      "report_path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/report.md",
+      "thresholds": []
+    },
+    "proof-depth-curve": {
+      "campaign_dir": "artifacts/proof/v1.6/campaigns/proof-depth-curve",
+      "counts": {
+        "evidence_classes": {
+          "blind_training_recovered": 2,
+          "perturbed_true_tree_recovered": 10,
+          "scaffolded_blind_training_recovered": 2,
+          "snapped_but_failed": 6
+        },
+        "execution_error": 0,
+        "failed": 6,
+        "repaired_candidate": 0,
+        "same_ast_return": 10,
+        "total": 20,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 14,
+        "verifier_recovery_rate": 0.7
+      },
+      "manifest_path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-depth-curve/runs/proof-depth-curve",
+      "report_path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/report.md",
+      "thresholds": [
+        {
+          "claim_class": "measured_depth_curve",
+          "claim_id": "paper-blind-depth-degradation",
+          "eligible": 20,
+          "evidence_classes": {
+            "blind_training_recovered": 2,
+            "perturbed_true_tree_recovered": 10,
+            "scaffolded_blind_training_recovered": 2,
+            "snapped_but_failed": 6
+          },
+          "failed": 0,
+          "passed": 20,
+          "rate": 1.0,
+          "required_rate": null,
+          "status": "reported",
+          "threshold": {
+            "allowed_evidence_classes": [
+              "blind_training_recovered",
+              "scaffolded_blind_training_recovered",
+              "compiler_warm_start_recovered",
+              "perturbed_true_tree_recovered",
+              "repaired_candidate",
+              "verified_equivalent",
+              "same_ast",
+              "soft_fit_only",
+              "snapped_but_failed",
+              "failed",
+              "unsupported",
+              "execution_failure"
+            ],
+            "description": "Depth-curve suites report measured recovery by depth without requiring universal blind recovery.",
+            "fail_on_execution_error": false,
+            "fail_on_unsupported": false,
+            "id": "measured_depth_curve",
+            "policy_type": "measured_rate",
+            "required_rate": null
+          },
+          "threshold_policy_id": "measured_depth_curve"
+        }
+      ]
+    },
+    "proof-shallow": {
+      "campaign_dir": "artifacts/proof/v1.6/campaigns/proof-shallow",
+      "counts": {
+        "evidence_classes": {
+          "scaffolded_blind_training_recovered": 18
+        },
+        "execution_error": 0,
+        "failed": 0,
+        "repaired_candidate": 0,
+        "same_ast_return": 0,
+        "total": 18,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 18,
+        "verifier_recovery_rate": 1.0
+      },
+      "manifest_path": "artifacts/proof/v1.6/campaigns/proof-shallow/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-shallow/runs/v1.5-shallow-proof",
+      "report_path": "artifacts/proof/v1.6/campaigns/proof-shallow/report.md",
+      "thresholds": [
+        {
+          "claim_class": "scaffolded_training_proof",
+          "claim_id": "paper-shallow-scaffolded-recovery",
+          "eligible": 18,
+          "evidence_classes": {
+            "scaffolded_blind_training_recovered": 18
+          },
+          "failed": 0,
+          "passed": 18,
+          "rate": 1.0,
+          "required_rate": 1.0,
+          "status": "passed",
+          "threshold": {
+            "allowed_evidence_classes": [
+              "scaffolded_blind_training_recovered"
+            ],
+            "description": "Declared scaffolded shallow suites pass only at 100% verifier-owned scaffolded training recovery.",
+            "fail_on_execution_error": true,
+            "fail_on_unsupported": true,
+            "id": "scaffolded_bounded_100_percent",
+            "policy_type": "bounded_rate",
+            "required_rate": 1.0
+          },
+          "threshold_policy_id": "scaffolded_bounded_100_percent"
+        }
+      ]
+    },
+    "proof-shallow-pure-blind": {
+      "campaign_dir": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind",
+      "counts": {
+        "evidence_classes": {
+          "blind_training_recovered": 2,
+          "failed": 1,
+          "repaired_candidate": 1,
+          "snapped_but_failed": 14
+        },
+        "execution_error": 0,
+        "failed": 15,
+        "repaired_candidate": 1,
+        "same_ast_return": 0,
+        "total": 18,
+        "unsupported": 0,
+        "verified_equivalent_ast": 0,
+        "verifier_recovered": 3,
+        "verifier_recovery_rate": 0.16666666666666666
+      },
+      "manifest_path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/campaign-manifest.json",
+      "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/runs/v1.5-shallow-pure-blind",
+      "report_path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/report.md",
+      "thresholds": [
+        {
+          "claim_class": "measured_training_boundary",
+          "claim_id": "paper-shallow-blind-recovery",
+          "eligible": 18,
+          "evidence_classes": {
+            "blind_training_recovered": 2,
+            "failed": 1,
+            "repaired_candidate": 1,
+            "snapped_but_failed": 14
+          },
+          "failed": 16,
+          "passed": 2,
+          "rate": 0.1111111111111111,
+          "required_rate": null,
+          "status": "reported",
+          "threshold": {
+            "allowed_evidence_classes": [
+              "blind_training_recovered"
+            ],
+            "description": "Pure random-initialized blind suites report measured recovery without a 100% pass target.",
+            "fail_on_execution_error": false,
+            "fail_on_unsupported": false,
+            "id": "measured_pure_blind_recovery",
+            "policy_type": "measured_rate",
+            "required_rate": null
+          },
+          "threshold_policy_id": "measured_pure_blind_recovery"
+        }
+      ]
+    }
+  },
+  "claim_rows": [
+    {
+      "campaign": "proof-shallow-pure-blind",
+      "claim_class": "measured_training_boundary",
+      "claim_id": "paper-shallow-blind-recovery",
+      "eligible": 18,
+      "passed": 2,
+      "rate": 0.1111111111111111,
+      "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/runs/v1.5-shallow-pure-blind",
+      "report_path": "artifacts/proof/v1.6/campaigns/proof-shallow-pure-blind/report.md",
+      "status": "reported",
+      "threshold_policy_id": "measured_pure_blind_recovery",
+      "verdict": "reported"
+    },
+    {
+      "campaign": "proof-shallow",
+      "claim_class": "scaffolded_training_proof",
+      "claim_id": "paper-shallow-scaffolded-recovery",
+      "eligible": 18,
+      "passed": 18,
+      "rate": 1.0,
+      "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-shallow/runs/v1.5-shallow-proof",
+      "report_path": "artifacts/proof/v1.6/campaigns/proof-shallow/report.md",
+      "status": "passed",
+      "threshold_policy_id": "scaffolded_bounded_100_percent",
+      "verdict": "passed"
+    },
+    {
+      "campaign": "proof-basin",
+      "claim_class": "bounded_training_proof",
+      "claim_id": "paper-perturbed-true-tree-basin",
+      "eligible": 9,
+      "passed": 9,
+      "rate": 1.0,
+      "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-basin/runs/proof-perturbed-basin",
+      "report_path": "artifacts/proof/v1.6/campaigns/proof-basin/report.md",
+      "status": "passed",
+      "threshold_policy_id": "bounded_100_percent",
+      "verdict": "passed"
+    },
+    {
+      "campaign": "proof-depth-curve",
+      "claim_class": "measured_depth_curve",
+      "claim_id": "paper-blind-depth-degradation",
+      "eligible": 20,
+      "passed": 20,
+      "rate": 1.0,
+      "raw_run_root": "artifacts/proof/v1.6/campaigns/proof-depth-curve/runs/proof-depth-curve",
+      "report_path": "artifacts/proof/v1.6/campaigns/proof-depth-curve/report.md",
+      "status": "reported",
+      "threshold_policy_id": "measured_depth_curve",
+      "verdict": "reported"
+    }
+  ],
+  "depth_curve": [
+    {
+      "blind_rate": 1.0,
+      "blind_seed_count": 2,
+      "depth": 2,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    },
+    {
+      "blind_rate": 1.0,
+      "blind_seed_count": 2,
+      "depth": 3,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    },
+    {
+      "blind_rate": 0.0,
+      "blind_seed_count": 2,
+      "depth": 4,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    },
+    {
+      "blind_rate": 0.0,
+      "blind_seed_count": 2,
+      "depth": 5,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    },
+    {
+      "blind_rate": 0.0,
+      "blind_seed_count": 2,
+      "depth": 6,
+      "perturbed_rate": 1.0,
+      "perturbed_seed_count": 2
+    }
+  ],
+  "generated_at": "2026-04-16T16:24:28.666761+00:00",
+  "out_of_scope_claims": [
+    {
+      "case_ids": [],
+      "claim_class": "contract_context",
+      "id": "paper-complete-depth-bounded-search",
+      "notes": [
+        "Complete depth-bounded search is represented separately from empirical optimizer success.",
+        "Catalog or compile-only validation cannot satisfy bounded training-proof claims."
+      ],
+      "source_refs": [
+        "sources/paper.pdf",
+        "sources/NORTH_STAR.md",
+        ".planning/REQUIREMENTS.md",
+        ".planning/ROADMAP.md"
+      ],
+      "statement": "EML trees form a complete depth-bounded representation family for the paper's elementary-function basis; this is context for proof suites, not a training-recovery pass condition.",
+      "suite_ids": [
+        "v1.5-shallow-pure-blind",
+        "v1.5-shallow-proof",
+        "proof-perturbed-basin",
+        "proof-depth-curve"
+      ],
+      "threshold_policy_id": "contract_context"
+    }
+  ],
+  "output_root": "artifacts/proof/v1.6",
+  "regime_summary": [
+    {
+      "failed": 21,
+      "regime": "blind",
+      "same_ast_return": 0,
+      "total": 46,
+      "unsupported": 0,
+      "verified_equivalent_ast": 0,
+      "verifier_recovered": 25
+    },
+    {
+      "failed": 0,
+      "regime": "warm_start",
+      "same_ast_return": 0,
+      "total": 0,
+      "unsupported": 0,
+      "verified_equivalent_ast": 0,
+      "verifier_recovered": 0
+    },
+    {
+      "failed": 0,
+      "regime": "compile",
+      "same_ast_return": 0,
+      "total": 0,
+      "unsupported": 0,
+      "verified_equivalent_ast": 0,
+      "verifier_recovered": 0
+    },
+    {
+      "failed": 0,
+      "regime": "catalog",
+      "same_ast_return": 0,
+      "total": 0,
+      "unsupported": 0,
+      "verified_equivalent_ast": 0,
+      "verifier_recovered": 0
+    },
+    {
+      "failed": 0,
+      "regime": "perturbed_tree",
+      "same_ast_return": 20,
+      "total": 23,
+      "unsupported": 0,
+      "verified_equivalent_ast": 0,
+      "verifier_recovered": 23
+    }
+  ],
+  "reproducibility": {
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli proof-campaign --output-root artifacts/proof/v1.6 --overwrite"
+  },
+  "schema": "eml.proof_campaign.v1",
+  "v14_campaigns": [
+    {
+      "blind_recovered": 4,
+      "blind_recovery_rate": 0.6666666666666666,
+      "blind_total": 6,
+      "campaign": "v1.4-standard",
+      "path": "artifacts/campaigns/v1.4-standard",
+      "total_runs": 16,
+      "verifier_recovered": 9,
+      "verifier_recovery_rate": 0.5625
+    },
+    {
+      "blind_recovered": 6,
+      "blind_recovery_rate": 0.6666666666666666,
+      "blind_total": 9,
+      "campaign": "v1.4-showcase",
+      "path": "artifacts/campaigns/v1.4-showcase",
+      "total_runs": 29,
+      "verifier_recovered": 18,
+      "verifier_recovery_rate": 0.6206896551724138
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "budget_ladder": "artifacts/campaigns/v1.16-geml-budget-ladder/budget-ladder.json",
+  "decision": "stop_full_campaign_fail_closed",
+  "failure_taxonomy": "artifacts/campaigns/v1.16-geml-budget-ladder/failure-taxonomy.json",
+  "generated_at": "2026-04-22T11:10:44.587957+00:00",
+  "pilot_campaign_dir": "artifacts/campaigns/v1.16-geml-pilot",
+  "rationale": "Pilot did not show clean verifier-gated i*pi exact recovery signal; full campaign should not run.",
+  "schema": "eml.v116_budget_ladder_manifest.v1",
+  "smoke_campaign_dir": "artifacts/campaigns/v1.16-geml-smoke",
+  "source_locks": "artifacts/campaigns/v1.16-geml-budget-ladder/source-locks.json"
+}

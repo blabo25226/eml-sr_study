@@ -1,0 +1,185 @@
+{
+  "category": "unit_aware_formulation",
+  "classification": "semi_synthetic",
+  "compatible_contracts": [
+    "verifier",
+    "benchmark_track",
+    "baseline_harness"
+  ],
+  "data_path": null,
+  "dataset_id": "unit_aware_ohm_law",
+  "description": "Unit-aware semi-synthetic Ohm-law formulation with current, resistance, and voltage units.",
+  "domain_constraints": {
+    "current_amp": {
+      "max": 1.0,
+      "min": 0.01,
+      "positive": true,
+      "unit": "ampere"
+    },
+    "resistance_ohm": {
+      "max": 1200.0,
+      "min": 50.0,
+      "positive": true,
+      "unit": "ohm"
+    }
+  },
+  "formula_id": "ohm_law",
+  "generator": "unit_aware_independent_uniform_sampling",
+  "manifest_sha256": "f6f8925fdf78fbca95a38ad74891f44cc8c2f298805d5b600c9c214a8569c18d",
+  "noise_policy": {
+    "type": "none"
+  },
+  "points": 32,
+  "schema": "eml.expanded_dataset_manifest.v1",
+  "seed": 0,
+  "source": "generated_from_ohm_law_with_physical_units",
+  "source_url": null,
+  "split_policy": {
+    "roles": {
+      "extrapolation": "diagnostic",
+      "final_confirmation": "final_confirmation",
+      "heldout": "diagnostic",
+      "selection": "selection",
+      "train": "training"
+    },
+    "type": "unit_aware_independent_domains"
+  },
+  "splits": [
+    {
+      "count": 32,
+      "domain": {
+        "current_amp": [
+          0.01,
+          0.5
+        ],
+        "resistance_ohm": [
+          50.0,
+          500.0
+        ]
+      },
+      "input_sha256": {
+        "current_amp": "a485b1d17b75107a37ede261eee9f9255a7f24031fd4467b00582a774ab74141",
+        "resistance_ohm": "03493eb6572e4b5b623d2796343b844a6a19a65ba3965c8b8b34be7f5117f78f"
+      },
+      "name": "train",
+      "role": "training",
+      "target_sha256": "d144f1cd0aa23107a2f68b613fc0e060de43e6c9337589054557c5870777fad8",
+      "target_unit": "volt",
+      "units": {
+        "current_amp": "ampere",
+        "resistance_ohm": "ohm"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "current_amp": [
+          0.02,
+          0.45
+        ],
+        "resistance_ohm": [
+          75.0,
+          650.0
+        ]
+      },
+      "input_sha256": {
+        "current_amp": "c3e4e3877d963998fe9a1947e1453d4c658fda1e4d73657d3a250f4113f95cc9",
+        "resistance_ohm": "a0bce351ee708938f956a0c13ad94630ca2eefd94065b885bab9ae3fabcdcb7f"
+      },
+      "name": "selection",
+      "role": "selection",
+      "target_sha256": "01ec3d31d18f591ef589bfd33bcc0e6ae26e3b3e55e5bc5cc8d49da659b4ff79",
+      "target_unit": "volt",
+      "units": {
+        "current_amp": "ampere",
+        "resistance_ohm": "ohm"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "current_amp": [
+          0.05,
+          0.7
+        ],
+        "resistance_ohm": [
+          100.0,
+          800.0
+        ]
+      },
+      "input_sha256": {
+        "current_amp": "6de8107cd3a15be949817b30e203bb37bc0b45330ff5a7fa5297a3a41b075735",
+        "resistance_ohm": "7bd7483b2d631d57bda2d8528b19be826f8496b85ee18a960e949b7cf9450e01"
+      },
+      "name": "heldout",
+      "role": "diagnostic",
+      "target_sha256": "7d888e4b1d7719a4e19173a57a9732b2cb514bd8e44f6b216686bcabc36b055d",
+      "target_unit": "volt",
+      "units": {
+        "current_amp": "ampere",
+        "resistance_ohm": "ohm"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "current_amp": [
+          0.75,
+          1.0
+        ],
+        "resistance_ohm": [
+          850.0,
+          1200.0
+        ]
+      },
+      "input_sha256": {
+        "current_amp": "082167799ba5c8c7455ea19801c8e8f6e76218f49bf2f8632e0d49f5fbe937a7",
+        "resistance_ohm": "f58ad65cbafdfa945091628b14202c130a58fa2da53c212752064a32d4096a85"
+      },
+      "name": "extrapolation",
+      "role": "diagnostic",
+      "target_sha256": "f5869c08c870d00884d3f0aaa3ac945c751a0a1ce1fd96c1acf4a266cab2e4b1",
+      "target_unit": "volt",
+      "units": {
+        "current_amp": "ampere",
+        "resistance_ohm": "ohm"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "current_amp": [
+          0.015,
+          0.95
+        ],
+        "resistance_ohm": [
+          60.0,
+          1100.0
+        ]
+      },
+      "input_sha256": {
+        "current_amp": "1614d4bb3b8fc259dc2a7a9cd75a2778c7bf227475be64e41b731c91554fb3c9",
+        "resistance_ohm": "2c88a9c6202988d739145289bd975a38d740371d1b8371219af0b3db1eac3198"
+      },
+      "name": "final_confirmation",
+      "role": "final_confirmation",
+      "target_sha256": "786dfcbd8851a61e01f3a07cc153ea0f447c4c40b0229221d551c5c6a2df6126",
+      "target_unit": "volt",
+      "units": {
+        "current_amp": "ampere",
+        "resistance_ohm": "ohm"
+      }
+    }
+  ],
+  "target_expression": "current_amp*resistance_ohm",
+  "tolerance": 1e-08,
+  "units": {
+    "current_amp": "ampere",
+    "resistance_ohm": "ohm",
+    "target": "volt"
+  },
+  "variables": [
+    "current_amp",
+    "resistance_ohm"
+  ]
+}

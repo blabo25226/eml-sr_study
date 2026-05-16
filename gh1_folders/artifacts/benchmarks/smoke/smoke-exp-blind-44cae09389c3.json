@@ -1,0 +1,207 @@
+{
+  "claim_status": "failed",
+  "environment": {
+    "code_version": "ea6e0a5",
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "metrics": {
+    "active_slot_count": null,
+    "best_loss": 6.593563826826581,
+    "changed_slot_count": null,
+    "high_precision_max_error": 3.626994328701647,
+    "post_snap_loss": 6.65026006217893,
+    "snap_active_node_count": 3,
+    "snap_min_margin": 0.06683857944817112,
+    "verifier_status": "failed"
+  },
+  "run": {
+    "artifact_path": "artifacts/benchmarks/smoke/smoke-exp-blind-44cae09389c3.json",
+    "case_id": "exp-blind",
+    "dataset": {
+      "points": 24,
+      "tolerance": 1e-08
+    },
+    "expect_recovery": false,
+    "formula": "exp",
+    "optimizer": {
+      "depth": 1,
+      "lr": 0.05,
+      "max_compile_depth": 12,
+      "max_compile_nodes": 256,
+      "max_power": 3,
+      "max_warm_depth": 10,
+      "restarts": 1,
+      "steps": 6,
+      "warm_depth": 0,
+      "warm_restarts": 1,
+      "warm_steps": 8
+    },
+    "perturbation_noise": 0.0,
+    "run_id": "smoke-exp-blind-44cae09389c3",
+    "seed": 0,
+    "start_mode": "blind",
+    "suite_id": "smoke",
+    "tags": [
+      "smoke",
+      "blind"
+    ]
+  },
+  "schema": "eml.benchmark_run.v1",
+  "stage_statuses": {
+    "blind_baseline": "failed"
+  },
+  "status": "snapped_but_failed",
+  "timing": {
+    "elapsed_seconds": 0.2551576669793576
+  },
+  "trained_eml_candidate": {
+    "best_loss": 6.593563826826581,
+    "best_restart": {
+      "best_fit_loss": 6.593563826826581,
+      "final_anomalies": {
+        "by_node": {
+          "root": {
+            "clamp_count": 0,
+            "inf_count": 0,
+            "max_abs": 6.018813577561766,
+            "max_exp_real": 1.0007589815198366,
+            "nan_count": 0
+          }
+        },
+        "clamp_count": 0,
+        "inf_count": 0,
+        "max_abs": 6.018813577561766,
+        "max_exp_real": 1.0007589815198366,
+        "nan_count": 0
+      },
+      "initialization": null,
+      "restart": 0,
+      "seed": 0,
+      "steps_completed": 6
+    },
+    "config": {
+      "constants": [
+        "1"
+      ],
+      "depth": 1,
+      "entropy_weight": 0.001,
+      "lr": 0.05,
+      "restarts": 1,
+      "seed": 0,
+      "size_weight": 0.0001,
+      "steps": 6,
+      "temperature_end": 0.25,
+      "temperature_start": 2.0,
+      "variables": [
+        "x"
+      ]
+    },
+    "post_snap_loss": 6.65026006217893,
+    "restarts": [
+      {
+        "best_fit_loss": 6.593563826826581,
+        "final_anomalies": {
+          "by_node": {
+            "root": {
+              "clamp_count": 0,
+              "inf_count": 0,
+              "max_abs": 6.018813577561766,
+              "max_exp_real": 1.0007589815198366,
+              "nan_count": 0
+            }
+          },
+          "clamp_count": 0,
+          "inf_count": 0,
+          "max_abs": 6.018813577561766,
+          "max_exp_real": 1.0007589815198366,
+          "nan_count": 0
+        },
+        "initialization": null,
+        "restart": 0,
+        "seed": 0,
+        "steps_completed": 6
+      }
+    ],
+    "schema": "eml.run_manifest.v1",
+    "snap": {
+      "active_node_count": 3,
+      "ast": {
+        "metadata": {
+          "depth": 1,
+          "node_count": 3,
+          "source": "exact_ast"
+        },
+        "root": {
+          "kind": "eml",
+          "left": {
+            "kind": "var",
+            "name": "x"
+          },
+          "right": {
+            "kind": "var",
+            "name": "x"
+          }
+        },
+        "schema": "eml.ast.v1",
+        "semantics": {
+          "constant_basis": [],
+          "log_branch": "principal",
+          "operator": "exp(x)-log(y)",
+          "verification_mode": "canonical"
+        },
+        "variables": [
+          "x"
+        ]
+      },
+      "decisions": [
+        {
+          "choice": "var:x",
+          "margin": 0.06683857944817112,
+          "path": "root",
+          "probability": 0.5334192897240856,
+          "side": "left"
+        },
+        {
+          "choice": "var:x",
+          "margin": 0.5010042499455563,
+          "path": "root",
+          "probability": 0.7505021249727781,
+          "side": "right"
+        }
+      ],
+      "min_margin": 0.06683857944817112
+    },
+    "status": "snapped_candidate"
+  },
+  "trained_eml_verification": {
+    "candidate_kind": "exact_eml",
+    "high_precision_max_error": 3.626994328701647,
+    "reason": "mpmath_failed",
+    "split_results": [
+      {
+        "max_abs_error": 4.441264523152211,
+        "max_imag_residue": 3.141592653589793,
+        "mse": 6.65026006217893,
+        "name": "train",
+        "passed": false
+      },
+      {
+        "max_abs_error": 4.288185929124056,
+        "max_imag_residue": 3.141592653589793,
+        "mse": 6.884714796370504,
+        "name": "heldout",
+        "passed": false
+      },
+      {
+        "max_abs_error": 0.405702153246855,
+        "max_imag_residue": 0.0,
+        "mse": 0.0682688389899543,
+        "name": "extrapolation",
+        "passed": false
+      }
+    ],
+    "status": "failed",
+    "tolerance": 1e-08
+  }
+}

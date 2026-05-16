@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="520" viewBox="0 0 1180 520" role="img">
+<style>
+  .title { font: 700 24px sans-serif; fill: #1d252c; }
+  .subtitle { font: 400 14px sans-serif; fill: #4b5563; }
+  .axis { stroke: #28343d; stroke-width: 1.3; }
+  .axis-label { font: 700 13px sans-serif; fill: #1d252c; }
+  .grid { stroke: #d7dde3; stroke-width: 1; }
+  .tick { font: 12px sans-serif; fill: #51606d; }
+  .label { font: 12px sans-serif; fill: #1d252c; }
+  .value { font: 700 11px sans-serif; fill: #1d252c; }
+  .cell { font: 700 11px sans-serif; fill: #ffffff; }
+</style>
+<text x="92" y="42" class="title">Training Loss Before and After Snap</text>
+<text x="92" y="65" class="subtitle">-log10(loss), higher is lower loss</text>
+<line x1="92" y1="380" x2="1146" y2="380" class="axis" />
+<line x1="92" y1="84" x2="92" y2="380" class="axis" />
+<line x1="87" y1="380.00" x2="1146" y2="380.00" class="grid" />
+<text x="80" y="384.00" class="tick" text-anchor="end">0</text>
+<line x1="87" y1="306.00" x2="1146" y2="306.00" class="grid" />
+<text x="80" y="310.00" class="tick" text-anchor="end">4</text>
+<line x1="87" y1="232.00" x2="1146" y2="232.00" class="grid" />
+<text x="80" y="236.00" class="tick" text-anchor="end">8</text>
+<line x1="87" y1="158.00" x2="1146" y2="158.00" class="grid" />
+<text x="80" y="162.00" class="tick" text-anchor="end">12</text>
+<line x1="87" y1="84.00" x2="1146" y2="84.00" class="grid" />
+<text x="80" y="88.00" class="tick" text-anchor="end">16</text>
+<rect x="103.59" y="354.68" width="29.51" height="25.32" fill="#146c94" rx="3" />
+<text x="118.35" y="346.68" class="value" text-anchor="middle">4.3e-02</text>
+<text x="118.35" y="402" class="label" text-anchor="end" transform="rotate(-36 118.35 402)">exp blind best</text>
+<rect x="156.29" y="84.00" width="29.51" height="296.00" fill="#d1495b" rx="3" />
+<text x="171.05" y="76.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="171.05" y="402" class="label" text-anchor="end" transform="rotate(-36 171.05 402)">exp blind snap</text>
+<rect x="208.99" y="216.34" width="29.51" height="163.66" fill="#2a9d8f" rx="3" />
+<text x="223.75" y="208.34" class="value" text-anchor="middle">1.4e-09</text>
+<text x="223.75" y="402" class="label" text-anchor="end" transform="rotate(-36 223.75 402)">exp blind best</text>
+<rect x="261.69" y="84.00" width="29.51" height="296.00" fill="#e9c46a" rx="3" />
+<text x="276.45" y="76.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="276.45" y="402" class="label" text-anchor="end" transform="rotate(-36 276.45 402)">exp blind snap</text>
+<rect x="314.39" y="84.00" width="29.51" height="296.00" fill="#4d908e" rx="3" />
+<text x="329.15" y="76.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="329.15" y="402" class="label" text-anchor="end" transform="rotate(-36 329.15 402)">exp blind best</text>
+<rect x="367.09" y="84.00" width="29.51" height="296.00" fill="#8f5d5d" rx="3" />
+<text x="381.85" y="76.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="381.85" y="402" class="label" text-anchor="end" transform="rotate(-36 381.85 402)">exp blind snap</text>
+<rect x="419.79" y="84.00" width="29.51" height="296.00" fill="#577590" rx="3" />
+<text x="434.55" y="76.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="434.55" y="402" class="label" text-anchor="end" transform="rotate(-36 434.55 402)">exp blind best</text>
+<rect x="472.49" y="84.00" width="29.51" height="296.00" fill="#146c94" rx="3" />
+<text x="487.25" y="76.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="487.25" y="402" class="label" text-anchor="end" transform="rotate(-36 487.25 402)">exp blind snap</text>
+<rect x="525.19" y="84.00" width="29.51" height="296.00" fill="#d1495b" rx="3" />
+<text x="539.95" y="76.00" class="value" text-anchor="middle">1.2e-30</text>
+<text x="539.95" y="402" class="label" text-anchor="end" transform="rotate(-36 539.95 402)">shockley warm_start best</text>
+<rect x="577.89" y="84.00" width="29.51" height="296.00" fill="#2a9d8f" rx="3" />
+<text x="592.65" y="76.00" class="value" text-anchor="middle">1.2e-30</text>
+<text x="592.65" y="402" class="label" text-anchor="end" transform="rotate(-36 592.65 402)">shockley warm_start snap</text>
+<rect x="630.59" y="84.00" width="29.51" height="296.00" fill="#e9c46a" rx="3" />
+<text x="645.35" y="76.00" class="value" text-anchor="middle">9.4e-33</text>
+<text x="645.35" y="402" class="label" text-anchor="end" transform="rotate(-36 645.35 402)">arrhenius warm_start best</text>
+<rect x="683.29" y="84.00" width="29.51" height="296.00" fill="#4d908e" rx="3" />
+<text x="698.05" y="76.00" class="value" text-anchor="middle">9.4e-33</text>
+<text x="698.05" y="402" class="label" text-anchor="end" transform="rotate(-36 698.05 402)">arrhenius warm_start snap</text>
+<rect x="735.99" y="84.00" width="29.51" height="296.00" fill="#8f5d5d" rx="3" />
+<text x="750.75" y="76.00" class="value" text-anchor="middle">1.1e-31</text>
+<text x="750.75" y="402" class="label" text-anchor="end" transform="rotate(-36 750.75 402)">michaelis_menten warm_start best</text>
+<rect x="788.69" y="84.00" width="29.51" height="296.00" fill="#577590" rx="3" />
+<text x="803.45" y="76.00" class="value" text-anchor="middle">1.1e-31</text>
+<text x="803.45" y="402" class="label" text-anchor="end" transform="rotate(-36 803.45 402)">michaelis_menten warm_start snap</text>
+<rect x="841.39" y="84.00" width="29.51" height="296.00" fill="#146c94" rx="3" />
+<text x="856.15" y="76.00" class="value" text-anchor="middle">1.2e-208</text>
+<text x="856.15" y="402" class="label" text-anchor="end" transform="rotate(-36 856.15 402)">basin_depth2_exp_exp perturbed_tree best</text>
+<rect x="894.09" y="84.00" width="29.51" height="296.00" fill="#d1495b" rx="3" />
+<text x="908.85" y="76.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="908.85" y="402" class="label" text-anchor="end" transform="rotate(-36 908.85 402)">basin_depth2_exp_exp perturbed_tree snap</text>
+<rect x="946.79" y="353.51" width="29.51" height="26.49" fill="#2a9d8f" rx="3" />
+<text x="961.55" y="345.51" class="value" text-anchor="middle">3.7e-02</text>
+<text x="961.55" y="402" class="label" text-anchor="end" transform="rotate(-36 961.55 402)">logistic blind best</text>
+<rect x="999.49" y="380.00" width="29.51" height="0.00" fill="#e9c46a" rx="3" />
+<text x="1014.25" y="372.00" class="value" text-anchor="middle">4.4e+00</text>
+<text x="1014.25" y="402" class="label" text-anchor="end" transform="rotate(-36 1014.25 402)">logistic blind snap</text>
+<rect x="1052.19" y="380.00" width="29.51" height="0.00" fill="#4d908e" rx="3" />
+<text x="1066.95" y="372.00" class="value" text-anchor="middle">2.0e+02</text>
+<text x="1066.95" y="402" class="label" text-anchor="end" transform="rotate(-36 1066.95 402)">planck blind best</text>
+<rect x="1104.89" y="380.00" width="29.51" height="0.00" fill="#8f5d5d" rx="3" />
+<text x="1119.65" y="372.00" class="value" text-anchor="middle">inf</text>
+<text x="1119.65" y="402" class="label" text-anchor="end" transform="rotate(-36 1119.65 402)">planck blind snap</text>
+</svg>

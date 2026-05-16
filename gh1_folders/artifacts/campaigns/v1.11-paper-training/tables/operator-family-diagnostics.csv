@@ -1,0 +1,4 @@
+operator_family,operator_schedule,start_mode,training_mode,depth,total,verifier_pass_rate,unsupported_rate,repair_attempt_rate,repair_accept_rate,refit_attempt_rate,refit_accept_rate,anomaly_clamp_count_total,anomaly_exp_overflow_count_total,anomaly_expm1_overflow_count_total,anomaly_log_branch_cut_count_total,anomaly_log1p_branch_cut_count_total,anomaly_shifted_singularity_near_count_total,shifted_singularity_min_distance_min,median_active_node_count,median_candidate_complexity,median_post_snap_loss
+raw_eml,fixed,blind,blind_training,1,4,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,3.0,,0.0
+raw_eml,fixed,perturbed_tree,perturbed_true_tree_training,2,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,9.0,0.0,0.0,,5.0,,0.0
+raw_eml,fixed,warm_start,compiler_warm_start_training,2,3,1.0,0.0,0.0,0.0,1.0,0.0,2615.0,2614.0,0.0,1012.0,0.0,0.0,,35.0,,1.1019529165135634e-31

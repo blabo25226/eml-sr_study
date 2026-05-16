@@ -1,0 +1,11 @@
+{
+  "claim_boundary": "pipeline diagram shows stages, not a single pure-blind recovery denominator",
+  "figure_id": "pipeline",
+  "schema": "eml.v112_pipeline_figure_metadata.v1",
+  "source_tables": {
+    "claim_taxonomy": "artifacts/paper/v1.11/draft/claim-taxonomy.json",
+    "depth_refresh": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-summary.json",
+    "shallow_refresh": "artifacts/campaigns/v1.12-evidence-refresh/tables/shallow-refresh-runs.json"
+  },
+  "title": "Verifier-Gated Hybrid EML Pipeline"
+}

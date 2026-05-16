@@ -1,0 +1,6 @@
+operator_family,operator_schedule,formula,start_mode,training_mode,depth,total,verifier_recovered,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate,post_snap_verifier_pass_rate,median_best_loss,median_post_snap_loss,median_runtime_seconds,median_active_node_count,median_candidate_complexity
+raw_eml,fixed,arrhenius,warm_start,compiler_warm_start_training,2,1,1,1,0,0,0,0,1.0,0.0,0.0,1.0,9.421157240802948e-33,9.421157240802948e-33,2.1795942910248414,19.0,
+raw_eml,fixed,basin_depth2_exp_exp,perturbed_tree,perturbed_true_tree_training,2,1,1,1,0,0,0,0,1.0,0.0,0.0,1.0,1.1649356994016893e-208,0.0,0.9504200420342386,5.0,
+raw_eml,fixed,exp,blind,blind_training,1,4,4,0,0,0,0,0,1.0,0.0,0.0,1.0,7.120478954830774e-10,0.0,0.9510154380113818,3.0,
+raw_eml,fixed,michaelis_menten,warm_start,compiler_warm_start_training,2,1,1,1,0,0,0,0,1.0,0.0,0.0,1.0,1.1019529165135634e-31,1.1019529165135634e-31,9.68259099998977,41.0,
+raw_eml,fixed,shockley,warm_start,compiler_warm_start_training,2,1,1,1,0,0,0,0,1.0,0.0,0.0,1.0,1.1979866060425772e-30,1.1979866060425772e-30,19.015009167022072,35.0,

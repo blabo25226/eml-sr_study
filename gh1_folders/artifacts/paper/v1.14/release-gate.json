@@ -1,0 +1,58 @@
+{
+  "checks": [
+    {
+      "details": {
+        "claim_audit_status": "passed"
+      },
+      "id": "claim_audit_passed",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "returncode": 0,
+        "status": "passed",
+        "stderr": "",
+        "stdout": "dev: ok"
+      },
+      "id": "dev_contract_valid",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "returncode": 0,
+        "status": "passed",
+        "stderr": "",
+        "stdout": "public-snapshot: ok"
+      },
+      "id": "public_snapshot_contract_valid",
+      "status": "passed"
+    }
+  ],
+  "evidence": {
+    "baseline_harness": {
+      "dependency_locks_json": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/dependency-locks.json",
+      "manifest_json": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/manifest.json",
+      "output_dir": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14",
+      "report_md": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-report.md",
+      "rows_csv": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-runs.csv",
+      "rows_json": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-runs.json"
+    },
+    "paper_tracks": {
+      "aggregate_json": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/aggregate.json",
+      "aggregate_markdown": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/aggregate.md",
+      "campaign_dir": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks",
+      "manifest_json": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/campaign-manifest.json",
+      "report_markdown": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/report.md",
+      "runs_csv": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/tables/runs.csv"
+    }
+  },
+  "generated_at": "2026-04-21T08:52:52.722703+00:00",
+  "main_sync": {
+    "local_force_push_performed": false,
+    "reason": "The local release gate validates readiness; sanitized main publication is performed by the dev-only GitHub workflow after dev is pushed.",
+    "status": "ready_for_publish_main_workflow",
+    "workflow": ".github/workflows/publish-main.yml"
+  },
+  "schema": "eml.v113_release_gate.v1",
+  "status": "passed"
+}

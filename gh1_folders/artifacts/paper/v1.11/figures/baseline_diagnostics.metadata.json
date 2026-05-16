@@ -1,0 +1,13 @@
+{
+  "claim_boundary": "prediction-only baseline diagnostics do not enter EML symbolic-recovery denominators",
+  "denominator": "local prediction-only baselines fit on deterministic demo splits",
+  "figure_id": "baseline_diagnostics",
+  "included_statuses": [
+    "ok",
+    "unavailable"
+  ],
+  "schema": "eml.paper_figure_metadata.v1",
+  "source_table_csv": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.csv",
+  "source_table_json": "artifacts/paper/v1.11/assets/tables/baseline_diagnostics.json",
+  "title": "Prediction-Only Baseline Diagnostics"
+}

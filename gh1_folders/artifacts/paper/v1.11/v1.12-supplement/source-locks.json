@@ -1,0 +1,504 @@
+{
+  "generated_at": "2026-04-19T18:04:25.281623+00:00",
+  "output_dir": "artifacts/paper/v1.11/v1.12-supplement",
+  "schema": "eml.v112_supplement_source_locks.v1",
+  "source_count": 62,
+  "sources": [
+    {
+      "bytes": 1937,
+      "role": "v112_draft",
+      "sha256": "a54f834ad4c11c3f43b18e0ecc0b5cf7753eef10b34e11aafae11a23ec03da87",
+      "source_id": "v112-draft-abstract-md",
+      "source_path": "artifacts/paper/v1.11/draft/abstract.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/abstract.md"
+    },
+    {
+      "bytes": 2176,
+      "role": "v112_paper_facing",
+      "sha256": "8da908993ea5a11f735cb6dd3f3c830b8cb7d241d5e8094208ffeed84cde6bd9",
+      "source_id": "v112-draft-bounded-probes-manifest-json",
+      "source_path": "artifacts/paper/v1.11/draft/bounded-probes-manifest.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/bounded-probes-manifest.json"
+    },
+    {
+      "bytes": 3648,
+      "role": "v112_draft",
+      "sha256": "3161f48680e877333ba87d0a5231f1c1d5cc3a0acfe5f22f872cd9b532c56968",
+      "source_id": "v112-draft-claim-taxonomy-csv",
+      "source_path": "artifacts/paper/v1.11/draft/claim-taxonomy.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/claim-taxonomy.csv"
+    },
+    {
+      "bytes": 7279,
+      "role": "v112_draft",
+      "sha256": "fffcab9804cedae627f8c28b69d9f2bbee3a9c7264ad6cb6ba1b898738d6cc6a",
+      "source_id": "v112-draft-claim-taxonomy-json",
+      "source_path": "artifacts/paper/v1.11/draft/claim-taxonomy.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/claim-taxonomy.json"
+    },
+    {
+      "bytes": 1872,
+      "role": "v112_draft",
+      "sha256": "b33f2840ba97e30804808b3f84d927040ab69841eed2923af1b44e9c3b0d3ad4",
+      "source_id": "v112-draft-claim-taxonomy-md",
+      "source_path": "artifacts/paper/v1.11/draft/claim-taxonomy.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/claim-taxonomy.md"
+    },
+    {
+      "bytes": 1288,
+      "role": "v112_paper_facing",
+      "sha256": "96d12a9cff7845159e10931e6aabc1e840c02d617ef48ed7ec7d13c21716b70d",
+      "source_id": "v112-draft-figure-captions-md",
+      "source_path": "artifacts/paper/v1.11/draft/figure-captions.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/figure-captions.md"
+    },
+    {
+      "bytes": 531,
+      "role": "v112_paper_facing",
+      "sha256": "d2a1380688421eba6fcd64040d39d751b99c3a45aee2d2b597ca8a5778edb074",
+      "source_id": "v112-draft-figures-pipeline-metadata-json",
+      "source_path": "artifacts/paper/v1.11/draft/figures/pipeline.metadata.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/figures/pipeline.metadata.json"
+    },
+    {
+      "bytes": 2230,
+      "role": "v112_paper_facing",
+      "sha256": "f9ab31fc9cb696b4ef9fe6741a36299c9b6adaa2a4724deb0dd69c47a8dc226d",
+      "source_id": "v112-draft-figures-pipeline-svg",
+      "source_path": "artifacts/paper/v1.11/draft/figures/pipeline.svg",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/figures/pipeline.svg"
+    },
+    {
+      "bytes": 1014,
+      "role": "v112_draft",
+      "sha256": "8f23ca00c0e1bacfdfb6109c4fc07ebb000789bdc4f416e5adf1b32b5f458f0e",
+      "source_id": "v112-draft-limitations-md",
+      "source_path": "artifacts/paper/v1.11/draft/limitations.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/limitations.md"
+    },
+    {
+      "bytes": 2200,
+      "role": "v112_draft",
+      "sha256": "e417bb212e1a0bc5914a75a742b82001478351562019bdd3a8f403dea1ebe2ae",
+      "source_id": "v112-draft-manifest-json",
+      "source_path": "artifacts/paper/v1.11/draft/manifest.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/manifest.json"
+    },
+    {
+      "bytes": 1367,
+      "role": "v112_draft",
+      "sha256": "471185cd6c85c8fcf76de223519c3325f531c94e1f24725fb68ad83dc37c561f",
+      "source_id": "v112-draft-methods-md",
+      "source_path": "artifacts/paper/v1.11/draft/methods.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/methods.md"
+    },
+    {
+      "bytes": 2430,
+      "role": "v112_paper_facing",
+      "sha256": "995436b884fd10311545bdb5866bdc02f371ba6005965794495c175198b4a7b0",
+      "source_id": "v112-draft-paper-facing-manifest-json",
+      "source_path": "artifacts/paper/v1.11/draft/paper-facing-manifest.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/paper-facing-manifest.json"
+    },
+    {
+      "bytes": 1095,
+      "role": "v112_draft",
+      "sha256": "08611467ff7331c9b507f9254fb856447d293d9b831a1c0d33e14a7d171742a5",
+      "source_id": "v112-draft-results-md",
+      "source_path": "artifacts/paper/v1.11/draft/results.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/results.md"
+    },
+    {
+      "bytes": 1349,
+      "role": "v112_paper_facing",
+      "sha256": "6a8abed822c809e9ed1ab1dcaeb93ec5d9bf6c8d583684d49a065fa87a1b8258",
+      "source_id": "v112-draft-table-captions-md",
+      "source_path": "artifacts/paper/v1.11/draft/table-captions.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/table-captions.md"
+    },
+    {
+      "bytes": 537,
+      "role": "v112_bounded_probe",
+      "sha256": "5a6c4801fb555a02ca215af1f79116a9c272af5363c9dd6267a82f6a78b32331",
+      "source_id": "v112-draft-tables-conventional-symbolic-baseline-probe-csv",
+      "source_path": "artifacts/paper/v1.11/draft/tables/conventional-symbolic-baseline-probe.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/conventional-symbolic-baseline-probe.csv"
+    },
+    {
+      "bytes": 963,
+      "role": "v112_bounded_probe",
+      "sha256": "86c13dc89fda6a77dd7e51ee5515912f20357dead18c30cb95aeea71a9150d43",
+      "source_id": "v112-draft-tables-conventional-symbolic-baseline-probe-json",
+      "source_path": "artifacts/paper/v1.11/draft/tables/conventional-symbolic-baseline-probe.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/conventional-symbolic-baseline-probe.json"
+    },
+    {
+      "bytes": 667,
+      "role": "v112_bounded_probe",
+      "sha256": "2c81d97e45e8f0fa4627ac58c05b3a9d52efa443fe9d09692206997ab0f29835",
+      "source_id": "v112-draft-tables-conventional-symbolic-baseline-probe-md",
+      "source_path": "artifacts/paper/v1.11/draft/tables/conventional-symbolic-baseline-probe.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/conventional-symbolic-baseline-probe.md"
+    },
+    {
+      "bytes": 1396,
+      "role": "v112_paper_facing",
+      "sha256": "7c96236a27455988f53121c9d0ca143aa3d7467ab2a4c0bf8002a47c1c11c0ca",
+      "source_id": "v112-draft-tables-logistic-planck-negative-results-csv",
+      "source_path": "artifacts/paper/v1.11/draft/tables/logistic-planck-negative-results.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/logistic-planck-negative-results.csv"
+    },
+    {
+      "bytes": 2619,
+      "role": "v112_paper_facing",
+      "sha256": "0ee0c4fb3f5991af0b220002eb5021ff4616119d721a9eb215b0c8d13a2b2a34",
+      "source_id": "v112-draft-tables-logistic-planck-negative-results-json",
+      "source_path": "artifacts/paper/v1.11/draft/tables/logistic-planck-negative-results.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/logistic-planck-negative-results.json"
+    },
+    {
+      "bytes": 1636,
+      "role": "v112_paper_facing",
+      "sha256": "4f95b4e2d5232bdc9cc39aeb0cc4462e9f1567fe606910128166917ca94970da",
+      "source_id": "v112-draft-tables-logistic-planck-negative-results-md",
+      "source_path": "artifacts/paper/v1.11/draft/tables/logistic-planck-negative-results.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/logistic-planck-negative-results.md"
+    },
+    {
+      "bytes": 4522,
+      "role": "v112_bounded_probe",
+      "sha256": "9d9f3426bc3a87a0c69485d12daf688b2430bc4eff0a2539377c3b28c1c664b8",
+      "source_id": "v112-draft-tables-logistic-strict-support-diagnostic-json",
+      "source_path": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-diagnostic.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/logistic-strict-support-diagnostic.json"
+    },
+    {
+      "bytes": 868,
+      "role": "v112_bounded_probe",
+      "sha256": "edec07cfa37111b3974ce427f2886f56340cb52d47459a5f546a3a279b4f2c4a",
+      "source_id": "v112-draft-tables-logistic-strict-support-probe-csv",
+      "source_path": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-probe.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/logistic-strict-support-probe.csv"
+    },
+    {
+      "bytes": 1862,
+      "role": "v112_bounded_probe",
+      "sha256": "0699182783002cae77f298f346f306002742f17f760e7c46b9bfa6e3f57e889d",
+      "source_id": "v112-draft-tables-logistic-strict-support-probe-json",
+      "source_path": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-probe.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/logistic-strict-support-probe.json"
+    },
+    {
+      "bytes": 1161,
+      "role": "v112_bounded_probe",
+      "sha256": "8cee8d7fda7cad2bb0f58e7171cbec3af86a1aee53e35b1254cc1435ef7ca71d",
+      "source_id": "v112-draft-tables-logistic-strict-support-probe-md",
+      "source_path": "artifacts/paper/v1.11/draft/tables/logistic-strict-support-probe.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/logistic-strict-support-probe.md"
+    },
+    {
+      "bytes": 2060,
+      "role": "v112_paper_facing",
+      "sha256": "0ce6101d0ab834b594ad2d3a0b5dcf2aadf3093c03388492de278a3192e3a9aa",
+      "source_id": "v112-draft-tables-motif-library-evolution-csv",
+      "source_path": "artifacts/paper/v1.11/draft/tables/motif-library-evolution.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/motif-library-evolution.csv"
+    },
+    {
+      "bytes": 4311,
+      "role": "v112_paper_facing",
+      "sha256": "47dd0dd23a5da3813ce686f9bb8cdb683842502698395cfa1bcc8a04b98d8f12",
+      "source_id": "v112-draft-tables-motif-library-evolution-json",
+      "source_path": "artifacts/paper/v1.11/draft/tables/motif-library-evolution.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/motif-library-evolution.json"
+    },
+    {
+      "bytes": 2385,
+      "role": "v112_paper_facing",
+      "sha256": "3f4375dc6b4fafebfe5628f06e2ae3abf996a943b79d563a813010d96a48c2a6",
+      "source_id": "v112-draft-tables-motif-library-evolution-md",
+      "source_path": "artifacts/paper/v1.11/draft/tables/motif-library-evolution.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/tables/motif-library-evolution.md"
+    },
+    {
+      "bytes": 1060,
+      "role": "v112_paper_facing",
+      "sha256": "e477e3081d4846f52caf7cf8b53fab4eaa530d9df9dd469466f787e16a04b7d4",
+      "source_id": "v112-draft-training-detail-README-md",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/README.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/README.md"
+    },
+    {
+      "bytes": 11183,
+      "role": "v112_paper_facing",
+      "sha256": "f801cd1144ab23a306c5c58ea10eb5b0695765908f40024f1578dbcac5164ccf",
+      "source_id": "v112-draft-training-detail-figures-depth-loss-curves-svg",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/figures/depth-loss-curves.svg",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/figures/depth-loss-curves.svg"
+    },
+    {
+      "bytes": 10314,
+      "role": "v112_paper_facing",
+      "sha256": "67e8d01b7ea0f243f169e5f72bb780f9cab75221d24c378e79311a44d9d61d34",
+      "source_id": "v112-draft-training-detail-figures-shallow-loss-curves-svg",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/figures/shallow-loss-curves.svg",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/figures/shallow-loss-curves.svg"
+    },
+    {
+      "bytes": 7600,
+      "role": "v112_draft",
+      "sha256": "f501cb0b6ddb555942bfec22b9394f63ab23c9a35857d5639b0246ca0a9a5390",
+      "source_id": "v112-draft-training-detail-manifest-json",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/manifest.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/manifest.json"
+    },
+    {
+      "bytes": 109249,
+      "role": "v112_paper_facing",
+      "sha256": "7b626489bbb8296cde7dfed657df0f046913eb1e3f5a99bffe19be825bc87c8f",
+      "source_id": "v112-draft-training-detail-tables-candidate-lifecycle-csv",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/tables/candidate-lifecycle.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/tables/candidate-lifecycle.csv"
+    },
+    {
+      "bytes": 307687,
+      "role": "v112_paper_facing",
+      "sha256": "1bbc5e80647c64ad5c70ac9801b0c094f882b955bd3b2c5c5297801aedea3ce9",
+      "source_id": "v112-draft-training-detail-tables-candidate-lifecycle-json",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/tables/candidate-lifecycle.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/tables/candidate-lifecycle.json"
+    },
+    {
+      "bytes": 125788,
+      "role": "v112_paper_facing",
+      "sha256": "5ec74422e6b60e1c6b7681e4e746e34bfe63429370da0769aa14579bd1322cb7",
+      "source_id": "v112-draft-training-detail-tables-candidate-lifecycle-md",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/tables/candidate-lifecycle.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/tables/candidate-lifecycle.md"
+    },
+    {
+      "bytes": 33206,
+      "role": "v112_paper_facing",
+      "sha256": "f1e82d6cdcddd07dcae2a6c285fc505020be8d509393e63ea912111defaf9afc",
+      "source_id": "v112-draft-training-detail-tables-training-run-summaries-csv",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/tables/training-run-summaries.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/tables/training-run-summaries.csv"
+    },
+    {
+      "bytes": 83478,
+      "role": "v112_paper_facing",
+      "sha256": "e493130bdb921f5018711ae14544ed5761a50ab7b830e346a71141235c108333",
+      "source_id": "v112-draft-training-detail-tables-training-run-summaries-json",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/tables/training-run-summaries.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/tables/training-run-summaries.json"
+    },
+    {
+      "bytes": 36988,
+      "role": "v112_paper_facing",
+      "sha256": "09336c74ef68756a820a5a06b4675ce87a4d38595a40a0e756b4827b6f756c17",
+      "source_id": "v112-draft-training-detail-tables-training-run-summaries-md",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/tables/training-run-summaries.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/tables/training-run-summaries.md"
+    },
+    {
+      "bytes": 25138535,
+      "role": "v112_paper_facing",
+      "sha256": "a3c71f8b4f866254c669087f53bce832c3e4edca3147f827754e839aa30ea35a",
+      "source_id": "v112-draft-training-detail-tables-training-step-traces-csv",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/tables/training-step-traces.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/tables/training-step-traces.csv"
+    },
+    {
+      "bytes": 35985307,
+      "role": "v112_paper_facing",
+      "sha256": "d4b9f676fe0f0ae7b27f556baa1273809b769c32d5b744ecf06a761d83fadb12",
+      "source_id": "v112-draft-training-detail-tables-training-step-traces-json",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/tables/training-step-traces.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/tables/training-step-traces.json"
+    },
+    {
+      "bytes": 23984435,
+      "role": "v112_paper_facing",
+      "sha256": "94f2b7ccb7c9ecfd9be578728b2f7663daebc887a8dc6d84369d9a0e142e12c1",
+      "source_id": "v112-draft-training-detail-tables-training-step-traces-md",
+      "source_path": "artifacts/paper/v1.11/draft/training-detail/tables/training-step-traces.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/draft/training-detail/tables/training-step-traces.md"
+    },
+    {
+      "bytes": 85240,
+      "role": "v112_evidence_refresh",
+      "sha256": "395985a154c1549af237166c98d56ffa37488c27b1a02e3a2dda594fe18cd657",
+      "source_id": "v112-refresh-depth-aggregate-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/depth/aggregate.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/depth/aggregate.json"
+    },
+    {
+      "bytes": 4976,
+      "role": "v112_evidence_refresh",
+      "sha256": "82dc3c427a8717e717ed85449121ce60a9691ec580468e3bae084a2fa4a0e172",
+      "source_id": "v112-refresh-depth-aggregate-md",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/depth/aggregate.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/depth/aggregate.md"
+    },
+    {
+      "bytes": 85240,
+      "role": "v112_evidence_refresh",
+      "sha256": "395985a154c1549af237166c98d56ffa37488c27b1a02e3a2dda594fe18cd657",
+      "source_id": "v112-refresh-depth-aggregate-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/depth-aggregate.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/depth-aggregate.json"
+    },
+    {
+      "bytes": 4976,
+      "role": "v112_evidence_refresh",
+      "sha256": "82dc3c427a8717e717ed85449121ce60a9691ec580468e3bae084a2fa4a0e172",
+      "source_id": "v112-refresh-depth-aggregate-md",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/depth-aggregate.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/depth-aggregate.md"
+    },
+    {
+      "bytes": 53393340,
+      "role": "v112_evidence_refresh",
+      "sha256": "59fb2031aedfdba869d03b232b836dc453edadfbbae9031f91fd0cd2a085ffbd",
+      "source_id": "v112-refresh-depth-suite-result-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/depth-suite-result.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/depth-suite-result.json"
+    },
+    {
+      "bytes": 6771,
+      "role": "v112_evidence_refresh",
+      "sha256": "a085c927c2ec3cd13b6268ee3536e32aa0fa83ff64493b00fadd631e6c4925bb",
+      "source_id": "v112-refresh-depth-suite-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/depth-suite.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/depth-suite.json"
+    },
+    {
+      "bytes": 3337,
+      "role": "v112_evidence_refresh",
+      "sha256": "978c50285b73c235cd233c8d2f9b2c134f4a3e883ed5e8f850861fb4d89e9b7e",
+      "source_id": "v112-refresh-manifest-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/manifest.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/manifest.json"
+    },
+    {
+      "bytes": 78006,
+      "role": "v112_evidence_refresh",
+      "sha256": "6f70e3b543c258fa9c25c3d76a5a4915cca70f47f8940b1c13db9252d16ee2f2",
+      "source_id": "v112-refresh-shallow-aggregate-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/shallow/aggregate.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/shallow/aggregate.json"
+    },
+    {
+      "bytes": 4670,
+      "role": "v112_evidence_refresh",
+      "sha256": "fac72a16fb28984de64c06433c45a85f94208e248a2f42df87a59ad87c33f42a",
+      "source_id": "v112-refresh-shallow-aggregate-md",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/shallow/aggregate.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/shallow/aggregate.md"
+    },
+    {
+      "bytes": 78006,
+      "role": "v112_evidence_refresh",
+      "sha256": "6f70e3b543c258fa9c25c3d76a5a4915cca70f47f8940b1c13db9252d16ee2f2",
+      "source_id": "v112-refresh-shallow-aggregate-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/shallow-aggregate.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/shallow-aggregate.json"
+    },
+    {
+      "bytes": 4670,
+      "role": "v112_evidence_refresh",
+      "sha256": "fac72a16fb28984de64c06433c45a85f94208e248a2f42df87a59ad87c33f42a",
+      "source_id": "v112-refresh-shallow-aggregate-md",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/shallow-aggregate.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/shallow-aggregate.md"
+    },
+    {
+      "bytes": 4842048,
+      "role": "v112_evidence_refresh",
+      "sha256": "fc2b8ad265faa1056bddb7cc1a325aecdbc33cbae039a5445f461c88a82af060",
+      "source_id": "v112-refresh-shallow-suite-result-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/shallow-suite-result.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/shallow-suite-result.json"
+    },
+    {
+      "bytes": 3418,
+      "role": "v112_evidence_refresh",
+      "sha256": "9154fcbd040720cfcf221c7aeb2f9e5da65ef8e1de8ecb580da5c79a9b5b74cd",
+      "source_id": "v112-refresh-shallow-suite-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/shallow-suite.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/shallow-suite.json"
+    },
+    {
+      "bytes": 3582,
+      "role": "v112_evidence_refresh",
+      "sha256": "93309ea959da30dcab70d2b3d23e6f3190abe6dec497f11ad13047bee30b0414",
+      "source_id": "v112-refresh-tables-depth-refresh-runs-csv",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-runs.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/tables/depth-refresh-runs.csv"
+    },
+    {
+      "bytes": 7679,
+      "role": "v112_evidence_refresh",
+      "sha256": "f0f2118eb243b5e2b1662fc350bdbdf7f7038145ee240e20849c2f251c6856ee",
+      "source_id": "v112-refresh-tables-depth-refresh-runs-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-runs.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/tables/depth-refresh-runs.json"
+    },
+    {
+      "bytes": 4128,
+      "role": "v112_evidence_refresh",
+      "sha256": "928a637afbe6cd4fc32a4ad79d065f8f610f65c134a9081179fe056944069aff",
+      "source_id": "v112-refresh-tables-depth-refresh-runs-md",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-runs.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/tables/depth-refresh-runs.md"
+    },
+    {
+      "bytes": 847,
+      "role": "v112_evidence_refresh",
+      "sha256": "5a8bdb4f66668ed07abcf42141ddca4c1ef4f66cecf47993711e2d53530f7deb",
+      "source_id": "v112-refresh-tables-depth-refresh-summary-csv",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-summary.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/tables/depth-refresh-summary.csv"
+    },
+    {
+      "bytes": 2193,
+      "role": "v112_evidence_refresh",
+      "sha256": "4a82d44c26fb796a43852382baf962650abb0c24ca03b52aed44d015fb4ae9e2",
+      "source_id": "v112-refresh-tables-depth-refresh-summary-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-summary.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/tables/depth-refresh-summary.json"
+    },
+    {
+      "bytes": 1076,
+      "role": "v112_evidence_refresh",
+      "sha256": "83368ebb313d7237495c5c078980567bce4769ef4eac889a27c725ad3d38e02a",
+      "source_id": "v112-refresh-tables-depth-refresh-summary-md",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-summary.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/tables/depth-refresh-summary.md"
+    },
+    {
+      "bytes": 4540,
+      "role": "v112_evidence_refresh",
+      "sha256": "84184d1a312751a559017a5fb5d713f4d4efe7b061d2a7d0134c3cb21f09d735",
+      "source_id": "v112-refresh-tables-shallow-refresh-runs-csv",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/tables/shallow-refresh-runs.csv",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/tables/shallow-refresh-runs.csv"
+    },
+    {
+      "bytes": 9605,
+      "role": "v112_evidence_refresh",
+      "sha256": "07116a32ededa57f05a642f719b6b8698e961dd53dc9bc2b36164386b6556629",
+      "source_id": "v112-refresh-tables-shallow-refresh-runs-json",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/tables/shallow-refresh-runs.json",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/tables/shallow-refresh-runs.json"
+    },
+    {
+      "bytes": 5176,
+      "role": "v112_evidence_refresh",
+      "sha256": "76bb89d28fcecec85b0e9b3c751a18d3c233a00531b7431b4cac06776030bea1",
+      "source_id": "v112-refresh-tables-shallow-refresh-runs-md",
+      "source_path": "artifacts/campaigns/v1.12-evidence-refresh/tables/shallow-refresh-runs.md",
+      "supplement_path": "artifacts/paper/v1.11/v1.12-supplement/sources/evidence-refresh/tables/shallow-refresh-runs.md"
+    }
+  ]
+}

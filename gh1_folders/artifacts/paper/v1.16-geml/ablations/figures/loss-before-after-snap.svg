@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+<style>.title{font:700 22px Arial,sans-serif;fill:#17202a}.note{font:12px Arial,sans-serif;fill:#34495e}.label{font:11px Arial,sans-serif;fill:#34495e}.grid{stroke:#edf2f4;stroke-width:1}.bar{opacity:.92}</style>
+<text x="34" y="36" class="title">Loss Before and After Snap</text>
+<text x="34" y="58" class="note">Mean MSE across paired pilot rows. These values are diagnostics, not recovery evidence.</text>
+<line x1="220.0" y1="74" x2="220.0" y2="486" class="grid"/>
+<line x1="385.0" y1="74" x2="385.0" y2="486" class="grid"/>
+<line x1="550.0" y1="74" x2="550.0" y2="486" class="grid"/>
+<line x1="715.0" y1="74" x2="715.0" y2="486" class="grid"/>
+<line x1="880.0" y1="74" x2="880.0" y2="486" class="grid"/>
+<text x="34" y="101" class="label">raw pre-snap</text>
+<rect x="220" y="86" width="301.4" height="34" class="bar" fill="#457b9d"/>
+<text x="529.4" y="101" class="label">1.02</text>
+<text x="34" y="143" class="label">raw post-snap</text>
+<rect x="220" y="128" width="308.6" height="34" class="bar" fill="#1d3557"/>
+<text x="536.6" y="143" class="label">1.04</text>
+<text x="34" y="185" class="label">i*pi pre-snap</text>
+<rect x="220" y="170" width="575.0" height="34" class="bar" fill="#f4a261"/>
+<text x="803.0" y="185" class="label">1.94</text>
+<text x="34" y="227" class="label">i*pi post-snap</text>
+<rect x="220" y="212" width="660.0" height="34" class="bar" fill="#e76f51"/>
+<text x="888.0" y="227" class="label">2.23</text>
+</svg>

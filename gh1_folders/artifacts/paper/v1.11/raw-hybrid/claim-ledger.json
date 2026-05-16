@@ -1,0 +1,284 @@
+{
+  "generated_at": "2026-04-19T13:23:32.212970+00:00",
+  "rows": [
+    {
+      "claim_id": "v111-regime-pure_blind",
+      "eligible_denominator": "pure_blind",
+      "evidence_class": "pure_blind",
+      "failed": 21,
+      "public_claim": "Random-initialized blind training evidence, kept separate from repairs and scaffolds.",
+      "rate_source": "verifier_counts",
+      "repaired_candidate": 0,
+      "same_ast_return": 0,
+      "source_ids": [
+        "proof-depth-curve-aggregate",
+        "proof-shallow-pure-blind-aggregate"
+      ],
+      "total": 25,
+      "unsupported": 0,
+      "verifier_recovered": 4
+    },
+    {
+      "claim_id": "v111-regime-scaffolded",
+      "eligible_denominator": "scaffolded",
+      "evidence_class": "scaffolded",
+      "failed": 0,
+      "public_claim": "Blind training with declared scaffold initializers, not pure blind discovery.",
+      "rate_source": "verifier_counts",
+      "repaired_candidate": 0,
+      "same_ast_return": 0,
+      "source_ids": [
+        "proof-depth-curve-aggregate",
+        "proof-shallow-scaffolded-aggregate"
+      ],
+      "total": 20,
+      "unsupported": 0,
+      "verifier_recovered": 20
+    },
+    {
+      "claim_id": "v111-regime-compile_only",
+      "eligible_denominator": "compile_only",
+      "evidence_class": "compile_only",
+      "failed": 0,
+      "public_claim": "Exact compiler diagnostics that do not train from random initialization.",
+      "rate_source": "verifier_counts",
+      "repaired_candidate": 0,
+      "same_ast_return": 0,
+      "source_ids": [
+        "v1.10-logistic-aggregate",
+        "v1.10-planck-aggregate"
+      ],
+      "total": 2,
+      "unsupported": 2,
+      "verifier_recovered": 0
+    },
+    {
+      "claim_id": "v111-regime-warm_start",
+      "eligible_denominator": "warm_start",
+      "evidence_class": "warm_start",
+      "failed": 2,
+      "public_claim": "Compiler-seeded warm-start training attempts.",
+      "rate_source": "verifier_counts",
+      "repaired_candidate": 0,
+      "same_ast_return": 4,
+      "source_ids": [
+        "v1.6-beer-lambert-run",
+        "v1.6-historical-michaelis-diagnostic-run",
+        "v1.6-shockley-run",
+        "v1.9-arrhenius-aggregate",
+        "v1.9-michaelis-aggregate",
+        "v1.9-repair-aggregate"
+      ],
+      "total": 7,
+      "unsupported": 1,
+      "verifier_recovered": 4
+    },
+    {
+      "claim_id": "v111-regime-same_ast_return",
+      "eligible_denominator": "same_ast_return",
+      "evidence_class": "same_ast_return",
+      "failed": 0,
+      "public_claim": "Runs that returned the exact same AST or equivalent same-AST evidence.",
+      "rate_source": "verifier_counts",
+      "repaired_candidate": 0,
+      "same_ast_return": 24,
+      "source_ids": [
+        "proof-basin-probes-aggregate",
+        "proof-depth-curve-aggregate",
+        "proof-perturbed-basin-aggregate",
+        "v1.6-beer-lambert-run",
+        "v1.6-shockley-run",
+        "v1.9-arrhenius-aggregate",
+        "v1.9-michaelis-aggregate"
+      ],
+      "total": 24,
+      "unsupported": 0,
+      "verifier_recovered": 24
+    },
+    {
+      "claim_id": "v111-regime-repaired",
+      "eligible_denominator": "repaired",
+      "evidence_class": "repaired",
+      "failed": 4,
+      "public_claim": "Verifier-gated local repair evidence, separate from the original selected candidate.",
+      "rate_source": "verifier_counts",
+      "repaired_candidate": 4,
+      "same_ast_return": 0,
+      "source_ids": [
+        "proof-basin-probes-aggregate",
+        "proof-shallow-pure-blind-aggregate",
+        "v1.9-repair-aggregate"
+      ],
+      "total": 8,
+      "unsupported": 0,
+      "verifier_recovered": 4
+    },
+    {
+      "claim_id": "v111-regime-refit",
+      "eligible_denominator": "refit",
+      "evidence_class": "refit",
+      "failed": 14,
+      "public_claim": "Frozen exact-tree constant refit diagnostics, separate from discovery evidence.",
+      "rate_source": "verifier_counts",
+      "repaired_candidate": 3,
+      "same_ast_return": 7,
+      "source_ids": [
+        "proof-basin-probes-aggregate",
+        "proof-perturbed-basin-aggregate",
+        "proof-shallow-pure-blind-aggregate",
+        "proof-shallow-scaffolded-aggregate",
+        "v1.6-beer-lambert-run",
+        "v1.6-shockley-run",
+        "v1.9-arrhenius-aggregate",
+        "v1.9-michaelis-aggregate",
+        "v1.9-repair-aggregate"
+      ],
+      "total": 36,
+      "unsupported": 0,
+      "verifier_recovered": 22
+    },
+    {
+      "claim_id": "v111-regime-perturbed_basin",
+      "eligible_denominator": "perturbed_basin",
+      "evidence_class": "perturbed_basin",
+      "failed": 0,
+      "public_claim": "Perturbed true-tree basin evidence with known starts.",
+      "rate_source": "verifier_counts",
+      "repaired_candidate": 3,
+      "same_ast_return": 20,
+      "source_ids": [
+        "proof-basin-probes-aggregate",
+        "proof-depth-curve-aggregate",
+        "proof-perturbed-basin-aggregate"
+      ],
+      "total": 23,
+      "unsupported": 0,
+      "verifier_recovered": 23
+    },
+    {
+      "claim_id": "v111-law-beer-lambert",
+      "compile_depth": 9,
+      "compile_support": "supported",
+      "eligible_denominator": "same_ast_return",
+      "evidence_class": "same_ast_return",
+      "law": "Beer-Lambert",
+      "macro_hits": [],
+      "public_claim": "same-AST warm-start evidence",
+      "rate_source": "not_a_rate",
+      "source_ids": [
+        "artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-beer-perturbation-sweep-c671cedf25f1.json"
+      ],
+      "verifier_status": "recovered"
+    },
+    {
+      "claim_id": "v111-law-shockley",
+      "compile_depth": 13,
+      "compile_support": "supported",
+      "eligible_denominator": "same_ast_return",
+      "evidence_class": "same_ast_return",
+      "law": "Shockley",
+      "macro_hits": [
+        "scaled_exp_minus_one_template"
+      ],
+      "public_claim": "same-AST warm-start evidence",
+      "rate_source": "not_a_rate",
+      "source_ids": [
+        "artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-shockley-warm-316f98a5b1fb.json"
+      ],
+      "verifier_status": "recovered"
+    },
+    {
+      "claim_id": "v111-law-arrhenius",
+      "compile_depth": 7,
+      "compile_support": "supported",
+      "eligible_denominator": "same_ast_return",
+      "evidence_class": "same_ast_return",
+      "law": "Arrhenius",
+      "macro_hits": [
+        "direct_division_template"
+      ],
+      "public_claim": "same-AST warm-start evidence",
+      "rate_source": "not_a_rate",
+      "source_ids": [
+        "artifacts/campaigns/v1.9-arrhenius-evidence/v1.9-arrhenius-evidence/v1-9-arrhenius-evidence-arrhenius-warm-75f6e9c1764d.json"
+      ],
+      "verifier_status": "recovered"
+    },
+    {
+      "claim_id": "v111-law-michaelis-menten",
+      "compile_depth": 12,
+      "compile_support": "supported",
+      "eligible_denominator": "same_ast_return",
+      "evidence_class": "same_ast_return",
+      "law": "Michaelis-Menten",
+      "macro_hits": [
+        "saturation_ratio_template"
+      ],
+      "public_claim": "same-AST warm-start evidence",
+      "rate_source": "not_a_rate",
+      "source_ids": [
+        "artifacts/campaigns/v1.9-michaelis-evidence/v1.9-michaelis-evidence/v1-9-michaelis-evidence-michaelis-warm-a67d8ccfb108.json"
+      ],
+      "verifier_status": "recovered"
+    },
+    {
+      "claim_id": "v111-law-planck-diagnostic",
+      "compile_depth": 14,
+      "compile_support": "unsupported",
+      "eligible_denominator": "compile_only",
+      "evidence_class": "compile_only",
+      "law": "Planck diagnostic",
+      "macro_hits": [
+        "low_degree_power_template",
+        "scaled_exp_minus_one_template",
+        "direct_division_template"
+      ],
+      "public_claim": "unsupported diagnostic",
+      "rate_source": "not_a_rate",
+      "source_ids": [
+        "artifacts/campaigns/v1.10-planck-diagnostics/v1-10-planck-diagnostics-planck-compile-795067919a97.json"
+      ],
+      "verifier_status": "unsupported"
+    },
+    {
+      "claim_id": "v111-law-logistic-diagnostic",
+      "compile_depth": 15,
+      "compile_support": "unsupported",
+      "eligible_denominator": "compile_only",
+      "evidence_class": "compile_only",
+      "law": "Logistic diagnostic",
+      "macro_hits": [
+        "exponential_saturation_template"
+      ],
+      "public_claim": "unsupported diagnostic",
+      "rate_source": "not_a_rate",
+      "source_ids": [
+        "artifacts/campaigns/v1.10-logistic-evidence/v1-10-logistic-evidence-logistic-compile-c2af27a35e81.json"
+      ],
+      "verifier_status": "unsupported"
+    },
+    {
+      "claim_id": "v111-law-historical-michaelis-diagnostic",
+      "compile_depth": 14,
+      "compile_support": "unsupported",
+      "eligible_denominator": "historical_context",
+      "evidence_class": "historical_context",
+      "law": "Historical Michaelis diagnostic",
+      "macro_hits": [
+        "direct_division_template"
+      ],
+      "public_claim": "unsupported diagnostic",
+      "rate_source": "not_a_rate",
+      "source_ids": [
+        "artifacts/campaigns/v1.6-standard/runs/v1.3-standard/v1-3-standard-michaelis-warm-diagnostic-9917f8383370.json"
+      ],
+      "verifier_status": "unsupported"
+    }
+  ],
+  "rules": {
+    "loss_only_recovery": "forbidden",
+    "mixed_regime_blind_claims": "forbidden",
+    "recovery_rate_source": "verifier-owned counts only"
+  },
+  "schema": "eml.raw_hybrid_claim_ledger.v1"
+}

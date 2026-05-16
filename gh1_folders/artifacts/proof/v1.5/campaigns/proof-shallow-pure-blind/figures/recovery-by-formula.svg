@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+<style>
+  .title { font: 700 24px sans-serif; fill: #1d252c; }
+  .subtitle { font: 400 14px sans-serif; fill: #4b5563; }
+  .axis { stroke: #28343d; stroke-width: 1.3; }
+  .grid { stroke: #d7dde3; stroke-width: 1; }
+  .tick { font: 12px sans-serif; fill: #51606d; }
+  .label { font: 12px sans-serif; fill: #1d252c; }
+  .value { font: 700 11px sans-serif; fill: #1d252c; }
+</style>
+<text x="86" y="38" class="title">Verifier Recovery Rate by Formula</text>
+<text x="86" y="60" class="subtitle">recovered / total</text>
+<line x1="86" y1="390" x2="924" y2="390" class="axis" />
+<line x1="86" y1="76" x2="86" y2="390" class="axis" />
+<line x1="81" y1="390.00" x2="924" y2="390.00" class="grid" />
+<text x="74" y="394.00" class="tick" text-anchor="end">0</text>
+<line x1="81" y1="311.50" x2="924" y2="311.50" class="grid" />
+<text x="74" y="315.50" class="tick" text-anchor="end">0.25</text>
+<line x1="81" y1="233.00" x2="924" y2="233.00" class="grid" />
+<text x="74" y="237.00" class="tick" text-anchor="end">0.5</text>
+<line x1="81" y1="154.50" x2="924" y2="154.50" class="grid" />
+<text x="74" y="158.50" class="tick" text-anchor="end">0.75</text>
+<line x1="81" y1="76.00" x2="924" y2="76.00" class="grid" />
+<text x="74" y="80.00" class="tick" text-anchor="end">1</text>
+<rect x="123.83" y="390.00" width="64.00" height="0.00" fill="#2f6f8f" rx="3" />
+<text x="155.83" y="382.00" class="value" text-anchor="middle">0%</text>
+<text x="155.83" y="412" class="label" text-anchor="end" transform="rotate(-35 155.83 412)">beer_lambert</text>
+<rect x="263.50" y="180.67" width="64.00" height="209.33" fill="#d1495b" rx="3" />
+<text x="295.50" y="172.67" class="value" text-anchor="middle">67%</text>
+<text x="295.50" y="412" class="label" text-anchor="end" transform="rotate(-35 295.50 412)">exp</text>
+<rect x="403.17" y="390.00" width="64.00" height="0.00" fill="#4f8a3a" rx="3" />
+<text x="435.17" y="382.00" class="value" text-anchor="middle">0%</text>
+<text x="435.17" y="412" class="label" text-anchor="end" transform="rotate(-35 435.17 412)">log</text>
+<rect x="542.83" y="390.00" width="64.00" height="0.00" fill="#7a5195" rx="3" />
+<text x="574.83" y="382.00" class="value" text-anchor="middle">0%</text>
+<text x="574.83" y="412" class="label" text-anchor="end" transform="rotate(-35 574.83 412)">radioactive_decay</text>
+<rect x="682.50" y="390.00" width="64.00" height="0.00" fill="#a5673f" rx="3" />
+<text x="714.50" y="382.00" class="value" text-anchor="middle">0%</text>
+<text x="714.50" y="412" class="label" text-anchor="end" transform="rotate(-35 714.50 412)">scaled_exp_fast_decay</text>
+<rect x="822.17" y="390.00" width="64.00" height="0.00" fill="#1f8a70" rx="3" />
+<text x="854.17" y="382.00" class="value" text-anchor="middle">0%</text>
+<text x="854.17" y="412" class="label" text-anchor="end" transform="rotate(-35 854.17 412)">scaled_exp_growth</text>
+</svg>

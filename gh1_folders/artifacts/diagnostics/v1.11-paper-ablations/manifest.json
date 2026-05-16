@@ -1,0 +1,50 @@
+{
+  "claim_boundary": "baseline diagnostics are prediction-only and do not enter EML recovery denominators",
+  "counts": {
+    "baseline_diagnostics": 20,
+    "motif_depth_deltas": 6,
+    "regime_comparison": 12,
+    "repair_refit": 12
+  },
+  "generated_at": "2026-04-19T13:38:28.631765+00:00",
+  "output_dir": "artifacts/diagnostics/v1.11-paper-ablations",
+  "outputs": {
+    "baseline_diagnostics_csv": "artifacts/diagnostics/v1.11-paper-ablations/baseline-diagnostics.csv",
+    "baseline_diagnostics_json": "artifacts/diagnostics/v1.11-paper-ablations/baseline-diagnostics.json",
+    "baseline_diagnostics_md": "artifacts/diagnostics/v1.11-paper-ablations/baseline-diagnostics.md",
+    "manifest_json": "artifacts/diagnostics/v1.11-paper-ablations/manifest.json",
+    "motif_depth_deltas_csv": "artifacts/diagnostics/v1.11-paper-ablations/motif-depth-deltas.csv",
+    "motif_depth_deltas_json": "artifacts/diagnostics/v1.11-paper-ablations/motif-depth-deltas.json",
+    "motif_depth_deltas_md": "artifacts/diagnostics/v1.11-paper-ablations/motif-depth-deltas.md",
+    "output_dir": "artifacts/diagnostics/v1.11-paper-ablations",
+    "regime_comparison_csv": "artifacts/diagnostics/v1.11-paper-ablations/regime-comparison.csv",
+    "regime_comparison_json": "artifacts/diagnostics/v1.11-paper-ablations/regime-comparison.json",
+    "regime_comparison_md": "artifacts/diagnostics/v1.11-paper-ablations/regime-comparison.md",
+    "repair_refit_csv": "artifacts/diagnostics/v1.11-paper-ablations/repair-refit-diagnostics.csv",
+    "repair_refit_json": "artifacts/diagnostics/v1.11-paper-ablations/repair-refit-diagnostics.json",
+    "repair_refit_md": "artifacts/diagnostics/v1.11-paper-ablations/repair-refit-diagnostics.md"
+  },
+  "schema": "eml.paper_diagnostics.v1",
+  "sources": [
+    {
+      "path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.json",
+      "sha256": "f0c7a9f05f246b01cbb616905b2ad1cc5ecebdf7681dce3418e5b555457cc10c",
+      "source_id": "scientific_law_table"
+    },
+    {
+      "path": "artifacts/campaigns/v1.11-paper-training/aggregate.json",
+      "sha256": "10c7e0f7b24fa546060ed4d6601d6c53bca692540788f786b9c368075b083954",
+      "source_id": "training_aggregate"
+    },
+    {
+      "path": "artifacts/campaigns/v1.11-logistic-planck-probes/aggregate.json",
+      "sha256": "3d01c2c3943f6c38f496a66d44988a55a3c34f807b22d80dcd9c5724c7e1b92a",
+      "source_id": "probe_aggregate"
+    },
+    {
+      "path": "artifacts/campaigns/v1.9-repair-evidence/repair-evidence-summary.json",
+      "sha256": "c69bd971ca44b2d389506d9ffa8b2b81100023baab7a4af62075ff2803d3d6ee",
+      "source_id": "repair_summary"
+    }
+  ]
+}

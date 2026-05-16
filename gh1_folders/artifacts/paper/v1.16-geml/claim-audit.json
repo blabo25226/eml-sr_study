@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "description": "Gate config defines all allowed v1.16 outcomes.",
+      "id": "gate_has_all_outcomes",
+      "status": "passed"
+    },
+    {
+      "description": "Positive recovery numerator is verifier-gated trained exact recovery only.",
+      "id": "exact_recovery_only_positive_gate",
+      "status": "passed"
+    },
+    {
+      "description": "Claim text does not promote loss-only improvement to recovery.",
+      "id": "blocks_loss_only_recovery_claims",
+      "status": "passed"
+    },
+    {
+      "description": "Claim text avoids global raw/i*pi superiority claims.",
+      "id": "blocks_global_superiority_language",
+      "status": "passed"
+    },
+    {
+      "description": "Claim text avoids broad blind-recovery claims.",
+      "id": "blocks_broad_blind_recovery_language",
+      "status": "passed"
+    },
+    {
+      "description": "Claim text avoids full i*pi/GEML universality claims.",
+      "id": "blocks_full_universality_language",
+      "status": "passed"
+    },
+    {
+      "description": "Claim text keeps negative controls visible.",
+      "id": "negative_controls_visible",
+      "status": "passed"
+    },
+    {
+      "description": "Paper-positive language appears only when the gate evaluates paper_positive.",
+      "id": "paper_positive_requires_gate_pass",
+      "status": "passed"
+    },
+    {
+      "description": "Package includes source-lock tables.",
+      "id": "source_locks_present",
+      "status": "passed"
+    }
+  ],
+  "decision": "inconclusive",
+  "schema": "eml.v116_claim_audit.v1",
+  "status": "passed"
+}

@@ -1,0 +1,145 @@
+{
+  "rows": [
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "exp",
+      "pair_id": "exp:seed0:depth2",
+      "seed": "0",
+      "target_family": "negative_control",
+      "tier": "smoke"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "sin_pi",
+      "pair_id": "sin_pi:seed0:depth3",
+      "seed": "0",
+      "target_family": "periodic",
+      "tier": "smoke"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "cos_pi",
+      "pair_id": "cos_pi:seed0:depth3",
+      "seed": "0",
+      "target_family": "periodic",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "ipi_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "cos_pi",
+      "pair_id": "cos_pi:seed1:depth3",
+      "seed": "1",
+      "target_family": "periodic",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "exp",
+      "pair_id": "exp:seed0:depth2",
+      "seed": "0",
+      "target_family": "negative_control",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "exp",
+      "pair_id": "exp:seed1:depth2",
+      "seed": "1",
+      "target_family": "negative_control",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "harmonic_sum",
+      "pair_id": "harmonic_sum:seed0:depth3",
+      "seed": "0",
+      "target_family": "harmonic",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "harmonic_sum",
+      "pair_id": "harmonic_sum:seed1:depth3",
+      "seed": "1",
+      "target_family": "harmonic",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "ipi_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "log",
+      "pair_id": "log:seed0:depth2",
+      "seed": "0",
+      "target_family": "negative_control",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "ipi_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "log",
+      "pair_id": "log:seed1:depth2",
+      "seed": "1",
+      "target_family": "negative_control",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "log_periodic_oscillation",
+      "pair_id": "log_periodic_oscillation:seed0:depth3",
+      "seed": "0",
+      "target_family": "log_periodic",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "log_periodic_oscillation",
+      "pair_id": "log_periodic_oscillation:seed1:depth3",
+      "seed": "1",
+      "target_family": "log_periodic",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "sin_pi",
+      "pair_id": "sin_pi:seed0:depth3",
+      "seed": "0",
+      "target_family": "periodic",
+      "tier": "pilot"
+    },
+    {
+      "actionable_next_step": "Inspect snap mismatch and candidate-pool alternatives; do not count as recovery.",
+      "comparison_outcome": "raw_lower_post_snap_mse",
+      "failure_class": "loss_only_signal",
+      "formula": "sin_pi",
+      "pair_id": "sin_pi:seed1:depth3",
+      "seed": "1",
+      "target_family": "periodic",
+      "tier": "pilot"
+    }
+  ],
+  "schema": "eml.v116_failure_taxonomy.v1"
+}

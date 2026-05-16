@@ -1,0 +1,59 @@
+{
+  "claim_boundary": "current-code refresh rows preserve pure-blind, scaffolded, and depth denominators separately",
+  "counts": {
+    "depth_runs": 8,
+    "depth_summary_rows": 4,
+    "depth_verifier_recovered": 4,
+    "shallow_runs": 10,
+    "shallow_verifier_recovered": 10
+  },
+  "generated_at": "2026-04-19T18:04:06.976512+00:00",
+  "output_dir": "artifacts/campaigns/v1.12-evidence-refresh",
+  "outputs": {
+    "depth_aggregate_json": "artifacts/campaigns/v1.12-evidence-refresh/depth-aggregate.json",
+    "depth_aggregate_md": "artifacts/campaigns/v1.12-evidence-refresh/depth-aggregate.md",
+    "depth_runs_csv": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-runs.csv",
+    "depth_runs_json": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-runs.json",
+    "depth_runs_md": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-runs.md",
+    "depth_suite_json": "artifacts/campaigns/v1.12-evidence-refresh/depth-suite.json",
+    "depth_suite_result_json": "artifacts/campaigns/v1.12-evidence-refresh/depth-suite-result.json",
+    "depth_summary_csv": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-summary.csv",
+    "depth_summary_json": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-summary.json",
+    "depth_summary_md": "artifacts/campaigns/v1.12-evidence-refresh/tables/depth-refresh-summary.md",
+    "manifest_json": "artifacts/campaigns/v1.12-evidence-refresh/manifest.json",
+    "output_dir": "artifacts/campaigns/v1.12-evidence-refresh",
+    "shallow_aggregate_json": "artifacts/campaigns/v1.12-evidence-refresh/shallow-aggregate.json",
+    "shallow_aggregate_md": "artifacts/campaigns/v1.12-evidence-refresh/shallow-aggregate.md",
+    "shallow_runs_csv": "artifacts/campaigns/v1.12-evidence-refresh/tables/shallow-refresh-runs.csv",
+    "shallow_runs_json": "artifacts/campaigns/v1.12-evidence-refresh/tables/shallow-refresh-runs.json",
+    "shallow_runs_md": "artifacts/campaigns/v1.12-evidence-refresh/tables/shallow-refresh-runs.md",
+    "shallow_suite_json": "artifacts/campaigns/v1.12-evidence-refresh/shallow-suite.json",
+    "shallow_suite_result_json": "artifacts/campaigns/v1.12-evidence-refresh/shallow-suite-result.json"
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli paper-refresh --output-dir artifacts/campaigns/v1.12-evidence-refresh --overwrite"
+  },
+  "schema": "eml.v112_evidence_refresh.v1",
+  "source_locks": [
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/shallow-suite.json",
+      "sha256": "9154fcbd040720cfcf221c7aeb2f9e5da65ef8e1de8ecb580da5c79a9b5b74cd",
+      "source_id": "shallow_suite"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/shallow-aggregate.json",
+      "sha256": "6f70e3b543c258fa9c25c3d76a5a4915cca70f47f8940b1c13db9252d16ee2f2",
+      "source_id": "shallow_aggregate"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/depth-suite.json",
+      "sha256": "a085c927c2ec3cd13b6268ee3536e32aa0fa83ff64493b00fadd631e6c4925bb",
+      "source_id": "depth_suite"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/depth-aggregate.json",
+      "sha256": "395985a154c1549af237166c98d56ffa37488c27b1a02e3a2dda594fe18cd657",
+      "source_id": "depth_aggregate"
+    }
+  ]
+}

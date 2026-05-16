@@ -1,0 +1,26 @@
+{
+  "both_recovered": 0,
+  "comparison_outcomes": {
+    "ipi_lower_post_snap_mse": 3,
+    "raw_lower_post_snap_mse": 9
+  },
+  "ipi_lower_post_snap_mse": 3,
+  "ipi_recovery_wins": 0,
+  "ipi_trained_exact_recovery": 0,
+  "ipi_trained_exact_recovery_rate": 0.0,
+  "loss_only_outcomes": 12,
+  "negative_control_pairs": 4,
+  "neither_recovered": 12,
+  "paired_rows": 12,
+  "raw_lower_post_snap_mse": 9,
+  "raw_recovery_wins": 0,
+  "raw_trained_exact_recovery": 0,
+  "raw_trained_exact_recovery_rate": 0.0,
+  "schema": "eml.geml_paired_summary.v1",
+  "target_families": {
+    "harmonic": 2,
+    "log_periodic": 2,
+    "negative_control": 4,
+    "periodic": 4
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "baseline_claim_surface": {
+    "denominator_excluded_rows": 80,
+    "eligible_external_row_count": 0,
+    "eligible_external_rows": [],
+    "main_surface_comparison_claim": false,
+    "policy": "quarantined_appendix_or_future_work_only",
+    "row_count": 80,
+    "unavailable_rows": 40,
+    "unsupported_rows": 30
+  },
+  "checks": [
+    {
+      "details": {
+        "aggregate_json": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/aggregate.json",
+        "run_count": 24
+      },
+      "id": "paper_track_aggregate_present",
+      "message": "Paper-track aggregate exists and contains run rows.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "counts": {
+          "compile_only_verified_support": 1,
+          "compile_only_verified_support_rate": 0.041666666666666664,
+          "discovery_classes": {
+            "compile_only_verified_support": 1,
+            "trained_exact_recovery": 8,
+            "unsupported": 15
+          },
+          "evidence_classes": {
+            "compile_only_verified": 1,
+            "same_ast": 8,
+            "unsupported": 15
+          },
+          "evidence_regimes": {
+            "compile_only_verified_support": 1,
+            "same_ast_seed_round_trip": 8,
+            "unsupported": 15
+          },
+          "execution_error": 0,
+          "failed": 0,
+          "repaired_candidate": 0,
+          "same_ast_return": 8,
+          "total": 24,
+          "trained_exact_recovery": 8,
+          "trained_exact_recovery_rate": 0.3333333333333333,
+          "unsupported": 15,
+          "verification_passed": 9,
+          "verification_passed_rate": 0.375,
+          "verified_equivalent_ast": 0,
+          "verifier_recovered": 9,
+          "verifier_recovery_rate": 0.375
+        }
+      },
+      "id": "paper_track_rows_have_no_execution_failures",
+      "message": "No paper-track rows failed unexpectedly.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "tracks": [
+          "basis_only",
+          "literal_constants"
+        ]
+      },
+      "id": "track_denominators_present",
+      "message": "Basis-only and literal-constant denominators are present.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing": [],
+        "verification_passed_count": 9
+      },
+      "id": "recovered_rows_have_verifier_evidence",
+      "message": "Verification-passed rows have verifier evidence payloads.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing": []
+      },
+      "id": "recovered_rows_have_track_labels",
+      "message": "Verification-passed rows carry benchmark track and constants policy labels.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing": []
+      },
+      "id": "recovered_rows_have_source_artifacts",
+      "message": "Verification-passed rows link existing source artifacts.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing": []
+      },
+      "id": "recovered_rows_have_final_confirmation_or_substitute",
+      "message": "Verification-passed rows have final-confirmation status or stronger verifier-evidence substitute.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "compile_only_support_count": 1,
+        "compile_rows_in_trained": []
+      },
+      "id": "compile_only_excluded_from_trained_recovery",
+      "message": "Compile-only verified support rows are excluded from trained recovery claims.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "actual": {
+          "compile_only_verified_support_rows": 1,
+          "failed_rows": 0,
+          "trained_exact_recovery_rows": 8,
+          "unsupported_rows": 15
+        },
+        "applied": true,
+        "expected": {
+          "compile_only_verified_support_rows": 1,
+          "failed_rows": 0,
+          "trained_exact_recovery_rows": 8,
+          "unsupported_rows": 15
+        }
+      },
+      "id": "paper_track_corrected_headline_counts",
+      "message": "Paper-track headline counts use trained recovery and compile-only support as separate axes.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "baseline_manifest": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/manifest.json",
+        "denominator_policy": "excluded_from_eml_recovery_denominators"
+      },
+      "id": "baseline_context_present",
+      "message": "Matched baseline context exists and is excluded from EML recovery denominators.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing_fields": [],
+        "rows_json": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-runs.json"
+      },
+      "id": "baseline_rows_expose_quarantine_fields",
+      "message": "Baseline rows expose dependency, launch, denominator, and claim-surface quarantine fields.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "denominator_excluded_rows": 80,
+        "eligible_external_row_count": 0,
+        "eligible_external_rows": [],
+        "main_surface_comparison_claim": false,
+        "policy": "quarantined_appendix_or_future_work_only",
+        "row_count": 80,
+        "unavailable_rows": 40,
+        "unsupported_rows": 30
+      },
+      "id": "baseline_main_surface_claims_quarantined",
+      "message": "Main-surface baseline comparison claims require completed fixed-budget external rows on the same target and split contract.",
+      "status": "passed"
+    }
+  ],
+  "compile_only_support_claims": [
+    {
+      "artifact_path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/runs/v1.13-paper-tracks/v1-13-paper-tracks-exp-basis-only-compile-3063b13aa4e5.json",
+      "artifact_sha256": "b15c6be90a46e24692d9392221e8a5f611531f3a9bda06176551e220da03c546",
+      "benchmark_track": "basis_only",
+      "constants_policy": "basis_only",
+      "discovery_class": "compile_only_verified_support",
+      "evidence_regime": "compile_only_verified_support",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "exp",
+      "run_id": "v1-13-paper-tracks-exp-basis-only-compile-3063b13aa4e5",
+      "verification_outcome": "recovered",
+      "verifier_status": "recovered"
+    }
+  ],
+  "counts": {
+    "compile_only_verified_support_rows": 1,
+    "failed_rows": 0,
+    "paper_track_rows": 24,
+    "recovered_rows": 8,
+    "trained_exact_recovery_rows": 8,
+    "unsupported_rows": 15,
+    "verification_passed_rows": 9
+  },
+  "generated_at": "2026-04-21T08:52:52.611588+00:00",
+  "recovered_claims": [
+    {
+      "artifact_path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/runs/v1.13-paper-tracks/v1-13-paper-tracks-exp-literal-warm-9b23eed6fa6a.json",
+      "artifact_sha256": "3e3609c192a1befd0707efe13e4443f6caa209ed671b795fa6da813fa96183fb",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "discovery_class": "trained_exact_recovery",
+      "evidence_regime": "same_ast_seed_round_trip",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "exp",
+      "run_id": "v1-13-paper-tracks-exp-literal-warm-9b23eed6fa6a",
+      "verification_outcome": "recovered",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/runs/v1.13-paper-tracks/v1-13-paper-tracks-radioactive-decay-literal-warm-2c95fb8d28a3.json",
+      "artifact_sha256": "2512c9b1cb5bd7c9ee5cd4083be2efcf4ade8f83216de18b7357d7890620520f",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "discovery_class": "trained_exact_recovery",
+      "evidence_regime": "same_ast_seed_round_trip",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "radioactive_decay",
+      "run_id": "v1-13-paper-tracks-radioactive-decay-literal-warm-2c95fb8d28a3",
+      "verification_outcome": "recovered",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/runs/v1.13-paper-tracks/v1-13-paper-tracks-beer-lambert-literal-warm-6bde0341b85f.json",
+      "artifact_sha256": "21f9d012841467e1882a4f356ab72fe0136480dde3296e28cfbe09bca8e92552",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "discovery_class": "trained_exact_recovery",
+      "evidence_regime": "same_ast_seed_round_trip",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "beer_lambert",
+      "run_id": "v1-13-paper-tracks-beer-lambert-literal-warm-6bde0341b85f",
+      "verification_outcome": "recovered",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/runs/v1.13-paper-tracks/v1-13-paper-tracks-scaled-exp-growth-literal-warm-de37e614d838.json",
+      "artifact_sha256": "7a22e9f10caf71a526be5821aebc120c4c213ae6999953a7ac139274d2c0cd82",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "discovery_class": "trained_exact_recovery",
+      "evidence_regime": "same_ast_seed_round_trip",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "scaled_exp_growth",
+      "run_id": "v1-13-paper-tracks-scaled-exp-growth-literal-warm-de37e614d838",
+      "verification_outcome": "recovered",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/runs/v1.13-paper-tracks/v1-13-paper-tracks-scaled-exp-fast-decay-literal-warm-2ec985eec55a.json",
+      "artifact_sha256": "f88a85f90d735f950d80058a0b1fb3aaaba574fbbd11fa63eedce1328c56bdbc",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "discovery_class": "trained_exact_recovery",
+      "evidence_regime": "same_ast_seed_round_trip",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "scaled_exp_fast_decay",
+      "run_id": "v1-13-paper-tracks-scaled-exp-fast-decay-literal-warm-2ec985eec55a",
+      "verification_outcome": "recovered",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/runs/v1.13-paper-tracks/v1-13-paper-tracks-arrhenius-literal-warm-b1aea4d7678e.json",
+      "artifact_sha256": "8c26348a8434f8fc6a0452eb303f8f0e299d2d126ddbf2e67d4ee97c555e7a0d",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "discovery_class": "trained_exact_recovery",
+      "evidence_regime": "same_ast_seed_round_trip",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "arrhenius",
+      "run_id": "v1-13-paper-tracks-arrhenius-literal-warm-b1aea4d7678e",
+      "verification_outcome": "recovered",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/runs/v1.13-paper-tracks/v1-13-paper-tracks-michaelis-menten-literal-warm-a45fcb5297df.json",
+      "artifact_sha256": "18b04dcf95fd41b4bc66b3d715e572f790f1644b986ecff2c008c760a5428cf3",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "discovery_class": "trained_exact_recovery",
+      "evidence_regime": "same_ast_seed_round_trip",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "michaelis_menten",
+      "run_id": "v1-13-paper-tracks-michaelis-menten-literal-warm-a45fcb5297df",
+      "verification_outcome": "recovered",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/runs/v1.13-paper-tracks/v1-13-paper-tracks-shockley-literal-warm-99701f065be5.json",
+      "artifact_sha256": "299bd536d5b73b9694390f60b4813dc98fa84e951c12ec42f7d1686168115a2e",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "discovery_class": "trained_exact_recovery",
+      "evidence_regime": "same_ast_seed_round_trip",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "shockley",
+      "run_id": "v1-13-paper-tracks-shockley-literal-warm-99701f065be5",
+      "verification_outcome": "recovered",
+      "verifier_status": "recovered"
+    }
+  ],
+  "schema": "eml.v113_claim_audit.v1",
+  "status": "passed"
+}

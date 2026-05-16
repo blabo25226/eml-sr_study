@@ -1,0 +1,61 @@
+{
+  "claim_denominator_rules": {
+    "compile_only_verified_support": "excluded_from_trained_exact_recovery",
+    "loss_only": "diagnostic_only",
+    "negative_controls": "visible_and_claim_blocking",
+    "same_ast_seed_round_trip": "excluded_from_trained_exact_recovery"
+  },
+  "matched_fields": [
+    "formula",
+    "seed",
+    "depth",
+    "steps",
+    "restarts",
+    "hardening_steps",
+    "hardening_emit_interval",
+    "dataset.points",
+    "dataset.tolerance",
+    "constants_policy",
+    "snap_rule",
+    "verifier_gate"
+  ],
+  "operator_families": [
+    "raw_eml",
+    "ipi_eml"
+  ],
+  "resource_metadata_required": [
+    "wall_clock_seconds",
+    "attempt_count",
+    "candidate_count",
+    "code_version",
+    "platform"
+  ],
+  "schema": "eml.v116_matched_campaign_contract.v1",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "suite_ids": {
+    "full": "v1.16-geml-full",
+    "pilot": "v1.16-geml-pilot",
+    "smoke": "v1.16-geml-smoke"
+  },
+  "targets": {
+    "natural_bias": [
+      "sin_pi",
+      "cos_pi",
+      "harmonic_sum",
+      "damped_oscillator",
+      "standing_wave_snapshot",
+      "log_periodic_oscillation"
+    ],
+    "negative_controls": [
+      "exp",
+      "log",
+      "quadratic_polynomial",
+      "rational_decay"
+    ]
+  },
+  "verifier_gate": "trained exact candidate selected by verifier across train, held-out, extrapolation, and high-precision checks"
+}

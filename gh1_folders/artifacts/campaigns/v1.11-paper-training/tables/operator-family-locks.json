@@ -1,0 +1,41 @@
+{
+  "groups": [
+    {
+      "depth": "1",
+      "operator_family": "raw_eml",
+      "operator_schedule": "fixed",
+      "refit_accept_rate": 0.0,
+      "repair_attempt_rate": 0.0,
+      "start_mode": "blind",
+      "total": 4,
+      "training_mode": "blind_training",
+      "unsupported_rate": 0.0,
+      "verifier_pass_rate": 1.0
+    },
+    {
+      "depth": "2",
+      "operator_family": "raw_eml",
+      "operator_schedule": "fixed",
+      "refit_accept_rate": 0.0,
+      "repair_attempt_rate": 0.0,
+      "start_mode": "perturbed_tree",
+      "total": 1,
+      "training_mode": "perturbed_true_tree_training",
+      "unsupported_rate": 0.0,
+      "verifier_pass_rate": 1.0
+    },
+    {
+      "depth": "2",
+      "operator_family": "raw_eml",
+      "operator_schedule": "fixed",
+      "refit_accept_rate": 0.0,
+      "repair_attempt_rate": 0.0,
+      "start_mode": "warm_start",
+      "total": 3,
+      "training_mode": "compiler_warm_start_training",
+      "unsupported_rate": 0.0,
+      "verifier_pass_rate": 1.0
+    }
+  ],
+  "schema": "eml.operator_family_locks.v1"
+}

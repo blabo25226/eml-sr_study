@@ -1,0 +1,25 @@
+{
+  "audit_status": "passed",
+  "claim_audit": "artifacts/paper/v1.11/v1.12-supplement/claim-audit.json",
+  "claim_boundary": "v1.12 supplement source-locks paper additions without changing v1.11 claim denominators",
+  "draft_dir": "artifacts/paper/v1.11/draft",
+  "generated_at": "2026-04-19T18:04:25.282003+00:00",
+  "output_dir": "artifacts/paper/v1.11/v1.12-supplement",
+  "outputs": {
+    "claim_audit_json": "artifacts/paper/v1.11/v1.12-supplement/claim-audit.json",
+    "claim_audit_md": "artifacts/paper/v1.11/v1.12-supplement/claim-audit.md",
+    "manifest_json": "artifacts/paper/v1.11/v1.12-supplement/manifest.json",
+    "output_dir": "artifacts/paper/v1.11/v1.12-supplement",
+    "reproduction_md": "artifacts/paper/v1.11/v1.12-supplement/reproduction.md",
+    "source_locks_json": "artifacts/paper/v1.11/v1.12-supplement/source-locks.json"
+  },
+  "parent_package": "artifacts/paper/v1.11",
+  "refresh_dir": "artifacts/campaigns/v1.12-evidence-refresh",
+  "reproduction": {
+    "commands_markdown": "artifacts/paper/v1.11/v1.12-supplement/reproduction.md",
+    "supplement_command": "PYTHONPATH=src python -m eml_symbolic_regression.cli paper-supplement --output-dir artifacts/paper/v1.11/v1.12-supplement --overwrite"
+  },
+  "schema": "eml.v112_supplement.v1",
+  "source_lock_count": 62,
+  "source_locks": "artifacts/paper/v1.11/v1.12-supplement/source-locks.json"
+}

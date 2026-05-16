@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+<style>
+  .title { font: 700 24px sans-serif; fill: #1d252c; }
+  .subtitle { font: 400 14px sans-serif; fill: #4b5563; }
+  .axis { stroke: #28343d; stroke-width: 1.3; }
+  .grid { stroke: #d7dde3; stroke-width: 1; }
+  .tick { font: 12px sans-serif; fill: #51606d; }
+  .label { font: 12px sans-serif; fill: #1d252c; }
+  .value { font: 700 11px sans-serif; fill: #1d252c; }
+</style>
+<text x="86" y="38" class="title">Training Loss Before and After Snap</text>
+<text x="86" y="60" class="subtitle">-log10(loss), higher is lower loss</text>
+<line x1="86" y1="390" x2="924" y2="390" class="axis" />
+<line x1="86" y1="76" x2="86" y2="390" class="axis" />
+<line x1="81" y1="390.00" x2="924" y2="390.00" class="grid" />
+<text x="74" y="394.00" class="tick" text-anchor="end">0</text>
+<line x1="81" y1="311.50" x2="924" y2="311.50" class="grid" />
+<text x="74" y="315.50" class="tick" text-anchor="end">4</text>
+<line x1="81" y1="233.00" x2="924" y2="233.00" class="grid" />
+<text x="74" y="237.00" class="tick" text-anchor="end">8</text>
+<line x1="81" y1="154.50" x2="924" y2="154.50" class="grid" />
+<text x="74" y="158.50" class="tick" text-anchor="end">12</text>
+<line x1="81" y1="76.00" x2="924" y2="76.00" class="grid" />
+<text x="74" y="80.00" class="tick" text-anchor="end">16</text>
+<rect x="88.38" y="76.00" width="12.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="94.38" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="94.38" y="412" class="label" text-anchor="end" transform="rotate(-35 94.38 412)">exp s0 best</text>
+<rect x="105.14" y="76.00" width="12.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="111.14" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="111.14" y="412" class="label" text-anchor="end" transform="rotate(-35 111.14 412)">exp s0 snap</text>
+<rect x="121.90" y="76.00" width="12.00" height="314.00" fill="#4f8a3a" rx="3" />
+<text x="127.90" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="127.90" y="412" class="label" text-anchor="end" transform="rotate(-35 127.90 412)">exp s1 best</text>
+<rect x="138.66" y="76.00" width="12.00" height="314.00" fill="#7a5195" rx="3" />
+<text x="144.66" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="144.66" y="412" class="label" text-anchor="end" transform="rotate(-35 144.66 412)">exp s1 snap</text>
+<rect x="155.42" y="76.00" width="12.00" height="314.00" fill="#a5673f" rx="3" />
+<text x="161.42" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="161.42" y="412" class="label" text-anchor="end" transform="rotate(-35 161.42 412)">exp s2 best</text>
+<rect x="172.18" y="76.00" width="12.00" height="314.00" fill="#1f8a70" rx="3" />
+<text x="178.18" y="68.00" class="value" text-anchor="middle">0.0e+00</text>
+<text x="178.18" y="412" class="label" text-anchor="end" transform="rotate(-35 178.18 412)">exp s2 snap</text>
+<rect x="188.94" y="76.00" width="12.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="194.94" y="68.00" class="value" text-anchor="middle">1.6e-32</text>
+<text x="194.94" y="412" class="label" text-anchor="end" transform="rotate(-35 194.94 412)">log s0 best</text>
+<rect x="205.70" y="76.00" width="12.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="211.70" y="68.00" class="value" text-anchor="middle">1.6e-32</text>
+<text x="211.70" y="412" class="label" text-anchor="end" transform="rotate(-35 211.70 412)">log s0 snap</text>
+<rect x="222.46" y="76.00" width="12.00" height="314.00" fill="#4f8a3a" rx="3" />
+<text x="228.46" y="68.00" class="value" text-anchor="middle">1.1e-32</text>
+<text x="228.46" y="412" class="label" text-anchor="end" transform="rotate(-35 228.46 412)">log s1 best</text>
+<rect x="239.22" y="76.00" width="12.00" height="314.00" fill="#7a5195" rx="3" />
+<text x="245.22" y="68.00" class="value" text-anchor="middle">1.1e-32</text>
+<text x="245.22" y="412" class="label" text-anchor="end" transform="rotate(-35 245.22 412)">log s1 snap</text>
+<rect x="255.98" y="76.00" width="12.00" height="314.00" fill="#a5673f" rx="3" />
+<text x="261.98" y="68.00" class="value" text-anchor="middle">9.9e-33</text>
+<text x="261.98" y="412" class="label" text-anchor="end" transform="rotate(-35 261.98 412)">log s2 best</text>
+<rect x="272.74" y="76.00" width="12.00" height="314.00" fill="#1f8a70" rx="3" />
+<text x="278.74" y="68.00" class="value" text-anchor="middle">9.9e-33</text>
+<text x="278.74" y="412" class="label" text-anchor="end" transform="rotate(-35 278.74 412)">log s2 snap</text>
+<rect x="289.50" y="390.00" width="12.00" height="0.00" fill="#2f6f8f" rx="3" />
+<text x="295.50" y="382.00" class="value" text-anchor="middle">3.6e+00</text>
+<text x="295.50" y="412" class="label" text-anchor="end" transform="rotate(-35 295.50 412)">radioactive_decay s0 best</text>
+<rect x="306.26" y="390.00" width="12.00" height="0.00" fill="#d1495b" rx="3" />
+<text x="312.26" y="382.00" class="value" text-anchor="middle">3.6e+00</text>
+<text x="312.26" y="412" class="label" text-anchor="end" transform="rotate(-35 312.26 412)">radioactive_decay s0 snap</text>
+<rect x="323.02" y="390.00" width="12.00" height="0.00" fill="#4f8a3a" rx="3" />
+<text x="329.02" y="382.00" class="value" text-anchor="middle">3.0e+00</text>
+<text x="329.02" y="412" class="label" text-anchor="end" transform="rotate(-35 329.02 412)">radioactive_decay s1 best</text>
+<rect x="339.78" y="390.00" width="12.00" height="0.00" fill="#7a5195" rx="3" />
+<text x="345.78" y="382.00" class="value" text-anchor="middle">3.0e+00</text>
+<text x="345.78" y="412" class="label" text-anchor="end" transform="rotate(-35 345.78 412)">radioactive_decay s1 snap</text>
+<rect x="356.54" y="390.00" width="12.00" height="0.00" fill="#a5673f" rx="3" />
+<text x="362.54" y="382.00" class="value" text-anchor="middle">3.3e+00</text>
+<text x="362.54" y="412" class="label" text-anchor="end" transform="rotate(-35 362.54 412)">radioactive_decay s2 best</text>
+<rect x="373.30" y="390.00" width="12.00" height="0.00" fill="#1f8a70" rx="3" />
+<text x="379.30" y="382.00" class="value" text-anchor="middle">3.3e+00</text>
+<text x="379.30" y="412" class="label" text-anchor="end" transform="rotate(-35 379.30 412)">radioactive_decay s2 snap</text>
+<rect x="390.06" y="76.00" width="12.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="396.06" y="68.00" class="value" text-anchor="middle">3.7e-33</text>
+<text x="396.06" y="412" class="label" text-anchor="end" transform="rotate(-35 396.06 412)">beer_lambert s0 best</text>
+<rect x="406.82" y="76.00" width="12.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="412.82" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="412.82" y="412" class="label" text-anchor="end" transform="rotate(-35 412.82 412)">beer_lambert s0 snap</text>
+<rect x="423.58" y="76.00" width="12.00" height="314.00" fill="#4f8a3a" rx="3" />
+<text x="429.58" y="68.00" class="value" text-anchor="middle">3.7e-33</text>
+<text x="429.58" y="412" class="label" text-anchor="end" transform="rotate(-35 429.58 412)">beer_lambert s0 best</text>
+<rect x="440.34" y="76.00" width="12.00" height="314.00" fill="#7a5195" rx="3" />
+<text x="446.34" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="446.34" y="412" class="label" text-anchor="end" transform="rotate(-35 446.34 412)">beer_lambert s0 snap</text>
+<rect x="457.10" y="76.00" width="12.00" height="314.00" fill="#a5673f" rx="3" />
+<text x="463.10" y="68.00" class="value" text-anchor="middle">3.7e-33</text>
+<text x="463.10" y="412" class="label" text-anchor="end" transform="rotate(-35 463.10 412)">beer_lambert s0 best</text>
+<rect x="473.86" y="76.00" width="12.00" height="314.00" fill="#1f8a70" rx="3" />
+<text x="479.86" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="479.86" y="412" class="label" text-anchor="end" transform="rotate(-35 479.86 412)">beer_lambert s0 snap</text>
+<rect x="490.62" y="76.00" width="12.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="496.62" y="68.00" class="value" text-anchor="middle">3.7e-33</text>
+<text x="496.62" y="412" class="label" text-anchor="end" transform="rotate(-35 496.62 412)">beer_lambert s0 best</text>
+<rect x="507.38" y="76.00" width="12.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="513.38" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="513.38" y="412" class="label" text-anchor="end" transform="rotate(-35 513.38 412)">beer_lambert s0 snap</text>
+<rect x="524.14" y="390.00" width="12.00" height="0.00" fill="#4f8a3a" rx="3" />
+<text x="530.14" y="382.00" class="value" text-anchor="middle">6.9e+00</text>
+<text x="530.14" y="412" class="label" text-anchor="end" transform="rotate(-35 530.14 412)">beer_lambert s0 best</text>
+<rect x="540.90" y="390.00" width="12.00" height="0.00" fill="#7a5195" rx="3" />
+<text x="546.90" y="382.00" class="value" text-anchor="middle">7.2e+00</text>
+<text x="546.90" y="412" class="label" text-anchor="end" transform="rotate(-35 546.90 412)">beer_lambert s0 snap</text>
+<rect x="557.66" y="76.00" width="12.00" height="314.00" fill="#a5673f" rx="3" />
+<text x="563.66" y="68.00" class="value" text-anchor="middle">5.2e-33</text>
+<text x="563.66" y="412" class="label" text-anchor="end" transform="rotate(-35 563.66 412)">beer_lambert s1 best</text>
+<rect x="574.42" y="76.00" width="12.00" height="314.00" fill="#1f8a70" rx="3" />
+<text x="580.42" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="580.42" y="412" class="label" text-anchor="end" transform="rotate(-35 580.42 412)">beer_lambert s1 snap</text>
+<rect x="591.18" y="76.00" width="12.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="597.18" y="68.00" class="value" text-anchor="middle">5.2e-33</text>
+<text x="597.18" y="412" class="label" text-anchor="end" transform="rotate(-35 597.18 412)">beer_lambert s1 best</text>
+<rect x="607.94" y="76.00" width="12.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="613.94" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="613.94" y="412" class="label" text-anchor="end" transform="rotate(-35 613.94 412)">beer_lambert s1 snap</text>
+<rect x="624.70" y="76.00" width="12.00" height="314.00" fill="#4f8a3a" rx="3" />
+<text x="630.70" y="68.00" class="value" text-anchor="middle">5.2e-33</text>
+<text x="630.70" y="412" class="label" text-anchor="end" transform="rotate(-35 630.70 412)">beer_lambert s1 best</text>
+<rect x="641.46" y="76.00" width="12.00" height="314.00" fill="#7a5195" rx="3" />
+<text x="647.46" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="647.46" y="412" class="label" text-anchor="end" transform="rotate(-35 647.46 412)">beer_lambert s1 snap</text>
+<rect x="658.22" y="376.90" width="12.00" height="13.10" fill="#a5673f" rx="3" />
+<text x="664.22" y="368.90" class="value" text-anchor="middle">2.2e-01</text>
+<text x="664.22" y="412" class="label" text-anchor="end" transform="rotate(-35 664.22 412)">beer_lambert s1 best</text>
+<rect x="674.98" y="377.07" width="12.00" height="12.93" fill="#1f8a70" rx="3" />
+<text x="680.98" y="369.07" class="value" text-anchor="middle">2.2e-01</text>
+<text x="680.98" y="412" class="label" text-anchor="end" transform="rotate(-35 680.98 412)">beer_lambert s1 snap</text>
+<rect x="691.74" y="377.07" width="12.00" height="12.93" fill="#2f6f8f" rx="3" />
+<text x="697.74" y="369.07" class="value" text-anchor="middle">2.2e-01</text>
+<text x="697.74" y="412" class="label" text-anchor="end" transform="rotate(-35 697.74 412)">beer_lambert s1 best</text>
+<rect x="708.50" y="377.07" width="12.00" height="12.93" fill="#d1495b" rx="3" />
+<text x="714.50" y="369.07" class="value" text-anchor="middle">2.2e-01</text>
+<text x="714.50" y="412" class="label" text-anchor="end" transform="rotate(-35 714.50 412)">beer_lambert s1 snap</text>
+<rect x="725.26" y="76.00" width="12.00" height="314.00" fill="#4f8a3a" rx="3" />
+<text x="731.26" y="68.00" class="value" text-anchor="middle">3.6e-33</text>
+<text x="731.26" y="412" class="label" text-anchor="end" transform="rotate(-35 731.26 412)">beer_lambert s2 best</text>
+<rect x="742.02" y="76.00" width="12.00" height="314.00" fill="#7a5195" rx="3" />
+<text x="748.02" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="748.02" y="412" class="label" text-anchor="end" transform="rotate(-35 748.02 412)">beer_lambert s2 snap</text>
+<rect x="758.78" y="76.00" width="12.00" height="314.00" fill="#a5673f" rx="3" />
+<text x="764.78" y="68.00" class="value" text-anchor="middle">3.6e-33</text>
+<text x="764.78" y="412" class="label" text-anchor="end" transform="rotate(-35 764.78 412)">beer_lambert s2 best</text>
+<rect x="775.54" y="76.00" width="12.00" height="314.00" fill="#1f8a70" rx="3" />
+<text x="781.54" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="781.54" y="412" class="label" text-anchor="end" transform="rotate(-35 781.54 412)">beer_lambert s2 snap</text>
+<rect x="792.30" y="76.00" width="12.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="798.30" y="68.00" class="value" text-anchor="middle">3.6e-33</text>
+<text x="798.30" y="412" class="label" text-anchor="end" transform="rotate(-35 798.30 412)">beer_lambert s2 best</text>
+<rect x="809.06" y="76.00" width="12.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="815.06" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="815.06" y="412" class="label" text-anchor="end" transform="rotate(-35 815.06 412)">beer_lambert s2 snap</text>
+<rect x="825.82" y="76.00" width="12.00" height="314.00" fill="#4f8a3a" rx="3" />
+<text x="831.82" y="68.00" class="value" text-anchor="middle">1.2e-27</text>
+<text x="831.82" y="412" class="label" text-anchor="end" transform="rotate(-35 831.82 412)">beer_lambert s2 best</text>
+<rect x="842.58" y="76.00" width="12.00" height="314.00" fill="#7a5195" rx="3" />
+<text x="848.58" y="68.00" class="value" text-anchor="middle">4.5e-32</text>
+<text x="848.58" y="412" class="label" text-anchor="end" transform="rotate(-35 848.58 412)">beer_lambert s2 snap</text>
+<rect x="859.34" y="381.61" width="12.00" height="8.39" fill="#a5673f" rx="3" />
+<text x="865.34" y="373.61" class="value" text-anchor="middle">3.7e-01</text>
+<text x="865.34" y="412" class="label" text-anchor="end" transform="rotate(-35 865.34 412)">beer_lambert s2 best</text>
+<rect x="876.10" y="367.90" width="12.00" height="22.10" fill="#1f8a70" rx="3" />
+<text x="882.10" y="359.90" class="value" text-anchor="middle">7.5e-02</text>
+<text x="882.10" y="412" class="label" text-anchor="end" transform="rotate(-35 882.10 412)">beer_lambert s2 snap</text>
+<rect x="892.86" y="76.00" width="12.00" height="314.00" fill="#2f6f8f" rx="3" />
+<text x="898.86" y="68.00" class="value" text-anchor="middle">1.2e-30</text>
+<text x="898.86" y="412" class="label" text-anchor="end" transform="rotate(-35 898.86 412)">shockley s0 best</text>
+<rect x="909.62" y="76.00" width="12.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="915.62" y="68.00" class="value" text-anchor="middle">1.2e-30</text>
+<text x="915.62" y="412" class="label" text-anchor="end" transform="rotate(-35 915.62 412)">shockley s0 snap</text>
+</svg>

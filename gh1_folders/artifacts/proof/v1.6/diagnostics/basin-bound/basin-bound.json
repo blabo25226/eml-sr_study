@@ -1,0 +1,190 @@
+{
+  "bounded_noise_values": [
+    5.0
+  ],
+  "claim_recommendation": "probe_supports_35",
+  "declared_bound_noise_max": 5.0,
+  "declared_noise_grid": [
+    5.0,
+    15.0,
+    35.0
+  ],
+  "expected_seed_noise_rows": [
+    {
+      "case_id": "basin-beer-lambert-bound",
+      "formula": "beer_lambert",
+      "perturbation_noise": 5.0,
+      "row_source": "bounded",
+      "seed": 0,
+      "suite_id": "proof-perturbed-basin"
+    },
+    {
+      "case_id": "basin-beer-lambert-bound",
+      "formula": "beer_lambert",
+      "perturbation_noise": 5.0,
+      "row_source": "bounded",
+      "seed": 1,
+      "suite_id": "proof-perturbed-basin"
+    },
+    {
+      "case_id": "basin-beer-lambert-bound-probes",
+      "formula": "beer_lambert",
+      "perturbation_noise": 15.0,
+      "row_source": "probe",
+      "seed": 0,
+      "suite_id": "proof-perturbed-basin-beer-probes"
+    },
+    {
+      "case_id": "basin-beer-lambert-bound-probes",
+      "formula": "beer_lambert",
+      "perturbation_noise": 15.0,
+      "row_source": "probe",
+      "seed": 1,
+      "suite_id": "proof-perturbed-basin-beer-probes"
+    },
+    {
+      "case_id": "basin-beer-lambert-bound-probes",
+      "formula": "beer_lambert",
+      "perturbation_noise": 35.0,
+      "row_source": "probe",
+      "seed": 0,
+      "suite_id": "proof-perturbed-basin-beer-probes"
+    },
+    {
+      "case_id": "basin-beer-lambert-bound-probes",
+      "formula": "beer_lambert",
+      "perturbation_noise": 35.0,
+      "row_source": "probe",
+      "seed": 1,
+      "suite_id": "proof-perturbed-basin-beer-probes"
+    }
+  ],
+  "formula": "beer_lambert",
+  "incomplete_noise_values": [],
+  "invalid_artifact_noise_values": [],
+  "missing_seed_noise_rows": [],
+  "probe_noise_values": [
+    15.0,
+    35.0
+  ],
+  "raw_supported_noise_max": 5.0,
+  "repaired_supported_noise_max": 35.0,
+  "rows": [
+    {
+      "artifact_path": "artifacts/proof/v1.6/campaigns/proof-basin/runs/proof-perturbed-basin/proof-perturbed-basin-basin-beer-lambert-bound-0a5e00e13e43.json",
+      "artifact_sha256": "89ae7fe16125ec1b4cfe343c3ecc4a85c654e7bad17718f37da23fabcd4aca06",
+      "case_id": "basin-beer-lambert-bound",
+      "changed_slot_count": 0,
+      "claim_status": "recovered",
+      "evidence_class": "perturbed_true_tree_recovered",
+      "perturbation_noise": 5.0,
+      "raw_status": "recovered",
+      "reason": "verified",
+      "repair_accepted_move_count": 0,
+      "repair_status": "not_attempted",
+      "return_kind": "same_ast_return",
+      "row_source": "bounded",
+      "run_id": "proof-perturbed-basin-basin-beer-lambert-bound-0a5e00e13e43",
+      "seed": 0,
+      "status": "recovered",
+      "suite_id": "proof-perturbed-basin"
+    },
+    {
+      "artifact_path": "artifacts/proof/v1.6/campaigns/proof-basin/runs/proof-perturbed-basin/proof-perturbed-basin-basin-beer-lambert-bound-627e93d6dc9d.json",
+      "artifact_sha256": "1ab5d47fa1ff329b5555024cd18242e9e334123f33cd47ce17e5c70aac0f13c8",
+      "case_id": "basin-beer-lambert-bound",
+      "changed_slot_count": 0,
+      "claim_status": "recovered",
+      "evidence_class": "perturbed_true_tree_recovered",
+      "perturbation_noise": 5.0,
+      "raw_status": "recovered",
+      "reason": "verified",
+      "repair_accepted_move_count": 0,
+      "repair_status": "not_attempted",
+      "return_kind": "same_ast_return",
+      "row_source": "bounded",
+      "run_id": "proof-perturbed-basin-basin-beer-lambert-bound-627e93d6dc9d",
+      "seed": 1,
+      "status": "recovered",
+      "suite_id": "proof-perturbed-basin"
+    },
+    {
+      "artifact_path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/runs/proof-perturbed-basin-beer-probes/proof-perturbed-basin-beer-probes-basin-beer-lambert-bound-probes-2d877a2bc9fc.json",
+      "artifact_sha256": "5715c3a585fd2d522fb46229b5599500402398b40ff270753b6cf063def5cfe5",
+      "case_id": "basin-beer-lambert-bound-probes",
+      "changed_slot_count": 0,
+      "claim_status": "recovered",
+      "evidence_class": "perturbed_true_tree_recovered",
+      "perturbation_noise": 15.0,
+      "raw_status": "recovered",
+      "reason": "verified",
+      "repair_accepted_move_count": 0,
+      "repair_status": "not_attempted",
+      "return_kind": "same_ast_return",
+      "row_source": "probe",
+      "run_id": "proof-perturbed-basin-beer-probes-basin-beer-lambert-bound-probes-2d877a2bc9fc",
+      "seed": 0,
+      "status": "recovered",
+      "suite_id": "proof-perturbed-basin-beer-probes"
+    },
+    {
+      "artifact_path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/runs/proof-perturbed-basin-beer-probes/proof-perturbed-basin-beer-probes-basin-beer-lambert-bound-probes-752352286603.json",
+      "artifact_sha256": "f50016d2197849e409fd8801201c0e3f6f2d0284b9793f0dc1423640b2e90276",
+      "case_id": "basin-beer-lambert-bound-probes",
+      "changed_slot_count": 1,
+      "claim_status": "recovered",
+      "evidence_class": "repaired_candidate",
+      "perturbation_noise": 15.0,
+      "raw_status": "snapped_but_failed",
+      "reason": "train_failed",
+      "repair_accepted_move_count": 1,
+      "repair_status": "repaired",
+      "return_kind": "snapped_but_failed",
+      "row_source": "probe",
+      "run_id": "proof-perturbed-basin-beer-probes-basin-beer-lambert-bound-probes-752352286603",
+      "seed": 1,
+      "status": "repaired_candidate",
+      "suite_id": "proof-perturbed-basin-beer-probes"
+    },
+    {
+      "artifact_path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/runs/proof-perturbed-basin-beer-probes/proof-perturbed-basin-beer-probes-basin-beer-lambert-bound-probes-e17e44438210.json",
+      "artifact_sha256": "5088a033b7b9900e64f147e80defa76295e44f5b993fdec1eb6f1fd1e063fbb5",
+      "case_id": "basin-beer-lambert-bound-probes",
+      "changed_slot_count": 5,
+      "claim_status": "recovered",
+      "evidence_class": "repaired_candidate",
+      "perturbation_noise": 35.0,
+      "raw_status": "snapped_but_failed",
+      "reason": "train_failed",
+      "repair_accepted_move_count": 6,
+      "repair_status": "repaired",
+      "return_kind": "snapped_but_failed",
+      "row_source": "probe",
+      "run_id": "proof-perturbed-basin-beer-probes-basin-beer-lambert-bound-probes-e17e44438210",
+      "seed": 0,
+      "status": "repaired_candidate",
+      "suite_id": "proof-perturbed-basin-beer-probes"
+    },
+    {
+      "artifact_path": "artifacts/proof/v1.6/campaigns/proof-basin-probes/runs/proof-perturbed-basin-beer-probes/proof-perturbed-basin-beer-probes-basin-beer-lambert-bound-probes-99306eda3f85.json",
+      "artifact_sha256": "52261c08df1a03fc89fc0624a967df3adc6f7fc1fcbd5dc118cda6109470a90e",
+      "case_id": "basin-beer-lambert-bound-probes",
+      "changed_slot_count": 3,
+      "claim_status": "recovered",
+      "evidence_class": "repaired_candidate",
+      "perturbation_noise": 35.0,
+      "raw_status": "snapped_but_failed",
+      "reason": "train_failed",
+      "repair_accepted_move_count": 1,
+      "repair_status": "repaired",
+      "return_kind": "snapped_but_failed",
+      "row_source": "probe",
+      "run_id": "proof-perturbed-basin-beer-probes-basin-beer-lambert-bound-probes-99306eda3f85",
+      "seed": 1,
+      "status": "repaired_candidate",
+      "suite_id": "proof-perturbed-basin-beer-probes"
+    }
+  ],
+  "schema": "eml.perturbed_basin_bound_report.v1",
+  "unsupported_noise_values": []
+}

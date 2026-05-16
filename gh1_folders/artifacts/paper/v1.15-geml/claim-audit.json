@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "description": "Claim boundary does not assert global raw/i*pi superiority.",
+      "id": "blocks_global_superiority_language",
+      "status": "passed"
+    },
+    {
+      "description": "Claim boundary does not assert broad blind-recovery capability.",
+      "id": "blocks_broad_blind_recovery_language",
+      "status": "passed"
+    },
+    {
+      "description": "Claim boundary does not assert full universality for i*pi EML.",
+      "id": "blocks_full_universality_language",
+      "status": "passed"
+    },
+    {
+      "description": "Claim boundary is tied to the declared matched protocol.",
+      "id": "matched_protocol_referenced",
+      "status": "passed"
+    },
+    {
+      "description": "Claim boundary is tied to the restricted i*pi theory artifact.",
+      "id": "restricted_theory_referenced",
+      "status": "passed"
+    },
+    {
+      "description": "Claim boundary states a bounded decision.",
+      "id": "decision_is_bounded",
+      "status": "passed"
+    },
+    {
+      "description": "Claim audit has paired summary counts, even when no campaign rows were found.",
+      "id": "paired_summary_available",
+      "status": "passed"
+    }
+  ],
+  "schema": "eml.v115_geml_claim_audit.v1",
+  "status": "passed"
+}

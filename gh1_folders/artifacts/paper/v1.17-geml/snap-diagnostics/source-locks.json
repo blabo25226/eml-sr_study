@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-04-22T12:43:34.010175+00:00",
+  "inputs": [
+    {
+      "bytes": 38933,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/campaign-manifest.json",
+      "role": "input",
+      "sha256": "906c79f2c746ada11e2fe7c2f7b60014a82d03963319669364a567a56e28fe31",
+      "source_id": "campaign_manifest",
+      "status": "locked"
+    },
+    {
+      "bytes": 659,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/tables/geml-paired-summary.json",
+      "role": "input",
+      "sha256": "839ed70847f762f56cc08109dfe0038f7a5931c8aac4b628ab860721df8d29dc",
+      "source_id": "geml_paired_summary",
+      "status": "locked"
+    },
+    {
+      "bytes": 12167,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/tables/geml-paired-comparison.csv",
+      "role": "input",
+      "sha256": "03bec84f189e60c557073b0613395f1c7ed055f6088e7a69a70c6e702a6d245b",
+      "source_id": "geml_paired_comparison",
+      "status": "locked"
+    },
+    {
+      "bytes": 19683,
+      "path": "artifacts/campaigns/v1.16-geml-pilot/tables/runs.csv",
+      "role": "input",
+      "sha256": "41d1cdb89b591293ab288270abe88f6bbdcb7c5d2b8d6cc5c386bdad4eddc4d7",
+      "source_id": "runs_table",
+      "status": "locked"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 30124,
+      "path": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-diagnostics.json",
+      "role": "output",
+      "sha256": "be7730fb0476cf076641e2dbbe6c375596254bfe6b432c1d98a411602eb6c8ee",
+      "source_id": "snap_diagnostics_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 9952,
+      "path": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-diagnostics.csv",
+      "role": "output",
+      "sha256": "048f3907e002de7beeac85bec3fcc28192a0d1e6e59a97368dca9c45f1fbe53a",
+      "source_id": "snap_diagnostics_csv",
+      "status": "locked"
+    },
+    {
+      "bytes": 2869,
+      "path": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-diagnostics.md",
+      "role": "output",
+      "sha256": "6159a3c80af6382394226969c686981c90806ac09cabb2cd9691f5a60a3ce68b",
+      "source_id": "snap_diagnostics_md",
+      "status": "locked"
+    },
+    {
+      "bytes": 18046,
+      "path": "artifacts/paper/v1.17-geml/snap-diagnostics/snap-neighborhood-seeds.json",
+      "role": "output",
+      "sha256": "d6380e7d10dc15f82b06e2e1e89c191ba4c3c0523fa3d341c264bec246ba862f",
+      "source_id": "snap_neighborhood_seeds",
+      "status": "locked"
+    }
+  ],
+  "schema": "eml.v117_source_locks.v1"
+}

@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-04-22T12:43:42.600839+00:00",
+  "inputs": [
+    {
+      "bytes": 17217,
+      "path": "artifacts/paper/v1.17-geml/neighborhoods/neighborhood-candidates.json",
+      "role": "input",
+      "sha256": "7c2c8ea678976aaef5b2fdcf78b7ac30566d8931b91d6c0e83b5bd34485fbd9f",
+      "source_id": "neighborhood_candidates",
+      "status": "locked"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 21634,
+      "path": "artifacts/paper/v1.17-geml/ranking/ranked-candidates.json",
+      "role": "output",
+      "sha256": "a31a2e8de864a22e5b3b111e0f02daf59a5ed99288305579c5f125a435af01e7",
+      "source_id": "ranked_candidates_json",
+      "status": "locked"
+    },
+    {
+      "bytes": 7517,
+      "path": "artifacts/paper/v1.17-geml/ranking/ranked-candidates.csv",
+      "role": "output",
+      "sha256": "30fc845381eb5c0d22c2fe2ca3955ce4686ffaea5965f83d774c9bde04283199",
+      "source_id": "ranked_candidates_csv",
+      "status": "locked"
+    },
+    {
+      "bytes": 3071,
+      "path": "artifacts/paper/v1.17-geml/ranking/ranked-candidates.md",
+      "role": "output",
+      "sha256": "63a7da996c1c9be0cddf7801e5adbf10cd50fa46bd10772c992010ca4d57890d",
+      "source_id": "ranked_candidates_md",
+      "status": "locked"
+    }
+  ],
+  "schema": "eml.v117_source_locks.v1"
+}

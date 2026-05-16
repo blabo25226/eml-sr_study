@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+<style>
+  .title { font: 700 24px sans-serif; fill: #1d252c; }
+  .subtitle { font: 400 14px sans-serif; fill: #4b5563; }
+  .axis { stroke: #28343d; stroke-width: 1.3; }
+  .axis-label { font: 700 13px sans-serif; fill: #1d252c; }
+  .grid { stroke: #d7dde3; stroke-width: 1; }
+  .tick { font: 12px sans-serif; fill: #51606d; }
+  .label { font: 12px sans-serif; fill: #1d252c; }
+  .value { font: 700 11px sans-serif; fill: #1d252c; }
+  .cell { font: 700 11px sans-serif; fill: #ffffff; }
+</style>
+<text x="92" y="42" class="title">Best Prediction-Only Baseline Extrapolation Error</text>
+<text x="92" y="65" class="subtitle">-log10(extrapolation MSE), higher is lower error</text>
+<line x1="92" y1="380" x2="926" y2="380" class="axis" />
+<line x1="92" y1="84" x2="92" y2="380" class="axis" />
+<line x1="87" y1="380.00" x2="926" y2="380.00" class="grid" />
+<text x="80" y="384.00" class="tick" text-anchor="end">0</text>
+<line x1="87" y1="306.00" x2="926" y2="306.00" class="grid" />
+<text x="80" y="310.00" class="tick" text-anchor="end">4</text>
+<line x1="87" y1="232.00" x2="926" y2="232.00" class="grid" />
+<text x="80" y="236.00" class="tick" text-anchor="end">8</text>
+<line x1="87" y1="158.00" x2="926" y2="158.00" class="grid" />
+<text x="80" y="162.00" class="tick" text-anchor="end">12</text>
+<line x1="87" y1="84.00" x2="926" y2="84.00" class="grid" />
+<text x="80" y="88.00" class="tick" text-anchor="end">16</text>
+<rect x="149.40" y="345.48" width="52.00" height="34.52" fill="#146c94" rx="3" />
+<text x="175.40" y="337.48" class="value" text-anchor="middle">cubic 1.4e-02</text>
+<text x="175.40" y="402" class="label" text-anchor="end" transform="rotate(-36 175.40 402)">arrhenius</text>
+<rect x="316.20" y="84.00" width="52.00" height="296.00" fill="#d1495b" rx="3" />
+<text x="342.20" y="76.00" class="value" text-anchor="middle">log_linear_positive 4.7e-30</text>
+<text x="342.20" y="402" class="label" text-anchor="end" transform="rotate(-36 342.20 402)">exp</text>
+<rect x="483.00" y="311.30" width="52.00" height="68.70" fill="#2a9d8f" rx="3" />
+<text x="509.00" y="303.30" class="value" text-anchor="middle">cubic 1.9e-04</text>
+<text x="509.00" y="402" class="label" text-anchor="end" transform="rotate(-36 509.00 402)">logistic</text>
+<rect x="649.80" y="361.98" width="52.00" height="18.02" fill="#e9c46a" rx="3" />
+<text x="675.80" y="353.98" class="value" text-anchor="middle">mean 1.1e-01</text>
+<text x="675.80" y="402" class="label" text-anchor="end" transform="rotate(-36 675.80 402)">michaelis_menten</text>
+<rect x="816.60" y="362.25" width="52.00" height="17.75" fill="#4d908e" rx="3" />
+<text x="842.60" y="354.25" class="value" text-anchor="middle">log_linear_positive 1.1e-01</text>
+<text x="842.60" y="402" class="label" text-anchor="end" transform="rotate(-36 842.60 402)">planck</text>
+</svg>

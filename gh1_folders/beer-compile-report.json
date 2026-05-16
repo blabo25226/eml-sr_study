@@ -1,0 +1,410 @@
+{
+  "candidate": {
+    "sympy": "exp(-0.8*x)"
+  },
+  "candidate_kind": "catalog_sympy",
+  "claim_status": "verified_showcase",
+  "cleanup": {
+    "cleaned": "exp(-0.8*x)",
+    "original": "exp(-0.8*x)",
+    "original_tree_size": null,
+    "verification": {
+      "adversarial_max_error": 0.0,
+      "adversarial_status": "passed",
+      "branch_diagnostics": {
+        "branch_convention": "principal_complex_log_cut_negative_real_axis",
+        "branch_safety_guard": {
+          "available": true,
+          "config_fields": [
+            "log_safety_weight",
+            "log_safety_margin",
+            "log_safety_imag_tolerance"
+          ],
+          "faithful_verification_unchanged": true,
+          "training_only": true
+        },
+        "candidate_failure_class": "not_failed",
+        "schema": "eml.branch_diagnostics.v1",
+        "status": "unsupported_candidate_no_torch_eval"
+      },
+      "candidate_kind": "catalog_sympy",
+      "certificate_status": "unsupported_interval_certificate",
+      "dense_random_max_error": 0.0,
+      "dense_random_status": "passed",
+      "evidence_level": "dense_adversarial_numeric",
+      "high_precision_max_error": 0.0,
+      "high_precision_status": "performed",
+      "metric_roles": {
+        "diagnostic": 2,
+        "final_confirmation": 0,
+        "selection": 0,
+        "training": 1,
+        "verifier": 0
+      },
+      "reason": "verified_non_eml_candidate",
+      "split_results": [
+        {
+          "max_abs_error": 0.0,
+          "max_imag_residue": 0.0,
+          "mse": 0.0,
+          "name": "train",
+          "passed": true,
+          "role": "training"
+        },
+        {
+          "max_abs_error": 0.0,
+          "max_imag_residue": 0.0,
+          "mse": 0.0,
+          "name": "heldout",
+          "passed": true,
+          "role": "diagnostic"
+        },
+        {
+          "max_abs_error": 0.0,
+          "max_imag_residue": 0.0,
+          "mse": 0.0,
+          "name": "extrapolation",
+          "passed": true,
+          "role": "diagnostic"
+        }
+      ],
+      "status": "verified_showcase",
+      "symbolic_status": "unsupported_no_target",
+      "tolerance": 1e-08
+    }
+  },
+  "compiled_eml": {
+    "ast": {
+      "metadata": {
+        "constant_policy": "literal_constants",
+        "depth": 9,
+        "node_count": 19,
+        "source": "compiled_sympy"
+      },
+      "root": {
+        "kind": "eml",
+        "left": {
+          "kind": "eml",
+          "left": {
+            "kind": "eml",
+            "left": {
+              "kind": "const",
+              "value": "1"
+            },
+            "right": {
+              "kind": "eml",
+              "left": {
+                "kind": "eml",
+                "left": {
+                  "kind": "eml",
+                  "left": {
+                    "kind": "const",
+                    "value": "1"
+                  },
+                  "right": {
+                    "kind": "eml",
+                    "left": {
+                      "kind": "eml",
+                      "left": {
+                        "kind": "const",
+                        "value": "1"
+                      },
+                      "right": {
+                        "kind": "eml",
+                        "left": {
+                          "kind": "const",
+                          "value": "1"
+                        },
+                        "right": {
+                          "kind": "const",
+                          "value": "-0.8"
+                        }
+                      }
+                    },
+                    "right": {
+                      "kind": "const",
+                      "value": "1"
+                    }
+                  }
+                },
+                "right": {
+                  "kind": "var",
+                  "name": "x"
+                }
+              },
+              "right": {
+                "kind": "const",
+                "value": "1"
+              }
+            }
+          },
+          "right": {
+            "kind": "const",
+            "value": "1"
+          }
+        },
+        "right": {
+          "kind": "const",
+          "value": "1"
+        }
+      },
+      "schema": "eml.ast.v1",
+      "semantics": {
+        "constant_basis": [
+          "-0.8",
+          "1"
+        ],
+        "geml_parameter": "1",
+        "log_branch": "principal",
+        "named_specialization": "eml",
+        "operator": "exp(x)-log(y)",
+        "operator_family": {
+          "family": "raw_eml",
+          "label": "raw_eml",
+          "s": 1.0,
+          "t": 1.0,
+          "terminal": "one"
+        },
+        "verification_mode": "canonical"
+      },
+      "variables": [
+        "x"
+      ]
+    },
+    "metadata": {
+      "assumptions": [
+        "exp uses canonical complex exponential",
+        "multiplication uses verified EML arithmetic identity"
+      ],
+      "constant_policy": "literal_constants",
+      "constants": [
+        "-0.8",
+        "1"
+      ],
+      "depth": 9,
+      "macro_diagnostics": {
+        "baseline_depth": null,
+        "baseline_node_count": null,
+        "depth_delta": 0,
+        "hits": [],
+        "misses": [
+          "reciprocal_shift_template",
+          "saturation_ratio_template",
+          "exponential_saturation_template",
+          "low_degree_power_template",
+          "direct_division_template",
+          "scaled_exp_minus_one_template"
+        ],
+        "node_delta": 0,
+        "validation_passed": true,
+        "validation_status": "validated"
+      },
+      "node_count": 19,
+      "normalized_expression": "exp(-0.8*x)",
+      "source_expression": "exp(-0.8*x)",
+      "trace": [
+        {
+          "assumptions": [
+            "exp uses canonical complex exponential"
+          ],
+          "output_depth": 0,
+          "output_nodes": 1,
+          "rule": "constant",
+          "source": "-0.800000000000000"
+        },
+        {
+          "assumptions": [
+            "exp uses canonical complex exponential"
+          ],
+          "output_depth": 0,
+          "output_nodes": 1,
+          "rule": "variable",
+          "source": "x"
+        },
+        {
+          "assumptions": [
+            "exp uses canonical complex exponential",
+            "multiplication uses verified EML arithmetic identity"
+          ],
+          "output_depth": 8,
+          "output_nodes": 17,
+          "rule": "multiplication",
+          "source": "-0.8*x"
+        },
+        {
+          "assumptions": [
+            "exp uses canonical complex exponential",
+            "multiplication uses verified EML arithmetic identity"
+          ],
+          "output_depth": 9,
+          "output_nodes": 19,
+          "rule": "exp",
+          "source": "exp(-0.8*x)"
+        }
+      ],
+      "unsupported_reason": null,
+      "variables": [
+        "x"
+      ]
+    },
+    "schema": "eml.compiler_result.v1",
+    "validation": {
+      "max_abs_error": 3.4709586682080803e-16,
+      "mse": 3.9694633981158316e-32,
+      "passed": true,
+      "reason": "validated",
+      "tolerance": 1e-08
+    }
+  },
+  "compiled_eml_verification": {
+    "adversarial_max_error": 4.7612147624099185e-81,
+    "adversarial_status": "passed",
+    "branch_diagnostics": {
+      "branch_convention": "principal_complex_log_cut_negative_real_axis",
+      "branch_cut_crossing_count": 0,
+      "branch_cut_hit_count": 320,
+      "branch_cut_proximity_count": 320,
+      "branch_related": true,
+      "branch_safety_guard": {
+        "available": true,
+        "config_fields": [
+          "log_safety_weight",
+          "log_safety_margin",
+          "log_safety_imag_tolerance"
+        ],
+        "faithful_verification_unchanged": true,
+        "training_only": true
+      },
+      "candidate_failure_class": "not_failed",
+      "input_count": 1440,
+      "invalid_domain_skip_count": 0,
+      "log_branch_cut_count": 320,
+      "log_branch_cut_crossing_count": 0,
+      "log_branch_cut_min_distance": 0.0,
+      "log_branch_cut_proximity_count": 320,
+      "log_non_finite_input_count": 0,
+      "log_non_positive_real_count": 320,
+      "log_small_magnitude_count": 0,
+      "min_branch_cut_distance": 0.0,
+      "near_zero_count": 0,
+      "non_finite_count": 0,
+      "schema": "eml.branch_diagnostics.v1",
+      "status": "performed"
+    },
+    "candidate_kind": "exact_eml",
+    "certificate_status": "unsupported_interval_certificate",
+    "dense_random_max_error": 5.324421904866807e-81,
+    "dense_random_status": "passed",
+    "evidence_level": "dense_adversarial_numeric",
+    "high_precision_max_error": 5.047579387622015e-81,
+    "high_precision_status": "performed",
+    "metric_roles": {
+      "diagnostic": 2,
+      "final_confirmation": 0,
+      "selection": 0,
+      "training": 1,
+      "verifier": 0
+    },
+    "reason": "verified",
+    "split_results": [
+      {
+        "max_abs_error": 3.0398939823700045e-16,
+        "max_imag_residue": 2.0842079763244678e-16,
+        "mse": 4.5849925650839764e-32,
+        "name": "train",
+        "passed": true,
+        "role": "training"
+      },
+      {
+        "max_abs_error": 3.4709586682080803e-16,
+        "max_imag_residue": 2.0841867236070445e-16,
+        "mse": 5.486163854641919e-32,
+        "name": "heldout",
+        "passed": true,
+        "role": "diagnostic"
+      },
+      {
+        "max_abs_error": 1.6168356476480984e-16,
+        "max_imag_residue": 1.1753988034270813e-16,
+        "mse": 1.2217046076534547e-32,
+        "name": "extrapolation",
+        "passed": true,
+        "role": "diagnostic"
+      }
+    ],
+    "status": "recovered",
+    "symbolic_status": "unsupported_no_target",
+    "tolerance": 1e-08
+  },
+  "demo": "beer_lambert",
+  "description": "High-probability exponential-decay showcase.",
+  "schema": "eml.demo_report.v1",
+  "stage_statuses": {
+    "catalog_showcase": "verified_showcase",
+    "compiled_seed": "recovered"
+  },
+  "verification": {
+    "adversarial_max_error": 0.0,
+    "adversarial_status": "passed",
+    "branch_diagnostics": {
+      "branch_convention": "principal_complex_log_cut_negative_real_axis",
+      "branch_safety_guard": {
+        "available": true,
+        "config_fields": [
+          "log_safety_weight",
+          "log_safety_margin",
+          "log_safety_imag_tolerance"
+        ],
+        "faithful_verification_unchanged": true,
+        "training_only": true
+      },
+      "candidate_failure_class": "not_failed",
+      "schema": "eml.branch_diagnostics.v1",
+      "status": "unsupported_candidate_no_torch_eval"
+    },
+    "candidate_kind": "catalog_sympy",
+    "certificate_status": "unsupported_interval_certificate",
+    "dense_random_max_error": 0.0,
+    "dense_random_status": "passed",
+    "evidence_level": "dense_adversarial_numeric",
+    "high_precision_max_error": 0.0,
+    "high_precision_status": "performed",
+    "metric_roles": {
+      "diagnostic": 2,
+      "final_confirmation": 0,
+      "selection": 0,
+      "training": 1,
+      "verifier": 0
+    },
+    "reason": "verified_non_eml_candidate",
+    "split_results": [
+      {
+        "max_abs_error": 0.0,
+        "max_imag_residue": 0.0,
+        "mse": 0.0,
+        "name": "train",
+        "passed": true,
+        "role": "training"
+      },
+      {
+        "max_abs_error": 0.0,
+        "max_imag_residue": 0.0,
+        "mse": 0.0,
+        "name": "heldout",
+        "passed": true,
+        "role": "diagnostic"
+      },
+      {
+        "max_abs_error": 0.0,
+        "max_imag_residue": 0.0,
+        "mse": 0.0,
+        "name": "extrapolation",
+        "passed": true,
+        "role": "diagnostic"
+      }
+    ],
+    "status": "verified_showcase",
+    "symbolic_status": "unsupported_no_target",
+    "tolerance": 1e-08
+  }
+}

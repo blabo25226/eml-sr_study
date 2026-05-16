@@ -1,0 +1,68 @@
+{
+  "columns": [
+    "law",
+    "formula_id",
+    "compile_support",
+    "strict_gate",
+    "baseline_depth",
+    "relaxed_motif_depth",
+    "relaxed_depth_improved",
+    "macro_hits",
+    "compile_probe_status",
+    "blind_probe_status",
+    "blind_probe_verifier_status",
+    "promotion",
+    "promotion_reason",
+    "evidence_regime",
+    "scientific_artifact_path",
+    "blind_probe_artifact_path",
+    "claim_boundary"
+  ],
+  "rows": [
+    {
+      "baseline_depth": 27,
+      "blind_probe_artifact_path": "artifacts/campaigns/v1.11-logistic-planck-probes/runs/v1.11-logistic-planck-probes/v1-11-logistic-planck-probes-logistic-blind-probe-b35045193c4c.json",
+      "blind_probe_status": "snapped_but_failed",
+      "blind_probe_verifier_status": "failed",
+      "claim_boundary": "negative result remains visible; relaxed depth improvement is not recovery",
+      "compile_probe_status": "unsupported",
+      "compile_support": "unsupported",
+      "evidence_regime": "compile_only",
+      "formula_id": "logistic",
+      "law": "Logistic diagnostic",
+      "macro_hits": [
+        "exponential_saturation_template"
+      ],
+      "promotion": "no",
+      "promotion_reason": "strict support and verifier recovery did not both pass",
+      "relaxed_depth_improved": true,
+      "relaxed_motif_depth": 15,
+      "scientific_artifact_path": "artifacts/campaigns/v1.10-logistic-evidence/v1-10-logistic-evidence-logistic-compile-c2af27a35e81.json",
+      "strict_gate": 13
+    },
+    {
+      "baseline_depth": 24,
+      "blind_probe_artifact_path": "artifacts/campaigns/v1.11-logistic-planck-probes/runs/v1.11-logistic-planck-probes/v1-11-logistic-planck-probes-planck-blind-probe-be823c997bf6.json",
+      "blind_probe_status": "failed",
+      "blind_probe_verifier_status": "failed",
+      "claim_boundary": "negative result remains visible; relaxed depth improvement is not recovery",
+      "compile_probe_status": "unsupported",
+      "compile_support": "unsupported",
+      "evidence_regime": "compile_only",
+      "formula_id": "planck",
+      "law": "Planck diagnostic",
+      "macro_hits": [
+        "low_degree_power_template",
+        "scaled_exp_minus_one_template",
+        "direct_division_template"
+      ],
+      "promotion": "no",
+      "promotion_reason": "strict support and verifier recovery did not both pass",
+      "relaxed_depth_improved": true,
+      "relaxed_motif_depth": 14,
+      "scientific_artifact_path": "artifacts/campaigns/v1.10-planck-diagnostics/v1-10-planck-diagnostics-planck-compile-795067919a97.json",
+      "strict_gate": 13
+    }
+  ],
+  "schema": "eml.v112_source_table.v1"
+}

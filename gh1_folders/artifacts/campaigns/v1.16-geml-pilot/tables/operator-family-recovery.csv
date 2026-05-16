@@ -1,0 +1,13 @@
+operator_family,operator_schedule,formula,start_mode,training_mode,depth,total,verifier_recovered,same_ast_return,verified_equivalent_ast,unsupported,failed,execution_error,verifier_recovery_rate,unsupported_rate,failure_rate,post_snap_verifier_pass_rate,median_best_loss,median_post_snap_loss,median_runtime_seconds,median_active_node_count,median_candidate_complexity
+ipi_eml,fixed,cos_pi,blind,blind_training,3,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,1.044125654104056,1.8018169646719948,2.2182241664850153,4.0,
+ipi_eml,fixed,exp,blind,blind_training,2,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,1.2751198220471318,3.239281918015092,1.2462972914217971,3.0,
+ipi_eml,fixed,harmonic_sum,blind,blind_training,3,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,2.017372547965214,2.7289714030444605,2.1417937914957292,3.0,
+ipi_eml,fixed,log,blind,blind_training,2,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,1.620155486722493,1.620155486722711,1.3048586040385999,3.0,
+ipi_eml,fixed,log_periodic_oscillation,blind,blind_training,3,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,0.8518122735530891,1.4433509621070586,2.714498416520655,4.0,
+ipi_eml,fixed,sin_pi,blind,blind_training,3,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,1.906601065327422,2.5351613718137274,1.7395229170215316,3.0,
+raw_eml,fixed,cos_pi,blind,blind_training,3,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,0.7392068953537891,0.6666177739774976,2.511738416098524,5.0,
+raw_eml,fixed,exp,blind,blind_training,2,2,0,0,0,0,0,0,0.0,0.0,0.0,0.0,0.08646351416625178,0.563863630710743,1.1248636250384152,5.0,
+raw_eml,fixed,harmonic_sum,blind,blind_training,3,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,0.3660331237213719,0.8426964985554428,2.6760212290100753,3.0,
+raw_eml,fixed,log,blind,blind_training,2,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,2.499425246920481,2.5554525456965385,1.1504848749609664,5.0,
+raw_eml,fixed,log_periodic_oscillation,blind,blind_training,3,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,0.15603292453146642,0.9664464006138427,3.031762000056915,5.0,
+raw_eml,fixed,sin_pi,blind,blind_training,3,2,0,0,0,0,2,0,0.0,0.0,1.0,0.0,0.5209980049068539,0.6551638912675877,2.63522427045973,5.0,

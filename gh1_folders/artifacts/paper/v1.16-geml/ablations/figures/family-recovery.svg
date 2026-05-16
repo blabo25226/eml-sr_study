@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+<style>.title{font:700 22px Arial,sans-serif;fill:#17202a}.note{font:12px Arial,sans-serif;fill:#34495e}.label{font:11px Arial,sans-serif;fill:#34495e}.grid{stroke:#edf2f4;stroke-width:1}.bar{opacity:.92}</style>
+<text x="34" y="36" class="title">Family Recovery Outcomes</text>
+<text x="34" y="58" class="note">Exact recovery is verifier-gated. Loss-only bars are diagnostic and cannot support recovery claims.</text>
+<line x1="220.0" y1="74" x2="220.0" y2="486" class="grid"/>
+<line x1="385.0" y1="74" x2="385.0" y2="486" class="grid"/>
+<line x1="550.0" y1="74" x2="550.0" y2="486" class="grid"/>
+<line x1="715.0" y1="74" x2="715.0" y2="486" class="grid"/>
+<line x1="880.0" y1="74" x2="880.0" y2="486" class="grid"/>
+<text x="34" y="101" class="label">damped_oscillation exact</text>
+<rect x="220" y="86" width="0.0" height="24" class="bar" fill="#1b998b"/>
+<text x="228.0" y="101" class="label">0</text>
+<text x="34" y="133" class="label">damped_oscillation loss-only</text>
+<rect x="220" y="118" width="0.0" height="24" class="bar" fill="#e9c46a"/>
+<text x="228.0" y="133" class="label">0</text>
+<text x="34" y="165" class="label">harmonic exact</text>
+<rect x="220" y="150" width="0.0" height="24" class="bar" fill="#1b998b"/>
+<text x="228.0" y="165" class="label">0</text>
+<text x="34" y="197" class="label">harmonic loss-only</text>
+<rect x="220" y="182" width="330.0" height="24" class="bar" fill="#e9c46a"/>
+<text x="558.0" y="197" class="label">2</text>
+<text x="34" y="229" class="label">log_periodic exact</text>
+<rect x="220" y="214" width="0.0" height="24" class="bar" fill="#1b998b"/>
+<text x="228.0" y="229" class="label">0</text>
+<text x="34" y="261" class="label">log_periodic loss-only</text>
+<rect x="220" y="246" width="330.0" height="24" class="bar" fill="#e9c46a"/>
+<text x="558.0" y="261" class="label">2</text>
+<text x="34" y="293" class="label">negative_control exact</text>
+<rect x="220" y="278" width="0.0" height="24" class="bar" fill="#1b998b"/>
+<text x="228.0" y="293" class="label">0</text>
+<text x="34" y="325" class="label">negative_control loss-only</text>
+<rect x="220" y="310" width="660.0" height="24" class="bar" fill="#e9c46a"/>
+<text x="888.0" y="325" class="label">4</text>
+<text x="34" y="357" class="label">periodic exact</text>
+<rect x="220" y="342" width="0.0" height="24" class="bar" fill="#1b998b"/>
+<text x="228.0" y="357" class="label">0</text>
+<text x="34" y="389" class="label">periodic loss-only</text>
+<rect x="220" y="374" width="660.0" height="24" class="bar" fill="#e9c46a"/>
+<text x="888.0" y="389" class="label">4</text>
+<text x="34" y="421" class="label">standing_wave exact</text>
+<rect x="220" y="406" width="0.0" height="24" class="bar" fill="#1b998b"/>
+<text x="228.0" y="421" class="label">0</text>
+<text x="34" y="453" class="label">standing_wave loss-only</text>
+<rect x="220" y="438" width="0.0" height="24" class="bar" fill="#e9c46a"/>
+<text x="228.0" y="453" class="label">0</text>
+</svg>

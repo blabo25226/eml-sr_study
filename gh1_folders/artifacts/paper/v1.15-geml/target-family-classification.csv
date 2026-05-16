@@ -1,0 +1,7 @@
+target_family,declared_targets,paired_rows,ipi_recovery_wins,raw_recovery_wins,both_recovered,neither_recovered,loss_only_outcomes,ipi_lower_post_snap_mse,raw_lower_post_snap_mse,decision_class
+damped_oscillation,1,0,0,0,0,0,0,0,0,not_run
+harmonic,1,0,0,0,0,0,0,0,0,not_run
+log_periodic,1,0,0,0,0,0,0,0,0,not_run
+negative_control,4,1,0,0,0,1,1,0,1,raw_loss_only_signal
+periodic,2,1,0,0,0,1,1,1,0,ipi_loss_only_signal
+standing_wave,1,0,0,0,0,0,0,0,0,not_run

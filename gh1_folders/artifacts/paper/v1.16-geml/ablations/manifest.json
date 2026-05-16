@@ -1,0 +1,21 @@
+{
+  "ablation_table": "artifacts/paper/v1.16-geml/ablations/ablation-table.json",
+  "budget_ladder_dir": "artifacts/campaigns/v1.16-geml-budget-ladder",
+  "campaign_dir": "artifacts/campaigns/v1.16-geml-pilot",
+  "claim_boundary": "Phase 92 assets explain an inconclusive/negative result unless the Phase 88 gate is paper_positive.",
+  "decision": "inconclusive",
+  "failure_examples": "artifacts/paper/v1.16-geml/ablations/failure-examples.json",
+  "figure_metadata": "artifacts/paper/v1.16-geml/ablations/figure-metadata.json",
+  "generated_at": "2026-04-22T11:28:18.279074+00:00",
+  "package_dir": "artifacts/paper/v1.16-geml",
+  "paper_claim_allowed": false,
+  "row_counts": {
+    "ablation_rows": 12,
+    "failure_example_rows": 7,
+    "paired_rows": 12,
+    "run_rows": 24
+  },
+  "schema": "eml.v116_ablation_assets_manifest.v1",
+  "source_locks": "artifacts/paper/v1.16-geml/ablations/source-locks.json",
+  "source_locks_ok": true
+}

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img">
+<style>
+  .title { font: 700 24px sans-serif; fill: #1d252c; }
+  .subtitle { font: 400 14px sans-serif; fill: #4b5563; }
+  .axis { stroke: #28343d; stroke-width: 1.3; }
+  .grid { stroke: #d7dde3; stroke-width: 1; }
+  .tick { font: 12px sans-serif; fill: #51606d; }
+  .label { font: 12px sans-serif; fill: #1d252c; }
+  .value { font: 700 11px sans-serif; fill: #1d252c; }
+</style>
+<text x="86" y="38" class="title">Unsupported and Failure Taxonomy</text>
+<text x="86" y="60" class="subtitle">run count</text>
+<line x1="86" y1="390" x2="924" y2="390" class="axis" />
+<line x1="86" y1="76" x2="86" y2="390" class="axis" />
+<line x1="81" y1="390.00" x2="924" y2="390.00" class="grid" />
+<text x="74" y="394.00" class="tick" text-anchor="end">0</text>
+<line x1="81" y1="311.50" x2="924" y2="311.50" class="grid" />
+<text x="74" y="315.50" class="tick" text-anchor="end">1.2</text>
+<line x1="81" y1="233.00" x2="924" y2="233.00" class="grid" />
+<text x="74" y="237.00" class="tick" text-anchor="end">2.5</text>
+<line x1="81" y1="154.50" x2="924" y2="154.50" class="grid" />
+<text x="74" y="158.50" class="tick" text-anchor="end">3.8</text>
+<line x1="81" y1="76.00" x2="924" y2="76.00" class="grid" />
+<text x="74" y="80.00" class="tick" text-anchor="end">5</text>
+<rect x="193.67" y="264.40" width="64.00" height="125.60" fill="#2f6f8f" rx="3" />
+<text x="225.67" y="256.40" class="value" text-anchor="middle">2</text>
+<text x="225.67" y="412" class="label" text-anchor="end" transform="rotate(-35 225.67 412)">failed</text>
+<rect x="473.00" y="76.00" width="64.00" height="314.00" fill="#d1495b" rx="3" />
+<text x="505.00" y="68.00" class="value" text-anchor="middle">5</text>
+<text x="505.00" y="412" class="label" text-anchor="end" transform="rotate(-35 505.00 412)">snapped_but_failed</text>
+<rect x="752.33" y="138.80" width="64.00" height="251.20" fill="#4f8a3a" rx="3" />
+<text x="784.33" y="130.80" class="value" text-anchor="middle">4</text>
+<text x="784.33" y="412" class="label" text-anchor="end" transform="rotate(-35 784.33 412)">unsupported</text>
+</svg>

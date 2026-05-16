@@ -1,0 +1,152 @@
+{
+  "category": "noisy_synthetic_sweep",
+  "classification": "synthetic",
+  "compatible_contracts": [
+    "verifier",
+    "benchmark_track",
+    "baseline_harness"
+  ],
+  "data_path": null,
+  "dataset_id": "noisy_beer_lambert_sweep",
+  "description": "Synthetic Beer-Lambert sweep with controlled relative Gaussian observation noise.",
+  "domain_constraints": {
+    "x": {
+      "closed": true,
+      "max": 4.5,
+      "min": 0.0
+    }
+  },
+  "formula_id": "beer_lambert",
+  "generator": "linspace_with_seeded_jitter_plus_relative_gaussian_noise",
+  "manifest_sha256": "22191e4f90bbf66f2824b268b4fd63affb72fcc9d728f016410266738d03c860",
+  "noise_policy": {
+    "applies_to": [
+      "train",
+      "selection",
+      "heldout"
+    ],
+    "relative_sigma": 0.01,
+    "type": "gaussian_relative"
+  },
+  "points": 32,
+  "schema": "eml.expanded_dataset_manifest.v1",
+  "seed": 0,
+  "source": "generated_from_clean_beer_lambert_formula",
+  "source_url": null,
+  "split_policy": {
+    "roles": {
+      "extrapolation": "diagnostic",
+      "final_confirmation": "final_confirmation",
+      "heldout": "diagnostic",
+      "selection": "selection",
+      "train": "training"
+    },
+    "type": "independent_domains"
+  },
+  "splits": [
+    {
+      "count": 32,
+      "domain": {
+        "x": [
+          0.0,
+          3.0
+        ]
+      },
+      "input_sha256": {
+        "x": "03a51bf9c8fa757af422dc77a1f2fb82b5cfccc51efaa500e6ce3a0a639cc681"
+      },
+      "name": "train",
+      "role": "training",
+      "target_sha256": "4563b9bfb10a76362194e229585235f7ad80db21de4eadf06a8a99df328f80a1",
+      "target_unit": "relative_intensity",
+      "units": {
+        "x": "dimensionless_absorbance_path"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "x": [
+          0.1,
+          2.8
+        ]
+      },
+      "input_sha256": {
+        "x": "76d678a91e2fb371fdc63e1c85bc8cb60cb2de7c6935b171cde785df3088150b"
+      },
+      "name": "selection",
+      "role": "selection",
+      "target_sha256": "a704baf0528186d59e93930a189a0347ede8389aa6f72344e6411bd323cd2d95",
+      "target_unit": "relative_intensity",
+      "units": {
+        "x": "dimensionless_absorbance_path"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "x": [
+          0.15,
+          2.7
+        ]
+      },
+      "input_sha256": {
+        "x": "49f8af47b4f515c2823b3cd15711e7c55ebede95fb1a7b253752a92fd5ebb965"
+      },
+      "name": "heldout",
+      "role": "diagnostic",
+      "target_sha256": "b3e089da44c1cc05ace614ca8b1dab37f89ee153e9973ea7d02728ba87459cfe",
+      "target_unit": "relative_intensity",
+      "units": {
+        "x": "dimensionless_absorbance_path"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "x": [
+          3.1,
+          4.5
+        ]
+      },
+      "input_sha256": {
+        "x": "1bf3bbad227555932be2291c82df328fe75a4dc7ef3e526ee89ebced501def2d"
+      },
+      "name": "extrapolation",
+      "role": "diagnostic",
+      "target_sha256": "5e701fefd58b9cfdf4f8aeb3f67db31ae64cba768cccc549fc860078150ac5db",
+      "target_unit": "relative_intensity",
+      "units": {
+        "x": "dimensionless_absorbance_path"
+      }
+    },
+    {
+      "count": 16,
+      "domain": {
+        "x": [
+          0.05,
+          4.25
+        ]
+      },
+      "input_sha256": {
+        "x": "03583fc6b1f6aa3245f6ccf21e2dba63c7eaaace5c7974c01b8b0b56ac87abd2"
+      },
+      "name": "final_confirmation",
+      "role": "final_confirmation",
+      "target_sha256": "875338d5b70036ab6a4c0be9178e6ef0c0d8adaeba22efb38f5f7a6dcb7486fc",
+      "target_unit": "relative_intensity",
+      "units": {
+        "x": "dimensionless_absorbance_path"
+      }
+    }
+  ],
+  "target_expression": "exp(-0.8*x)",
+  "tolerance": 1e-08,
+  "units": {
+    "target": "relative_intensity",
+    "x": "dimensionless_absorbance_path"
+  },
+  "variables": [
+    "x"
+  ]
+}

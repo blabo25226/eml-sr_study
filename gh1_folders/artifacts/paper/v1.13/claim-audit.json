@@ -1,0 +1,189 @@
+{
+  "checks": [
+    {
+      "details": {
+        "aggregate_json": "artifacts/campaigns/v1.13-paper-tracks-final/aggregate.json",
+        "run_count": 24
+      },
+      "id": "paper_track_aggregate_present",
+      "message": "Paper-track aggregate exists and contains run rows.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "counts": {
+          "evidence_classes": {
+            "compile_only_verified": 1,
+            "same_ast": 8,
+            "unsupported": 15
+          },
+          "execution_error": 0,
+          "failed": 0,
+          "repaired_candidate": 0,
+          "same_ast_return": 8,
+          "total": 24,
+          "unsupported": 15,
+          "verified_equivalent_ast": 0,
+          "verifier_recovered": 9,
+          "verifier_recovery_rate": 0.375
+        }
+      },
+      "id": "paper_track_rows_have_no_execution_failures",
+      "message": "No paper-track rows failed unexpectedly.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "tracks": [
+          "basis_only",
+          "literal_constants"
+        ]
+      },
+      "id": "track_denominators_present",
+      "message": "Basis-only and literal-constant denominators are present.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing": [],
+        "recovered_count": 9
+      },
+      "id": "recovered_rows_have_verifier_evidence",
+      "message": "Recovered rows have verifier evidence payloads.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing": []
+      },
+      "id": "recovered_rows_have_track_labels",
+      "message": "Recovered rows carry benchmark track and constants policy labels.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing": []
+      },
+      "id": "recovered_rows_have_source_artifacts",
+      "message": "Recovered rows link existing source artifacts.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "missing": []
+      },
+      "id": "recovered_rows_have_final_confirmation_or_substitute",
+      "message": "Recovered rows have final-confirmation status or stronger verifier-evidence substitute.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "baseline_manifest": "artifacts/baselines/v1.13/manifest.json",
+        "denominator_policy": "excluded_from_eml_recovery_denominators"
+      },
+      "id": "baseline_context_present",
+      "message": "Matched baseline context exists and is excluded from EML recovery denominators.",
+      "status": "passed"
+    }
+  ],
+  "counts": {
+    "paper_track_rows": 24,
+    "recovered_rows": 9,
+    "unsupported_rows": 15
+  },
+  "generated_at": "2026-04-20T14:12:08.639689+00:00",
+  "recovered_claims": [
+    {
+      "artifact_path": "artifacts/campaigns/v1.13-paper-tracks-final/runs/v1.13-paper-tracks/v1-13-paper-tracks-exp-basis-only-compile-3063b13aa4e5.json",
+      "artifact_sha256": "dcb4b270ad15b31c3846594d72331388b976bf8d8e15c691d425709868f02266",
+      "benchmark_track": "basis_only",
+      "constants_policy": "basis_only",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "exp",
+      "run_id": "v1-13-paper-tracks-exp-basis-only-compile-3063b13aa4e5",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.13-paper-tracks-final/runs/v1.13-paper-tracks/v1-13-paper-tracks-exp-literal-warm-9b23eed6fa6a.json",
+      "artifact_sha256": "4e128328902625d76d2cc8532032ce81ba81b2646522d68c0dc8d6a4267cc714",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "exp",
+      "run_id": "v1-13-paper-tracks-exp-literal-warm-9b23eed6fa6a",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.13-paper-tracks-final/runs/v1.13-paper-tracks/v1-13-paper-tracks-radioactive-decay-literal-warm-2c95fb8d28a3.json",
+      "artifact_sha256": "6e72e2199a66802140f5ff864d627bc5dde264c81c3060dba7dbd44081dbd2a3",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "radioactive_decay",
+      "run_id": "v1-13-paper-tracks-radioactive-decay-literal-warm-2c95fb8d28a3",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.13-paper-tracks-final/runs/v1.13-paper-tracks/v1-13-paper-tracks-beer-lambert-literal-warm-6bde0341b85f.json",
+      "artifact_sha256": "f812e9e8f9e56a590814de6681b2c027c5e2eb81318b3a89fafbbc68d2f6f7cb",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "beer_lambert",
+      "run_id": "v1-13-paper-tracks-beer-lambert-literal-warm-6bde0341b85f",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.13-paper-tracks-final/runs/v1.13-paper-tracks/v1-13-paper-tracks-scaled-exp-growth-literal-warm-de37e614d838.json",
+      "artifact_sha256": "38dad5d9725abf17dec925933633dc9217880ecb68adcc6dd513c4ccf0de4838",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "scaled_exp_growth",
+      "run_id": "v1-13-paper-tracks-scaled-exp-growth-literal-warm-de37e614d838",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.13-paper-tracks-final/runs/v1.13-paper-tracks/v1-13-paper-tracks-scaled-exp-fast-decay-literal-warm-2ec985eec55a.json",
+      "artifact_sha256": "63d78a8a850ea1b89f25f4d166bd5e032446faa25fce9292b5632e0c452185bb",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "scaled_exp_fast_decay",
+      "run_id": "v1-13-paper-tracks-scaled-exp-fast-decay-literal-warm-2ec985eec55a",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.13-paper-tracks-final/runs/v1.13-paper-tracks/v1-13-paper-tracks-arrhenius-literal-warm-b1aea4d7678e.json",
+      "artifact_sha256": "50dcbe23e5f3fb654d747b16873bcb6fcf15cc66636e996baf122886dd137270",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "arrhenius",
+      "run_id": "v1-13-paper-tracks-arrhenius-literal-warm-b1aea4d7678e",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.13-paper-tracks-final/runs/v1.13-paper-tracks/v1-13-paper-tracks-michaelis-menten-literal-warm-a45fcb5297df.json",
+      "artifact_sha256": "10af60a5d93b089463b109207bbc454c953fe5b7c62fd36ab2478fa661123fe7",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "michaelis_menten",
+      "run_id": "v1-13-paper-tracks-michaelis-menten-literal-warm-a45fcb5297df",
+      "verifier_status": "recovered"
+    },
+    {
+      "artifact_path": "artifacts/campaigns/v1.13-paper-tracks-final/runs/v1.13-paper-tracks/v1-13-paper-tracks-shockley-literal-warm-99701f065be5.json",
+      "artifact_sha256": "36d67a603e55edcd69ca1b492ec498661c8beae04df713b868b355d328398562",
+      "benchmark_track": "literal_constants",
+      "constants_policy": "literal_constants",
+      "final_confirmation_status": "dense_adversarial_verifier_substitute",
+      "formula": "shockley",
+      "run_id": "v1-13-paper-tracks-shockley-literal-warm-99701f065be5",
+      "verifier_status": "recovered"
+    }
+  ],
+  "schema": "eml.v113_claim_audit.v1",
+  "status": "passed"
+}

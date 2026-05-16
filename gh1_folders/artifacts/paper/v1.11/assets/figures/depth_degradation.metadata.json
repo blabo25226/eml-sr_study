@@ -1,0 +1,13 @@
+{
+  "claim_boundary": "depth-curve rows are historical boundary evidence, not v1.11 paper-training claims",
+  "denominator": "v1.6 proof-depth-curve rows grouped by depth and start mode",
+  "figure_id": "depth_degradation",
+  "included_statuses": [
+    "recovered",
+    "snapped_but_failed"
+  ],
+  "schema": "eml.paper_figure_metadata.v1",
+  "source_table_csv": "artifacts/paper/v1.11/assets/tables/depth_degradation.csv",
+  "source_table_json": "artifacts/paper/v1.11/assets/tables/depth_degradation.json",
+  "title": "Recovery Degradation with Depth"
+}

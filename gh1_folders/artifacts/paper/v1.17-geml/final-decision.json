@@ -1,0 +1,52 @@
+{
+  "broader_campaign_gate": "block_broader_campaigns",
+  "claim_boundary": "v1.17 is an additive snap-first analysis over the intact v1.16 package. Exact-signal claims require verifier-gated natural exact recovery, loss-only rows remain diagnostic, and the v1.16 failure taxonomy remains the context for non-recovery rows.",
+  "decision": "still_inconclusive",
+  "exact_signal_found": false,
+  "natural_exact_recovery_count": 0,
+  "negative_control_exact_recovery_count": 0,
+  "next_campaign_allowed": false,
+  "package_contents": {
+    "before_v116_package_manifest": "artifacts/paper/v1.16-geml/manifest.json",
+    "failure_taxonomy_reference": {
+      "path": "artifacts/paper/v1.16-geml/ablations/failure-examples.json",
+      "status": "locked"
+    },
+    "neighborhood_manifest": "artifacts/paper/v1.17-geml/neighborhoods/manifest.json",
+    "ranking_manifest": "artifacts/paper/v1.17-geml/ranking/manifest.json",
+    "sandbox_manifest": "artifacts/paper/v1.17-geml/sandbox/manifest.json",
+    "snap_diagnostics_manifest": "artifacts/paper/v1.17-geml/snap-diagnostics/manifest.json"
+  },
+  "rationale": "No clean verifier-gated natural exact signal was found; broader campaigns remain blocked.",
+  "reproduction_commands": [
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli geml-v117-snap-diagnostics --output-dir artifacts/paper/v1.17-geml/snap-diagnostics --campaign-dir artifacts/campaigns/v1.16-geml-pilot --overwrite",
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli geml-v117-neighborhoods --output-dir artifacts/paper/v1.17-geml/neighborhoods --snap-diagnostics-dir artifacts/paper/v1.17-geml/snap-diagnostics --overwrite",
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli geml-v117-rank-candidates --output-dir artifacts/paper/v1.17-geml/ranking --neighborhoods-dir artifacts/paper/v1.17-geml/neighborhoods --overwrite",
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli geml-v117-sandbox --output-dir artifacts/paper/v1.17-geml/sandbox --ranking-dir artifacts/paper/v1.17-geml/ranking --overwrite",
+    "PYTHONPATH=src python -m eml_symbolic_regression.cli geml-v117-package --output-dir artifacts/paper/v1.17-geml --snap-diagnostics-dir artifacts/paper/v1.17-geml/snap-diagnostics --neighborhoods-dir artifacts/paper/v1.17-geml/neighborhoods --ranking-dir artifacts/paper/v1.17-geml/ranking --sandbox-dir artifacts/paper/v1.17-geml/sandbox --v116-package-dir artifacts/paper/v1.16-geml --overwrite"
+  ],
+  "sandbox_broader_campaign_gate": "block_broader_campaigns",
+  "sandbox_decision": "no_exact_signal",
+  "schema": "eml.v117_final_decision.v1",
+  "selected_exact_candidates": [],
+  "source_locks_ok": true,
+  "v116_comparison_mode": "additive_reference_only",
+  "v116_package": {
+    "decision": "inconclusive",
+    "manifest": "artifacts/paper/v1.16-geml/manifest.json",
+    "schema": "eml.v116_paper_decision_package.v1",
+    "status": "locked"
+  },
+  "v117_counts": {
+    "neighborhood_candidate_rows": 24,
+    "ranking": {
+      "by_evidence_class": {
+        "original_snap": 24
+      },
+      "total": 24
+    },
+    "sandbox_summary_rows": 8,
+    "snap_diagnostic_rows": 24,
+    "snap_neighborhood_seed_rows": 24
+  }
+}

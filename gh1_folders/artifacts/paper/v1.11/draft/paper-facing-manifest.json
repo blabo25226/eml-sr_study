@@ -1,0 +1,51 @@
+{
+  "claim_boundary": "paper-facing assets preserve unsupported diagnostic rows and regime separation",
+  "counts": {
+    "caption_files": 2,
+    "figures": 1,
+    "motif_rows": 5,
+    "negative_result_rows": 2
+  },
+  "generated_at": "2026-04-19T18:04:21.036263+00:00",
+  "output_dir": "artifacts/paper/v1.11/draft",
+  "outputs": {
+    "figure_captions_md": "artifacts/paper/v1.11/draft/figure-captions.md",
+    "manifest_json": "artifacts/paper/v1.11/draft/paper-facing-manifest.json",
+    "motif_evolution_csv": "artifacts/paper/v1.11/draft/tables/motif-library-evolution.csv",
+    "motif_evolution_json": "artifacts/paper/v1.11/draft/tables/motif-library-evolution.json",
+    "motif_evolution_md": "artifacts/paper/v1.11/draft/tables/motif-library-evolution.md",
+    "negative_results_csv": "artifacts/paper/v1.11/draft/tables/logistic-planck-negative-results.csv",
+    "negative_results_json": "artifacts/paper/v1.11/draft/tables/logistic-planck-negative-results.json",
+    "negative_results_md": "artifacts/paper/v1.11/draft/tables/logistic-planck-negative-results.md",
+    "output_dir": "artifacts/paper/v1.11/draft",
+    "pipeline_metadata_json": "artifacts/paper/v1.11/draft/figures/pipeline.metadata.json",
+    "pipeline_svg": "artifacts/paper/v1.11/draft/figures/pipeline.svg",
+    "table_captions_md": "artifacts/paper/v1.11/draft/table-captions.md"
+  },
+  "reproduction": {
+    "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli paper-figures --output-dir artifacts/paper/v1.11/draft"
+  },
+  "schema": "eml.v112_paper_facing_assets.v1",
+  "sources": [
+    {
+      "path": "artifacts/diagnostics/v1.11-paper-ablations/motif-depth-deltas.json",
+      "sha256": "4f37daf3a0c2b44ff4ba17ab3faac4f70e3636e88ba32edbcc3bc832b77f9fa9",
+      "source_id": "motif_depth_deltas"
+    },
+    {
+      "path": "artifacts/paper/v1.11/raw-hybrid/scientific-law-table.json",
+      "sha256": "f0c7a9f05f246b01cbb616905b2ad1cc5ecebdf7681dce3418e5b555457cc10c",
+      "source_id": "scientific_law_table"
+    },
+    {
+      "path": "artifacts/campaigns/v1.11-logistic-planck-probes/aggregate.json",
+      "sha256": "3d01c2c3943f6c38f496a66d44988a55a3c34f807b22d80dcd9c5724c7e1b92a",
+      "source_id": "aggregate"
+    },
+    {
+      "path": "artifacts/campaigns/v1.12-evidence-refresh/manifest.json",
+      "sha256": "978c50285b73c235cd233c8d2f9b2c134f4a3e883ed5e8f850861fb4d89e9b7e",
+      "source_id": "manifest"
+    }
+  ]
+}

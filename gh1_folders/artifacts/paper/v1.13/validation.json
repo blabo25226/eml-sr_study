@@ -1,0 +1,51 @@
+{
+  "checks": [
+    {
+      "details": {
+        "missing": []
+      },
+      "id": "manifest_required_fields",
+      "message": "Manifest has required publication provenance fields.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "schema": "eml.v113_publication_rebuild.v1"
+      },
+      "id": "manifest_schema",
+      "message": "Manifest uses the v1.13 publication rebuild schema.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "mismatched": [],
+        "missing_file": [],
+        "missing_hash": []
+      },
+      "id": "input_hashes_valid",
+      "message": "input rows have existing files and valid SHA-256 hashes.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "mismatched": [],
+        "missing_file": [],
+        "missing_hash": []
+      },
+      "id": "output_hashes_valid",
+      "message": "output rows have existing files and valid SHA-256 hashes.",
+      "status": "passed"
+    },
+    {
+      "details": {
+        "violations": []
+      },
+      "id": "placeholder_metadata_rejected",
+      "message": "No forbidden placeholder metadata appears outside explicit deterministic fixtures.",
+      "status": "passed"
+    }
+  ],
+  "generated_at": "2026-04-20T14:12:08.730040+00:00",
+  "schema": "eml.v113_publication_validation.v1",
+  "status": "passed"
+}

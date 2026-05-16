@@ -1,0 +1,326 @@
+{
+  "claim_audit": {
+    "json": "artifacts/paper/v1.14/claim-audit.json",
+    "markdown": "artifacts/paper/v1.14/claim-audit.md",
+    "status": "passed"
+  },
+  "claim_boundary": "Full mode regenerates bounded v1.13 paper-track evidence, matched baseline context, expanded dataset manifests, claim audit, and local public-snapshot readiness. Direct remote main publication is delegated to the dev-only publish workflow.",
+  "command": "PYTHONPATH=src python -m eml_symbolic_regression.cli publication-rebuild --output-dir artifacts/paper/v1.14 --overwrite --allow-dirty",
+  "environment": {
+    "container": {
+      "path": "Dockerfile",
+      "present": true,
+      "sha256": "2b11304cd13e53d7ce1cd8913a48f359c447a39d21619f8115abe72ec6fa4208"
+    },
+    "executable": "/Users/artemlegotin/anaconda3/bin/python",
+    "lockfile": {
+      "path": "requirements-lock.txt",
+      "present": true,
+      "sha256": "38309ad75026d907098924c37905d5b3accb74f769bc8422ef8be6225315ada8"
+    },
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "python": "3.11.5"
+  },
+  "generated_at": "2026-04-21T08:52:52.723173+00:00",
+  "git": {
+    "branch": "dev",
+    "dirty": false,
+    "revision": "d2988def50795727706f381d662a14fc0106fe09",
+    "status_short": []
+  },
+  "inputs": [
+    {
+      "bytes": 682,
+      "path": "pyproject.toml",
+      "role": "source_input",
+      "sha256": "4dc58f90c4aa3535050eba5e7a7157003c7a99790b93e45a4aa7cecf254db7b7"
+    },
+    {
+      "bytes": 70,
+      "path": "requirements-lock.txt",
+      "role": "source_input",
+      "sha256": "38309ad75026d907098924c37905d5b3accb74f769bc8422ef8be6225315ada8"
+    },
+    {
+      "bytes": 429,
+      "path": "Dockerfile",
+      "role": "source_input",
+      "sha256": "2b11304cd13e53d7ce1cd8913a48f359c447a39d21619f8115abe72ec6fa4208"
+    },
+    {
+      "bytes": 46615,
+      "path": "src/eml_symbolic_regression/cli.py",
+      "role": "source_input",
+      "sha256": "57992cfa2d1e2e40f0c830defe1038846c52086d1e1ce5851389f8a8141321a2"
+    },
+    {
+      "bytes": 41989,
+      "path": "src/eml_symbolic_regression/publication.py",
+      "role": "source_input",
+      "sha256": "0162bb5fd800c873b24f1c93c2481dd88c66b19a17393921a784b063917d02b3"
+    },
+    {
+      "bytes": 178753,
+      "path": "src/eml_symbolic_regression/benchmark.py",
+      "role": "source_input",
+      "sha256": "3327ecfac4c86ff34399ea885f41de9e94f895fe53def75049e646ecc3f66a17"
+    },
+    {
+      "bytes": 73969,
+      "path": "src/eml_symbolic_regression/campaign.py",
+      "role": "source_input",
+      "sha256": "8c7fb370b8f80fc243244507f01fed2790247a54f49e8a33ae3bdeb32ce6b8e6"
+    },
+    {
+      "bytes": 31654,
+      "path": "src/eml_symbolic_regression/datasets.py",
+      "role": "source_input",
+      "sha256": "583899f751d3d24bb512885576f1569209fddf13a46521ad40800c9798cc73f0"
+    },
+    {
+      "bytes": 27996,
+      "path": "src/eml_symbolic_regression/baselines.py",
+      "role": "source_input",
+      "sha256": "ca4b7edd156c164b21b026bfab093dce525437e00d8f853c26e7399c8489a121"
+    },
+    {
+      "bytes": 13092,
+      "path": "src/eml_symbolic_regression/verify.py",
+      "role": "source_input",
+      "sha256": "9d153b93c75b366108e1a9e80ad34fd8ce764cc62ecc457a29dc64da9b103c94"
+    },
+    {
+      "bytes": 4595,
+      "path": "scripts/validate-ci-contract.py",
+      "role": "source_input",
+      "sha256": "4abec5e127422331a5780baaf330a41437ee9ded1a7140c7546cbeed39380436"
+    },
+    {
+      "bytes": 3782,
+      "path": ".github/workflows/ci.yml",
+      "role": "source_input",
+      "sha256": "177bd8c93673fa8bf2b65c13a005ba05fd86500e838aebeb5141374ac0c345b6"
+    },
+    {
+      "bytes": 2252,
+      "path": ".github/workflows/publish-main.yml",
+      "role": "source_input",
+      "sha256": "f5e60858d74c6b6781cbda8fb77c79663f4a56072aa2a5c5831a447ec416a3c9"
+    },
+    {
+      "bytes": 449,
+      "path": "data/real/hubble_1929_velocity_distance.csv",
+      "role": "source_input",
+      "sha256": "6a79d2e305499f2553b2a2a141e99a04ec5a1b0294304599175e515753d73138"
+    },
+    {
+      "bytes": 33297,
+      "path": "sources/NORTH_STAR.md",
+      "role": "source_input",
+      "sha256": "72e5214321f997a6e231db942be44cb2fb827c9d1b183d9d881651fca1810af0"
+    },
+    {
+      "bytes": 6410,
+      "path": "sources/FOR_DEMO.md",
+      "role": "source_input",
+      "sha256": "a68bac22e5799dcef132b11fd940f731cd920756e39d29b66dee6927d489b665"
+    }
+  ],
+  "linked_evidence": {
+    "baseline_harness": {
+      "dependency_locks_json": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/dependency-locks.json",
+      "manifest_json": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/manifest.json",
+      "output_dir": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14",
+      "report_md": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-report.md",
+      "rows_csv": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-runs.csv",
+      "rows_json": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-runs.json"
+    },
+    "expanded_datasets": {
+      "manifest_dir": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14",
+      "manifests": [
+        {
+          "dataset_id": "noisy_beer_lambert_sweep",
+          "manifest_sha256": "22191e4f90bbf66f2824b268b4fd63affb72fcc9d728f016410266738d03c860",
+          "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/noisy_beer_lambert_sweep-manifest.json"
+        },
+        {
+          "dataset_id": "michaelis_parameter_identifiability",
+          "manifest_sha256": "e5b08f7c5f84a9258d30d9d1fc3953362d3f7efc3c78606af9d08aebeca8918c",
+          "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/michaelis_parameter_identifiability-manifest.json"
+        },
+        {
+          "dataset_id": "multivariable_arrhenius_surface",
+          "manifest_sha256": "c460e508a1c3a91916ae5ac94f0ebbb23727a571ce82a019b6bbb7654ec2d069",
+          "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/multivariable_arrhenius_surface-manifest.json"
+        },
+        {
+          "dataset_id": "unit_aware_ohm_law",
+          "manifest_sha256": "f6f8925fdf78fbca95a38ad74891f44cc8c2f298805d5b600c9c214a8569c18d",
+          "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/unit_aware_ohm_law-manifest.json"
+        },
+        {
+          "dataset_id": "real_hubble_1929",
+          "manifest_sha256": "3baf9508c672e8378520f777c374c95b335101b5e40e271217af76312c21b3c8",
+          "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/real_hubble_1929-manifest.json"
+        }
+      ]
+    },
+    "generated": true,
+    "mode": "full",
+    "paper_tracks": {
+      "aggregate_json": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/aggregate.json",
+      "aggregate_markdown": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/aggregate.md",
+      "campaign_dir": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks",
+      "manifest_json": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/campaign-manifest.json",
+      "report_markdown": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/report.md",
+      "runs_csv": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/tables/runs.csv"
+    }
+  },
+  "mode": "full",
+  "output_dir": "artifacts/paper/v1.14",
+  "outputs": [
+    {
+      "bytes": 3280,
+      "path": "artifacts/paper/v1.14/source-locks.json",
+      "role": "generated_output",
+      "sha256": "a9a7fe55a75e8343a753003931cc4145b65cb71fd5c211f7655d5722514190d0"
+    },
+    {
+      "bytes": 380,
+      "path": "artifacts/paper/v1.14/reproduction.md",
+      "role": "generated_output",
+      "sha256": "8078c603ba9307f4bdaf0c8ec1675b5051945553f965fed006cb7d03cc27b7f5"
+    },
+    {
+      "bytes": 12721,
+      "path": "artifacts/paper/v1.14/claim-audit.json",
+      "role": "generated_output",
+      "sha256": "cf6c5746775698c3a273bac45fe958da91333c6b5626ff43017d1bcf7f29bcb8"
+    },
+    {
+      "bytes": 2514,
+      "path": "artifacts/paper/v1.14/claim-audit.md",
+      "role": "generated_output",
+      "sha256": "1d175d5bb83c61009510c7f809e3f91f87103712eeaa1567f70aa651c98d0ef8"
+    },
+    {
+      "bytes": 2504,
+      "path": "artifacts/paper/v1.14/release-gate.json",
+      "role": "generated_output",
+      "sha256": "42104918285c2c0febbea051e577d6e521181fcb0ff7a316ddc386bb0ef5ebfe"
+    },
+    {
+      "bytes": 294,
+      "path": "artifacts/paper/v1.14/release-gate.md",
+      "role": "generated_output",
+      "sha256": "b086b5b1a3c8818f29519c86e9c1e14b950e3d13aedeac23d8afaffc76aac46a"
+    },
+    {
+      "bytes": 1326,
+      "path": "artifacts/paper/v1.14/validation.json",
+      "role": "generated_output",
+      "sha256": "f55315f112cd5cc05a69c6d389586ec98ef00ee18f2fe4677071367a9bda3c3d"
+    },
+    {
+      "bytes": 257,
+      "path": "artifacts/paper/v1.14/validation.md",
+      "role": "generated_output",
+      "sha256": "7889e63036dea6e749333c6d7af286c01996fce23436d2365853da401c1e1589"
+    },
+    {
+      "bytes": 62470,
+      "path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/campaign-manifest.json",
+      "role": "generated_output",
+      "sha256": "88ba228bdc60fd2b3a268242a09e7b9c599dad63b123e6b6d4839be560e065cd"
+    },
+    {
+      "bytes": 287036,
+      "path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/aggregate.json",
+      "role": "generated_output",
+      "sha256": "d0609c9f6850df02e0ba8f78e59bf59dccd110fff6ebd1300b4c66f4c91d356d"
+    },
+    {
+      "bytes": 12767,
+      "path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/aggregate.md",
+      "role": "generated_output",
+      "sha256": "82a58dfb2da601e15007fb70868fb49911fea5689d718e827733d7edfd23444f"
+    },
+    {
+      "bytes": 9873,
+      "path": "artifacts/paper/v1.14/linked-artifacts/campaigns/v1.14-corrected-paper-tracks/report.md",
+      "role": "generated_output",
+      "sha256": "1fdb1413e1257072a3d9a9ef0b618904ee607c9c71c3842bdac20a7bc399f72b"
+    },
+    {
+      "bytes": 2382,
+      "path": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/manifest.json",
+      "role": "generated_output",
+      "sha256": "683a5a4af14f5af820574c49ac51214c14b0ace158b7b6701abac8f3b1e25751"
+    },
+    {
+      "bytes": 543754,
+      "path": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-runs.json",
+      "role": "generated_output",
+      "sha256": "ef37602883cd9530833f4635065fe989a044b5e3dcf85b5e9ed1c91f5b93e825"
+    },
+    {
+      "bytes": 33950,
+      "path": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-runs.csv",
+      "role": "generated_output",
+      "sha256": "fffdd390af10aa6f45c0e0469dde886f60e73ee3649819d951549bc3611834b2"
+    },
+    {
+      "bytes": 11919,
+      "path": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/baseline-report.md",
+      "role": "generated_output",
+      "sha256": "e82a61629f26ba2e45a241f26b3497789322ae7d64baadbd2484637b04bb4e23"
+    },
+    {
+      "bytes": 1462,
+      "path": "artifacts/paper/v1.14/linked-artifacts/baselines/v1.14/dependency-locks.json",
+      "role": "generated_output",
+      "sha256": "fc0becd070fd9f0516ae59d14bb09e6e54dc45f780378c644e4e8416060f2fc8"
+    },
+    {
+      "bytes": 3856,
+      "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/noisy_beer_lambert_sweep-manifest.json",
+      "role": "generated_output",
+      "sha256": "596e8e01085ba462c00b36356e9c3bb9cf5106dfb92611203ece6280907d463f"
+    },
+    {
+      "bytes": 3867,
+      "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/michaelis_parameter_identifiability-manifest.json",
+      "role": "generated_output",
+      "sha256": "f6900fc4269b18875c08360faffb2d0282695a519ee4ff2bbbbb32f7472c02c8"
+    },
+    {
+      "bytes": 4770,
+      "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/multivariable_arrhenius_surface-manifest.json",
+      "role": "generated_output",
+      "sha256": "eaf563459a58f0993a84b29c95c6690bcf344e086f047fb2d2ade07fe34ca783"
+    },
+    {
+      "bytes": 4902,
+      "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/unit_aware_ohm_law-manifest.json",
+      "role": "generated_output",
+      "sha256": "57efbfdd4fd3002f603407f8d1a47214b2f35e2fb23562ad68d6a1239103c9da"
+    },
+    {
+      "bytes": 3014,
+      "path": "artifacts/paper/v1.14/linked-artifacts/datasets/v1.14/real_hubble_1929-manifest.json",
+      "role": "generated_output",
+      "sha256": "27d0320f2ba844d31f83d9f33d2b7a0b61dcfa6aa3b81da72a4b4b1f06390c1b"
+    }
+  ],
+  "release_gate": {
+    "json": "artifacts/paper/v1.14/release-gate.json",
+    "markdown": "artifacts/paper/v1.14/release-gate.md",
+    "status": "passed"
+  },
+  "schema": "eml.v113_publication_rebuild.v1",
+  "validation": {
+    "status": "passed",
+    "validation_json": "artifacts/paper/v1.14/validation.json",
+    "validation_markdown": "artifacts/paper/v1.14/validation.md"
+  }
+}
