@@ -17,7 +17,7 @@ https://github.com/Amin7410/Project-Andrzej/
 
 README.mdとexampleフォルダの.rs、example_python.pyを試した
 
-他の.rsや.pyはまだ試していない(05/17)
+github内のフォルダは全て試した(05/17)
 
 
 -gh4-
@@ -27,7 +27,13 @@ cargo run --bin test
 
 README.mdとexampleフォルダの.rsを試した
 
-他の.rsや.pyはまだ試していない(05/17)
+他のtestフォルダの.rsや.pyはまだ試していない(05/17)
 
 -gh5-
-未読
+install済み
+pip install git+https://github.com/janegbert/pyeml.git
+pip install pyeml
+
+README.mdとtestフォルダの.pyを試した
+
+github内のフォルダは全て試した(05/17)
