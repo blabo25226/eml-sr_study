@@ -1,11 +1,11 @@
--gh1-
-githubのファイルをそのままコピーして引っ張て来た
-どのファイルも試していない
+------gh1------
+install済み
+pip install git+https://github.com/arlegotin/eml-symbolic-regression.git
 
--gh2-
-eml-srのinstallすら不明
 
--gh3-
+------gh2------
+
+------gh3------
 
 ./bin/test.rsの実行は
 cargo run --bin test
@@ -20,7 +20,7 @@ README.mdとexampleフォルダの.rs、example_python.pyを試した
 github内のフォルダは全て試した(05/17)
 
 
--gh4-
+------gh4------
 
 ./bin/test.rsの実行は
 cargo run --bin test
@@ -29,7 +29,7 @@ README.mdとexampleフォルダの.rsを試した
 
 他のtestフォルダの.rsや.pyはまだ試していない(05/17)
 
--gh5-
+------gh5------
 install済み
 pip install git+https://github.com/janegbert/pyeml.git
 pip install pyeml
