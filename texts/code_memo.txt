@@ -2,21 +2,17 @@
 install済み
 pip install git+https://github.com/arlegotin/eml-symbolic-regression.git
 
+testフォルダの.pyをダウンロードした(05/17)
 
 ------gh2------
-
+使用不可
 ------gh3------
 
 ./bin/test.rsの実行は
 cargo run --bin test
-
-参考にしているgithubのrepository
-https://github.com/Amin7410/Project-Andrzej/
-
 現在利用しているライブラリ"eml-sr"はrustで作られている
 
 README.mdとexampleフォルダの.rs、example_python.pyを試した
-
 github内のフォルダは全て試した(05/17)
 
 
@@ -25,8 +21,8 @@ github内のフォルダは全て試した(05/17)
 ./bin/test.rsの実行は
 cargo run --bin test
 
-README.mdとexampleフォルダの.rsを試した
-
+README.mdの.rsを試した
+exampleフォルダの.rsをダウンロードした
 他のtestフォルダの.rsや.pyはまだ試していない(05/17)
 
 ------gh5------
@@ -34,6 +30,8 @@ install済み
 pip install git+https://github.com/janegbert/pyeml.git
 pip install pyeml
 
-README.mdとtestフォルダの.pyを試した
+README.mdの.pyを試した
+testフォルダの.pyをダウンロードした(05/17)
 
-github内のフォルダは全て試した(05/17)
+------結果------
+gh3を採用

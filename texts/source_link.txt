@@ -2,6 +2,7 @@ gh1: ライブラリ"eml-sr(pytorch)"のデモプレイ
 https://github.com/arlegotin/eml-symbolic-regression
 
 gh2: eml-sr(pytorch)とPySRとの比較
+利用中止
 https://github.com/oaustegard/eml-sr/blob/main/benchmarks/pysr_compare.md
 
 gh3: ライブラリ,クレート"eml-sr(rust)"の紹介&試用
