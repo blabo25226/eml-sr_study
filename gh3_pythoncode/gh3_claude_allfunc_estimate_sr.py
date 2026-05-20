@@ -37,7 +37,7 @@ RMSE_THRESHOLD = 1e-4    # "回収成功" とみなすRMSE閾値
 
 def main():
     print("=" * 60)
-    print("  EML-SR: Feynman Equations – All Function Estimation")
+    print("  EML-SR: Feynman Equations - All Function Estimation")
     print("=" * 60)
 
     # --- 1. 方程式リストの読み込み ---
