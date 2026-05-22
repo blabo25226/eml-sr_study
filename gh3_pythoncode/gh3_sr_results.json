@@ -1,0 +1,5196 @@
+{
+  "total": 99,
+  "ok": 9,
+  "skipped": 5,
+  "failed": 85,
+  "total_elapsed_s": 2939.481841802597,
+  "settings": {
+    "N_SAMPLES": 200,
+    "MAX_COMPLEXITY": 6,
+    "BEAM_WIDTH": 300,
+    "RMSE_THRESHOLD": 0.0001
+  },
+  "results": [
+    {
+      "eq_id": "I.6.2a",
+      "status": "partial",
+      "found_formula": "Divide(Cos(ArcTan(v_{0})), Exp(v_{0}))",
+      "found_python": "(np.cos(np.arctan(v_{0}))/np.exp(v_{0}))",
+      "rmse": 0.009033610234223272,
+      "complexity": 6,
+      "elapsed_s": 33.93912982940674,
+      "candidates": [
+        {
+          "formula": "Divide(Cos(ArcTan(v_{0})), Exp(v_{0}))",
+          "python": "(np.cos(np.arctan(v_{0}))/np.exp(v_{0}))",
+          "complexity": 6,
+          "rmse": 0.009033610234223272,
+          "error": 0.00903361023422327
+        },
+        {
+          "formula": "EML(0, ArcTan(Sqrt(v_{0})))",
+          "python": "(np.exp(-19670.4843) - np.log(np.arctan(np.sqrt(v_{0}))))",
+          "complexity": 5,
+          "rmse": 0.020391298201334458,
+          "error": 0.02039129820133446
+        },
+        {
+          "formula": "Divide(I, Exp(v_{0}))",
+          "python": "(0.3722/np.exp(v_{0}))",
+          "complexity": 4,
+          "rmse": 0.041491148154381076,
+          "error": 0.04149114815438107
+        },
+        {
+          "formula": "Divide(I, v_{0})",
+          "python": "(0.1108/v_{0})",
+          "complexity": 3,
+          "rmse": 0.05292732273729115,
+          "error": 0.05292732273729117
+        },
+        {
+          "formula": "Tan(I)",
+          "python": "np.tan(15.8122)",
+          "complexity": 2,
+          "rmse": 0.07342980388390623,
+          "error": 0.07342980388390621
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.10483774501367836,
+          "error": 0.10483774501367836
+        }
+      ],
+      "index": 1,
+      "n_vars": 1,
+      "var_names": [
+        "theta"
+      ]
+    },
+    {
+      "eq_id": "I.6.2",
+      "status": "failed",
+      "found_formula": "Times(Sin(I), Sin(Inv(v_{1})))",
+      "found_python": "(np.sin(0.2307))*(np.sin((1/v_{1})))",
+      "rmse": 0.021407809322108427,
+      "complexity": 6,
+      "elapsed_s": 52.585066080093384,
+      "candidates": [
+        {
+          "formula": "Times(Sin(I), Sin(Inv(v_{1})))",
+          "python": "(np.sin(0.2307))*(np.sin((1/v_{1})))",
+          "complexity": 6,
+          "rmse": 0.021407809322108427,
+          "error": 0.02140780932210842
+        },
+        {
+          "formula": "Divide(Divide(I, v_{1}), E)",
+          "python": "((0.1417/v_{1})/0.6861)",
+          "complexity": 5,
+          "rmse": 0.02173013204121851,
+          "error": 0.021730132041218514
+        },
+        {
+          "formula": "Divide(Sin(I), v_{1})",
+          "python": "(np.sin(0.2307)/v_{1})",
+          "complexity": 4,
+          "rmse": 0.025242143558654,
+          "error": 0.025242143558653996
+        },
+        {
+          "formula": "Neg(Tan(1))",
+          "python": "(-np.tan(-98784.3466))",
+          "complexity": 3,
+          "rmse": 0.04326559234125719,
+          "error": 0.0432655923412572
+        },
+        {
+          "formula": "ArcTan(E)",
+          "python": "np.arctan(0.0889)",
+          "complexity": 2,
+          "rmse": 0.05026059209666838,
+          "error": 0.05026059209666838
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.12296184098341045,
+          "error": 0.12296184098341043
+        }
+      ],
+      "index": 2,
+      "n_vars": 2,
+      "var_names": [
+        "sigma",
+        "theta"
+      ]
+    },
+    {
+      "eq_id": "I.6.2b",
+      "status": "failed",
+      "found_formula": "Sin(Divide(ArcTan(Inv(v_{0})), E))",
+      "found_python": "np.sin((np.arctan((1/v_{0}))/2.5161))",
+      "rmse": 0.038761174514376606,
+      "complexity": 6,
+      "elapsed_s": 58.23577427864075,
+      "candidates": [
+        {
+          "formula": "Sin(Divide(ArcTan(Inv(v_{0})), E))",
+          "python": "np.sin((np.arctan((1/v_{0}))/2.5161))",
+          "complexity": 6,
+          "rmse": 0.038761174514376606,
+          "error": 0.03876117451437662
+        },
+        {
+          "formula": "Divide(ArcTan(Inv(v_{0})), E)",
+          "python": "(np.arctan((1/v_{0}))/2.5161)",
+          "complexity": 5,
+          "rmse": 0.03882189669246438,
+          "error": 0.03882189669246439
+        },
+        {
+          "formula": "Divide(Inv(v_{0}), Pi)",
+          "python": "((1/v_{0})/2.9597)",
+          "complexity": 4,
+          "rmse": 0.041813722658068354,
+          "error": 0.04181372265806834
+        },
+        {
+          "formula": "Exp(Neg(v_{0}))",
+          "python": "np.exp((-v_{0}))",
+          "complexity": 3,
+          "rmse": 0.06541605602249569,
+          "error": 0.06541605602249567
+        },
+        {
+          "formula": "Sqrt(I)",
+          "python": "np.sqrt(0.0403)",
+          "complexity": 2,
+          "rmse": 0.06594682372946267,
+          "error": 0.06594682372946267
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.21204557333659124,
+          "error": 0.21204557333659113
+        }
+      ],
+      "index": 3,
+      "n_vars": 3,
+      "var_names": [
+        "sigma",
+        "theta",
+        "theta1"
+      ]
+    },
+    {
+      "eq_id": "I.8.14",
+      "status": "failed",
+      "found_formula": "Plus(Exp(I), Cos(Cos(v_{1})))",
+      "found_python": "(np.exp(0.1943))+(np.cos(np.cos(v_{1})))",
+      "rmse": 0.948239428842195,
+      "complexity": 6,
+      "elapsed_s": 48.339417934417725,
+      "candidates": [
+        {
+          "formula": "Plus(Exp(I), Cos(Cos(v_{1})))",
+          "python": "(np.exp(0.1943))+(np.cos(np.cos(v_{1})))",
+          "complexity": 6,
+          "rmse": 0.948239428842195,
+          "error": 0.9482394288421948
+        },
+        {
+          "formula": "Plus(1, Cos(Cos(v_{1})))",
+          "python": "(1.3081)+(np.cos(np.cos(v_{1})))",
+          "complexity": 5,
+          "rmse": 0.958765076855355,
+          "error": 0.9587650768553546
+        },
+        {
+          "formula": "Subtract(Pi, ArcTan(v_{2}))",
+          "python": "(3.2113)-(np.arctan(v_{2}))",
+          "complexity": 4,
+          "rmse": 0.9669965407278374,
+          "error": 0.9669965407278376
+        },
+        {
+          "formula": "ArcCos(Tan(I))",
+          "python": "np.arccos(np.tan(-801.4871))",
+          "complexity": 3,
+          "rmse": 0.9750298777194663,
+          "error": 0.9750298777194666
+        },
+        {
+          "formula": "Sqrt(I)",
+          "python": "np.sqrt(3.9431)",
+          "complexity": 2,
+          "rmse": 0.9750668430313032,
+          "error": 0.9750668430313031
+        },
+        {
+          "formula": "E",
+          "python": "np.e",
+          "complexity": 1,
+          "rmse": 1.2280765122622201,
+          "error": 1.22807651226222
+        }
+      ],
+      "index": 4,
+      "n_vars": 4,
+      "var_names": [
+        "x1",
+        "x2",
+        "y1",
+        "y2"
+      ]
+    },
+    {
+      "eq_id": "I.9.18",
+      "status": "failed",
+      "found_formula": "EML(Divide(Sqrt(v_{0}), v_{7}), Pi)",
+      "found_python": "(np.exp((np.sqrt(v_{0})/v_{7})) - np.log(3.1426))",
+      "rmse": 0.09993787039832598,
+      "complexity": 6,
+      "elapsed_s": 74.37946224212646,
+      "candidates": [
+        {
+          "formula": "EML(Divide(Sqrt(v_{0}), v_{7}), Pi)",
+          "python": "(np.exp((np.sqrt(v_{0})/v_{7})) - np.log(3.1426))",
+          "complexity": 6,
+          "rmse": 0.09993787039832598,
+          "error": 0.09993787039832601
+        },
+        {
+          "formula": "Times(v_{0}, Divide(v_{1}, Pi))",
+          "python": "(v_{0})*((v_{1}/9.2171))",
+          "complexity": 5,
+          "rmse": 0.10313149699015732,
+          "error": 0.10313149699015729
+        },
+        {
+          "formula": "Divide(ArcTan(v_{0}), v_{7})",
+          "python": "(np.arctan(v_{0})/v_{7})",
+          "complexity": 4,
+          "rmse": 0.10654997673633879,
+          "error": 0.10654997673633881
+        },
+        {
+          "formula": "ArcTan(Inv(v_{7}))",
+          "python": "np.arctan((1/v_{7}))",
+          "complexity": 3,
+          "rmse": 0.1173098660174855,
+          "error": 0.11730986601748551
+        },
+        {
+          "formula": "Inv(v_{7})",
+          "python": "(1/v_{7})",
+          "complexity": 2,
+          "rmse": 0.11759264812469225,
+          "error": 0.11759264812469221
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.30126053886789916,
+          "error": 0.30126053886789933
+        }
+      ],
+      "index": 5,
+      "n_vars": 9,
+      "var_names": [
+        "m1",
+        "m2",
+        "G",
+        "x1",
+        "x2",
+        "y1",
+        "y2",
+        "z1",
+        "z2"
+      ]
+    },
+    {
+      "eq_id": "I.10.7",
+      "status": "failed",
+      "found_formula": "Divide(v_{0}, ArcTan(ArcTan(v_{2})))",
+      "found_python": "(v_{0}/np.arctan(np.arctan(v_{2})))",
+      "rmse": 0.08535183048357808,
+      "complexity": 5,
+      "elapsed_s": 35.265554904937744,
+      "candidates": [
+        {
+          "formula": "Divide(v_{0}, ArcTan(ArcTan(v_{2})))",
+          "python": "(v_{0}/np.arctan(np.arctan(v_{2})))",
+          "complexity": 5,
+          "rmse": 0.08535183048357808,
+          "error": 0.08535183048357807
+        },
+        {
+          "formula": "Plus(v_{0}, Inv(v_{2}))",
+          "python": "(v_{0})+((1/v_{2}))",
+          "complexity": 4,
+          "rmse": 0.11957027297002767,
+          "error": 0.11957027297002769
+        },
+        {
+          "formula": "Plus(I, v_{0})",
+          "python": "(0.2467)+(v_{0})",
+          "complexity": 3,
+          "rmse": 0.18937056597628144,
+          "error": 0.1893705659762814
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 0.18937056756524376,
+          "error": 0.1893705675652438
+        }
+      ],
+      "index": 6,
+      "n_vars": 3,
+      "var_names": [
+        "m_0",
+        "v",
+        "c"
+      ]
+    },
+    {
+      "eq_id": "I.11.19",
+      "status": "failed",
+      "found_formula": "Plus(Exp(E), Times(v_{1}, v_{4}))",
+      "found_python": "(np.exp(np.e))+((v_{1})*(v_{4}))",
+      "rmse": 6.98132758621178,
+      "complexity": 6,
+      "elapsed_s": 13.425195693969727,
+      "candidates": [
+        {
+          "formula": "Plus(Exp(E), Times(v_{1}, v_{4}))",
+          "python": "(np.exp(np.e))+((v_{1})*(v_{4}))",
+          "complexity": 6,
+          "rmse": 6.98132758621178,
+          "error": 6.981327586211777
+        },
+        {
+          "formula": "Times(Exp(E), Sqrt(v_{4}))",
+          "python": "(np.exp(np.e))*(np.sqrt(v_{4}))",
+          "complexity": 5,
+          "rmse": 7.686132065422255,
+          "error": 7.686132065422258
+        },
+        {
+          "formula": "Plus(v_{4}, Exp(Pi))",
+          "python": "(v_{4})+(np.exp(np.pi))",
+          "complexity": 4,
+          "rmse": 8.248529814457656,
+          "error": 8.248529814457658
+        },
+        {
+          "formula": "Exp(Pi)",
+          "python": "np.exp(np.pi)",
+          "complexity": 2,
+          "rmse": 9.228926747378106,
+          "error": 9.228926747378106
+        },
+        {
+          "formula": "v_{4}",
+          "python": "v_{4}",
+          "complexity": 1,
+          "rmse": 24.541287706733083,
+          "error": 24.54128770673308
+        }
+      ],
+      "index": 7,
+      "n_vars": 6,
+      "var_names": [
+        "x1",
+        "x2",
+        "x3",
+        "y1",
+        "y2",
+        "y3"
+      ]
+    },
+    {
+      "eq_id": "I.12.1",
+      "status": "ok",
+      "found_formula": "Times(v_{0}, v_{1})",
+      "found_python": "(v_{0})*(v_{1})",
+      "rmse": 0.0,
+      "complexity": 3,
+      "elapsed_s": 7.94557785987854,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, v_{1})",
+          "python": "(v_{0})*(v_{1})",
+          "complexity": 3,
+          "rmse": 0.0,
+          "error": 0.0
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 7.432262107742691,
+          "error": 7.432262107742688
+        }
+      ],
+      "index": 8,
+      "n_vars": 2,
+      "var_names": [
+        "mu",
+        "Nn"
+      ]
+    },
+    {
+      "eq_id": "I.12.2",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, Divide(I, Exp(v_{3})))",
+      "found_python": "(v_{1})*((0.1981/np.exp(v_{3})))",
+      "rmse": 0.048368709523212934,
+      "complexity": 6,
+      "elapsed_s": 60.66156983375549,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Divide(I, Exp(v_{3})))",
+          "python": "(v_{1})*((0.1981/np.exp(v_{3})))",
+          "complexity": 6,
+          "rmse": 0.048368709523212934,
+          "error": 0.04836870952321295
+        },
+        {
+          "formula": "Divide(Inv(v_{2}), Exp(v_{3}))",
+          "python": "((1/v_{2})/np.exp(v_{3}))",
+          "complexity": 5,
+          "rmse": 0.05290945809365953,
+          "error": 0.052909458093659524
+        },
+        {
+          "formula": "Divide(Sin(E), v_{3})",
+          "python": "(np.sin(647.3370)/v_{3})",
+          "complexity": 4,
+          "rmse": 0.05927365379815961,
+          "error": 0.059273653798159597
+        },
+        {
+          "formula": "Divide(I, v_{3})",
+          "python": "(0.0658/v_{3})",
+          "complexity": 3,
+          "rmse": 0.07073339189562586,
+          "error": 0.07073339189562586
+        },
+        {
+          "formula": "Tan(I)",
+          "python": "np.tan(0.0115)",
+          "complexity": 2,
+          "rmse": 0.08489361250092381,
+          "error": 0.0848936125009238
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.09158343191817263,
+          "error": 0.09158343191817263
+        }
+      ],
+      "index": 9,
+      "n_vars": 4,
+      "var_names": [
+        "q1",
+        "q2",
+        "epsilon",
+        "r"
+      ]
+    },
+    {
+      "eq_id": "I.12.4",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Divide(I, Exp(v_{2})))",
+      "found_python": "(v_{0})*((0.0628/np.exp(v_{2})))",
+      "rmse": 0.013857820906352802,
+      "complexity": 6,
+      "elapsed_s": 55.92865228652954,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Divide(I, Exp(v_{2})))",
+          "python": "(v_{0})*((0.0628/np.exp(v_{2})))",
+          "complexity": 6,
+          "rmse": 0.013857820906352802,
+          "error": 0.013857820906352803
+        },
+        {
+          "formula": "Divide(ArcTan(1), Exp(v_{2}))",
+          "python": "(np.arctan(0.2324)/np.exp(v_{2}))",
+          "complexity": 5,
+          "rmse": 0.01661697938903534,
+          "error": 0.016616979389035343
+        },
+        {
+          "formula": "Divide(Neg(I), v_{2})",
+          "python": "((--0.0357)/v_{2})",
+          "complexity": 4,
+          "rmse": 0.020134133780500853,
+          "error": 0.020134133780500853
+        },
+        {
+          "formula": "Divide(I, v_{2})",
+          "python": "(0.0208/v_{2})",
+          "complexity": 3,
+          "rmse": 0.023552236422642238,
+          "error": 0.02355223642264224
+        },
+        {
+          "formula": "Sqrt(I)",
+          "python": "np.sqrt(0.0004)",
+          "complexity": 2,
+          "rmse": 0.024226485315530254,
+          "error": 0.024226485315530257
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.030059617617517197,
+          "error": 0.0300596176175172
+        }
+      ],
+      "index": 10,
+      "n_vars": 3,
+      "var_names": [
+        "q1",
+        "epsilon",
+        "r"
+      ]
+    },
+    {
+      "eq_id": "I.12.5",
+      "status": "ok",
+      "found_formula": "Times(v_{0}, v_{1})",
+      "found_python": "(v_{0})*(v_{1})",
+      "rmse": 0.0,
+      "complexity": 3,
+      "elapsed_s": 7.866544961929321,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, v_{1})",
+          "python": "(v_{0})*(v_{1})",
+          "complexity": 3,
+          "rmse": 0.0,
+          "error": 0.0
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 7.082931361908183,
+          "error": 7.082931361908183
+        }
+      ],
+      "index": 11,
+      "n_vars": 2,
+      "var_names": [
+        "q2",
+        "Ef"
+      ]
+    },
+    {
+      "eq_id": "I.12.11",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Exp(Exp(Sin(v_{4}))))",
+      "found_python": "(v_{0})*(np.exp(np.exp(np.sin(v_{4}))))",
+      "rmse": 18.637886455559602,
+      "complexity": 6,
+      "elapsed_s": 11.706613063812256,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Exp(Exp(Sin(v_{4}))))",
+          "python": "(v_{0})*(np.exp(np.exp(np.sin(v_{4}))))",
+          "complexity": 6,
+          "rmse": 18.637886455559602,
+          "error": 18.6378864555596
+        },
+        {
+          "formula": "Times(Exp(Pi), Sin(v_{4}))",
+          "python": "(np.exp(np.pi))*(np.sin(v_{4}))",
+          "complexity": 5,
+          "rmse": 19.5138154140992,
+          "error": 19.51381541409921
+        },
+        {
+          "formula": "Exp(Exp(Sin(v_{4})))",
+          "python": "np.exp(np.exp(np.sin(v_{4})))",
+          "complexity": 4,
+          "rmse": 23.759329448746822,
+          "error": 23.759329448746822
+        },
+        {
+          "formula": "Times(v_{2}, v_{3})",
+          "python": "(v_{2})*(v_{3})",
+          "complexity": 3,
+          "rmse": 26.12785268318411,
+          "error": 26.127852683184106
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 26.921434479699027,
+          "error": 26.921434479699027
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 27.420882674664572,
+          "error": 27.420882674664572
+        }
+      ],
+      "index": 12,
+      "n_vars": 5,
+      "var_names": [
+        "q",
+        "Ef",
+        "B",
+        "v",
+        "theta"
+      ]
+    },
+    {
+      "eq_id": "I.13.4",
+      "status": "failed",
+      "found_formula": "Plus(v_{3}, Times(v_{0}, Exp(E)))",
+      "found_python": "(v_{3})+((v_{0})*(np.exp(np.e)))",
+      "rmse": 19.247602079557407,
+      "complexity": 6,
+      "elapsed_s": 9.803292751312256,
+      "candidates": [
+        {
+          "formula": "Plus(v_{3}, Times(v_{0}, Exp(E)))",
+          "python": "(v_{3})+((v_{0})*(np.exp(np.e)))",
+          "complexity": 6,
+          "rmse": 19.247602079557407,
+          "error": 19.247602079557414
+        },
+        {
+          "formula": "Times(v_{0}, Exp(E))",
+          "python": "(v_{0})*(np.exp(np.e))",
+          "complexity": 4,
+          "rmse": 19.584893889408036,
+          "error": 19.58489388940804
+        },
+        {
+          "formula": "Tan(Cos(I))",
+          "python": "np.tan(np.cos(1j))",
+          "complexity": 3,
+          "rmse": 28.39841213015332,
+          "error": 28.39841213015332
+        },
+        {
+          "formula": "Exp(v_{0})",
+          "python": "np.exp(v_{0})",
+          "complexity": 2,
+          "rmse": 31.268104820855697,
+          "error": 31.268104820855704
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 50.21522472545481,
+          "error": 50.21522472545481
+        }
+      ],
+      "index": 13,
+      "n_vars": 4,
+      "var_names": [
+        "m",
+        "v",
+        "u",
+        "w"
+      ]
+    },
+    {
+      "eq_id": "I.13.12",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, Subtract(v_{2}, v_{3}))",
+      "found_python": "(v_{1})*((v_{2})-(v_{3}))",
+      "rmse": 5.301971195967248,
+      "complexity": 5,
+      "elapsed_s": 13.178433179855347,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Subtract(v_{2}, v_{3}))",
+          "python": "(v_{1})*((v_{2})-(v_{3}))",
+          "complexity": 5,
+          "rmse": 5.301971195967248,
+          "error": 5.301971195967246
+        },
+        {
+          "formula": "Exp(Subtract(v_{2}, v_{3}))",
+          "python": "np.exp((v_{2})-(v_{3}))",
+          "complexity": 4,
+          "rmse": 7.120732326445835,
+          "error": 7.120732326445836
+        },
+        {
+          "formula": "Subtract(v_{2}, v_{3})",
+          "python": "(v_{2})-(v_{3})",
+          "complexity": 3,
+          "rmse": 7.803969121522556,
+          "error": 7.803969121522557
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 8.463073700045921,
+          "error": 8.463073700045921
+        }
+      ],
+      "index": 14,
+      "n_vars": 5,
+      "var_names": [
+        "m1",
+        "m2",
+        "r1",
+        "r2",
+        "G"
+      ]
+    },
+    {
+      "eq_id": "I.14.3",
+      "status": "ok",
+      "found_formula": "Times(v_{1}, Times(v_{0}, v_{2}))",
+      "found_python": "(v_{1})*((v_{0})*(v_{2}))",
+      "rmse": 2.9445827250241156e-15,
+      "complexity": 5,
+      "elapsed_s": 8.878286838531494,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Times(v_{0}, v_{2}))",
+          "python": "(v_{1})*((v_{0})*(v_{2}))",
+          "complexity": 5,
+          "rmse": 2.9445827250241156e-15,
+          "error": 2.9445827250241156e-15
+        },
+        {
+          "formula": "Exp(Exp(ArcTan(v_{1})))",
+          "python": "np.exp(np.exp(np.arctan(v_{1})))",
+          "complexity": 4,
+          "rmse": 16.96896250609025,
+          "error": 16.96896250609025
+        },
+        {
+          "formula": "Exp(Pi)",
+          "python": "np.exp(np.pi)",
+          "complexity": 2,
+          "rmse": 19.590041897579514,
+          "error": 19.590041897579514
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 30.048916680273862,
+          "error": 30.048916680273862
+        }
+      ],
+      "index": 15,
+      "n_vars": 3,
+      "var_names": [
+        "m",
+        "g",
+        "z"
+      ]
+    },
+    {
+      "eq_id": "I.14.4",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Sqrt(Exp(v_{1})))",
+      "found_python": "(v_{0})*(np.sqrt(np.exp(v_{1})))",
+      "rmse": 2.0720358400635894,
+      "complexity": 5,
+      "elapsed_s": 8.051387071609497,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Sqrt(Exp(v_{1})))",
+          "python": "(v_{0})*(np.sqrt(np.exp(v_{1})))",
+          "complexity": 5,
+          "rmse": 2.0720358400635894,
+          "error": 2.0720358400635894
+        },
+        {
+          "formula": "Exp(Subtract(v_{1}, 1))",
+          "python": "np.exp((v_{1})-(1))",
+          "complexity": 4,
+          "rmse": 8.411774858170563,
+          "error": 8.411774858170563
+        },
+        {
+          "formula": "Times(v_{1}, v_{1})",
+          "python": "(v_{1})*(v_{1})",
+          "complexity": 3,
+          "rmse": 8.887411010380452,
+          "error": 8.887411010380452
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 12.046819565638087,
+          "error": 12.04681956563809
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 16.020648704931258,
+          "error": 16.020648704931258
+        }
+      ],
+      "index": 16,
+      "n_vars": 2,
+      "var_names": [
+        "k_spring",
+        "x"
+      ]
+    },
+    {
+      "eq_id": "I.15.3x",
+      "status": "failed",
+      "found_formula": "Subtract(v_{0}, Times(v_{1}, v_{3}))",
+      "found_python": "(v_{0})-((v_{1})*(v_{3}))",
+      "rmse": 0.18111211805673377,
+      "complexity": 5,
+      "elapsed_s": 18.788501739501953,
+      "candidates": [
+        {
+          "formula": "Subtract(v_{0}, Times(v_{1}, v_{3}))",
+          "python": "(v_{0})-((v_{1})*(v_{3}))",
+          "complexity": 5,
+          "rmse": 0.18111211805673377,
+          "error": 0.18111211805673375
+        },
+        {
+          "formula": "Subtract(v_{0}, Sqrt(I))",
+          "python": "(v_{0})-(np.sqrt(4.2600))",
+          "complexity": 4,
+          "rmse": 0.6228075218258082,
+          "error": 0.6228075218258082
+        },
+        {
+          "formula": "Subtract(v_{0}, v_{3})",
+          "python": "(v_{0})-(v_{3})",
+          "complexity": 3,
+          "rmse": 0.7901111412980742,
+          "error": 0.790111141298074
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 2.218203792020876,
+          "error": 2.218203792020876
+        }
+      ],
+      "index": 17,
+      "n_vars": 4,
+      "var_names": [
+        "x",
+        "u",
+        "c",
+        "t"
+      ]
+    },
+    {
+      "eq_id": "I.15.3t",
+      "status": "failed",
+      "found_formula": "EML(Log(v_{3}), ArcTan(Sqrt(v_{0})))",
+      "found_python": "(np.exp(np.log(v_{3})) - np.log(np.arctan(np.sqrt(v_{0}))))",
+      "rmse": 0.10400910487966959,
+      "complexity": 6,
+      "elapsed_s": 38.88692355155945,
+      "candidates": [
+        {
+          "formula": "EML(Log(v_{3}), ArcTan(Sqrt(v_{0})))",
+          "python": "(np.exp(np.log(v_{3})) - np.log(np.arctan(np.sqrt(v_{0}))))",
+          "complexity": 6,
+          "rmse": 0.10400910487966959,
+          "error": 0.10400910487966959
+        },
+        {
+          "formula": "Times(v_{3}, ArcTan(ArcTan(E)))",
+          "python": "(v_{3})*(np.arctan(np.arctan(1296.3040)))",
+          "complexity": 5,
+          "rmse": 0.11476182885880529,
+          "error": 0.1147618288588053
+        },
+        {
+          "formula": "Times(v_{3}, Exp(I))",
+          "python": "(v_{3})*(np.exp(0.0008))",
+          "complexity": 4,
+          "rmse": 0.11516076083142701,
+          "error": 0.11516076083142703
+        },
+        {
+          "formula": "Plus(I, v_{3})",
+          "python": "(-0.0134)+(v_{3})",
+          "complexity": 3,
+          "rmse": 0.11542424137518907,
+          "error": 0.11542424137518909
+        },
+        {
+          "formula": "v_{3}",
+          "python": "v_{3}",
+          "complexity": 1,
+          "rmse": 0.11542424138328033,
+          "error": 0.11542424138328036
+        }
+      ],
+      "index": 18,
+      "n_vars": 4,
+      "var_names": [
+        "x",
+        "c",
+        "u",
+        "t"
+      ]
+    },
+    {
+      "eq_id": "I.15.1",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, Plus(v_{0}, Inv(v_{2})))",
+      "found_python": "(v_{1})*((v_{0})+((1/v_{2})))",
+      "rmse": 0.23213031286217353,
+      "complexity": 6,
+      "elapsed_s": 10.530811786651611,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Plus(v_{0}, Inv(v_{2})))",
+          "python": "(v_{1})*((v_{0})+((1/v_{2})))",
+          "complexity": 6,
+          "rmse": 0.23213031286217353,
+          "error": 0.2321303128621736
+        },
+        {
+          "formula": "Times(v_{1}, Subtract(v_{0}, I))",
+          "python": "(v_{1})*((v_{0})-(-0.0789))",
+          "complexity": 5,
+          "rmse": 0.32798645187191683,
+          "error": 0.32798645187191666
+        },
+        {
+          "formula": "Times(v_{0}, v_{1})",
+          "python": "(v_{0})*(v_{1})",
+          "complexity": 3,
+          "rmse": 0.39420649747917047,
+          "error": 0.3942064974791705
+        },
+        {
+          "formula": "Exp(v_{1})",
+          "python": "np.exp(v_{1})",
+          "complexity": 2,
+          "rmse": 1.9087142888742752,
+          "error": 1.9087142888742752
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 2.241145375875106,
+          "error": 2.2411453758751056
+        }
+      ],
+      "index": 19,
+      "n_vars": 3,
+      "var_names": [
+        "m_0",
+        "v",
+        "c"
+      ]
+    },
+    {
+      "eq_id": "I.16.6",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Sin(ArcTan(v_{1})))",
+      "found_python": "(v_{0})*(np.sin(np.arctan(v_{1})))",
+      "rmse": 0.35288819803074495,
+      "complexity": 5,
+      "elapsed_s": 38.238776206970215,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Sin(ArcTan(v_{1})))",
+          "python": "(v_{0})*(np.sin(np.arctan(v_{1})))",
+          "complexity": 5,
+          "rmse": 0.35288819803074495,
+          "error": 0.35288819803074495
+        },
+        {
+          "formula": "Divide(v_{0}, E)",
+          "python": "(v_{0}/1.0864)",
+          "complexity": 3,
+          "rmse": 0.37837637476054237,
+          "error": 0.3783763747605425
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 0.4547011021129181,
+          "error": 0.4547011021129181
+        }
+      ],
+      "index": 20,
+      "n_vars": 3,
+      "var_names": [
+        "c",
+        "v",
+        "u"
+      ]
+    },
+    {
+      "eq_id": "I.18.4",
+      "status": "failed",
+      "found_formula": "Times(Sqrt(v_{2}), Sqrt(v_{3}))",
+      "found_python": "(np.sqrt(v_{2}))*(np.sqrt(v_{3}))",
+      "rmse": 0.2916703890811827,
+      "complexity": 5,
+      "elapsed_s": 45.767910957336426,
+      "candidates": [
+        {
+          "formula": "Times(Sqrt(v_{2}), Sqrt(v_{3}))",
+          "python": "(np.sqrt(v_{2}))*(np.sqrt(v_{3}))",
+          "complexity": 5,
+          "rmse": 0.2916703890811827,
+          "error": 0.2916703890811827
+        },
+        {
+          "formula": "Subtract(Pi, Sin(v_{3}))",
+          "python": "(3.1233)-(np.sin(v_{3}))",
+          "complexity": 4,
+          "rmse": 0.6254540846063785,
+          "error": 0.6254540846063785
+        },
+        {
+          "formula": "Exp(ArcTan(v_{3}))",
+          "python": "np.exp(np.arctan(v_{3}))",
+          "complexity": 3,
+          "rmse": 0.6947108930735716,
+          "error": 0.6947108930735717
+        },
+        {
+          "formula": "v_{3}",
+          "python": "v_{3}",
+          "complexity": 1,
+          "rmse": 0.8031253104470945,
+          "error": 0.8031253104470945
+        }
+      ],
+      "index": 21,
+      "n_vars": 4,
+      "var_names": [
+        "m1",
+        "m2",
+        "r1",
+        "r2"
+      ]
+    },
+    {
+      "index": 22,
+      "eq_id": "I.18.12",
+      "n_vars": 2,
+      "var_names": [
+        "r",
+        "F"
+      ],
+      "status": "skipped",
+      "reason": "too_few_valid_samples",
+      "found_formula": null,
+      "found_python": null,
+      "rmse": null,
+      "complexity": null,
+      "elapsed_s": 0.0,
+      "candidates": []
+    },
+    {
+      "index": 23,
+      "eq_id": "I.18.14",
+      "n_vars": 3,
+      "var_names": [
+        "m",
+        "r",
+        "v"
+      ],
+      "status": "skipped",
+      "reason": "too_few_valid_samples",
+      "found_formula": null,
+      "found_python": null,
+      "rmse": null,
+      "complexity": null,
+      "elapsed_s": 0.0,
+      "candidates": []
+    },
+    {
+      "eq_id": "I.24.6",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, EML(v_{3}, Sin(v_{1})))",
+      "found_python": "(v_{0})*((np.exp(v_{3}) - np.log(np.sin(v_{1}))))",
+      "rmse": 8.207694854659714,
+      "complexity": 6,
+      "elapsed_s": 10.412996053695679,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, EML(v_{3}, Sin(v_{1})))",
+          "python": "(v_{0})*((np.exp(v_{3}) - np.log(np.sin(v_{1}))))",
+          "complexity": 6,
+          "rmse": 8.207694854659714,
+          "error": 8.207694854659714
+        },
+        {
+          "formula": "Times(v_{0}, Exp(v_{3}))",
+          "python": "(v_{0})*(np.exp(v_{3}))",
+          "complexity": 4,
+          "rmse": 8.899600936161736,
+          "error": 8.899600936161738
+        },
+        {
+          "formula": "EML(Pi, Pi)",
+          "python": "(np.exp(np.pi) - np.log(np.pi))",
+          "complexity": 3,
+          "rmse": 15.4983318735862,
+          "error": 15.498331873586201
+        },
+        {
+          "formula": "Exp(Pi)",
+          "python": "np.exp(np.pi)",
+          "complexity": 2,
+          "rmse": 15.657030959382578,
+          "error": 15.657030959382581
+        },
+        {
+          "formula": "Pi",
+          "python": "np.pi",
+          "complexity": 1,
+          "rmse": 23.14806166489063,
+          "error": 23.14806166489063
+        }
+      ],
+      "index": 24,
+      "n_vars": 4,
+      "var_names": [
+        "m",
+        "omega",
+        "omega_0",
+        "x"
+      ]
+    },
+    {
+      "eq_id": "I.25.13",
+      "status": "ok",
+      "found_formula": "Divide(v_{0}, v_{1})",
+      "found_python": "(v_{0}/v_{1})",
+      "rmse": 1.30140800408409e-16,
+      "complexity": 3,
+      "elapsed_s": 44.7035973072052,
+      "candidates": [
+        {
+          "formula": "Divide(v_{0}, v_{1})",
+          "python": "(v_{0}/v_{1})",
+          "complexity": 3,
+          "rmse": 1.30140800408409e-16,
+          "error": 1.30140800408409e-16
+        },
+        {
+          "formula": "Log(v_{0})",
+          "python": "np.log(v_{0})",
+          "complexity": 2,
+          "rmse": 0.6031506123491875,
+          "error": 0.6031506123491877
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 0.7173238071600464,
+          "error": 0.7173238071600462
+        }
+      ],
+      "index": 25,
+      "n_vars": 2,
+      "var_names": [
+        "q",
+        "C"
+      ]
+    },
+    {
+      "eq_id": "I.26.2",
+      "status": "ok",
+      "found_formula": "ArcSin(Times(v_{0}, Sin(v_{1})))",
+      "found_python": "np.arcsin((v_{0})*(np.sin(v_{1})))",
+      "rmse": 4.139088019719548e-17,
+      "complexity": 5,
+      "elapsed_s": 49.79589796066284,
+      "candidates": [
+        {
+          "formula": "ArcSin(Times(v_{0}, Sin(v_{1})))",
+          "python": "np.arcsin((v_{0})*(np.sin(v_{1})))",
+          "complexity": 5,
+          "rmse": 4.139088019719548e-17,
+          "error": 4.139088019719548e-17
+        },
+        {
+          "formula": "Times(v_{0}, Sin(v_{1}))",
+          "python": "(v_{0})*(np.sin(v_{1}))",
+          "complexity": 4,
+          "rmse": 0.05526955013749229,
+          "error": 0.05526955013749228
+        },
+        {
+          "formula": "EML(0, v_{1})",
+          "python": "(np.exp(0.0097) - np.log(v_{1}))",
+          "complexity": 3,
+          "rmse": 0.2926907311556136,
+          "error": 0.2926907311556136
+        },
+        {
+          "formula": "Sin(v_{1})",
+          "python": "np.sin(v_{1})",
+          "complexity": 2,
+          "rmse": 0.40178768316435615,
+          "error": 0.4017876831643562
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.505771338301355,
+          "error": 0.5057713383013552
+        }
+      ],
+      "index": 26,
+      "n_vars": 2,
+      "var_names": [
+        "n",
+        "theta2"
+      ]
+    },
+    {
+      "eq_id": "I.27.6",
+      "status": "failed",
+      "found_formula": "Divide(Sqrt(Divide(v_{1}, v_{2})), E)",
+      "found_python": "(np.sqrt((v_{1}/v_{2}))/1.3419)",
+      "rmse": 0.17139050770600422,
+      "complexity": 6,
+      "elapsed_s": 53.91947555541992,
+      "candidates": [
+        {
+          "formula": "Divide(Sqrt(Divide(v_{1}, v_{2})), E)",
+          "python": "(np.sqrt((v_{1}/v_{2}))/1.3419)",
+          "complexity": 6,
+          "rmse": 0.17139050770600422,
+          "error": 0.17139050770600425
+        },
+        {
+          "formula": "ArcTan(Divide(v_{1}, v_{2}))",
+          "python": "np.arctan((v_{1}/v_{2}))",
+          "complexity": 4,
+          "rmse": 0.17879001862807403,
+          "error": 0.1787900186280741
+        },
+        {
+          "formula": "ArcSin(ArcSin(v_{2}))",
+          "python": "np.arcsin(np.arcsin(v_{2}))",
+          "complexity": 3,
+          "rmse": 0.29931715778976165,
+          "error": 0.2993171577897616
+        },
+        {
+          "formula": "ArcTan(1)",
+          "python": "np.arctan(1.0086)",
+          "complexity": 2,
+          "rmse": 0.38467274055994943,
+          "error": 0.38467274055994954
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 0.4363237997426586,
+          "error": 0.4363237997426585
+        }
+      ],
+      "index": 27,
+      "n_vars": 3,
+      "var_names": [
+        "d1",
+        "d2",
+        "n"
+      ]
+    },
+    {
+      "eq_id": "I.29.4",
+      "status": "ok",
+      "found_formula": "Divide(v_{0}, v_{1})",
+      "found_python": "(v_{0}/v_{1})",
+      "rmse": 1.9986905439932426e-16,
+      "complexity": 3,
+      "elapsed_s": 45.32356262207031,
+      "candidates": [
+        {
+          "formula": "Divide(v_{0}, v_{1})",
+          "python": "(v_{0}/v_{1})",
+          "complexity": 3,
+          "rmse": 1.9986905439932426e-16,
+          "error": 1.9986905439932423e-16
+        },
+        {
+          "formula": "Log(v_{0})",
+          "python": "np.log(v_{0})",
+          "complexity": 2,
+          "rmse": 1.197353397300804,
+          "error": 1.197353397300804
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 1.4024988426533562,
+          "error": 1.4024988426533558
+        }
+      ],
+      "index": 28,
+      "n_vars": 2,
+      "var_names": [
+        "omega",
+        "c"
+      ]
+    },
+    {
+      "eq_id": "I.29.16",
+      "status": "failed",
+      "found_formula": "EML(Sqrt(Log(v_{1})), Inv(v_{0}))",
+      "found_python": "(np.exp(np.sqrt(np.log(v_{1}))) - np.log((1/v_{0})))",
+      "rmse": 1.702573762445916,
+      "complexity": 6,
+      "elapsed_s": 18.873166799545288,
+      "candidates": [
+        {
+          "formula": "EML(Sqrt(Log(v_{1})), Inv(v_{0}))",
+          "python": "(np.exp(np.sqrt(np.log(v_{1}))) - np.log((1/v_{0})))",
+          "complexity": 6,
+          "rmse": 1.702573762445916,
+          "error": 1.7025737624459163
+        },
+        {
+          "formula": "Plus(Sqrt(v_{0}), Sqrt(v_{1}))",
+          "python": "(np.sqrt(v_{0}))+(np.sqrt(v_{1}))",
+          "complexity": 5,
+          "rmse": 1.7556400022040533,
+          "error": 1.7556400022040537
+        },
+        {
+          "formula": "Exp(Sqrt(Sqrt(v_{1})))",
+          "python": "np.exp(np.sqrt(np.sqrt(v_{1})))",
+          "complexity": 4,
+          "rmse": 1.7798080197136854,
+          "error": 1.7798080197136852
+        },
+        {
+          "formula": "Exp(ArcTan(v_{1}))",
+          "python": "np.exp(np.arctan(v_{1}))",
+          "complexity": 3,
+          "rmse": 1.8166705381841939,
+          "error": 1.8166705381841934
+        },
+        {
+          "formula": "Pi",
+          "python": "np.pi",
+          "complexity": 1,
+          "rmse": 1.9697882121431873,
+          "error": 1.969788212143187
+        }
+      ],
+      "index": 29,
+      "n_vars": 4,
+      "var_names": [
+        "x1",
+        "x2",
+        "theta1",
+        "theta2"
+      ]
+    },
+    {
+      "eq_id": "I.30.3",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Exp(Cos(v_{1})))",
+      "found_python": "(v_{0})*(np.exp(np.cos(v_{1})))",
+      "rmse": 1.9094884905298526,
+      "complexity": 5,
+      "elapsed_s": 9.109649419784546,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Exp(Cos(v_{1})))",
+          "python": "(v_{0})*(np.exp(np.cos(v_{1})))",
+          "complexity": 5,
+          "rmse": 1.9094884905298526,
+          "error": 1.9094884905298521
+        },
+        {
+          "formula": "Plus(v_{0}, Cos(v_{1}))",
+          "python": "(v_{0})+(np.cos(v_{1}))",
+          "complexity": 4,
+          "rmse": 2.149939266638573,
+          "error": 2.1499392666385733
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 2.3921562308335744,
+          "error": 2.392156230833574
+        }
+      ],
+      "index": 30,
+      "n_vars": 3,
+      "var_names": [
+        "Int_0",
+        "theta",
+        "n"
+      ]
+    },
+    {
+      "eq_id": "I.30.5",
+      "status": "ok",
+      "found_formula": "ArcSin(Divide(Divide(v_{0}, v_{2}), v_{1}))",
+      "found_python": "np.arcsin(((v_{0}/v_{2})/v_{1}))",
+      "rmse": 3.2605418710725895e-17,
+      "complexity": 6,
+      "elapsed_s": 56.542876958847046,
+      "candidates": [
+        {
+          "formula": "ArcSin(Divide(Divide(v_{0}, v_{2}), v_{1}))",
+          "python": "np.arcsin(((v_{0}/v_{2})/v_{1}))",
+          "complexity": 6,
+          "rmse": 3.2605418710725895e-17,
+          "error": 3.2605418710725895e-17
+        },
+        {
+          "formula": "Divide(Divide(v_{0}, v_{2}), v_{1})",
+          "python": "((v_{0}/v_{2})/v_{1})",
+          "complexity": 5,
+          "rmse": 0.011716507945583531,
+          "error": 0.01171650794558353
+        },
+        {
+          "formula": "Divide(Inv(v_{2}), E)",
+          "python": "((1/v_{2})/2.1005)",
+          "complexity": 4,
+          "rmse": 0.08258646514521797,
+          "error": 0.08258646514521792
+        },
+        {
+          "formula": "Log(Sqrt(v_{0}))",
+          "python": "np.log(np.sqrt(v_{0}))",
+          "complexity": 3,
+          "rmse": 0.12725136551757324,
+          "error": 0.12725136551757324
+        },
+        {
+          "formula": "Sqrt(I)",
+          "python": "np.sqrt(0.0387)",
+          "complexity": 2,
+          "rmse": 0.1282615963870457,
+          "error": 0.12826159638704573
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.23231833460420648,
+          "error": 0.23231833460420642
+        }
+      ],
+      "index": 31,
+      "n_vars": 3,
+      "var_names": [
+        "lambd",
+        "d",
+        "n"
+      ]
+    },
+    {
+      "eq_id": "I.32.5",
+      "status": "failed",
+      "found_formula": "Divide(ArcCos(ArcTan(v_{3})), Log(v_{2}))",
+      "found_python": "(np.arccos(np.arctan(v_{3}))/np.log(v_{2}))",
+      "rmse": 0.5140770578087104,
+      "complexity": 6,
+      "elapsed_s": 67.63245844841003,
+      "candidates": [
+        {
+          "formula": "Divide(ArcCos(ArcTan(v_{3})), Log(v_{2}))",
+          "python": "(np.arccos(np.arctan(v_{3}))/np.log(v_{2}))",
+          "complexity": 6,
+          "rmse": 0.5140770578087104,
+          "error": 0.5140770578087104
+        },
+        {
+          "formula": "ArcSin(Divide(v_{1}, Exp(v_{3})))",
+          "python": "np.arcsin((v_{1}/np.exp(v_{3})))",
+          "complexity": 5,
+          "rmse": 0.5845785899629906,
+          "error": 0.5845785899629906
+        },
+        {
+          "formula": "Divide(v_{1}, Exp(v_{3}))",
+          "python": "(v_{1}/np.exp(v_{3}))",
+          "complexity": 4,
+          "rmse": 0.607123461386011,
+          "error": 0.6071234613860108
+        },
+        {
+          "formula": "Inv(v_{3})",
+          "python": "(1/v_{3})",
+          "complexity": 2,
+          "rmse": 0.6912179025216767,
+          "error": 0.6912179025216766
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.7926671231657256,
+          "error": 0.7926671231657256
+        }
+      ],
+      "index": 32,
+      "n_vars": 4,
+      "var_names": [
+        "q",
+        "a",
+        "epsilon",
+        "c"
+      ]
+    },
+    {
+      "eq_id": "I.32.17",
+      "status": "failed",
+      "found_formula": "Times(v_{4}, Cos(Log(Neg(v_{5}))))",
+      "found_python": "(v_{4})*(np.cos(np.log((-v_{5}))))",
+      "rmse": 3.8030642886909924,
+      "complexity": 6,
+      "elapsed_s": 13.304873943328857,
+      "candidates": [
+        {
+          "formula": "Times(v_{4}, Cos(Log(Neg(v_{5}))))",
+          "python": "(v_{4})*(np.cos(np.log((-v_{5}))))",
+          "complexity": 6,
+          "rmse": 3.8030642886909924,
+          "error": 3.803064288690992
+        },
+        {
+          "formula": "Times(v_{3}, Times(v_{4}, v_{4}))",
+          "python": "(v_{3})*((v_{4})*(v_{4}))",
+          "complexity": 5,
+          "rmse": 4.10787756423573,
+          "error": 4.1078775642357295
+        },
+        {
+          "formula": "EML(v_{4}, v_{5})",
+          "python": "(np.exp(v_{4}) - np.log(v_{5}))",
+          "complexity": 3,
+          "rmse": 4.207715612567457,
+          "error": 4.207715612567458
+        },
+        {
+          "formula": "Exp(v_{4})",
+          "python": "np.exp(v_{4})",
+          "complexity": 2,
+          "rmse": 4.624121293716958,
+          "error": 4.624121293716959
+        },
+        {
+          "formula": "E",
+          "python": "np.e",
+          "complexity": 1,
+          "rmse": 4.729297572649951,
+          "error": 4.729297572649952
+        }
+      ],
+      "index": 33,
+      "n_vars": 6,
+      "var_names": [
+        "epsilon",
+        "c",
+        "Ef",
+        "r",
+        "omega",
+        "omega_0"
+      ]
+    },
+    {
+      "eq_id": "I.34.8",
+      "status": "failed",
+      "found_formula": "Times(Log(v_{2}), Times(v_{0}, v_{1}))",
+      "found_python": "(np.log(v_{2}))*((v_{0})*(v_{1}))",
+      "rmse": 6.363356243675876,
+      "complexity": 6,
+      "elapsed_s": 10.34946346282959,
+      "candidates": [
+        {
+          "formula": "Times(Log(v_{2}), Times(v_{0}, v_{1}))",
+          "python": "(np.log(v_{2}))*((v_{0})*(v_{1}))",
+          "complexity": 6,
+          "rmse": 6.363356243675876,
+          "error": 6.363356243675877
+        },
+        {
+          "formula": "Plus(v_{2}, Times(v_{0}, v_{1}))",
+          "python": "(v_{2})+((v_{0})*(v_{1}))",
+          "complexity": 5,
+          "rmse": 6.862359367776965,
+          "error": 6.862359367776967
+        },
+        {
+          "formula": "Times(v_{0}, v_{1})",
+          "python": "(v_{0})*(v_{1})",
+          "complexity": 3,
+          "rmse": 7.329308423813801,
+          "error": 7.3293084238138
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 9.983902775965738,
+          "error": 9.983902775965742
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 11.22376770070682,
+          "error": 11.22376770070682
+        }
+      ],
+      "index": 34,
+      "n_vars": 4,
+      "var_names": [
+        "q",
+        "v",
+        "B",
+        "p"
+      ]
+    },
+    {
+      "eq_id": "I.34.1",
+      "status": "failed",
+      "found_formula": "EML(Sqrt(v_{2}), Subtract(v_{0}, v_{1}))",
+      "found_python": "(np.exp(np.sqrt(v_{2})) - np.log((v_{0})-(v_{1})))",
+      "rmse": 0.6254182389147129,
+      "complexity": 6,
+      "elapsed_s": 20.023736000061035,
+      "candidates": [
+        {
+          "formula": "EML(Sqrt(v_{2}), Subtract(v_{0}, v_{1}))",
+          "python": "(np.exp(np.sqrt(v_{2})) - np.log((v_{0})-(v_{1})))",
+          "complexity": 6,
+          "rmse": 0.6254182389147129,
+          "error": 0.625418238914713
+        },
+        {
+          "formula": "EML(Sqrt(v_{2}), Neg(v_{0}))",
+          "python": "(np.exp(np.sqrt(v_{2})) - np.log((-v_{0})))",
+          "complexity": 5,
+          "rmse": 0.722488243987453,
+          "error": 0.7224882439874533
+        },
+        {
+          "formula": "EML(Sqrt(v_{2}), v_{0})",
+          "python": "(np.exp(np.sqrt(v_{2})) - np.log(v_{0}))",
+          "complexity": 4,
+          "rmse": 0.722488243987453,
+          "error": 0.7224882439874534
+        },
+        {
+          "formula": "Plus(v_{1}, v_{2})",
+          "python": "(v_{1})+(v_{2})",
+          "complexity": 3,
+          "rmse": 0.9336540038455267,
+          "error": 0.9336540038455271
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 1.4929035590530368,
+          "error": 1.492903559053037
+        }
+      ],
+      "index": 35,
+      "n_vars": 3,
+      "var_names": [
+        "c",
+        "v",
+        "omega_0"
+      ]
+    },
+    {
+      "eq_id": "I.34.14",
+      "status": "failed",
+      "found_formula": "Divide(Exp(Sqrt(v_{2})), ArcTan(v_{0}))",
+      "found_python": "(np.exp(np.sqrt(v_{2}))/np.arctan(v_{0}))",
+      "rmse": 0.48039709576365247,
+      "complexity": 6,
+      "elapsed_s": 24.92496919631958,
+      "candidates": [
+        {
+          "formula": "Divide(Exp(Sqrt(v_{2})), ArcTan(v_{0}))",
+          "python": "(np.exp(np.sqrt(v_{2}))/np.arctan(v_{0}))",
+          "complexity": 6,
+          "rmse": 0.48039709576365247,
+          "error": 0.48039709576365247
+        },
+        {
+          "formula": "Plus(v_{2}, EML(1, v_{0}))",
+          "python": "(v_{2})+((np.exp(1.0285) - np.log(v_{0})))",
+          "complexity": 5,
+          "rmse": 0.5021414589311111,
+          "error": 0.5021414589311113
+        },
+        {
+          "formula": "Times(v_{2}, ArcTan(Pi))",
+          "python": "(v_{2})*(np.arctan(4.2541))",
+          "complexity": 4,
+          "rmse": 0.569368535811643,
+          "error": 0.569368535811643
+        },
+        {
+          "formula": "Plus(1, v_{2})",
+          "python": "(0.9398)+(v_{2})",
+          "complexity": 3,
+          "rmse": 0.6645359449648761,
+          "error": 0.6645359449648764
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 1.1753349623785871,
+          "error": 1.1753349623785874
+        }
+      ],
+      "index": 36,
+      "n_vars": 3,
+      "var_names": [
+        "c",
+        "v",
+        "omega_0"
+      ]
+    },
+    {
+      "eq_id": "I.34.27",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Log(Sqrt(v_{1})))",
+      "found_python": "(v_{0})*(np.log(np.sqrt(v_{1})))",
+      "rmse": 0.2004595261309933,
+      "complexity": 5,
+      "elapsed_s": 48.619346618652344,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Log(Sqrt(v_{1})))",
+          "python": "(v_{0})*(np.log(np.sqrt(v_{1})))",
+          "complexity": 5,
+          "rmse": 0.2004595261309933,
+          "error": 0.20045952613099327
+        },
+        {
+          "formula": "EML(I, Inv(v_{1}))",
+          "python": "(np.exp(1j) - np.log((1/v_{1})))",
+          "complexity": 4,
+          "rmse": 0.5860685687570935,
+          "error": 0.5860685687570935
+        },
+        {
+          "formula": "Divide(v_{1}, E)",
+          "python": "(v_{1}/2.3910)",
+          "complexity": 3,
+          "rmse": 0.611067583608612,
+          "error": 0.6110675836086121
+        },
+        {
+          "formula": "Sqrt(v_{1})",
+          "python": "np.sqrt(v_{1})",
+          "complexity": 2,
+          "rmse": 0.6345386035688202,
+          "error": 0.6345386035688204
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 0.9081481928858685,
+          "error": 0.9081481928858685
+        }
+      ],
+      "index": 37,
+      "n_vars": 2,
+      "var_names": [
+        "omega",
+        "h"
+      ]
+    },
+    {
+      "eq_id": "I.37.4",
+      "status": "failed",
+      "found_formula": "EML(Exp(Cos(v_{2})), Cos(v_{2}))",
+      "found_python": "(np.exp(np.exp(np.cos(v_{2}))) - np.log(np.cos(v_{2})))",
+      "rmse": 1.7615442125487248,
+      "complexity": 6,
+      "elapsed_s": 9.149135828018188,
+      "candidates": [
+        {
+          "formula": "EML(Exp(Cos(v_{2})), Cos(v_{2}))",
+          "python": "(np.exp(np.exp(np.cos(v_{2}))) - np.log(np.cos(v_{2})))",
+          "complexity": 6,
+          "rmse": 1.7615442125487248,
+          "error": 1.761544212548726
+        },
+        {
+          "formula": "Plus(v_{0}, Log(Tan(v_{2})))",
+          "python": "(v_{0})+(np.log(np.tan(v_{2})))",
+          "complexity": 5,
+          "rmse": 2.0738434282126748,
+          "error": 2.0738434282126748
+        },
+        {
+          "formula": "EML(1, Cos(v_{2}))",
+          "python": "(np.exp(1) - np.log(np.cos(v_{2})))",
+          "complexity": 4,
+          "rmse": 2.429178520185283,
+          "error": 2.429178520185284
+        },
+        {
+          "formula": "Exp(ArcTan(v_{0}))",
+          "python": "np.exp(np.arctan(v_{0}))",
+          "complexity": 3,
+          "rmse": 2.8550013186894945,
+          "error": 2.855001318689495
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 2.8990031279127852,
+          "error": 2.8990031279127852
+        }
+      ],
+      "index": 38,
+      "n_vars": 3,
+      "var_names": [
+        "I1",
+        "I2",
+        "delta"
+      ]
+    },
+    {
+      "index": 39,
+      "eq_id": "I.38.12",
+      "n_vars": 3,
+      "var_names": [
+        "m",
+        "q",
+        "h"
+      ],
+      "status": "skipped",
+      "reason": "too_few_valid_samples",
+      "found_formula": null,
+      "found_python": null,
+      "rmse": null,
+      "complexity": null,
+      "elapsed_s": 0.0,
+      "candidates": []
+    },
+    {
+      "eq_id": "I.39.1",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, Times(v_{0}, Cos(I)))",
+      "found_python": "(v_{1})*((v_{0})*(np.cos(1j)))",
+      "rmse": 0.41705968184844,
+      "complexity": 6,
+      "elapsed_s": 7.466968774795532,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Times(v_{0}, Cos(I)))",
+          "python": "(v_{1})*((v_{0})*(np.cos(1j)))",
+          "complexity": 6,
+          "rmse": 0.41705968184844,
+          "error": 0.41705968184844
+        },
+        {
+          "formula": "Plus(v_{1}, Times(v_{0}, v_{1}))",
+          "python": "(v_{1})+((v_{0})*(v_{1}))",
+          "complexity": 5,
+          "rmse": 2.2534947515351798,
+          "error": 2.2534947515351793
+        },
+        {
+          "formula": "Times(v_{0}, v_{1})",
+          "python": "(v_{0})*(v_{1})",
+          "complexity": 3,
+          "rmse": 4.84045422771796,
+          "error": 4.840454227717961
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 7.506960246847819,
+          "error": 7.506960246847822
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 11.644709508345683,
+          "error": 11.644709508345683
+        }
+      ],
+      "index": 40,
+      "n_vars": 2,
+      "var_names": [
+        "pr",
+        "V"
+      ]
+    },
+    {
+      "eq_id": "I.39.11",
+      "status": "failed",
+      "found_formula": "Divide(Plus(v_{1}, v_{2}), Log(v_{0}))",
+      "found_python": "((v_{1})+(v_{2})/np.log(v_{0}))",
+      "rmse": 1.6825234114460004,
+      "complexity": 6,
+      "elapsed_s": 9.787292957305908,
+      "candidates": [
+        {
+          "formula": "Divide(Plus(v_{1}, v_{2}), Log(v_{0}))",
+          "python": "((v_{1})+(v_{2})/np.log(v_{0}))",
+          "complexity": 6,
+          "rmse": 1.6825234114460004,
+          "error": 1.6825234114460001
+        },
+        {
+          "formula": "Times(v_{1}, Divide(v_{2}, v_{0}))",
+          "python": "(v_{1})*((v_{2}/v_{0}))",
+          "complexity": 5,
+          "rmse": 2.214964729053824,
+          "error": 2.2149647290538246
+        },
+        {
+          "formula": "Times(v_{1}, Sqrt(v_{2}))",
+          "python": "(v_{1})*(np.sqrt(v_{2}))",
+          "complexity": 4,
+          "rmse": 2.48745035884091,
+          "error": 2.4874503588409103
+        },
+        {
+          "formula": "Plus(1, v_{1})",
+          "python": "(1)+(v_{1})",
+          "complexity": 3,
+          "rmse": 2.9043645532571105,
+          "error": 2.90436455325711
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 3.208606816900391,
+          "error": 3.20860681690039
+        }
+      ],
+      "index": 41,
+      "n_vars": 3,
+      "var_names": [
+        "gamma",
+        "pr",
+        "V"
+      ]
+    },
+    {
+      "eq_id": "I.39.22",
+      "status": "failed",
+      "found_formula": "Times(Log(v_{1}), Times(v_{0}, v_{3}))",
+      "found_python": "(np.log(v_{1}))*((v_{0})*(v_{3}))",
+      "rmse": 5.881180192390382,
+      "complexity": 6,
+      "elapsed_s": 11.231428146362305,
+      "candidates": [
+        {
+          "formula": "Times(Log(v_{1}), Times(v_{0}, v_{3}))",
+          "python": "(np.log(v_{1}))*((v_{0})*(v_{3}))",
+          "complexity": 6,
+          "rmse": 5.881180192390382,
+          "error": 5.881180192390381
+        },
+        {
+          "formula": "Plus(v_{3}, Times(v_{0}, v_{1}))",
+          "python": "(v_{3})+((v_{0})*(v_{1}))",
+          "complexity": 5,
+          "rmse": 6.55817344627742,
+          "error": 6.5581734462774195
+        },
+        {
+          "formula": "Times(v_{0}, v_{1})",
+          "python": "(v_{0})*(v_{1})",
+          "complexity": 3,
+          "rmse": 7.157560748091764,
+          "error": 7.157560748091765
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 10.243097300651195,
+          "error": 10.243097300651192
+        },
+        {
+          "formula": "v_{3}",
+          "python": "v_{3}",
+          "complexity": 1,
+          "rmse": 10.986972536865053,
+          "error": 10.986972536865055
+        }
+      ],
+      "index": 42,
+      "n_vars": 4,
+      "var_names": [
+        "n",
+        "T",
+        "V",
+        "kb"
+      ]
+    },
+    {
+      "eq_id": "I.40.1",
+      "status": "failed",
+      "found_formula": "Times(v_{3}, Divide(Inv(v_{1}), v_{2}))",
+      "found_python": "(v_{3})*(((1/v_{1})/v_{2}))",
+      "rmse": 0.45461824963500425,
+      "complexity": 6,
+      "elapsed_s": 67.69796466827393,
+      "candidates": [
+        {
+          "formula": "Times(v_{3}, Divide(Inv(v_{1}), v_{2}))",
+          "python": "(v_{3})*(((1/v_{1})/v_{2}))",
+          "complexity": 6,
+          "rmse": 0.45461824963500425,
+          "error": 0.4546182496350043
+        },
+        {
+          "formula": "ArcSin(Divide(Log(v_{3}), v_{1}))",
+          "python": "np.arcsin((np.log(v_{3})/v_{1}))",
+          "complexity": 5,
+          "rmse": 0.5318851194536272,
+          "error": 0.5318851194536273
+        },
+        {
+          "formula": "Divide(Log(v_{3}), v_{1})",
+          "python": "(np.log(v_{3})/v_{1})",
+          "complexity": 4,
+          "rmse": 0.5399901299870326,
+          "error": 0.5399901299870324
+        },
+        {
+          "formula": "Inv(v_{1})",
+          "python": "(1/v_{1})",
+          "complexity": 2,
+          "rmse": 0.5914325203981119,
+          "error": 0.591432520398112
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.7688219237437429,
+          "error": 0.7688219237437431
+        }
+      ],
+      "index": 43,
+      "n_vars": 6,
+      "var_names": [
+        "n_0",
+        "m",
+        "x",
+        "T",
+        "g",
+        "kb"
+      ]
+    },
+    {
+      "eq_id": "I.41.16",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Tan(Sqrt(ArcSin(v_{4}))))",
+      "found_python": "(v_{0})*(np.tan(np.sqrt(np.arcsin(v_{4}))))",
+      "rmse": 2.1837623283928846,
+      "complexity": 6,
+      "elapsed_s": 13.324376821517944,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Tan(Sqrt(ArcSin(v_{4}))))",
+          "python": "(v_{0})*(np.tan(np.sqrt(np.arcsin(v_{4}))))",
+          "complexity": 6,
+          "rmse": 2.1837623283928846,
+          "error": 2.1837623283928855
+        },
+        {
+          "formula": "Times(v_{0}, Divide(v_{1}, v_{4}))",
+          "python": "(v_{0})*((v_{1}/v_{4}))",
+          "complexity": 5,
+          "rmse": 2.4931814780215915,
+          "error": 2.4931814780215915
+        },
+        {
+          "formula": "Exp(Subtract(Pi, v_{4}))",
+          "python": "np.exp((np.pi)-(v_{4}))",
+          "complexity": 4,
+          "rmse": 2.585714150236822,
+          "error": 2.585714150236821
+        },
+        {
+          "formula": "Divide(v_{0}, v_{4})",
+          "python": "(v_{0}/v_{4})",
+          "complexity": 3,
+          "rmse": 2.8790899419152476,
+          "error": 2.8790899419152476
+        },
+        {
+          "formula": "Sqrt(v_{0})",
+          "python": "np.sqrt(v_{0})",
+          "complexity": 2,
+          "rmse": 3.2713723200305935,
+          "error": 3.2713723200305926
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 3.3352132290207908,
+          "error": 3.335213229020791
+        }
+      ],
+      "index": 44,
+      "n_vars": 5,
+      "var_names": [
+        "omega",
+        "T",
+        "h",
+        "kb",
+        "c"
+      ]
+    },
+    {
+      "eq_id": "I.43.16",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Exp(Divide(E, v_{3})))",
+      "found_python": "(v_{0})*(np.exp((np.e/v_{3})))",
+      "rmse": 7.840013144285549,
+      "complexity": 6,
+      "elapsed_s": 9.98473048210144,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Exp(Divide(E, v_{3})))",
+          "python": "(v_{0})*(np.exp((np.e/v_{3})))",
+          "complexity": 6,
+          "rmse": 7.840013144285549,
+          "error": 7.840013144285545
+        },
+        {
+          "formula": "Plus(v_{0}, Times(v_{1}, v_{2}))",
+          "python": "(v_{0})+((v_{1})*(v_{2}))",
+          "complexity": 5,
+          "rmse": 9.278060296266036,
+          "error": 9.278060296266036
+        },
+        {
+          "formula": "Times(v_{1}, v_{2})",
+          "python": "(v_{1})*(v_{2})",
+          "complexity": 3,
+          "rmse": 10.019378058007229,
+          "error": 10.019378058007232
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 12.793452554116886,
+          "error": 12.793452554116886
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 14.484220917428175,
+          "error": 14.484220917428175
+        }
+      ],
+      "index": 45,
+      "n_vars": 4,
+      "var_names": [
+        "mu_drift",
+        "q",
+        "Volt",
+        "d"
+      ]
+    },
+    {
+      "eq_id": "I.43.31",
+      "status": "ok",
+      "found_formula": "Times(v_{1}, Times(v_{0}, v_{2}))",
+      "found_python": "(v_{1})*((v_{0})*(v_{2}))",
+      "rmse": 0.0,
+      "complexity": 5,
+      "elapsed_s": 8.851303815841675,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Times(v_{0}, v_{2}))",
+          "python": "(v_{1})*((v_{0})*(v_{2}))",
+          "complexity": 5,
+          "rmse": 0.0,
+          "error": 0.0
+        },
+        {
+          "formula": "Exp(Exp(ArcTan(v_{0})))",
+          "python": "np.exp(np.exp(np.arctan(v_{0})))",
+          "complexity": 4,
+          "rmse": 16.21252884219222,
+          "error": 16.21252884219222
+        },
+        {
+          "formula": "Exp(Pi)",
+          "python": "np.exp(np.pi)",
+          "complexity": 2,
+          "rmse": 18.906474665883056,
+          "error": 18.90647466588306
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 28.57121567094607,
+          "error": 28.571215670946074
+        }
+      ],
+      "index": 46,
+      "n_vars": 3,
+      "var_names": [
+        "mob",
+        "T",
+        "kb"
+      ]
+    },
+    {
+      "eq_id": "I.43.43",
+      "status": "failed",
+      "found_formula": "Times(Sqrt(v_{3}), Divide(v_{1}, v_{2}))",
+      "found_python": "(np.sqrt(v_{3}))*((v_{1}/v_{2}))",
+      "rmse": 1.1331751222403494,
+      "complexity": 6,
+      "elapsed_s": 28.23140525817871,
+      "candidates": [
+        {
+          "formula": "Times(Sqrt(v_{3}), Divide(v_{1}, v_{2}))",
+          "python": "(np.sqrt(v_{3}))*((v_{1}/v_{2}))",
+          "complexity": 6,
+          "rmse": 1.1331751222403494,
+          "error": 1.1331751222403497
+        },
+        {
+          "formula": "EML(Divide(v_{1}, v_{0}), v_{2})",
+          "python": "(np.exp((v_{1}/v_{0})) - np.log(v_{2}))",
+          "complexity": 5,
+          "rmse": 1.2761451285473866,
+          "error": 1.2761451285473866
+        },
+        {
+          "formula": "Divide(v_{1}, Sqrt(v_{2}))",
+          "python": "(v_{1}/np.sqrt(v_{2}))",
+          "complexity": 4,
+          "rmse": 1.5342040607353749,
+          "error": 1.5342040607353749
+        },
+        {
+          "formula": "Divide(v_{1}, v_{2})",
+          "python": "(v_{1}/v_{2})",
+          "complexity": 3,
+          "rmse": 1.6084730779511227,
+          "error": 1.6084730779511227
+        },
+        {
+          "formula": "Sqrt(v_{1})",
+          "python": "np.sqrt(v_{1})",
+          "complexity": 2,
+          "rmse": 1.8378400700074058,
+          "error": 1.837840070007406
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 2.0971985162881426,
+          "error": 2.0971985162881435
+        }
+      ],
+      "index": 47,
+      "n_vars": 4,
+      "var_names": [
+        "gamma",
+        "kb",
+        "A",
+        "v"
+      ]
+    },
+    {
+      "eq_id": "I.44.4",
+      "status": "failed",
+      "found_formula": "Times(Exp(E), Subtract(v_{4}, v_{3}))",
+      "found_python": "(np.exp(np.e))*((v_{4})-(v_{3}))",
+      "rmse": 15.033499307418976,
+      "complexity": 6,
+      "elapsed_s": 12.880559206008911,
+      "candidates": [
+        {
+          "formula": "Times(Exp(E), Subtract(v_{4}, v_{3}))",
+          "python": "(np.exp(np.e))*((v_{4})-(v_{3}))",
+          "complexity": 6,
+          "rmse": 15.033499307418976,
+          "error": 15.033499307418978
+        },
+        {
+          "formula": "EML(Divide(v_{4}, v_{3}), v_{3})",
+          "python": "(np.exp((v_{4}/v_{3})) - np.log(v_{3}))",
+          "complexity": 5,
+          "rmse": 16.038628846842432,
+          "error": 16.038628846842432
+        },
+        {
+          "formula": "Exp(Divide(v_{4}, v_{3}))",
+          "python": "np.exp((v_{4}/v_{3}))",
+          "complexity": 4,
+          "rmse": 16.432593876159718,
+          "error": 16.432593876159714
+        },
+        {
+          "formula": "Inv(Log(v_{3}))",
+          "python": "(1/np.log(v_{3}))",
+          "complexity": 3,
+          "rmse": 19.1123241678528,
+          "error": 19.1123241678528
+        },
+        {
+          "formula": "v_{4}",
+          "python": "v_{4}",
+          "complexity": 1,
+          "rmse": 19.981641531485334,
+          "error": 19.98164153148533
+        }
+      ],
+      "index": 48,
+      "n_vars": 5,
+      "var_names": [
+        "n",
+        "kb",
+        "T",
+        "V1",
+        "V2"
+      ]
+    },
+    {
+      "eq_id": "I.47.23",
+      "status": "failed",
+      "found_formula": "Plus(Sin(E), Divide(v_{1}, v_{2}))",
+      "found_python": "(np.sin(2.4679))+((v_{1}/v_{2}))",
+      "rmse": 0.3891415345053853,
+      "complexity": 6,
+      "elapsed_s": 51.83145022392273,
+      "candidates": [
+        {
+          "formula": "Plus(Sin(E), Divide(v_{1}, v_{2}))",
+          "python": "(np.sin(2.4679))+((v_{1}/v_{2}))",
+          "complexity": 6,
+          "rmse": 0.3891415345053853,
+          "error": 0.38914153450538536
+        },
+        {
+          "formula": "EML(ArcTan(Sqrt(v_{1})), v_{2})",
+          "python": "(np.exp(np.arctan(np.sqrt(v_{1}))) - np.log(v_{2}))",
+          "complexity": 5,
+          "rmse": 0.4125814014943393,
+          "error": 0.41258140149433925
+        },
+        {
+          "formula": "Divide(v_{1}, Sqrt(v_{2}))",
+          "python": "(v_{1}/np.sqrt(v_{2}))",
+          "complexity": 4,
+          "rmse": 0.45824506416372224,
+          "error": 0.4582450641637222
+        },
+        {
+          "formula": "EML(1, v_{2})",
+          "python": "(np.exp(1.0474) - np.log(v_{2}))",
+          "complexity": 3,
+          "rmse": 0.5696532876237399,
+          "error": 0.5696532876237398
+        },
+        {
+          "formula": "Sqrt(v_{0})",
+          "python": "np.sqrt(v_{0})",
+          "complexity": 2,
+          "rmse": 0.5955701411944042,
+          "error": 0.5955701411944041
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 1.0776543296301075,
+          "error": 1.0776543296301073
+        }
+      ],
+      "index": 49,
+      "n_vars": 3,
+      "var_names": [
+        "gamma",
+        "pr",
+        "rho"
+      ]
+    },
+    {
+      "eq_id": "I.48.2",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Times(v_{2}, v_{2}))",
+      "found_python": "(v_{0})*((v_{2})*(v_{2}))",
+      "rmse": 4.084526486048415,
+      "complexity": 5,
+      "elapsed_s": 8.801685333251953,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Times(v_{2}, v_{2}))",
+          "python": "(v_{0})*((v_{2})*(v_{2}))",
+          "complexity": 5,
+          "rmse": 4.084526486048415,
+          "error": 4.084526486048416
+        },
+        {
+          "formula": "Times(v_{2}, Exp(Pi))",
+          "python": "(v_{2})*(np.exp(np.pi))",
+          "complexity": 4,
+          "rmse": 74.51106769728653,
+          "error": 74.51106769728653
+        },
+        {
+          "formula": "Tan(Tan(1))",
+          "python": "np.tan(np.tan(1))",
+          "complexity": 3,
+          "rmse": 118.87429825233413,
+          "error": 118.87429825233414
+        },
+        {
+          "formula": "Exp(v_{0})",
+          "python": "np.exp(v_{0})",
+          "complexity": 2,
+          "rmse": 135.46257283380893,
+          "error": 135.4625728338089
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 162.92135211477094,
+          "error": 162.92135211477085
+        }
+      ],
+      "index": 50,
+      "n_vars": 3,
+      "var_names": [
+        "m",
+        "v",
+        "c"
+      ]
+    },
+    {
+      "eq_id": "I.50.26",
+      "status": "failed",
+      "found_formula": "Times(Log(v_{1}), Plus(I, v_{3}))",
+      "found_python": "(np.log(v_{1}))*((0.3106)+(v_{3}))",
+      "rmse": 1.8726885834691638,
+      "complexity": 6,
+      "elapsed_s": 12.20283842086792,
+      "candidates": [
+        {
+          "formula": "Times(Log(v_{1}), Plus(I, v_{3}))",
+          "python": "(np.log(v_{1}))*((0.3106)+(v_{3}))",
+          "complexity": 6,
+          "rmse": 1.8726885834691638,
+          "error": 1.8726885834691633
+        },
+        {
+          "formula": "Times(v_{0}, Divide(v_{3}, E))",
+          "python": "(v_{0})*((v_{3}/2.5213))",
+          "complexity": 5,
+          "rmse": 1.8824124064710872,
+          "error": 1.8824124064710868
+        },
+        {
+          "formula": "Times(v_{3}, Log(v_{1}))",
+          "python": "(v_{3})*(np.log(v_{1}))",
+          "complexity": 4,
+          "rmse": 1.884570642391317,
+          "error": 1.884570642391317
+        },
+        {
+          "formula": "Inv(Sin(v_{0}))",
+          "python": "(1/np.sin(v_{0}))",
+          "complexity": 3,
+          "rmse": 2.017784702964055,
+          "error": 2.017784702964056
+        },
+        {
+          "formula": "Sqrt(v_{1})",
+          "python": "np.sqrt(v_{1})",
+          "complexity": 2,
+          "rmse": 2.030214688433022,
+          "error": 2.030214688433022
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 2.035466664113097,
+          "error": 2.0354666641130965
+        }
+      ],
+      "index": 51,
+      "n_vars": 4,
+      "var_names": [
+        "x1",
+        "omega",
+        "t",
+        "alpha"
+      ]
+    },
+    {
+      "eq_id": "II.2.42",
+      "status": "failed",
+      "found_formula": "Times(v_{3}, Subtract(v_{2}, v_{1}))",
+      "found_python": "(v_{3})*((v_{2})-(v_{1}))",
+      "rmse": 4.47456059386938,
+      "complexity": 5,
+      "elapsed_s": 12.065772771835327,
+      "candidates": [
+        {
+          "formula": "Times(v_{3}, Subtract(v_{2}, v_{1}))",
+          "python": "(v_{3})*((v_{2})-(v_{1}))",
+          "complexity": 5,
+          "rmse": 4.47456059386938,
+          "error": 4.4745605938693815
+        },
+        {
+          "formula": "Times(v_{0}, Sin(v_{1}))",
+          "python": "(v_{0})*(np.sin(v_{1}))",
+          "complexity": 4,
+          "rmse": 6.993282646160901,
+          "error": 6.993282646160897
+        },
+        {
+          "formula": "Subtract(v_{2}, v_{1})",
+          "python": "(v_{2})-(v_{1})",
+          "complexity": 3,
+          "rmse": 7.0754748264045935,
+          "error": 7.075474826404592
+        },
+        {
+          "formula": "Sin(v_{1})",
+          "python": "np.sin(v_{1})",
+          "complexity": 2,
+          "rmse": 7.937534896925953,
+          "error": 7.937534896925951
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 8.307065221910173,
+          "error": 8.307065221910172
+        }
+      ],
+      "index": 52,
+      "n_vars": 5,
+      "var_names": [
+        "kappa",
+        "T1",
+        "T2",
+        "A",
+        "d"
+      ]
+    },
+    {
+      "eq_id": "II.3.24",
+      "status": "partial",
+      "found_formula": "Divide(Log(Sqrt(v_{0})), Exp(v_{1}))",
+      "found_python": "(np.log(np.sqrt(v_{0}))/np.exp(v_{1}))",
+      "rmse": 0.0096652099334925,
+      "complexity": 6,
+      "elapsed_s": 52.43670296669006,
+      "candidates": [
+        {
+          "formula": "Divide(Log(Sqrt(v_{0})), Exp(v_{1}))",
+          "python": "(np.log(np.sqrt(v_{0}))/np.exp(v_{1}))",
+          "complexity": 6,
+          "rmse": 0.0096652099334925,
+          "error": 0.009665209933492501
+        },
+        {
+          "formula": "Times(v_{0}, Divide(I, v_{1}))",
+          "python": "(v_{0})*((0.0488/v_{1}))",
+          "complexity": 5,
+          "rmse": 0.02465270673984669,
+          "error": 0.024652706739846684
+        },
+        {
+          "formula": "Divide(I, Log(v_{1}))",
+          "python": "(0.0254/np.log(v_{1}))",
+          "complexity": 4,
+          "rmse": 0.03172864598450316,
+          "error": 0.03172864598450315
+        },
+        {
+          "formula": "Divide(I, v_{1})",
+          "python": "(0.0488/v_{1})",
+          "complexity": 3,
+          "rmse": 0.05287640806374903,
+          "error": 0.05287640806374902
+        },
+        {
+          "formula": "Sin(I)",
+          "python": "np.sin(84.7900)",
+          "complexity": 2,
+          "rmse": 0.055283949007593446,
+          "error": 0.055283949007593446
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.069029464303505,
+          "error": 0.069029464303505
+        }
+      ],
+      "index": 53,
+      "n_vars": 2,
+      "var_names": [
+        "Pwr",
+        "r"
+      ]
+    },
+    {
+      "eq_id": "II.4.23",
+      "status": "failed",
+      "found_formula": "ArcTan(Times(v_{0}, Divide(I, v_{1})))",
+      "found_python": "np.arctan((v_{0})*((0.0324/v_{1})))",
+      "rmse": 0.018193542748474477,
+      "complexity": 6,
+      "elapsed_s": 57.32106924057007,
+      "candidates": [
+        {
+          "formula": "ArcTan(Times(v_{0}, Divide(I, v_{1})))",
+          "python": "np.arctan((v_{0})*((0.0324/v_{1})))",
+          "complexity": 6,
+          "rmse": 0.018193542748474477,
+          "error": 0.018193542748474477
+        },
+        {
+          "formula": "Times(v_{0}, Divide(I, v_{1}))",
+          "python": "(v_{0})*((0.0324/v_{1}))",
+          "complexity": 5,
+          "rmse": 0.018229227418906445,
+          "error": 0.018229227418906452
+        },
+        {
+          "formula": "Divide(Tan(E), v_{1})",
+          "python": "(np.tan(119.4828)/v_{1})",
+          "complexity": 4,
+          "rmse": 0.024786055308807814,
+          "error": 0.024786055308807814
+        },
+        {
+          "formula": "Exp(Sqrt(Pi))",
+          "python": "np.exp(np.sqrt(-9799.7711))",
+          "complexity": 3,
+          "rmse": 0.028063762630237545,
+          "error": 0.028063762630237552
+        },
+        {
+          "formula": "Sqrt(I)",
+          "python": "np.sqrt(0.0007)",
+          "complexity": 2,
+          "rmse": 0.02926962765677106,
+          "error": 0.029269627656771064
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.04465934121164865,
+          "error": 0.044659341211648655
+        }
+      ],
+      "index": 54,
+      "n_vars": 3,
+      "var_names": [
+        "q",
+        "epsilon",
+        "r"
+      ]
+    },
+    {
+      "eq_id": "II.6.11",
+      "status": "failed",
+      "found_formula": "Times(Cos(v_{2}), Sqrt(Inv(E)))",
+      "found_python": "(np.cos(v_{2}))*(np.sqrt((1/1030.3165)))",
+      "rmse": 0.016187512460857815,
+      "complexity": 6,
+      "elapsed_s": 63.613141775131226,
+      "candidates": [
+        {
+          "formula": "Times(Cos(v_{2}), Sqrt(Inv(E)))",
+          "python": "(np.cos(v_{2}))*(np.sqrt((1/1030.3165)))",
+          "complexity": 6,
+          "rmse": 0.016187512460857815,
+          "error": 0.01618751246085782
+        },
+        {
+          "formula": "Divide(Cos(v_{2}), Exp(Pi))",
+          "python": "(np.cos(v_{2})/np.exp(3.5868))",
+          "complexity": 5,
+          "rmse": 0.016224037582786597,
+          "error": 0.016224037582786593
+        },
+        {
+          "formula": "Times(I, Cos(v_{2}))",
+          "python": "(0.0230)*(np.cos(v_{2}))",
+          "complexity": 4,
+          "rmse": 0.016713334241788325,
+          "error": 0.016713334241788325
+        },
+        {
+          "formula": "Times(I, v_{2})",
+          "python": "(-0.0065)*(v_{2})",
+          "complexity": 3,
+          "rmse": 0.01932822888790909,
+          "error": 0.019328228887909086
+        },
+        {
+          "formula": "Tan(I)",
+          "python": "np.tan(-0.0024)",
+          "complexity": 2,
+          "rmse": 0.023564494123804,
+          "error": 0.023564494123804
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.024606450741476632,
+          "error": 0.024606450741476632
+        }
+      ],
+      "index": 55,
+      "n_vars": 4,
+      "var_names": [
+        "epsilon",
+        "p_d",
+        "theta",
+        "r"
+      ]
+    },
+    {
+      "eq_id": "II.6.15a",
+      "status": "failed",
+      "found_formula": "Divide(Tan(Exp(ArcCos(v_{2}))), v_{2})",
+      "found_python": "(np.tan(np.exp(np.arccos(v_{2})))/v_{2})",
+      "rmse": 0.16639632617405262,
+      "complexity": 6,
+      "elapsed_s": 74.18852663040161,
+      "candidates": [
+        {
+          "formula": "Divide(Tan(Exp(ArcCos(v_{2}))), v_{2})",
+          "python": "(np.tan(np.exp(np.arccos(v_{2})))/v_{2})",
+          "complexity": 6,
+          "rmse": 0.16639632617405262,
+          "error": 0.1663963261740526
+        },
+        {
+          "formula": "ArcSin(Tan(Exp(ArcCos(v_{2}))))",
+          "python": "np.arcsin(np.tan(np.exp(np.arccos(v_{2}))))",
+          "complexity": 5,
+          "rmse": 0.16676102914351437,
+          "error": 0.16676102914351434
+        },
+        {
+          "formula": "Tan(Exp(ArcCos(v_{2})))",
+          "python": "np.tan(np.exp(np.arccos(v_{2})))",
+          "complexity": 4,
+          "rmse": 0.17934328085372608,
+          "error": 0.1793432808537261
+        },
+        {
+          "formula": "Sqrt(Cos(v_{2}))",
+          "python": "np.sqrt(np.cos(v_{2}))",
+          "complexity": 3,
+          "rmse": 0.18908417800667257,
+          "error": 0.18908417800667257
+        },
+        {
+          "formula": "Sqrt(I)",
+          "python": "np.sqrt(0.0345)",
+          "complexity": 2,
+          "rmse": 0.2980300962177963,
+          "error": 0.2980300962177963
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.34421447444098885,
+          "error": 0.34421447444098896
+        }
+      ],
+      "index": 56,
+      "n_vars": 6,
+      "var_names": [
+        "epsilon",
+        "p_d",
+        "r",
+        "x",
+        "y",
+        "z"
+      ]
+    },
+    {
+      "eq_id": "II.6.15b",
+      "status": "failed",
+      "found_formula": "Times(v_{2}, Divide(I, Exp(v_{3})))",
+      "found_python": "(v_{2})*((-0.0610/np.exp(v_{3})))",
+      "rmse": 0.02540992047270419,
+      "complexity": 6,
+      "elapsed_s": 62.4810905456543,
+      "candidates": [
+        {
+          "formula": "Times(v_{2}, Divide(I, Exp(v_{3})))",
+          "python": "(v_{2})*((-0.0610/np.exp(v_{3})))",
+          "complexity": 6,
+          "rmse": 0.02540992047270419,
+          "error": 0.025409920472704198
+        },
+        {
+          "formula": "Times(v_{2}, Divide(I, v_{3}))",
+          "python": "(v_{2})*((-0.0177/v_{3}))",
+          "complexity": 5,
+          "rmse": 0.026579710443184516,
+          "error": 0.026579710443184513
+        },
+        {
+          "formula": "Times(I, Cos(v_{2}))",
+          "python": "(0.0208)*(np.cos(v_{2}))",
+          "complexity": 4,
+          "rmse": 0.027814974254536544,
+          "error": 0.027814974254536544
+        },
+        {
+          "formula": "Divide(I, v_{3})",
+          "python": "(-0.0177/v_{3})",
+          "complexity": 3,
+          "rmse": 0.02897880269601822,
+          "error": 0.02897880269601822
+        },
+        {
+          "formula": "Tan(I)",
+          "python": "np.tan(-0.0023)",
+          "complexity": 2,
+          "rmse": 0.03164318422718516,
+          "error": 0.03164318422718516
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.03238156402941416,
+          "error": 0.032381564029414146
+        }
+      ],
+      "index": 57,
+      "n_vars": 4,
+      "var_names": [
+        "epsilon",
+        "p_d",
+        "theta",
+        "r"
+      ]
+    },
+    {
+      "eq_id": "II.8.7",
+      "status": "failed",
+      "found_formula": "Tan(Times(v_{0}, Divide(I, v_{2})))",
+      "found_python": "np.tan((v_{0})*((0.0867/v_{2})))",
+      "rmse": 0.06931529083839902,
+      "complexity": 6,
+      "elapsed_s": 58.81891655921936,
+      "candidates": [
+        {
+          "formula": "Tan(Times(v_{0}, Divide(I, v_{2})))",
+          "python": "np.tan((v_{0})*((0.0867/v_{2})))",
+          "complexity": 6,
+          "rmse": 0.06931529083839902,
+          "error": 0.069315290838399
+        },
+        {
+          "formula": "Times(v_{0}, Divide(I, v_{2}))",
+          "python": "(v_{0})*((0.0867/v_{2}))",
+          "complexity": 5,
+          "rmse": 0.07075104382491361,
+          "error": 0.0707510438249136
+        },
+        {
+          "formula": "Times(I, Exp(v_{0}))",
+          "python": "(0.0012)*(np.exp(v_{0}))",
+          "complexity": 4,
+          "rmse": 0.09686315160243315,
+          "error": 0.09686315160243317
+        },
+        {
+          "formula": "Exp(Neg(v_{2}))",
+          "python": "np.exp((-v_{2}))",
+          "complexity": 3,
+          "rmse": 0.09734651744095894,
+          "error": 0.09734651744095892
+        },
+        {
+          "formula": "Sqrt(I)",
+          "python": "np.sqrt(0.0163)",
+          "complexity": 2,
+          "rmse": 0.12328030800973369,
+          "error": 0.12328030800973366
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.1402734341764745,
+          "error": 0.14027343417647448
+        }
+      ],
+      "index": 58,
+      "n_vars": 3,
+      "var_names": [
+        "q",
+        "epsilon",
+        "d"
+      ]
+    },
+    {
+      "eq_id": "II.8.31",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Sqrt(Exp(v_{1})))",
+      "found_python": "(v_{0})*(np.sqrt(np.exp(v_{1})))",
+      "rmse": 1.918175536254756,
+      "complexity": 5,
+      "elapsed_s": 7.373244285583496,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Sqrt(Exp(v_{1})))",
+          "python": "(v_{0})*(np.sqrt(np.exp(v_{1})))",
+          "complexity": 5,
+          "rmse": 1.918175536254756,
+          "error": 1.918175536254756
+        },
+        {
+          "formula": "Exp(Subtract(v_{1}, 1))",
+          "python": "np.exp((v_{1})-(1))",
+          "complexity": 4,
+          "rmse": 9.323702970655782,
+          "error": 9.32370297065578
+        },
+        {
+          "formula": "Times(v_{1}, v_{1})",
+          "python": "(v_{1})*(v_{1})",
+          "complexity": 3,
+          "rmse": 11.103154768352985,
+          "error": 11.103154768352981
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 13.897878295713111,
+          "error": 13.897878295713108
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 19.458145274118046,
+          "error": 19.458145274118042
+        }
+      ],
+      "index": 59,
+      "n_vars": 2,
+      "var_names": [
+        "epsilon",
+        "Ef"
+      ]
+    },
+    {
+      "eq_id": "II.10.9",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Divide(I, v_{1}))",
+      "found_python": "(v_{0})*((0.3086/v_{1}))",
+      "rmse": 0.1391293616336108,
+      "complexity": 5,
+      "elapsed_s": 63.331732988357544,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Divide(I, v_{1}))",
+          "python": "(v_{0})*((0.3086/v_{1}))",
+          "complexity": 5,
+          "rmse": 0.1391293616336108,
+          "error": 0.1391293616336108
+        },
+        {
+          "formula": "Divide(Log(v_{0}), v_{1})",
+          "python": "(np.log(v_{0})/v_{1})",
+          "complexity": 4,
+          "rmse": 0.1617722140675232,
+          "error": 0.16177221406752318
+        },
+        {
+          "formula": "ArcTan(Inv(v_{1}))",
+          "python": "np.arctan((1/v_{1}))",
+          "complexity": 3,
+          "rmse": 0.20406533190796358,
+          "error": 0.20406533190796358
+        },
+        {
+          "formula": "Inv(v_{1})",
+          "python": "(1/v_{1})",
+          "complexity": 2,
+          "rmse": 0.21098746891767514,
+          "error": 0.21098746891767514
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.40639138651071316,
+          "error": 0.40639138651071316
+        }
+      ],
+      "index": 60,
+      "n_vars": 3,
+      "var_names": [
+        "sigma_den",
+        "epsilon",
+        "chi"
+      ]
+    },
+    {
+      "eq_id": "II.11.3",
+      "status": "failed",
+      "found_formula": "Divide(Divide(v_{0}, v_{3}), ArcSin(v_{2}))",
+      "found_python": "((v_{0}/v_{3})/np.arcsin(v_{2}))",
+      "rmse": 0.07119776800195726,
+      "complexity": 6,
+      "elapsed_s": 69.96038389205933,
+      "candidates": [
+        {
+          "formula": "Divide(Divide(v_{0}, v_{3}), ArcSin(v_{2}))",
+          "python": "((v_{0}/v_{3})/np.arcsin(v_{2}))",
+          "complexity": 6,
+          "rmse": 0.07119776800195726,
+          "error": 0.07119776800195726
+        },
+        {
+          "formula": "Divide(Divide(v_{0}, v_{3}), E)",
+          "python": "((v_{0}/v_{3})/2.7582)",
+          "complexity": 5,
+          "rmse": 0.08592623626121124,
+          "error": 0.08592623626121125
+        },
+        {
+          "formula": "Divide(Log(v_{0}), v_{3})",
+          "python": "(np.log(v_{0})/v_{3})",
+          "complexity": 4,
+          "rmse": 0.09097061126454903,
+          "error": 0.09097061126454904
+        },
+        {
+          "formula": "Times(I, v_{0})",
+          "python": "(0.0770)*(v_{0})",
+          "complexity": 3,
+          "rmse": 0.10485044363333182,
+          "error": 0.10485044363333178
+        },
+        {
+          "formula": "Sin(I)",
+          "python": "np.sin(3540.3883)",
+          "complexity": 2,
+          "rmse": 0.1158958065894565,
+          "error": 0.11589580658945646
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.21142895282425286,
+          "error": 0.2114289528242529
+        }
+      ],
+      "index": 61,
+      "n_vars": 5,
+      "var_names": [
+        "q",
+        "Ef",
+        "m",
+        "omega_0",
+        "omega"
+      ]
+    },
+    {
+      "eq_id": "II.11.17",
+      "status": "failed",
+      "found_formula": "Times(Log(v_{0}), Exp(ArcSin(v_{3})))",
+      "found_python": "(np.log(v_{0}))*(np.exp(np.arcsin(v_{3})))",
+      "rmse": 1.3583844352187484,
+      "complexity": 6,
+      "elapsed_s": 34.05583381652832,
+      "candidates": [
+        {
+          "formula": "Times(Log(v_{0}), Exp(ArcSin(v_{3})))",
+          "python": "(np.log(v_{0}))*(np.exp(np.arcsin(v_{3})))",
+          "complexity": 6,
+          "rmse": 1.3583844352187484,
+          "error": 1.3583844352187484
+        },
+        {
+          "formula": "Times(v_{0}, ArcCos(Log(v_{3})))",
+          "python": "(v_{0})*(np.arccos(np.log(v_{3})))",
+          "complexity": 5,
+          "rmse": 1.4295513535487887,
+          "error": 1.4295513535487891
+        },
+        {
+          "formula": "Exp(Subtract(v_{0}, v_{3}))",
+          "python": "np.exp((v_{0})-(v_{3}))",
+          "complexity": 4,
+          "rmse": 1.475856392187939,
+          "error": 1.4758563921879388
+        },
+        {
+          "formula": "Exp(ArcSin(v_{3}))",
+          "python": "np.exp(np.arcsin(v_{3}))",
+          "complexity": 3,
+          "rmse": 1.526181840438023,
+          "error": 1.5261818404380225
+        },
+        {
+          "formula": "Sin(v_{3})",
+          "python": "np.sin(v_{3})",
+          "complexity": 2,
+          "rmse": 1.787230340964179,
+          "error": 1.7872303409641788
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 1.8765938919957745,
+          "error": 1.8765938919957748
+        }
+      ],
+      "index": 62,
+      "n_vars": 6,
+      "var_names": [
+        "n_0",
+        "kb",
+        "T",
+        "theta",
+        "p_d",
+        "Ef"
+      ]
+    },
+    {
+      "eq_id": "II.11.20",
+      "status": "failed",
+      "found_formula": "Divide(Times(v_{0}, v_{1}), Sqrt(v_{4}))",
+      "found_python": "((v_{0})*(v_{1})/np.sqrt(v_{4}))",
+      "rmse": 3.9136720011559127,
+      "complexity": 6,
+      "elapsed_s": 12.324195623397827,
+      "candidates": [
+        {
+          "formula": "Divide(Times(v_{0}, v_{1}), Sqrt(v_{4}))",
+          "python": "((v_{0})*(v_{1})/np.sqrt(v_{4}))",
+          "complexity": 6,
+          "rmse": 3.9136720011559127,
+          "error": 3.9136720011559114
+        },
+        {
+          "formula": "Times(v_{2}, Divide(v_{1}, v_{4}))",
+          "python": "(v_{2})*((v_{1}/v_{4}))",
+          "complexity": 5,
+          "rmse": 4.10941593887864,
+          "error": 4.109415938878641
+        },
+        {
+          "formula": "Times(v_{1}, Sqrt(v_{0}))",
+          "python": "(v_{1})*(np.sqrt(v_{0}))",
+          "complexity": 4,
+          "rmse": 4.454449719619204,
+          "error": 4.4544497196192046
+        },
+        {
+          "formula": "Sqrt(Exp(v_{1}))",
+          "python": "np.sqrt(np.exp(v_{1}))",
+          "complexity": 3,
+          "rmse": 4.718602022466062,
+          "error": 4.71860202246606
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 5.415632025128974,
+          "error": 5.415632025128973
+        }
+      ],
+      "index": 63,
+      "n_vars": 5,
+      "var_names": [
+        "n_rho",
+        "p_d",
+        "Ef",
+        "kb",
+        "T"
+      ]
+    },
+    {
+      "eq_id": "II.11.27",
+      "status": "failed",
+      "found_formula": "Times(E, Times(v_{0}, v_{1}))",
+      "found_python": "(2.8613)*((v_{0})*(v_{1}))",
+      "rmse": 0.2502500366391836,
+      "complexity": 5,
+      "elapsed_s": 57.13504219055176,
+      "candidates": [
+        {
+          "formula": "Times(E, Times(v_{0}, v_{1}))",
+          "python": "(2.8613)*((v_{0})*(v_{1}))",
+          "complexity": 5,
+          "rmse": 0.2502500366391836,
+          "error": 0.25025003663918355
+        },
+        {
+          "formula": "Times(v_{0}, Exp(v_{1}))",
+          "python": "(v_{0})*(np.exp(v_{1}))",
+          "complexity": 4,
+          "rmse": 0.39021397973075367,
+          "error": 0.39021397973075356
+        },
+        {
+          "formula": "Times(v_{0}, v_{2})",
+          "python": "(v_{0})*(v_{2})",
+          "complexity": 3,
+          "rmse": 0.5215463717484806,
+          "error": 0.5215463717484806
+        },
+        {
+          "formula": "Tan(v_{0})",
+          "python": "np.tan(v_{0})",
+          "complexity": 2,
+          "rmse": 0.5381607773393369,
+          "error": 0.538160777339337
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 0.5501498276018012,
+          "error": 0.5501498276018011
+        }
+      ],
+      "index": 64,
+      "n_vars": 4,
+      "var_names": [
+        "n",
+        "alpha",
+        "epsilon",
+        "Ef"
+      ]
+    },
+    {
+      "eq_id": "II.11.28",
+      "status": "failed",
+      "found_formula": "Divide(ArcTan(Exp(v_{0})), Cos(v_{1}))",
+      "found_python": "(np.arctan(np.exp(v_{0}))/np.cos(v_{1}))",
+      "rmse": 0.1354158508327602,
+      "complexity": 6,
+      "elapsed_s": 50.74046516418457,
+      "candidates": [
+        {
+          "formula": "Divide(ArcTan(Exp(v_{0})), Cos(v_{1}))",
+          "python": "(np.arctan(np.exp(v_{0}))/np.cos(v_{1}))",
+          "complexity": 6,
+          "rmse": 0.1354158508327602,
+          "error": 0.13541585083276023
+        },
+        {
+          "formula": "Plus(v_{1}, Sqrt(Sqrt(v_{0})))",
+          "python": "(v_{1})+(np.sqrt(np.sqrt(v_{0})))",
+          "complexity": 5,
+          "rmse": 0.16699991727699237,
+          "error": 0.1669999172769923
+        },
+        {
+          "formula": "Sqrt(Exp(v_{1}))",
+          "python": "np.sqrt(np.exp(v_{1}))",
+          "complexity": 3,
+          "rmse": 0.20736317916206237,
+          "error": 0.20736317916206237
+        },
+        {
+          "formula": "ArcTan(Pi)",
+          "python": "np.arctan(3.9667)",
+          "complexity": 2,
+          "rmse": 0.2976961229272535,
+          "error": 0.2976961229272535
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 0.4276593908303079,
+          "error": 0.4276593908303078
+        }
+      ],
+      "index": 65,
+      "n_vars": 2,
+      "var_names": [
+        "n",
+        "alpha"
+      ]
+    },
+    {
+      "eq_id": "II.13.17",
+      "status": "failed",
+      "found_formula": "Divide(Exp(Neg(v_{1})), Exp(v_{3}))",
+      "found_python": "(np.exp((-v_{1}))/np.exp(v_{3}))",
+      "rmse": 0.01553160231042694,
+      "complexity": 6,
+      "elapsed_s": 61.19013714790344,
+      "candidates": [
+        {
+          "formula": "Divide(Exp(Neg(v_{1})), Exp(v_{3}))",
+          "python": "(np.exp((-v_{1}))/np.exp(v_{3}))",
+          "complexity": 6,
+          "rmse": 0.01553160231042694,
+          "error": 0.015531602310426941
+        },
+        {
+          "formula": "Divide(Cos(1), Exp(v_{1}))",
+          "python": "(np.cos(8829.2652)/np.exp(v_{1}))",
+          "complexity": 5,
+          "rmse": 0.016053628844281968,
+          "error": 0.016053628844281968
+        },
+        {
+          "formula": "Divide(Neg(I), v_{1})",
+          "python": "((--0.0314)/v_{1})",
+          "complexity": 4,
+          "rmse": 0.017757373484942298,
+          "error": 0.017757373484942298
+        },
+        {
+          "formula": "Divide(I, v_{1})",
+          "python": "(0.0189/v_{1})",
+          "complexity": 3,
+          "rmse": 0.020458649641254198,
+          "error": 0.0204586496412542
+        },
+        {
+          "formula": "Sqrt(I)",
+          "python": "np.sqrt(0.0003)",
+          "complexity": 2,
+          "rmse": 0.021426786828965972,
+          "error": 0.02142678682896597
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.026471550963230582,
+          "error": 0.026471550963230582
+        }
+      ],
+      "index": 66,
+      "n_vars": 4,
+      "var_names": [
+        "epsilon",
+        "c",
+        "I",
+        "r"
+      ]
+    },
+    {
+      "eq_id": "II.13.23",
+      "status": "failed",
+      "found_formula": "Divide(v_{0}, ArcTan(ArcTan(v_{2})))",
+      "found_python": "(v_{0}/np.arctan(np.arctan(v_{2})))",
+      "rmse": 0.08513380312815187,
+      "complexity": 5,
+      "elapsed_s": 35.396098375320435,
+      "candidates": [
+        {
+          "formula": "Divide(v_{0}, ArcTan(ArcTan(v_{2})))",
+          "python": "(v_{0}/np.arctan(np.arctan(v_{2})))",
+          "complexity": 5,
+          "rmse": 0.08513380312815187,
+          "error": 0.08513380312815184
+        },
+        {
+          "formula": "Plus(v_{0}, Inv(v_{2}))",
+          "python": "(v_{0})+((1/v_{2}))",
+          "complexity": 4,
+          "rmse": 0.11378169344950097,
+          "error": 0.11378169344950101
+        },
+        {
+          "formula": "Plus(I, v_{0})",
+          "python": "(0.2466)+(v_{0})",
+          "complexity": 3,
+          "rmse": 0.1827197698557846,
+          "error": 0.1827197698557846
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 0.18271977150041968,
+          "error": 0.1827197715004197
+        }
+      ],
+      "index": 67,
+      "n_vars": 3,
+      "var_names": [
+        "rho_c_0",
+        "v",
+        "c"
+      ]
+    },
+    {
+      "eq_id": "II.13.34",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, Plus(v_{0}, Inv(v_{2})))",
+      "found_python": "(v_{1})*((v_{0})+((1/v_{2})))",
+      "rmse": 0.18245573800346704,
+      "complexity": 6,
+      "elapsed_s": 11.060864448547363,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Plus(v_{0}, Inv(v_{2})))",
+          "python": "(v_{1})*((v_{0})+((1/v_{2})))",
+          "complexity": 6,
+          "rmse": 0.18245573800346704,
+          "error": 0.1824557380034671
+        },
+        {
+          "formula": "Times(v_{1}, Plus(Pi, v_{0}))",
+          "python": "(v_{1})*((0.2250)+(v_{0}))",
+          "complexity": 5,
+          "rmse": 0.26137008534751327,
+          "error": 0.2613700853475132
+        },
+        {
+          "formula": "Times(v_{0}, v_{1})",
+          "python": "(v_{0})*(v_{1})",
+          "complexity": 3,
+          "rmse": 0.32747327358583905,
+          "error": 0.3274732735858391
+        },
+        {
+          "formula": "Exp(v_{1})",
+          "python": "np.exp(v_{1})",
+          "complexity": 2,
+          "rmse": 1.9583768679120659,
+          "error": 1.9583768679120659
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 2.134794910317291,
+          "error": 2.1347949103172916
+        }
+      ],
+      "index": 68,
+      "n_vars": 3,
+      "var_names": [
+        "rho_c_0",
+        "v",
+        "c"
+      ]
+    },
+    {
+      "eq_id": "II.15.4",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Exp(Neg(Cos(v_{2}))))",
+      "found_python": "(v_{0})*(np.exp((-np.cos(v_{2}))))",
+      "rmse": 3.386053653793073,
+      "complexity": 6,
+      "elapsed_s": 9.2027268409729,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Exp(Neg(Cos(v_{2}))))",
+          "python": "(v_{0})*(np.exp((-np.cos(v_{2}))))",
+          "complexity": 6,
+          "rmse": 3.386053653793073,
+          "error": 3.386053653793073
+        },
+        {
+          "formula": "Times(v_{1}, ArcTan(ArcCos(v_{2})))",
+          "python": "(v_{1})*(np.arctan(np.arccos(v_{2})))",
+          "complexity": 5,
+          "rmse": 3.7332597024082697,
+          "error": 3.73325970240827
+        },
+        {
+          "formula": "Exp(ArcSin(Log(v_{2})))",
+          "python": "np.exp(np.arcsin(np.log(v_{2})))",
+          "complexity": 4,
+          "rmse": 4.047690730595401,
+          "error": 4.047690730595401
+        },
+        {
+          "formula": "Exp(ArcTan(v_{2}))",
+          "python": "np.exp(np.arctan(v_{2}))",
+          "complexity": 3,
+          "rmse": 4.461535855493088,
+          "error": 4.461535855493088
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 4.5333362491801,
+          "error": 4.5333362491801
+        }
+      ],
+      "index": 69,
+      "n_vars": 3,
+      "var_names": [
+        "mom",
+        "B",
+        "theta"
+      ]
+    },
+    {
+      "eq_id": "II.15.5",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, ArcTan(ArcCos(v_{2})))",
+      "found_python": "(v_{1})*(np.arctan(np.arccos(v_{2})))",
+      "rmse": 3.7281595241215393,
+      "complexity": 5,
+      "elapsed_s": 9.044784545898438,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, ArcTan(ArcCos(v_{2})))",
+          "python": "(v_{1})*(np.arctan(np.arccos(v_{2})))",
+          "complexity": 5,
+          "rmse": 3.7281595241215393,
+          "error": 3.7281595241215393
+        },
+        {
+          "formula": "Subtract(v_{0}, Cos(v_{2}))",
+          "python": "(v_{0})-(np.cos(v_{2}))",
+          "complexity": 4,
+          "rmse": 4.176935327828258,
+          "error": 4.17693532782826
+        },
+        {
+          "formula": "Plus(1, v_{1})",
+          "python": "(1)+(v_{1})",
+          "complexity": 3,
+          "rmse": 4.505827835017028,
+          "error": 4.505827835017028
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 4.5830140083488695,
+          "error": 4.5830140083488695
+        }
+      ],
+      "index": 70,
+      "n_vars": 3,
+      "var_names": [
+        "p_d",
+        "Ef",
+        "theta"
+      ]
+    },
+    {
+      "eq_id": "II.21.32",
+      "status": "failed",
+      "found_formula": "Divide(Tan(Inv(v_{1})), Exp(v_{2}))",
+      "found_python": "(np.tan((1/v_{1}))/np.exp(v_{2}))",
+      "rmse": 0.03592890006807001,
+      "complexity": 6,
+      "elapsed_s": 68.85154414176941,
+      "candidates": [
+        {
+          "formula": "Divide(Tan(Inv(v_{1})), Exp(v_{2}))",
+          "python": "(np.tan((1/v_{1}))/np.exp(v_{2}))",
+          "complexity": 6,
+          "rmse": 0.03592890006807001,
+          "error": 0.03592890006807001
+        },
+        {
+          "formula": "Times(v_{0}, Divide(I, v_{1}))",
+          "python": "(v_{0})*((0.0500/v_{1}))",
+          "complexity": 5,
+          "rmse": 0.03601818773034547,
+          "error": 0.03601818773034548
+        },
+        {
+          "formula": "Divide(Inv(v_{1}), v_{4})",
+          "python": "((1/v_{1})/v_{4})",
+          "complexity": 4,
+          "rmse": 0.04237137533538142,
+          "error": 0.04237137533538142
+        },
+        {
+          "formula": "Inv(Log(I))",
+          "python": "(1/np.log(-78490351.5422))",
+          "complexity": 3,
+          "rmse": 0.05460114207045984,
+          "error": 0.054601142070459824
+        },
+        {
+          "formula": "Tan(I)",
+          "python": "np.tan(0.0108)",
+          "complexity": 2,
+          "rmse": 0.06973084736609857,
+          "error": 0.06973084736609857
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.07694764436747827,
+          "error": 0.0769476443674783
+        }
+      ],
+      "index": 71,
+      "n_vars": 5,
+      "var_names": [
+        "q",
+        "epsilon",
+        "r",
+        "v",
+        "c"
+      ]
+    },
+    {
+      "eq_id": "II.24.17",
+      "status": "failed",
+      "found_formula": "Subtract(Divide(v_{0}, v_{1}), Inv(v_{0}))",
+      "found_python": "((v_{0}/v_{1}))-((1/v_{0}))",
+      "rmse": 0.09727587730154993,
+      "complexity": 6,
+      "elapsed_s": 37.20136094093323,
+      "candidates": [
+        {
+          "formula": "Subtract(Divide(v_{0}, v_{1}), Inv(v_{0}))",
+          "python": "((v_{0}/v_{1}))-((1/v_{0}))",
+          "complexity": 6,
+          "rmse": 0.09727587730154993,
+          "error": 0.09727587730154995
+        },
+        {
+          "formula": "Divide(Subtract(v_{0}, Pi), v_{1})",
+          "python": "((v_{0})-(0.2986)/v_{1})",
+          "complexity": 5,
+          "rmse": 0.12442996383541349,
+          "error": 0.12442996383541349
+        },
+        {
+          "formula": "Divide(v_{0}, v_{1})",
+          "python": "(v_{0}/v_{1})",
+          "complexity": 3,
+          "rmse": 0.2234612785726408,
+          "error": 0.22346127857264078
+        },
+        {
+          "formula": "Sqrt(Pi)",
+          "python": "np.sqrt(11.6895)",
+          "complexity": 2,
+          "rmse": 0.896989899940956,
+          "error": 0.8969898999409558
+        },
+        {
+          "formula": "Pi",
+          "python": "np.pi",
+          "complexity": 1,
+          "rmse": 0.8992274860188851,
+          "error": 0.899227486018885
+        }
+      ],
+      "index": 72,
+      "n_vars": 3,
+      "var_names": [
+        "omega",
+        "c",
+        "d"
+      ]
+    },
+    {
+      "eq_id": "II.27.16",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, Exp(Exp(ArcTan(v_{2}))))",
+      "found_python": "(v_{1})*(np.exp(np.exp(np.arctan(v_{2}))))",
+      "rmse": 54.6843052606596,
+      "complexity": 6,
+      "elapsed_s": 8.958940982818604,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Exp(Exp(ArcTan(v_{2}))))",
+          "python": "(v_{1})*(np.exp(np.exp(np.arctan(v_{2}))))",
+          "complexity": 6,
+          "rmse": 54.6843052606596,
+          "error": 54.6843052606596
+        },
+        {
+          "formula": "Times(Exp(v_{2}), Sqrt(v_{1}))",
+          "python": "(np.exp(v_{2}))*(np.sqrt(v_{1}))",
+          "complexity": 5,
+          "rmse": 65.69418028253754,
+          "error": 65.69418028253754
+        },
+        {
+          "formula": "Times(v_{0}, Exp(v_{2}))",
+          "python": "(v_{0})*(np.exp(v_{2}))",
+          "complexity": 4,
+          "rmse": 69.57492450719664,
+          "error": 69.57492450719663
+        },
+        {
+          "formula": "Exp(v_{2})",
+          "python": "np.exp(v_{2})",
+          "complexity": 2,
+          "rmse": 92.2712822077549,
+          "error": 92.27128220775492
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 129.30976342469134,
+          "error": 129.30976342469134
+        }
+      ],
+      "index": 73,
+      "n_vars": 3,
+      "var_names": [
+        "epsilon",
+        "c",
+        "Ef"
+      ]
+    },
+    {
+      "eq_id": "II.27.18",
+      "status": "ok",
+      "found_formula": "Times(v_{0}, Times(v_{1}, v_{1}))",
+      "found_python": "(v_{0})*((v_{1})*(v_{1}))",
+      "rmse": 0.0,
+      "complexity": 5,
+      "elapsed_s": 7.536250352859497,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Times(v_{1}, v_{1}))",
+          "python": "(v_{0})*((v_{1})*(v_{1}))",
+          "complexity": 5,
+          "rmse": 0.0,
+          "error": 0.0
+        },
+        {
+          "formula": "Exp(Exp(ArcTan(v_{1})))",
+          "python": "np.exp(np.exp(np.arctan(v_{1})))",
+          "complexity": 4,
+          "rmse": 17.464192799649037,
+          "error": 17.464192799649037
+        },
+        {
+          "formula": "EML(v_{1}, v_{1})",
+          "python": "(np.exp(v_{1}) - np.log(v_{1}))",
+          "complexity": 3,
+          "rmse": 20.500946197606112,
+          "error": 20.500946197606112
+        },
+        {
+          "formula": "Exp(v_{1})",
+          "python": "np.exp(v_{1})",
+          "complexity": 2,
+          "rmse": 20.843841787875117,
+          "error": 20.843841787875117
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 38.176008791684716,
+          "error": 38.17600879168473
+        }
+      ],
+      "index": 74,
+      "n_vars": 2,
+      "var_names": [
+        "epsilon",
+        "Ef"
+      ]
+    },
+    {
+      "eq_id": "II.34.2a",
+      "status": "failed",
+      "found_formula": "Times(Log(v_{0}), Tan(Inv(v_{2})))",
+      "found_python": "(np.log(v_{0}))*(np.tan((1/v_{2})))",
+      "rmse": 0.29010256758113145,
+      "complexity": 6,
+      "elapsed_s": 60.23800206184387,
+      "candidates": [
+        {
+          "formula": "Times(Log(v_{0}), Tan(Inv(v_{2})))",
+          "python": "(np.log(v_{0}))*(np.tan((1/v_{2})))",
+          "complexity": 6,
+          "rmse": 0.29010256758113145,
+          "error": 0.29010256758113145
+        },
+        {
+          "formula": "ArcSin(Divide(Log(v_{0}), v_{2}))",
+          "python": "np.arcsin((np.log(v_{0})/v_{2}))",
+          "complexity": 5,
+          "rmse": 0.3116491311097992,
+          "error": 0.31164913110979925
+        },
+        {
+          "formula": "Divide(Sqrt(v_{0}), v_{2})",
+          "python": "(np.sqrt(v_{0})/v_{2})",
+          "complexity": 4,
+          "rmse": 0.3307899883638346,
+          "error": 0.33078998836383444
+        },
+        {
+          "formula": "Tan(Inv(v_{2}))",
+          "python": "np.tan((1/v_{2}))",
+          "complexity": 3,
+          "rmse": 0.3861011306286715,
+          "error": 0.3861011306286715
+        },
+        {
+          "formula": "Inv(v_{2})",
+          "python": "(1/v_{2})",
+          "complexity": 2,
+          "rmse": 0.41452333215863224,
+          "error": 0.4145233321586322
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 0.6468484451158611,
+          "error": 0.6468484451158611
+        }
+      ],
+      "index": 75,
+      "n_vars": 3,
+      "var_names": [
+        "q",
+        "v",
+        "r"
+      ]
+    },
+    {
+      "eq_id": "II.34.2",
+      "status": "failed",
+      "found_formula": "Times(v_{2}, Times(v_{1}, Sqrt(v_{0})))",
+      "found_python": "(v_{2})*((v_{1})*(np.sqrt(v_{0})))",
+      "rmse": 3.1907934546791408,
+      "complexity": 6,
+      "elapsed_s": 9.061717510223389,
+      "candidates": [
+        {
+          "formula": "Times(v_{2}, Times(v_{1}, Sqrt(v_{0})))",
+          "python": "(v_{2})*((v_{1})*(np.sqrt(v_{0})))",
+          "complexity": 6,
+          "rmse": 3.1907934546791408,
+          "error": 3.1907934546791417
+        },
+        {
+          "formula": "Plus(v_{1}, Times(v_{0}, v_{2}))",
+          "python": "(v_{1})+((v_{0})*(v_{2}))",
+          "complexity": 5,
+          "rmse": 4.780389960658779,
+          "error": 4.780389960658777
+        },
+        {
+          "formula": "Times(v_{0}, v_{2})",
+          "python": "(v_{0})*(v_{2})",
+          "complexity": 3,
+          "rmse": 6.623980092187317,
+          "error": 6.623980092187318
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 8.464015071789373,
+          "error": 8.464015071789369
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 12.07197323589408,
+          "error": 12.071973235894076
+        }
+      ],
+      "index": 76,
+      "n_vars": 3,
+      "var_names": [
+        "q",
+        "v",
+        "r"
+      ]
+    },
+    {
+      "eq_id": "II.34.11",
+      "status": "failed",
+      "found_formula": "Divide(Times(v_{0}, v_{1}), Sqrt(v_{3}))",
+      "found_python": "((v_{0})*(v_{1})/np.sqrt(v_{3}))",
+      "rmse": 2.9939030808288436,
+      "complexity": 6,
+      "elapsed_s": 10.466141700744629,
+      "candidates": [
+        {
+          "formula": "Divide(Times(v_{0}, v_{1}), Sqrt(v_{3}))",
+          "python": "((v_{0})*(v_{1})/np.sqrt(v_{3}))",
+          "complexity": 6,
+          "rmse": 2.9939030808288436,
+          "error": 2.993903080828844
+        },
+        {
+          "formula": "Times(v_{1}, Divide(v_{0}, v_{3}))",
+          "python": "(v_{1})*((v_{0}/v_{3}))",
+          "complexity": 5,
+          "rmse": 3.7000254582963463,
+          "error": 3.7000254582963445
+        },
+        {
+          "formula": "Times(v_{0}, Sqrt(v_{1}))",
+          "python": "(v_{0})*(np.sqrt(v_{1}))",
+          "complexity": 4,
+          "rmse": 4.206460683493929,
+          "error": 4.206460683493929
+        },
+        {
+          "formula": "Plus(v_{0}, v_{1})",
+          "python": "(v_{0})+(v_{1})",
+          "complexity": 3,
+          "rmse": 4.460576720644615,
+          "error": 4.460576720644615
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 5.6139850227727095,
+          "error": 5.613985022772711
+        }
+      ],
+      "index": 77,
+      "n_vars": 4,
+      "var_names": [
+        "g_",
+        "q",
+        "B",
+        "m"
+      ]
+    },
+    {
+      "eq_id": "II.34.29a",
+      "status": "failed",
+      "found_formula": "ArcSin(Divide(ArcTan(Log(v_{0})), v_{2}))",
+      "found_python": "np.arcsin((np.arctan(np.log(v_{0}))/v_{2}))",
+      "rmse": 0.1292568198709302,
+      "complexity": 6,
+      "elapsed_s": 64.16625595092773,
+      "candidates": [
+        {
+          "formula": "ArcSin(Divide(ArcTan(Log(v_{0})), v_{2}))",
+          "python": "np.arcsin((np.arctan(np.log(v_{0}))/v_{2}))",
+          "complexity": 6,
+          "rmse": 0.1292568198709302,
+          "error": 0.1292568198709302
+        },
+        {
+          "formula": "Divide(ArcTan(Log(v_{0})), v_{2})",
+          "python": "(np.arctan(np.log(v_{0}))/v_{2})",
+          "complexity": 5,
+          "rmse": 0.13215720963305919,
+          "error": 0.1321572096330592
+        },
+        {
+          "formula": "Divide(Tan(E), v_{2})",
+          "python": "(np.tan(1759.9432)/v_{2})",
+          "complexity": 4,
+          "rmse": 0.17501066607886312,
+          "error": 0.1750106660788631
+        },
+        {
+          "formula": "Inv(ArcSin(v_{2}))",
+          "python": "(1/np.arcsin(v_{2}))",
+          "complexity": 3,
+          "rmse": 0.1826917656168273,
+          "error": 0.1826917656168273
+        },
+        {
+          "formula": "Inv(v_{2})",
+          "python": "(1/v_{2})",
+          "complexity": 2,
+          "rmse": 0.20920623973425323,
+          "error": 0.20920623973425323
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.3603120663243284,
+          "error": 0.3603120663243284
+        }
+      ],
+      "index": 78,
+      "n_vars": 3,
+      "var_names": [
+        "q",
+        "h",
+        "m"
+      ]
+    },
+    {
+      "eq_id": "II.34.29b",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Times(v_{4}, Exp(Pi)))",
+      "found_python": "(v_{0})*((v_{4})*(np.exp(np.pi)))",
+      "rmse": 145.13242805989648,
+      "complexity": 6,
+      "elapsed_s": 11.465449571609497,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Times(v_{4}, Exp(Pi)))",
+          "python": "(v_{0})*((v_{4})*(np.exp(np.pi)))",
+          "complexity": 6,
+          "rmse": 145.13242805989648,
+          "error": 145.13242805989648
+        },
+        {
+          "formula": "Times(v_{4}, Tan(Tan(1)))",
+          "python": "(v_{4})*(np.tan(np.tan(1)))",
+          "complexity": 5,
+          "rmse": 175.3597310697876,
+          "error": 175.3597310697876
+        },
+        {
+          "formula": "Times(v_{2}, Exp(v_{4}))",
+          "python": "(v_{2})*(np.exp(v_{4}))",
+          "complexity": 4,
+          "rmse": 175.38493854298093,
+          "error": 175.3849385429809
+        },
+        {
+          "formula": "Tan(Tan(1))",
+          "python": "np.tan(np.tan(1))",
+          "complexity": 3,
+          "rmse": 220.6666340945774,
+          "error": 220.66663409457735
+        },
+        {
+          "formula": "Exp(v_{0})",
+          "python": "np.exp(v_{0})",
+          "complexity": 2,
+          "rmse": 233.09546446352255,
+          "error": 233.0954644635227
+        },
+        {
+          "formula": "v_{2}",
+          "python": "v_{2}",
+          "complexity": 1,
+          "rmse": 263.1241870528434,
+          "error": 263.1241870528434
+        }
+      ],
+      "index": 79,
+      "n_vars": 5,
+      "var_names": [
+        "g_",
+        "h",
+        "Jz",
+        "mom",
+        "B"
+      ]
+    },
+    {
+      "eq_id": "II.35.18",
+      "status": "failed",
+      "found_formula": "Divide(v_{0}, ArcSin(ArcSin(v_{3})))",
+      "found_python": "(v_{0}/np.arcsin(np.arcsin(v_{3})))",
+      "rmse": 0.2283079548159971,
+      "complexity": 5,
+      "elapsed_s": 65.88931155204773,
+      "candidates": [
+        {
+          "formula": "Divide(v_{0}, ArcSin(ArcSin(v_{3})))",
+          "python": "(v_{0}/np.arcsin(np.arcsin(v_{3})))",
+          "complexity": 5,
+          "rmse": 0.2283079548159971,
+          "error": 0.22830795481599706
+        },
+        {
+          "formula": "Divide(ArcTan(v_{0}), v_{3})",
+          "python": "(np.arctan(v_{0})/v_{3})",
+          "complexity": 4,
+          "rmse": 0.2600403786651494,
+          "error": 0.2600403786651493
+        },
+        {
+          "formula": "Divide(v_{0}, Pi)",
+          "python": "(v_{0}/3.2335)",
+          "complexity": 3,
+          "rmse": 0.2626828696783369,
+          "error": 0.262682869678337
+        },
+        {
+          "formula": "Log(v_{0})",
+          "python": "np.log(v_{0})",
+          "complexity": 2,
+          "rmse": 0.29040224039481116,
+          "error": 0.29040224039481116
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 0.5075336323870112,
+          "error": 0.5075336323870112
+        }
+      ],
+      "index": 80,
+      "n_vars": 5,
+      "var_names": [
+        "n_0",
+        "kb",
+        "T",
+        "mom",
+        "B"
+      ]
+    },
+    {
+      "eq_id": "II.35.21",
+      "status": "failed",
+      "found_formula": "Subtract(Times(v_{0}, v_{1}), Sqrt(v_{3}))",
+      "found_python": "((v_{0})*(v_{1}))-(np.sqrt(v_{3}))",
+      "rmse": 1.8730609902707065,
+      "complexity": 6,
+      "elapsed_s": 11.610371589660645,
+      "candidates": [
+        {
+          "formula": "Subtract(Times(v_{0}, v_{1}), Sqrt(v_{3}))",
+          "python": "((v_{0})*(v_{1}))-(np.sqrt(v_{3}))",
+          "complexity": 6,
+          "rmse": 1.8730609902707065,
+          "error": 1.8730609902707065
+        },
+        {
+          "formula": "Subtract(Times(v_{0}, v_{1}), v_{3})",
+          "python": "((v_{0})*(v_{1}))-(v_{3})",
+          "complexity": 5,
+          "rmse": 1.9877276538634516,
+          "error": 1.9877276538634512
+        },
+        {
+          "formula": "Times(v_{0}, v_{1})",
+          "python": "(v_{0})*(v_{1})",
+          "complexity": 3,
+          "rmse": 2.8220915043440855,
+          "error": 2.8220915043440864
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 5.122198375671093,
+          "error": 5.122198375671093
+        }
+      ],
+      "index": 81,
+      "n_vars": 5,
+      "var_names": [
+        "n_rho",
+        "mom",
+        "B",
+        "kb",
+        "T"
+      ]
+    },
+    {
+      "eq_id": "II.36.38",
+      "status": "failed",
+      "found_formula": "Times(Sqrt(v_{1}), Divide(v_{0}, v_{2}))",
+      "found_python": "(np.sqrt(v_{1}))*((v_{0}/v_{2}))",
+      "rmse": 0.7833463319672618,
+      "complexity": 6,
+      "elapsed_s": 63.20527410507202,
+      "candidates": [
+        {
+          "formula": "Times(Sqrt(v_{1}), Divide(v_{0}, v_{2}))",
+          "python": "(np.sqrt(v_{1}))*((v_{0}/v_{2}))",
+          "complexity": 6,
+          "rmse": 0.7833463319672618,
+          "error": 0.7833463319672618
+        },
+        {
+          "formula": "Times(v_{0}, Exp(Cos(v_{2})))",
+          "python": "(v_{0})*(np.exp(np.cos(v_{2})))",
+          "complexity": 5,
+          "rmse": 0.8926877088612337,
+          "error": 0.8926877088612338
+        },
+        {
+          "formula": "Plus(v_{0}, Cos(v_{3}))",
+          "python": "(v_{0})+(np.cos(v_{3}))",
+          "complexity": 4,
+          "rmse": 0.9129050555957903,
+          "error": 0.9129050555957906
+        },
+        {
+          "formula": "Divide(Pi, v_{3})",
+          "python": "(3.1299/v_{3})",
+          "complexity": 3,
+          "rmse": 1.0097465386402291,
+          "error": 1.0097465386402291
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 1.117642314077657,
+          "error": 1.1176423140776572
+        }
+      ],
+      "index": 82,
+      "n_vars": 8,
+      "var_names": [
+        "mom",
+        "H",
+        "kb",
+        "T",
+        "alpha",
+        "epsilon",
+        "c",
+        "M"
+      ]
+    },
+    {
+      "eq_id": "II.38.3",
+      "status": "failed",
+      "found_formula": "Times(Log(v_{0}), Times(v_{1}, v_{3}))",
+      "found_python": "(np.log(v_{0}))*((v_{1})*(v_{3}))",
+      "rmse": 7.527801357244468,
+      "complexity": 6,
+      "elapsed_s": 10.473883390426636,
+      "candidates": [
+        {
+          "formula": "Times(Log(v_{0}), Times(v_{1}, v_{3}))",
+          "python": "(np.log(v_{0}))*((v_{1})*(v_{3}))",
+          "complexity": 6,
+          "rmse": 7.527801357244468,
+          "error": 7.527801357244465
+        },
+        {
+          "formula": "Plus(v_{0}, Times(v_{1}, v_{3}))",
+          "python": "(v_{0})+((v_{1})*(v_{3}))",
+          "complexity": 5,
+          "rmse": 8.232582155327574,
+          "error": 8.232582155327572
+        },
+        {
+          "formula": "Times(v_{1}, v_{3})",
+          "python": "(v_{1})*(v_{3})",
+          "complexity": 3,
+          "rmse": 8.987066216327326,
+          "error": 8.987066216327324
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 11.41077292685502,
+          "error": 11.410772926855017
+        },
+        {
+          "formula": "v_{3}",
+          "python": "v_{3}",
+          "complexity": 1,
+          "rmse": 13.414160352721701,
+          "error": 13.414160352721701
+        }
+      ],
+      "index": 83,
+      "n_vars": 4,
+      "var_names": [
+        "Y",
+        "A",
+        "d",
+        "x"
+      ]
+    },
+    {
+      "eq_id": "II.38.14",
+      "status": "failed",
+      "found_formula": "ArcTan(Times(v_{0}, Divide(I, v_{1})))",
+      "found_python": "np.arctan((v_{0})*((0.4148/v_{1})))",
+      "rmse": 0.054688649734562174,
+      "complexity": 6,
+      "elapsed_s": 56.11463928222656,
+      "candidates": [
+        {
+          "formula": "ArcTan(Times(v_{0}, Divide(I, v_{1})))",
+          "python": "np.arctan((v_{0})*((0.4148/v_{1})))",
+          "complexity": 6,
+          "rmse": 0.054688649734562174,
+          "error": 0.05468864973456215
+        },
+        {
+          "formula": "Sin(Divide(Log(v_{0}), v_{1}))",
+          "python": "np.sin((np.log(v_{0})/v_{1}))",
+          "complexity": 5,
+          "rmse": 0.06462333838318829,
+          "error": 0.06462333838318829
+        },
+        {
+          "formula": "Divide(Log(v_{0}), v_{1})",
+          "python": "(np.log(v_{0})/v_{1})",
+          "complexity": 4,
+          "rmse": 0.09707604565447937,
+          "error": 0.09707604565447937
+        },
+        {
+          "formula": "ArcTan(Inv(v_{1}))",
+          "python": "np.arctan((1/v_{1}))",
+          "complexity": 3,
+          "rmse": 0.1734491743402846,
+          "error": 0.17344917434028462
+        },
+        {
+          "formula": "Inv(v_{1})",
+          "python": "(1/v_{1})",
+          "complexity": 2,
+          "rmse": 0.1854364765104066,
+          "error": 0.18543647651040662
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.47484790620856626,
+          "error": 0.4748479062085662
+        }
+      ],
+      "index": 84,
+      "n_vars": 2,
+      "var_names": [
+        "Y",
+        "sigma"
+      ]
+    },
+    {
+      "eq_id": "III.4.32",
+      "status": "failed",
+      "found_formula": "Plus(v_{2}, Exp(Divide(v_{3}, v_{1})))",
+      "found_python": "(v_{2})+(np.exp((v_{3}/v_{1})))",
+      "rmse": 7.1197615585831056,
+      "complexity": 6,
+      "elapsed_s": 10.385737180709839,
+      "candidates": [
+        {
+          "formula": "Plus(v_{2}, Exp(Divide(v_{3}, v_{1})))",
+          "python": "(v_{2})+(np.exp((v_{3}/v_{1})))",
+          "complexity": 6,
+          "rmse": 7.1197615585831056,
+          "error": 7.119761558583103
+        },
+        {
+          "formula": "Divide(Exp(Pi), v_{0})",
+          "python": "(np.exp(np.pi)/v_{0})",
+          "complexity": 4,
+          "rmse": 7.974412196602827,
+          "error": 7.974412196602826
+        },
+        {
+          "formula": "Times(v_{2}, v_{3})",
+          "python": "(v_{2})*(v_{3})",
+          "complexity": 3,
+          "rmse": 8.33965600031795,
+          "error": 8.339656000317952
+        },
+        {
+          "formula": "v_{3}",
+          "python": "v_{3}",
+          "complexity": 1,
+          "rmse": 10.939203173435313,
+          "error": 10.939203173435313
+        }
+      ],
+      "index": 85,
+      "n_vars": 4,
+      "var_names": [
+        "h",
+        "omega",
+        "kb",
+        "T"
+      ]
+    },
+    {
+      "eq_id": "III.4.33",
+      "status": "failed",
+      "found_formula": "Subtract(Times(v_{2}, v_{3}), Tan(E))",
+      "found_python": "((v_{2})*(v_{3}))-(np.tan(27068.5770))",
+      "rmse": 0.3756931061970532,
+      "complexity": 6,
+      "elapsed_s": 10.284190893173218,
+      "candidates": [
+        {
+          "formula": "Subtract(Times(v_{2}, v_{3}), Tan(E))",
+          "python": "((v_{2})*(v_{3}))-(np.tan(27068.5770))",
+          "complexity": 6,
+          "rmse": 0.3756931061970532,
+          "error": 0.37569310619705315
+        },
+        {
+          "formula": "Subtract(Times(v_{2}, v_{3}), 1)",
+          "python": "((v_{2})*(v_{3}))-(0.3490)",
+          "complexity": 5,
+          "rmse": 0.4960969415152127,
+          "error": 0.49609694151521283
+        },
+        {
+          "formula": "Times(v_{2}, v_{3})",
+          "python": "(v_{2})*(v_{3})",
+          "complexity": 3,
+          "rmse": 0.7714351863040364,
+          "error": 0.7714351863040364
+        },
+        {
+          "formula": "v_{3}",
+          "python": "v_{3}",
+          "complexity": 1,
+          "rmse": 6.6862229943673865,
+          "error": 6.6862229943673865
+        }
+      ],
+      "index": 86,
+      "n_vars": 4,
+      "var_names": [
+        "h",
+        "omega",
+        "kb",
+        "T"
+      ]
+    },
+    {
+      "eq_id": "III.7.38",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, Times(v_{0}, v_{0}))",
+      "found_python": "(v_{1})*((v_{0})*(v_{0}))",
+      "rmse": 32.18200133147654,
+      "complexity": 5,
+      "elapsed_s": 8.841210126876831,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Times(v_{0}, v_{0}))",
+          "python": "(v_{1})*((v_{0})*(v_{0}))",
+          "complexity": 5,
+          "rmse": 32.18200133147654,
+          "error": 32.18200133147655
+        },
+        {
+          "formula": "Times(v_{0}, Exp(E))",
+          "python": "(v_{0})*(np.exp(np.e))",
+          "complexity": 4,
+          "rmse": 34.69626417802617,
+          "error": 34.696264178026176
+        },
+        {
+          "formula": "EML(v_{0}, v_{2})",
+          "python": "(np.exp(v_{0}) - np.log(v_{2}))",
+          "complexity": 3,
+          "rmse": 40.93561876705451,
+          "error": 40.93561876705449
+        },
+        {
+          "formula": "Exp(v_{0})",
+          "python": "np.exp(v_{0})",
+          "complexity": 2,
+          "rmse": 40.96189949944759,
+          "error": 40.9618994994476
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 60.625087655287956,
+          "error": 60.62508765528795
+        }
+      ],
+      "index": 87,
+      "n_vars": 3,
+      "var_names": [
+        "mom",
+        "B",
+        "h"
+      ]
+    },
+    {
+      "eq_id": "III.8.54",
+      "status": "failed",
+      "found_formula": "Divide(Cos(Inv(v_{1})), ArcSin(Pi))",
+      "found_python": "(np.cos((1/v_{1}))/np.arcsin(1.1490))",
+      "rmse": 0.34288624361843484,
+      "complexity": 6,
+      "elapsed_s": 64.24864959716797,
+      "candidates": [
+        {
+          "formula": "Divide(Cos(Inv(v_{1})), ArcSin(Pi))",
+          "python": "(np.cos((1/v_{1}))/np.arcsin(1.1490))",
+          "complexity": 6,
+          "rmse": 0.34288624361843484,
+          "error": 0.3428862436184348
+        },
+        {
+          "formula": "Tan(Divide(Sqrt(v_{1}), Pi))",
+          "python": "np.tan((np.sqrt(v_{1})/3.0317))",
+          "complexity": 5,
+          "rmse": 0.34328532760437136,
+          "error": 0.3432853276043714
+        },
+        {
+          "formula": "ArcTan(Divide(v_{1}, E))",
+          "python": "np.arctan((v_{1}/3.2488))",
+          "complexity": 4,
+          "rmse": 0.3434412586164894,
+          "error": 0.3434412586164893
+        },
+        {
+          "formula": "Divide(v_{1}, Pi)",
+          "python": "(v_{1}/3.3046)",
+          "complexity": 3,
+          "rmse": 0.34529288606577896,
+          "error": 0.34529288606577896
+        },
+        {
+          "formula": "Sin(E)",
+          "python": "np.sin(2.6832)",
+          "complexity": 2,
+          "rmse": 0.3483966194916623,
+          "error": 0.34839661949166223
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.553308063370062,
+          "error": 0.553308063370062
+        }
+      ],
+      "index": 88,
+      "n_vars": 3,
+      "var_names": [
+        "E_n",
+        "t",
+        "h"
+      ]
+    },
+    {
+      "eq_id": "III.9.52",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Exp(EML(1, v_{3})))",
+      "found_python": "(v_{0})*(np.exp((np.exp(1) - np.log(v_{3}))))",
+      "rmse": 11.876529824379393,
+      "complexity": 6,
+      "elapsed_s": 13.070282459259033,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Exp(EML(1, v_{3})))",
+          "python": "(v_{0})*(np.exp((np.exp(1) - np.log(v_{3}))))",
+          "complexity": 6,
+          "rmse": 11.876529824379393,
+          "error": 11.876529824379393
+        },
+        {
+          "formula": "Times(v_{0}, Times(Pi, v_{1}))",
+          "python": "(v_{0})*((np.pi)*(v_{1}))",
+          "complexity": 5,
+          "rmse": 12.17417595152792,
+          "error": 12.174175951527921
+        },
+        {
+          "formula": "Divide(Exp(Pi), v_{3})",
+          "python": "(np.exp(np.pi)/v_{3})",
+          "complexity": 4,
+          "rmse": 12.826773053059192,
+          "error": 12.826773053059194
+        },
+        {
+          "formula": "EML(E, v_{3})",
+          "python": "(np.exp(np.e) - np.log(v_{3}))",
+          "complexity": 3,
+          "rmse": 13.19384419095621,
+          "error": 13.19384419095621
+        },
+        {
+          "formula": "Exp(E)",
+          "python": "np.exp(np.e)",
+          "complexity": 2,
+          "rmse": 13.287241125164144,
+          "error": 13.287241125164142
+        },
+        {
+          "formula": "Pi",
+          "python": "np.pi",
+          "complexity": 1,
+          "rmse": 17.701840118700535,
+          "error": 17.701840118700535
+        }
+      ],
+      "index": 89,
+      "n_vars": 6,
+      "var_names": [
+        "p_d",
+        "Ef",
+        "t",
+        "h",
+        "omega",
+        "omega_0"
+      ]
+    },
+    {
+      "index": 90,
+      "eq_id": "III.10.19",
+      "n_vars": 3,
+      "var_names": [
+        "mom",
+        "Bx",
+        "By"
+      ],
+      "status": "skipped",
+      "reason": "too_few_valid_samples",
+      "found_formula": null,
+      "found_python": null,
+      "rmse": null,
+      "complexity": null,
+      "elapsed_s": 0.0,
+      "candidates": []
+    },
+    {
+      "eq_id": "III.12.43",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, Log(Sqrt(v_{0})))",
+      "found_python": "(v_{1})*(np.log(np.sqrt(v_{0})))",
+      "rmse": 0.182536725978364,
+      "complexity": 5,
+      "elapsed_s": 49.04864239692688,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, Log(Sqrt(v_{0})))",
+          "python": "(v_{1})*(np.log(np.sqrt(v_{0})))",
+          "complexity": 5,
+          "rmse": 0.182536725978364,
+          "error": 0.18253672597836404
+        },
+        {
+          "formula": "EML(I, Inv(v_{0}))",
+          "python": "(np.exp(1j) - np.log((1/v_{0})))",
+          "complexity": 4,
+          "rmse": 0.6240456313779433,
+          "error": 0.6240456313779431
+        },
+        {
+          "formula": "Divide(v_{0}, E)",
+          "python": "(v_{0}/2.3412)",
+          "complexity": 3,
+          "rmse": 0.6324929127539477,
+          "error": 0.6324929127539475
+        },
+        {
+          "formula": "Sqrt(v_{0})",
+          "python": "np.sqrt(v_{0})",
+          "complexity": 2,
+          "rmse": 0.6702791000011289,
+          "error": 0.6702791000011289
+        },
+        {
+          "formula": "1",
+          "python": "1",
+          "complexity": 1,
+          "rmse": 0.9789512647602929,
+          "error": 0.9789512647602931
+        }
+      ],
+      "index": 91,
+      "n_vars": 2,
+      "var_names": [
+        "n",
+        "h"
+      ]
+    },
+    {
+      "eq_id": "III.13.18",
+      "status": "failed",
+      "found_formula": "Times(v_{0}, Times(v_{2}, Exp(v_{1})))",
+      "found_python": "(v_{0})*((v_{2})*(np.exp(v_{1})))",
+      "rmse": 374.4781812447851,
+      "complexity": 6,
+      "elapsed_s": 10.604441404342651,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Times(v_{2}, Exp(v_{1})))",
+          "python": "(v_{0})*((v_{2})*(np.exp(v_{1})))",
+          "complexity": 6,
+          "rmse": 374.4781812447851,
+          "error": 374.47818124478505
+        },
+        {
+          "formula": "EML(Plus(E, v_{1}), v_{3})",
+          "python": "(np.exp((np.e)+(v_{1})) - np.log(v_{3}))",
+          "complexity": 5,
+          "rmse": 541.0578394248315,
+          "error": 541.0578394248317
+        },
+        {
+          "formula": "Exp(Plus(E, v_{1}))",
+          "python": "np.exp((np.e)+(v_{1}))",
+          "complexity": 4,
+          "rmse": 541.359604018599,
+          "error": 541.359604018599
+        },
+        {
+          "formula": "Tan(Tan(1))",
+          "python": "np.tan(np.tan(1))",
+          "complexity": 3,
+          "rmse": 748.9136073430083,
+          "error": 748.9136073430083
+        },
+        {
+          "formula": "Exp(v_{1})",
+          "python": "np.exp(v_{1})",
+          "complexity": 2,
+          "rmse": 752.687379484984,
+          "error": 752.6873794849843
+        },
+        {
+          "formula": "v_{1}",
+          "python": "v_{1}",
+          "complexity": 1,
+          "rmse": 793.630629666043,
+          "error": 793.6306296660426
+        }
+      ],
+      "index": 92,
+      "n_vars": 4,
+      "var_names": [
+        "E_n",
+        "d",
+        "k",
+        "h"
+      ]
+    },
+    {
+      "eq_id": "III.14.14",
+      "status": "failed",
+      "found_formula": "Times(Exp(v_{1}), Divide(v_{0}, v_{3}))",
+      "found_python": "(np.exp(v_{1}))*((v_{0}/v_{3}))",
+      "rmse": 6.454373584213449,
+      "complexity": 6,
+      "elapsed_s": 11.949781894683838,
+      "candidates": [
+        {
+          "formula": "Times(Exp(v_{1}), Divide(v_{0}, v_{3}))",
+          "python": "(np.exp(v_{1}))*((v_{0}/v_{3}))",
+          "complexity": 6,
+          "rmse": 6.454373584213449,
+          "error": 6.454373584213449
+        },
+        {
+          "formula": "Times(v_{0}, Times(v_{1}, v_{2}))",
+          "python": "(v_{0})*((v_{1})*(v_{2}))",
+          "complexity": 5,
+          "rmse": 6.570536263732372,
+          "error": 6.570536263732372
+        },
+        {
+          "formula": "Plus(v_{0}, Exp(v_{2}))",
+          "python": "(v_{0})+(np.exp(v_{2}))",
+          "complexity": 4,
+          "rmse": 7.287958233580011,
+          "error": 7.28795823358001
+        },
+        {
+          "formula": "Times(E, v_{0})",
+          "python": "(np.e)*(v_{0})",
+          "complexity": 3,
+          "rmse": 7.440404023425612,
+          "error": 7.440404023425611
+        },
+        {
+          "formula": "Exp(v_{1})",
+          "python": "np.exp(v_{1})",
+          "complexity": 2,
+          "rmse": 8.102102893281279,
+          "error": 8.102102893281282
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 8.745198385981197,
+          "error": 8.745198385981196
+        }
+      ],
+      "index": 93,
+      "n_vars": 5,
+      "var_names": [
+        "I_0",
+        "q",
+        "Volt",
+        "kb",
+        "T"
+      ]
+    },
+    {
+      "eq_id": "III.15.12",
+      "status": "failed",
+      "found_formula": "EML(Sqrt(v_{0}), Sin(Log(v_{2})))",
+      "found_python": "(np.exp(np.sqrt(v_{0})) - np.log(np.sin(np.log(v_{2}))))",
+      "rmse": 4.699420698519585,
+      "complexity": 6,
+      "elapsed_s": 9.334349393844604,
+      "candidates": [
+        {
+          "formula": "EML(Sqrt(v_{0}), Sin(Log(v_{2})))",
+          "python": "(np.exp(np.sqrt(v_{0})) - np.log(np.sin(np.log(v_{2}))))",
+          "complexity": 6,
+          "rmse": 4.699420698519585,
+          "error": 4.699420698519585
+        },
+        {
+          "formula": "EML(Sqrt(v_{0}), Log(v_{2}))",
+          "python": "(np.exp(np.sqrt(v_{0})) - np.log(np.log(v_{2})))",
+          "complexity": 5,
+          "rmse": 4.705677767205067,
+          "error": 4.705677767205064
+        },
+        {
+          "formula": "Plus(v_{0}, v_{0})",
+          "python": "(v_{0})+(v_{0})",
+          "complexity": 3,
+          "rmse": 4.7383097862086085,
+          "error": 4.738309786208608
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 5.72158955727969,
+          "error": 5.7215895572796915
+        }
+      ],
+      "index": 94,
+      "n_vars": 3,
+      "var_names": [
+        "U",
+        "k",
+        "d"
+      ]
+    },
+    {
+      "eq_id": "III.15.14",
+      "status": "partial",
+      "found_formula": "Times(v_{0}, Divide(I, Exp(v_{2})))",
+      "found_python": "(v_{0})*((0.0292/np.exp(v_{2})))",
+      "rmse": 0.009013678468246088,
+      "complexity": 6,
+      "elapsed_s": 54.981860637664795,
+      "candidates": [
+        {
+          "formula": "Times(v_{0}, Divide(I, Exp(v_{2})))",
+          "python": "(v_{0})*((0.0292/np.exp(v_{2})))",
+          "complexity": 6,
+          "rmse": 0.009013678468246088,
+          "error": 0.009013678468246085
+        },
+        {
+          "formula": "Times(v_{0}, Divide(I, v_{2}))",
+          "python": "(v_{0})*((0.0100/v_{2}))",
+          "complexity": 5,
+          "rmse": 0.009316901382261473,
+          "error": 0.009316901382261473
+        },
+        {
+          "formula": "Divide(Neg(I), v_{2})",
+          "python": "((--0.0183)/v_{2})",
+          "complexity": 4,
+          "rmse": 0.012193398761168728,
+          "error": 0.01219339876116873
+        },
+        {
+          "formula": "ArcCos(Cos(I))",
+          "python": "np.arccos(np.cos(0.0099))",
+          "complexity": 3,
+          "rmse": 0.013588964329350245,
+          "error": 0.013588964329350249
+        },
+        {
+          "formula": "Sqrt(I)",
+          "python": "np.sqrt(0.0002)",
+          "complexity": 2,
+          "rmse": 0.014255892419306453,
+          "error": 0.01425589241930646
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 0.016379605914271008,
+          "error": 0.016379605914271005
+        }
+      ],
+      "index": 95,
+      "n_vars": 3,
+      "var_names": [
+        "h",
+        "E_n",
+        "d"
+      ]
+    },
+    {
+      "eq_id": "III.15.27",
+      "status": "failed",
+      "found_formula": "Divide(Divide(v_{0}, v_{2}), Sin(E))",
+      "found_python": "((v_{0}/v_{2})/np.sin(2.7058))",
+      "rmse": 1.4026794164498395,
+      "complexity": 6,
+      "elapsed_s": 11.452011346817017,
+      "candidates": [
+        {
+          "formula": "Divide(Divide(v_{0}, v_{2}), Sin(E))",
+          "python": "((v_{0}/v_{2})/np.sin(2.7058))",
+          "complexity": 6,
+          "rmse": 1.4026794164498395,
+          "error": 1.4026794164498393
+        },
+        {
+          "formula": "Times(E, Divide(v_{0}, v_{2}))",
+          "python": "(2.5948)*((v_{0}/v_{2}))",
+          "complexity": 5,
+          "rmse": 1.4344312362642626,
+          "error": 1.4344312362642626
+        },
+        {
+          "formula": "Plus(v_{0}, Sin(v_{2}))",
+          "python": "(v_{0})+(np.sin(v_{2}))",
+          "complexity": 4,
+          "rmse": 1.5949852450092437,
+          "error": 1.5949852450092434
+        },
+        {
+          "formula": "Plus(I, v_{0})",
+          "python": "(-0.3973)+(v_{0})",
+          "complexity": 3,
+          "rmse": 1.9007149742765983,
+          "error": 1.900714974276598
+        },
+        {
+          "formula": "v_{0}",
+          "python": "v_{0}",
+          "complexity": 1,
+          "rmse": 1.9007149746862375,
+          "error": 1.9007149746862373
+        }
+      ],
+      "index": 96,
+      "n_vars": 3,
+      "var_names": [
+        "alpha",
+        "n",
+        "d"
+      ]
+    },
+    {
+      "eq_id": "III.17.37",
+      "status": "failed",
+      "found_formula": "Times(v_{1}, ArcSin(Tan(Cos(v_{2}))))",
+      "found_python": "(v_{1})*(np.arcsin(np.tan(np.cos(v_{2}))))",
+      "rmse": 2.7408918119113914,
+      "complexity": 6,
+      "elapsed_s": 9.070390462875366,
+      "candidates": [
+        {
+          "formula": "Times(v_{1}, ArcSin(Tan(Cos(v_{2}))))",
+          "python": "(v_{1})*(np.arcsin(np.tan(np.cos(v_{2}))))",
+          "complexity": 6,
+          "rmse": 2.7408918119113914,
+          "error": 2.7408918119113914
+        },
+        {
+          "formula": "Times(v_{1}, Tan(Cos(v_{2})))",
+          "python": "(v_{1})*(np.tan(np.cos(v_{2})))",
+          "complexity": 5,
+          "rmse": 2.9158982237592572,
+          "error": 2.915898223759258
+        },
+        {
+          "formula": "Times(v_{1}, Cos(v_{2}))",
+          "python": "(v_{1})*(np.cos(v_{2}))",
+          "complexity": 4,
+          "rmse": 3.3385543624833245,
+          "error": 3.338554362483325
+        },
+        {
+          "formula": "Subtract(1, v_{1})",
+          "python": "(1)-(v_{1})",
+          "complexity": 3,
+          "rmse": 4.246331406900295,
+          "error": 4.246331406900294
+        },
+        {
+          "formula": "Neg(v_{1})",
+          "python": "(-v_{1})",
+          "complexity": 2,
+          "rmse": 4.406226974138107,
+          "error": 4.406226974138108
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 4.956058625421449,
+          "error": 4.9560586254214485
+        }
+      ],
+      "index": 97,
+      "n_vars": 3,
+      "var_names": [
+        "beta",
+        "alpha",
+        "theta"
+      ]
+    },
+    {
+      "index": 98,
+      "eq_id": "III.19.51",
+      "n_vars": 4,
+      "var_names": [
+        "m",
+        "q",
+        "h",
+        "n"
+      ],
+      "status": "skipped",
+      "reason": "too_few_valid_samples",
+      "found_formula": null,
+      "found_python": null,
+      "rmse": null,
+      "complexity": null,
+      "elapsed_s": 0.0,
+      "candidates": []
+    },
+    {
+      "eq_id": "III.21.20",
+      "status": "failed",
+      "found_formula": "Subtract(Times(v_{1}, Neg(v_{2})), v_{0})",
+      "found_python": "((v_{1})*((-v_{2})))-(v_{0})",
+      "rmse": 8.43087497140833,
+      "complexity": 6,
+      "elapsed_s": 10.07120132446289,
+      "candidates": [
+        {
+          "formula": "Subtract(Times(v_{1}, Neg(v_{2})), v_{0})",
+          "python": "((v_{1})*((-v_{2})))-(v_{0})",
+          "complexity": 6,
+          "rmse": 8.43087497140833,
+          "error": 8.43087497140833
+        },
+        {
+          "formula": "Times(v_{1}, Neg(v_{2}))",
+          "python": "(v_{1})*((-v_{2}))",
+          "complexity": 4,
+          "rmse": 9.255252773303525,
+          "error": 9.255252773303527
+        },
+        {
+          "formula": "Tan(Sqrt(E))",
+          "python": "np.tan(np.sqrt(np.e))",
+          "complexity": 3,
+          "rmse": 11.204036308745568,
+          "error": 11.204036308745565
+        },
+        {
+          "formula": "Neg(v_{1})",
+          "python": "(-v_{1})",
+          "complexity": 2,
+          "rmse": 13.728579693802264,
+          "error": 13.728579693802264
+        },
+        {
+          "formula": "0",
+          "python": "0",
+          "complexity": 1,
+          "rmse": 16.095242213844188,
+          "error": 16.095242213844188
+        }
+      ],
+      "index": 99,
+      "n_vars": 4,
+      "var_names": [
+        "rho_c_0",
+        "q",
+        "A_vec",
+        "m"
+      ]
+    }
+  ]
+}
